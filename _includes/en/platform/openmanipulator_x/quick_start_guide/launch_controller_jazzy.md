@@ -4,9 +4,13 @@ After running this section, software controller that controls the OMX will be la
 
 {% capture notice_01 %}
 **NOTE**: 
-If you are using the Docker environment, make sure you are inside the container before running these commands. Use `./docker/container.sh enter` to enter the container.
+If you are using the Docker environment, make sure you are inside the container before running these commands.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+```bash
+./docker/container.sh enter
+```
 
 - When operating with `U2D2`  
 Close all terminal and enter the command below in each new terminal.
