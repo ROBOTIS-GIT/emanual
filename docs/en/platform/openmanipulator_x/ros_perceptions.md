@@ -47,6 +47,12 @@ This example is not supported.
 {: .notice--warning}
 </section>
 
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+This example is not supported.  
+[https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
+{: .notice--warning}
+</section>
+
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 The following is an example of connecting the OV7725 camera module with AL422B buffer to the GPIO of OpenCR.  
 [https://community.robotsource.org/t/opencr-with-ov7725-al422b-camera-2-8-tftlcd/1413](https://community.robotsource.org/t/opencr-with-ov7725-al422b-camera-2-8-tftlcd/1413)

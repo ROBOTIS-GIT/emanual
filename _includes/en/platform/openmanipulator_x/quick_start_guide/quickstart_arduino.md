@@ -1,10 +1,10 @@
 
-**WARNING** : This Arduino instruction **does not require ROS** to operate OpenMANIPULATOR-X.  
+**WARNING** : This Arduino instruction **does not require ROS** to operate OMX.  
 When operating with ROS, the PC becomes the main controller.  
 On the other hands, when operating with Arduino, the OpenCR becomes the main controller.
 {: .notice--danger}
 
-OpenMANIPULATOR-X is compatible with **OpenCR**. We offer API to easily control manipulator.  
+OMX is compatible with **OpenCR**. We offer API to easily control manipulator.  
 This API supports DYNAMIXEL, DYNAMIXEL-X including protocol 1.0 and 2.0. Furthermore, this code can be used for [OpenMANIPULATOR Friends](/docs/en/platform/openmanipulator_x/friends/).  
 User can write the code in **Arduino IDE** and simulate or control using **Processing** GUI.
 
@@ -47,7 +47,7 @@ User can write the code in **Arduino IDE** and simulate or control using **Proce
 Please be aware that OpenCR board manager **does not support Arduino IDE on ARM based SBC such as Raspberry Pi or NVidia Jetson**.
 {: .notice--danger}
 
-Now let's setup the Processing GUI tool for easier control of OpenMANIPULATOR-X.
+Now let's setup the Processing GUI tool for easier control of OMX.
 
 1. Download and install the Processing.
 

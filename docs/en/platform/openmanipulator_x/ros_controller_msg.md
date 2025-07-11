@@ -7,8 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_controller_msg/
 tabs: "ROS"
-tab_title1: Humble
-tab_title2: Noetic
+tab_title1: Jazzy
+tab_title2: Humble
+tab_title3: Noetic
 tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
@@ -41,6 +42,14 @@ If you want to learn more, please refer to the official documentation for MoveIt
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 **NOTE**:  
+If you want to learn more, please refer to the official documentation for MoveIt 2 and ros2_control:  
+[MoveIt 2 Documentation](https://moveit.picknik.ai/main/index.html)  
+[ros2_control Documentation](https://control.ros.org/humble/index.html)  
+{: .notice--info}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
+**NOTE**:  
 Please launch the [OpenMANIPULATOR-X Controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) before running this section.
 {: .notice--info}
 
@@ -57,6 +66,11 @@ Not supported
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+Not supported
+{: .notice--warning}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/msg_list_topic_noetic.md %}
 </section>
 
@@ -73,6 +87,11 @@ Not supported
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+Not supported
+{: .notice--warning}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/msg_list_service_noetic.md %}
 </section>
 
