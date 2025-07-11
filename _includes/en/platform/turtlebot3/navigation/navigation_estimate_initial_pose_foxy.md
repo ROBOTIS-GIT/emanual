@@ -3,7 +3,7 @@
 1. Click the `2D Pose Estimate` button in the RViz2 menu.
 2. Click on the map where the actual robot is located and drag the large green arrow toward the direction where the robot is facing.
 3. Repeat step 1 and 2 until the LDS sensor data is overlayed on the saved map. 
-  ![](/assets/images/platform/turtlebot3/ros2/tb3_navigation2_rviz_01.png)
+  ![](/assets/images/platform/turtlebot3/navigation/tb3_navigation2_rviz_01.png)
 4. Launch the keyboard teleoperation node to precisely locate the robot on the map.  
 **[Remote PC]**  
   ```bash

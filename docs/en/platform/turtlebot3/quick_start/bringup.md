@@ -28,14 +28,14 @@ page_number: 8
 <![end dummy Header 1]-->
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_humble.md %}
+{% include en/platform/turtlebot3/quick_start/bringup_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_jazzy.md %}
+{% include en/platform/turtlebot3/quick_start/bringup_jazzy.md %}
 </section>
 
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/bringup_noetic.md %}
+{% include en/platform/turtlebot3/quick_start/bringup_noetic.md %}
 </section>

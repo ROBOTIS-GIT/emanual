@@ -105,7 +105,7 @@ Please refer to the below Ubuntu installation process.
 **NOTE**: This instruction takes about 2 hours to install ROS and related packages for TurtleBot3. Elapsed time may vary depending on network environment.
 {: .notice--info}
 
-![](/assets/images/platform/turtlebot3/logo_ros.png)
+![](/assets/images/platform/turtlebot3/logo/logo_ros.png)
 
 **[TurtleBot]** Install ROS
 
@@ -175,7 +175,7 @@ $ rosrun turtlebot3_bringup create_udev_rules
 
 ## [Network Configuration](#network-configuration)
 
-![](/assets/images/platform/turtlebot3/software/network_configuration.png)
+![](/assets/images/platform/turtlebot3/quick_start/quick_start/network_configuration.png)
 
 ROS requires IP addresses in order to communicate between TurtleBot3 and remote PC.
 
@@ -187,7 +187,7 @@ $ ifconfig
 
 Texts in the rectangle is the IP address of the `TurtleBot`.
 
-![](/assets/images/platform/turtlebot3/software/network_configuration4.png)
+![](/assets/images/platform/turtlebot3/quick_start/quick_start/network_configuration4.png)
 
 Enter the following command.
 
@@ -199,7 +199,7 @@ Press ' `alt+/` ' to end line of the file.
 
 Replace the `localhost` in the ROS_MASTER_URI address with the IP address acquired from [Remote PC Network Configuration](http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_setup/#network-configuration). Also replace the `localhost` in the ROS_HOSTNAME address with the IP address acquired from the above terminal window, which is the IP address of TurtleBot3.
 
-![](/assets/images/platform/turtlebot3/software/network_configuration5.png)
+![](/assets/images/platform/turtlebot3/quick_start/quick_start/network_configuration5.png)
 
 Then, source the bashrc with below command.
 

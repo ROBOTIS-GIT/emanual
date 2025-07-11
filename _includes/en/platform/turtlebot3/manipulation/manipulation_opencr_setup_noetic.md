@@ -83,8 +83,8 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
 9. Select the OpenCR's USB port from ***Tools > Port*** menu.
 
 10. Upload the TurtleBot3 firmware sketch with `Ctrl` + `U` or the upload icon.  
-  ![](/assets/images/platform/turtlebot3/opencr/o2.png)  
-  ![](/assets/images/platform/turtlebot3/opencr/o3.png)
+  ![](/assets/images/platform/turtlebot3/quick_start/opencr_setup/o2.png)  
+  ![](/assets/images/platform/turtlebot3/quick_start/opencr_setup/o3.png)
 
 11. If firmware upload fails, try uploading through recovery mode. The following sequence activates the recovery mode of OpenCR. When in recovery mode, the `STATUS` led of the OpenCR will blink periodically.
   - Hold down the `PUSH SW2` button.

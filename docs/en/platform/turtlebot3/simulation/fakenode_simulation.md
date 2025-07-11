@@ -31,7 +31,7 @@ page_number: 15
 {::options parse_block_html="true" /}
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/fakenode_simulation_humble.md %}
+{% include en/platform/turtlebot3/simulation/fakenode_simulation_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
@@ -40,5 +40,5 @@ page_number: 15
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/fakenode_simulation_noetic.md %}
+{% include en/platform/turtlebot3/simulation/fakenode_simulation_noetic.md %}
 </section>

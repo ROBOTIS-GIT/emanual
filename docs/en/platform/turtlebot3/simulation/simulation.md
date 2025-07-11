@@ -24,13 +24,13 @@ page_number: 12
 {::options parse_block_html="true" /}
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/simulation_humble.md %}
+{% include en/platform/turtlebot3/simulation/simulation_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/simulation_jazzy.md %}
+{% include en/platform/turtlebot3/simulation/simulation_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/simulation_noetic.md %}
+{% include en/platform/turtlebot3/simulation/simulation_noetic.md %}
 </section>

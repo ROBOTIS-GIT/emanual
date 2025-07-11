@@ -96,7 +96,7 @@ You can use RViz or image_view to verify driver. You can select data topic name 
 
 #### [Raspberry Pi Camera V2](#raspberry-pi-camera-v2)
 
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/Pi-Camera-front.jpg)
+![](/assets/images/platform/turtlebot3/more_info/appendix_raspi_cam/Pi-Camera-front.jpg)
 
 - See more details about [Raspberry Pi Camera V2](/docs/en/platform/turtlebot3/appendix_raspi_cam/#overview)
 
@@ -113,21 +113,21 @@ You can use RViz or image_view to verify driver. You can select data topic name 
     $ sudo raspi-config
     ```
 
-    ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-1.png)
+    ![](/assets/images/platform/turtlebot3/more_info/appendix_raspi_cam/pi-cam-hardware-setting-1.png)
 
 2. Select **3 Interfacing Options**.
 
-    ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-2.png)
+    ![](/assets/images/platform/turtlebot3/more_info/appendix_raspi_cam/pi-cam-hardware-setting-2.png)
 
 3. Select **P1 Camera**.
     
-    ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-3.png)
+    ![](/assets/images/platform/turtlebot3/more_info/appendix_raspi_cam/pi-cam-hardware-setting-3.png)
 
 4. Enable camera interface.
 
-    ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-4.png)    
+    ![](/assets/images/platform/turtlebot3/more_info/appendix_raspi_cam/pi-cam-hardware-setting-4.png)    
     
-    ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-5.png)
+    ![](/assets/images/platform/turtlebot3/more_info/appendix_raspi_cam/pi-cam-hardware-setting-5.png)
 
 5. After **reboot Raspberry Pi**, to test that the system is installed and working, try the following command:
 
