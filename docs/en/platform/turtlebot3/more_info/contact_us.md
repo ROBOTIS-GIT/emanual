@@ -26,7 +26,7 @@ page_number: 36
 
 ### [About Open Robotics](#about-open-robotics)
 
-![](/assets/images/platform/turtlebot3/logo_openrobotics.png)
+![](/assets/images/platform/turtlebot3/logo/logo_openrobotics.png)
 
 
 [Open Robotics](https://www.openrobotics.org/) is an independent non-profit organization founded by members of the global robotics community. The mission of Open Robotics is to support the development, distribution, and adoption of open source software for use in robotics research, education, and product development.
@@ -36,7 +36,7 @@ page_number: 36
 
 ### [About ROBOTIS](#about-robotis)
 
-![](/assets/images/platform/turtlebot3/logo_robotis.png)
+![](/assets/images/platform/turtlebot3/logo/logo_robotis.png)
 
 [ROBOTIS](http://www.robotis.com/) was derived from a simple response to the question, "What is a Robot?".
 
@@ -76,7 +76,7 @@ There are many answers to this question, but we strive to develop and apply prod
 
 ### [About OST (Open Source Team)](#about-ost-open-source-team)
 
-![](/assets/images/platform/turtlebot3/contact/open_source_team.jpg)
+![](/assets/images/platform/turtlebot3/more_info/contact/open_source_team.jpg)
 
 * Members : Ashe Kim, Daniel Seon, Darby Lim, Hancheol Cho, Jason Jin, Leon Jung, M. Y, Will Son, Yoonseok Pyo
 * Alumni : Christopher Tatsch, Yoshihiro Shibata

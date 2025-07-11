@@ -24,7 +24,7 @@ page_number: 31
 
 ### [RealSense™](#appendix-realsense)
 
-![](/assets/images/platform/turtlebot3/appendix_realsense/realsense_r200.png)
+![](/assets/images/platform/turtlebot3/more_info/appendix_realsense/realsense_r200.png)
 
 ### [Overview](#overview)
 

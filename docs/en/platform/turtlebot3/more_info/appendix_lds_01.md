@@ -27,8 +27,8 @@ page_number: 29
 
 #### [Overview](#overview)
 
-![](/assets/images/platform/turtlebot3/appendix_lds/lds_small.png)
-![](/assets/images/platform/turtlebot3/appendix_lds/lds_top_small.png)
+![](/assets/images/platform/turtlebot3/more_info/appendix_lds/lds_small.png)
+![](/assets/images/platform/turtlebot3/more_info/appendix_lds/lds_top_small.png)
 
 - 360 Laser Distance Sensor LDS-01 is a 2D laser scanner capable of sensing 360 degrees that collects a set of data around the robot to use for SLAM (Simultaneous Localization and Mapping) and Navigation.
 - The LDS-01 is used for TurtleBot3 Burger, Waffle and Waffle Pi models.
@@ -208,7 +208,7 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 
 - Run the application (`Ctrl`-`R`)
 
-![](/assets/images/platform/turtlebot3/appendix_lds/lds_gui.png)
+![](/assets/images/platform/turtlebot3/more_info/appendix_lds/lds_gui.png)
 
 #### [User Guide (for Embedded Board)](#user-guide-for-embedded-board)
 
@@ -218,7 +218,7 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 ##### Preparations
 - The LDS-01 in TurtleBot3 package comes with the interface board, but you can also connect the sensor to the power and UART pins of embedded boards.
 
-![](/assets/images/platform/turtlebot3/appendix_lds/lds_lines.png)
+![](/assets/images/platform/turtlebot3/more_info/appendix_lds/lds_lines.png)
 
 **WARNNING** : The wiring colours of LDS-01 could differ from the picture by manaufacturers. 
 {: .notice--warning}

@@ -33,7 +33,7 @@ $ docker compose down
 ```
 
 {% capture warning_01 %}
-**WARNING**: When stopping the container with `docker compose down`, all unsaved data in the container will be removed.
+**NOTE**: When stopping the container with `docker compose down`, all unsaved data in the container will be removed.
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
 

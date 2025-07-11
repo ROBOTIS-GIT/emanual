@@ -24,7 +24,7 @@ page_number:
 
 ## [Teleoperation](#ros-teleoperation)
 
-![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
+![](/assets/images/platform/turtlebot3/quick_start/basic_operation/remote_pc_and_turtlebot.png)
 
 {% capture notice_01 %}
 **NOTE**: 
@@ -83,7 +83,7 @@ If the node is successfully launched, the following instruction will be appeared
 
 The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for TurtleBot3 Burger, Waffle and Waffle Pi. This controller can be used with the Bluetooth module [BT410][bt410]. The TurtleBot3 Waffle Pi includes this controller and Bluetooth modules. When using RC-100, it is not necessary to execute a specific node because `turtlebot_core` node creates a `/cmd_vel` topic in the firmware directly connected to OpeCR.
 
-![](/assets/images/platform/turtlebot3/example/rc100b_with_bt410.png)
+![](/assets/images/platform/turtlebot3/quick_start/basic_operation/rc100b_with_bt410.png)
 
 1. Connect BT-410 to OpenCR UART1 port (as described [here][appendix_opencr1_0]).
 
@@ -157,14 +157,14 @@ Download [ROS CONTROL][ros_control] and run the application.
 
 After connecting `roscore` to ROS_CONTROL app, enter `Topic` tab in `Preferences` to confiture topic name.
 
-![](/assets/images/platform/turtlebot3/example/ros_control.png)
+![](/assets/images/platform/turtlebot3/quick_start/basic_operation/ros_control.png)
 
 You are supposed to change topic name as `/cmd_vel` in Joystick Topic, `/scan` in LaserScan Topic,
 `/image_raw/compressed` in Image Topic and `/odom` in Odometry Topic.
 
 Then, you can check state of node and topic connection by `rqt_graph` commands
 
-![](/assets/images/platform/turtlebot3/example/ros_control_graph.png)
+![](/assets/images/platform/turtlebot3/quick_start/basic_operation/ros_control_graph.png)
 
 ## [LEAP Motion](#leap-motion)
 

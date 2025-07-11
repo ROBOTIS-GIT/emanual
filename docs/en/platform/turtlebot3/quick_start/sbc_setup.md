@@ -29,13 +29,13 @@ page_number: 5
 <![end dummy Header 1]-->
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/sbc_setup_humble.md %}
+{% include en/platform/turtlebot3/quick_start/sbc_setup_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/sbc_setup_jazzy.md %}
+{% include en/platform/turtlebot3/quick_start/sbc_setup_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/sbc_setup_noetic.md %}
+{% include en/platform/turtlebot3/quick_start/sbc_setup_noetic.md %}
 </section>

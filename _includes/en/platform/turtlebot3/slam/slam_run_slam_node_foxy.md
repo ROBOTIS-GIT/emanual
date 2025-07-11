@@ -16,7 +16,7 @@ $ ros2 launch turtlebot3_bringup robot.launch.py
 $ export TURTLEBOT3_MODEL=burger
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py
   ```  
-  ![](/assets/images/platform/turtlebot3/ros2/platform_cartographer.png)
+  ![](/assets/images/platform/turtlebot3/slam/platform_cartographer.png)
 
 <details>
 <summary>
