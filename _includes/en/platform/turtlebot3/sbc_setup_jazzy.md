@@ -244,10 +244,13 @@ If you have purchased a TurtleBot3 after 2025, please use `LDS-03` for your LDS_
 |:---:|:---:|:---:|
 |![](/assets/images/platform/turtlebot3/appendix_lds/lds_small.png)|![](/assets/images/platform/turtlebot3/appendix_lds/lds_ld08_small.png)|![](/assets/images/platform/turtlebot3/appendix_lds/lds_coind4_small.png)
 
-Depending on your LDS model, use `LDS-01`, `LDS-02` or `LDS-03`.  
+Depending on your LDS model, use the appropriate model: LDS-01, LDS-02, or LDS-03.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ echo 'export LDS_MODEL=LDS-03' >> ~/.bashrc
+$ echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc # If you are using LDS-01
+$ echo 'export LDS_MODEL=LDS-02' >> ~/.bashrc # If you are using LDS-02
+$ echo 'export LDS_MODEL=LDS-03' >> ~/.bashrc # If you are using LDS-03
+
 ```
 
 Apply changes with the command below.  
