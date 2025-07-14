@@ -17,6 +17,20 @@ page_number: 3
 
 # [Quick Start Guide](#quick-start-guide)
 
+## [Hardware Setup](#hardware-setup)
+
+### OMY-3M
+<img src="/assets/images/platform/omy/hardware_setup_1.jpg"/>
+
+### OMY-F3M
+<img src="/assets/images/platform/omy/hardware_setup_2.jpg"/>
+
+### OMY-L100
+<img src="/assets/images/platform/omy/hardware_setup_3.jpg"/>
+
+### OMY-AI3M
+<img src="/assets/images/platform/omy/hardware_setup_4.jpg"/>
+
 ## [Power connection](#power-connection)
 
 <img src="/assets/images/platform/omy/omy_power.png" width="800"/>
