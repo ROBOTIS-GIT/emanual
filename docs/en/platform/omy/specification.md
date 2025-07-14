@@ -44,9 +44,13 @@ page_number: 2
 
 ![](/assets/images/platform/omy/omy_follower_layout.png)
 
+- `Download` [PDF](https://www.robotis.com/service/download.php?no=2208), [DWG](https://www.robotis.com/service/download.php?no=2207), [STEP](https://www.robotis.com/service/download.php?no=2209)
+
 ## [[Follower] Workspace](#follower-workspace)
 
 ![](/assets/images/platform/omy/omy_follower_workspace.png)
+
+- `Download` [PDF](https://www.robotis.com/service/download.php?no=2213)
 
 ## [[Follower] Inertia](#follower-inertia)
 
@@ -214,6 +218,8 @@ page_number: 2
 ## [[Leader] Layout](#leader-layout)
 
 ![](/assets/images/platform/omy/omy_leader_layout.png)
+
+- `Download` [PDF](https://www.robotis.com/service/download.php?no=2211), [DWG](https://www.robotis.com/service/download.php?no=2210), [STEP](https://www.robotis.com/service/download.php?no=2212)
 
 ## [[Leader] Inertia](#leader-inertia)
 

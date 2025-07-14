@@ -26243,6 +26243,8 @@ omy:
   - title: "Quick Start Guide"
     url: /platform/omy/quick_start_guide/#quick-start-guide
     children:
+    - title: "Hardware Setup"
+      url: /platform/omy/quick_start_guide/#hardware-setup
     - title: "Power connection"
       url: /platform/omy/quick_start_guide/#power-connection
     - title: "SSH connection"

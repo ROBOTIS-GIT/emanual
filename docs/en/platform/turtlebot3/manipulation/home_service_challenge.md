@@ -31,10 +31,10 @@ page_number: 18
 {::options parse_block_html="true" /}
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/home_service_challenge_humble.md %}
+{% include en/platform/turtlebot3/manipulation/home_service_challenge_humble.md %}
 {: .notice}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/home_service_challenge_noetic.md %}
+{% include en/platform/turtlebot3/manipulation/home_service_challenge_noetic.md %}
 </section>

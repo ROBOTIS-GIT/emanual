@@ -25,7 +25,7 @@ page_number: 28
 
 ### [OpenCR1.0](#appendix-opencr10)
 
-![](/assets/images/platform/turtlebot3/appendix_opencr/opencr.png)
+![](/assets/images/platform/turtlebot3/more_info/appendix_opencr/opencr.png)
 
 #### [Overview](#overview)
 
@@ -106,7 +106,7 @@ This might be help you to implement code and test it without ROS connection.
 
 **First**, ready to [LN-101](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1277&GC=GD0B0107) or any [USB to Serial converter](https://www.sparkfun.com/products/12731).
 
-![](/assets/images/platform/turtlebot3/appendix_opencr/debug_port.png)
+![](/assets/images/platform/turtlebot3/more_info/appendix_opencr/debug_port.png)
 
 **Second**, open `turtlebot3_core_config.h` file and activate [DEBUG](https://github.com/ROBOTIS-GIT/OpenCR/blob/develop/arduino/opencr_arduino/opencr/libraries/turtlebot3/examples/turtlebot3_burger/turtlebot3_core/turtlebot3_core_config.h#L73). After that upload it to OpenCR.
 

@@ -88,7 +88,7 @@ $ roscore
 $ rqt
 ```
 
-    ![](/assets/images/platform/turtlebot3/application/multi_turtlebot_rqt.png)
+  ![](/assets/images/platform/turtlebot3/basic_examples/load_multiple_turtlebot3s/multi_turtlebot_rqt.png)
 
 To use this setup, each TurtleBot3 makes a map using SLAM and these maps are merged simultaneously by the [multi_map_merge][multi_map_merge] package. You can get more information about this by visiting [Virtual SLAM by Multiple TurtleBot3s][virtual slam by multiple turtlebot3s].
 

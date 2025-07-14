@@ -34,7 +34,7 @@ ROBOTIS has prepared an online competition on [ROS Development Studio (RDS)][rds
 
 #### TurtleBot3 AutoRace on RDS
 
-![](/assets/images/platform/turtlebot3/challenges/competition_autorace.png)
+![](/assets/images/platform/turtlebot3/overview/challenges/competition_autorace.png)
 
 - [TurtleBot3 AutoRace](https://rds.theconstructsim.com/tc_projects/use_project_share_link/21e00583-6e60-415a-aa66-bd2c78e0733a)
 
@@ -42,7 +42,7 @@ For more information or if you want to launch it in your remote PC, please visit
 
 #### Task Mission using TurtleBot3 and OpenManipulator on RDS
 
-![](/assets/images/platform/turtlebot3/challenges/competition_pick_and_place.png)
+![](/assets/images/platform/turtlebot3/overview/challenges/competition_pick_and_place.png)
 
 - [Task Mission using TurtleBot3 and OpenManipulator](https://rds.theconstructsim.com/tc_projects/use_project_share_link/b345dbb4-c806-4822-919e-84b7cf00c8c0)
 
@@ -79,8 +79,8 @@ For more information about it or if you want to launch it in your remote PC, ple
 
 #### [Autonomous Mobile Robot Competition (Dankook University)](#autonomous-mobile-robot-competition-dankook-university)
 
-![](/assets/images/platform/turtlebot3/challenges/autorace_dankook_1.jpg)
-![](/assets/images/platform/turtlebot3/challenges/autorace_dankook_2.jpg)
+![](/assets/images/platform/turtlebot3/overview/challenges/autorace_dankook_1.jpg)
+![](/assets/images/platform/turtlebot3/overview/challenges/autorace_dankook_2.jpg)
 
 ### [AutoRace RBIZ Challenge](#autorace-rbiz-challenge)
 

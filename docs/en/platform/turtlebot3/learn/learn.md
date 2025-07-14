@@ -30,7 +30,7 @@ page_number: 24
 
 [AWS RoboMaker – Develop, Test, Deploy, and Manage Intelligent Robotics Apps][aws_robomaker_example]
 
-![](/assets/images/platform/turtlebot3/projects/robo_library_gazebo_1.gif)
+![](/assets/images/platform/turtlebot3/learn/projects/robo_library_gazebo_1.gif)
 
 ### AWS RoboMaker Reinforcement Learning example with Turtlebot3
 

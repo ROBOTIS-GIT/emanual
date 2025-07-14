@@ -28,7 +28,7 @@ $ pip install opencv-contrib-python
 3. **Prepare an ArUco marker**  
 ArUco markers are divided into multiple dictionaries to balance the number of markers, identification reliability, and detection speed. In this example, we used the `DICT_5X5_250` dictionary. Prepare an image of an ArUco marker and measure the size of the marker.  
 
-      ![ArUco marker](/assets/images/platform/turtlebot3/application/aruco_marker.jpg)  
+      ![ArUco marker](/assets/images/platform/turtlebot3/basic_examples/aruco_tracker/aruco_marker.jpg)  
 <br>
 
 4. **Bringup TurtleBot3**  
@@ -72,4 +72,4 @@ $ ros2 launch turtlebot3_bringup rviz2.launch.py
     ```bash
     $ ros2 launch turtlebot3_aruco_tracker turtlebot3_aruco_tracker.launch.py marker_size:=0.04
     ```
-    ![ArUco Tracker RViz](/assets/images/platform/turtlebot3/application/aruco_tracker_rviz.png)  
+    ![ArUco Tracker RViz](/assets/images/platform/turtlebot3/basic_examples/aruco_tracker/aruco_tracker_rviz.png)  
