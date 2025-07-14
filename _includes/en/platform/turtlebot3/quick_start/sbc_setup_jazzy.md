@@ -237,8 +237,6 @@ $ source ~/.bashrc
 {: .notice--warning}
 
 ### LDS Configuration
-The TurtleBot3 LDS has been updated to the LDS-03 since 2025.  
-If you have purchased a TurtleBot3 after 2025, please use `LDS-03` for your LDS_MODEL.
 
 |LDS-01|LDS-02|LDS-03|
 |:---:|:---:|:---:|
