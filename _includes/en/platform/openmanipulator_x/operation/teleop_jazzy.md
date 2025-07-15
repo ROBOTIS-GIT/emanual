@@ -6,12 +6,12 @@ If you are using the Docker environment, make sure you are inside the container 
 
 **Terminal 1** - Launch the hardware controller:
 ```bash
-$ ros2 launch open_manipulator_bringup omx.launch.py
+$ ros2 launch open_manipulator_bringup open_manipulator_x.launch.py
 ```
 
 **Terminal 2** - Launch teleoperation:
 ```bash
-$ ros2 run open_manipulator_teleop omx_teleop
+$ ros2 run open_manipulator_teleop open_manipulator_x_teleop
 ```
 
 You will see the interface below in the terminal window after a successful launch, and you can now easily control the OpenMANIPULATOR-X using the keyboard.

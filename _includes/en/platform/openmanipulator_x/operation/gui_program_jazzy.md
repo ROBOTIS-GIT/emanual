@@ -11,17 +11,17 @@ Launch the GUI program for OpenMANIPULATOR-X with ROS 2 Jazzy.
 
 **Terminal 1** - Launch the hardware controller:
 ```bash
-$ ros2 launch open_manipulator_bringup omx.launch.py
+$ ros2 launch open_manipulator_bringup open_manipulator_x.launch.py
 ```
 
 **Terminal 2** - Launch MoveIt configuration:
 ```bash
-$ ros2 launch open_manipulator_moveit_config omx_moveit.launch.py
+$ ros2 launch open_manipulator_moveit_config open_manipulator_x_moveit.launch.py
 ```
 
 **Terminal 3** - Launch the GUI program:
 ```bash
-$ ros2 launch open_manipulator_gui omx_gui.launch.py
+$ ros2 launch open_manipulator_gui open_manipulator_x_gui.launch.py
 ```
 
 3. Click the `Timer Start` button.  

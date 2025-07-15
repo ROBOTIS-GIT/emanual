@@ -5,6 +5,6 @@
 
 Load OpenMANIPULATOR-X on RViz.  
 ```bash
-$ ros2 launch open_manipulator_description omx.launch.py
+$ ros2 launch open_manipulator_description open_manipulator_x.launch.py
 ```  
 ![](/assets/images/platform/openmanipulator_x/ros2_OpenMANIPULATORX_rviz.png) 

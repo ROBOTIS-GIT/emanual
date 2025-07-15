@@ -3,19 +3,19 @@ Open a new terminal and launch the OM packages for ROS 2 Jazzy.
 - When operating with `U2D2`  
 Close all terminal and enter the command below in each new terminal.
 ```bash
-$ ros2 launch open_manipulator_bringup omx.launch.py
+$ ros2 launch open_manipulator_bringup open_manipulator_x.launch.py
 ```
 
 - When operating with `OpenCR`  
 Close all terminals and enter the command below in the new terminal.
 ```bash
-$ ros2 launch open_manipulator_bringup omx.launch.py port_name:=/dev/ttyACM0
+$ ros2 launch open_manipulator_bringup open_manipulator_x.launch.py port_name:=/dev/ttyACM0
 ```
 
 {% capture warning_01 %}
 **WARNING** :  
-Please check each joint position before running OMX. The manipulator will not operate if any joint is out of operable range.  
-The following image describes the recommended pose of OMX at start up. Please adjust the pose before the torque is turned on by the controller.  
+Please check each joint position before running open_manipulator_x. The manipulator will not operate if any joint is out of operable range.  
+The following image describes the recommended pose of open_manipulator_x at start up. Please adjust the pose before the torque is turned on by the controller.  
 <img src="/assets/images/platform/openmanipulator_x/real_omx_init_pose.png" width="250">
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
@@ -23,7 +23,7 @@ The following image describes the recommended pose of OMX at start up. Please ad
 Following message will be shown in the Terminal after the process done successfully with `U2D2`.  
 
 ```
-$ ros2 launch open_manipulator_bringup omx.launch.py
+$ ros2 launch open_manipulator_bringup open_manipulator_x.launch.py
 
 [INFO] [launch]: All log files can be found below
 [INFO] [launch]: Default logging verbosity is set to INFO
@@ -211,7 +211,7 @@ $ ros2 launch open_manipulator_bringup omx.launch.py
 [ros2_control_node-1] [INFO] [1751511731.027289507] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
 [ros2_control_node-1] [INFO] [1751511731.131317160] [controller_manager]: Loading controller : 'arm_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
 [ros2_control_node-1] [INFO] [1751511731.131411607] [controller_manager]: Loading controller 'arm_controller'
-[ros2_control_node-1] [INFO] [1751511731.138269320] [controller_manager]: Controller 'arm_controller' node arguments: --ros-args --params-file /tmp/launch_params_6_4c_95z --params-file /root/ros2_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omx/hardware_controller_manager.yaml 
+[ros2_control_node-1] [INFO] [1751511731.138269320] [controller_manager]: Controller 'arm_controller' node arguments: --ros-args --params-file /tmp/launch_params_6_4c_95z --params-file /root/ros2_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/open_manipulator_x/hardware_controller_manager.yaml 
 [spawner-2] [INFO] [1751511731.166336939] [spawner_arm_controller]: Loaded arm_controller
 [ros2_control_node-1] [INFO] [1751511731.167789273] [controller_manager]: Configuring controller: 'arm_controller'
 [ros2_control_node-1] [INFO] [1751511731.168277922] [arm_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
@@ -224,7 +224,7 @@ $ ros2 launch open_manipulator_bringup omx.launch.py
 [spawner-2] [INFO] [1751511731.207877250] [spawner_arm_controller]: Configured and activated arm_controller
 [ros2_control_node-1] [INFO] [1751511731.209499839] [controller_manager]: Loading controller : 'gripper_controller' of type 'position_controllers/GripperActionController'
 [ros2_control_node-1] [INFO] [1751511731.209555286] [controller_manager]: Loading controller 'gripper_controller'
-[ros2_control_node-1] [INFO] [1751511731.212216025] [controller_manager]: Controller 'gripper_controller' node arguments: --ros-args --params-file /tmp/launch_params_6_4c_95z --params-file /root/ros2_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omx/hardware_controller_manager.yaml 
+[ros2_control_node-1] [INFO] [1751511731.212216025] [controller_manager]: Controller 'gripper_controller' node arguments: --ros-args --params-file /tmp/launch_params_6_4c_95z --params-file /root/ros2_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/open_manipulator_xhardware_controller_manager.yaml 
 [ros2_control_node-1] [WARN] [1751511731.226791266] [gripper_controller]: [Deprecated]: the `position_controllers/GripperActionController` and `effort_controllers::GripperActionController` controllers are replaced by 'parallel_gripper_controllers/GripperActionController' controller
 [spawner-2] [INFO] [1751511731.236574535] [spawner_arm_controller]: Loaded gripper_controller
 [ros2_control_node-1] [INFO] [1751511731.237004610] [controller_manager]: Configuring controller: 'gripper_controller'
@@ -234,7 +234,7 @@ $ ros2 launch open_manipulator_bringup omx.launch.py
 [spawner-2] [INFO] [1751511731.266792295] [spawner_arm_controller]: Configured and activated gripper_controller
 [ros2_control_node-1] [INFO] [1751511731.268632209] [controller_manager]: Loading controller : 'joint_state_broadcaster' of type 'joint_state_broadcaster/JointStateBroadcaster'
 [ros2_control_node-1] [INFO] [1751511731.268729088] [controller_manager]: Loading controller 'joint_state_broadcaster'
-[ros2_control_node-1] [INFO] [1751511731.272768326] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /tmp/launch_params_6_4c_95z --params-file /root/ros2_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/omx/hardware_controller_manager.yaml 
+[ros2_control_node-1] [INFO] [1751511731.272768326] [controller_manager]: Controller 'joint_state_broadcaster' node arguments: --ros-args --params-file /tmp/launch_params_6_4c_95z --params-file /root/ros2_ws/install/open_manipulator_bringup/share/open_manipulator_bringup/config/open_manipulator_x/hardware_controller_manager.yaml 
 [spawner-2] [INFO] [1751511731.297833178] [spawner_arm_controller]: Loaded joint_state_broadcaster
 [ros2_control_node-1] [INFO] [1751511731.298434771] [controller_manager]: Configuring controller: 'joint_state_broadcaster'
 [ros2_control_node-1] [INFO] [1751511731.298554879] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
@@ -266,6 +266,6 @@ $ ros2 launch open_manipulator_bringup omx.launch.py
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
 {% capture notice_02 %}
-**NOTE**: OMX controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/) which supports `MX 2.0`, `X` and `Pro` series. [Protocol 1.0](/docs/en/dxl/protocol1/) does not support SyncRead instructions to access to multiple DYNAMIXEL's's simultaneously.  
+**NOTE**: open_manipulator_x controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/) which supports `MX 2.0`, `X` and `Pro` series. [Protocol 1.0](/docs/en/dxl/protocol1/) does not support SyncRead instructions to access to multiple DYNAMIXEL's's simultaneously.  
 {% endcapture %}
 <div class="notice--info">{{ notice_02 | markdownify }}</div>

@@ -4,12 +4,12 @@ MoveIt 2! is a set of packages for your robot to manipulate for Motion Planning,
 
 **Terminal 1** - Launch the hardware controller:
 ```bash
-$ ros2 launch open_manipulator_bringup omx.launch.py
+$ ros2 launch open_manipulator_bringup open_manipulator_x.launch.py
 ```
 
 **Terminal 2** - Launch MoveIt configuration:
 ```bash
-$ ros2 launch open_manipulator_moveit_config omx_moveit.launch.py
+$ ros2 launch open_manipulator_moveit_config open_manipulator_x_moveit.launch.py
 ```
   ![](/assets/images/platform/openmanipulator_x/moveit2_example.png)  
   
@@ -32,10 +32,10 @@ Close all terminals and then launch the Gazebo simulator and RViz visualization 
 
 **Terminal 1** - Launch Gazebo simulation:
 ```bash
-$ ros2 launch open_manipulator_bringup omx_gazebo.launch.py
+$ ros2 launch open_manipulator_bringup open_manipulator_x_gazebo.launch.py
 ```
 
 **Terminal 2** - Launch MoveIt configuration for simulation:
 ```bash
-$ ros2 launch open_manipulator_moveit_config omx_moveit.launch.py use_sim:=true
+$ ros2 launch open_manipulator_moveit_config open_manipulator_x_moveit.launch.py use_sim:=true
 ``` 

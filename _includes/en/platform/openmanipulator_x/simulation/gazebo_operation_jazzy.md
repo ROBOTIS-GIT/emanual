@@ -5,17 +5,17 @@ Click to view detailed instructions.
 
   **Terminal 1** - Launch the Gazebo simulation:
   ```bash
-  $ ros2 launch open_manipulator_bringup omx_gazebo.launch.py
+  $ ros2 launch open_manipulator_bringup open_manipulator_x_gazebo.launch.py
   ```
 
   **Terminal 2** - Launch MoveIt configuration:
   ```bash
-  $ ros2 launch open_manipulator_moveit_config omx_moveit.launch.py use_sim:=true
+  $ ros2 launch open_manipulator_moveit_config open_manipulator_x_moveit.launch.py use_sim:=true
   ```
 
   **Terminal 3** - Launch GUI program:
   ```bash
-  $ ros2 launch open_manipulator_gui omx_gui.launch.py
+  $ ros2 launch open_manipulator_gui open_manipulator_x_gui.launch.py
   ```
   ![](/assets/images/platform/openmanipulator_x/OpenManipulator_x_GUI.png)
 
@@ -23,12 +23,12 @@ Click to view detailed instructions.
 
   **Terminal 1** - Launch the Gazebo simulation:
   ```bash
-  $ ros2 launch open_manipulator_bringup omx_gazebo.launch.py
+  $ ros2 launch open_manipulator_bringup open_manipulator_x_gazebo.launch.py
   ```
 
   **Terminal 2** - Launch teleoperation:
   ```bash
-  $ ros2 run open_manipulator_teleop omx_teleop
+  $ ros2 run open_manipulator_teleop open_manipulator_x_teleop
   ```
 
   ```

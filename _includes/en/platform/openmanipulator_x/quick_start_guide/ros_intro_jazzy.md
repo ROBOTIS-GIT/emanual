@@ -1,8 +1,3 @@
-{% capture jazzy_naming_note %}
-**NOTE**: Starting from ROS 2 Jazzy, OpenMANIPULATOR-X has been renamed to **OpenMANIPULATOR-X**.
-{% endcapture %}
-<div class="notice--info">{{ jazzy_naming_note | markdownify }}</div>
-
 This step by step quick start guide for running OpenMANIPULATOR-X on **ROS**<sup>TM</sup> will guide you to operate the OpenMANIPULATOR-X for the first time.  
 
 In order to run this Quick Start Guide, you should be prepared with below items. 

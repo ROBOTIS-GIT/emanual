@@ -8,14 +8,14 @@ If you are using the Docker environment, make sure you are inside the container 
 
 Open a terminal and enter below command.  
 ```bash
-$ ros2 run open_manipulator_teleop omx_teleop
+$ ros2 run open_manipulator_teleop open_manipulator_x_teleop
 ```
 
 #### Option 2: Host Installation
 
 Open a terminal and enter below command.  
 ```bash
-$ ros2 run open_manipulator_teleop omx_teleop
+$ ros2 run open_manipulator_teleop open_manipulator_x_teleop
 ```
 
 You will see the interface below in the terminal window after a successful launch, and you can now easily control the OpenMANIPULATOR-X using the keyboard.
