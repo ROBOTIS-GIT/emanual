@@ -44,7 +44,7 @@ page_number: 31
 | Items                    | Specifications                                                       |
 |:-------------------------|:---------------------------------------------------------------------|
 | Operating supply voltage | 5V DC ± 10%                                                          |
-| LASWER Wave Length       | VCSEL Laser (λ=905 nm)                                               |
+| LASER Wave Length       | VCSEL Laser (λ=905 nm)                                               |
 | LASER safety             | Class I (IEC-60825)                                                  |
 | Current consumption      | 240 ~ 320 mA                                                         |
 | Detection distance       | 0.05 ~ 12 m                                                          |
