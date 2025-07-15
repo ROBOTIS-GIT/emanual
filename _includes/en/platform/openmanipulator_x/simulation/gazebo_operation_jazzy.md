@@ -1,4 +1,4 @@
-In order to control the simulated OMX, launch the [OMX control GUI](/docs/en/platform/openmanipulator_x/ros_operation/#gui-program) or [Keyboard teleoperation](/docs/en/platform/openmanipulator_x/ros_operation/#keyboard)  
+In order to control the simulated OpenMANIPULATOR-X, launch the [OpenMANIPULATOR-X control GUI](/docs/en/platform/openmanipulator_x/ros_operation/#gui-program) or [Keyboard teleoperation](/docs/en/platform/openmanipulator_x/ros_operation/#keyboard)  
 Click to view detailed instructions.
 
 - GUI Program

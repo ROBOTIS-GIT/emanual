@@ -3,8 +3,8 @@
 {% endcapture %}
 <div class="notice--danger">{{ warning_01 | markdownify }}</div>
 
-Load OMX on RViz.  
+Load OpenMANIPULATOR-X on RViz.  
 ```bash
 $ ros2 launch open_manipulator_description omx.launch.py
 ```  
-![](/assets/images/platform/openmanipulator_x/ros2_omx_rviz.png) 
+![](/assets/images/platform/openmanipulator_x/ros2_OpenMANIPULATORX_rviz.png) 

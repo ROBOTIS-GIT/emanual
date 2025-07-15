@@ -11,7 +11,7 @@ A login and logout are required.
 
 <!-- #### (Optional) Install Intel RealSense ROS Wrapper
 
-If you plan to use Intel RealSense cameras with OMX, please follow the official instructions for installing and using the [RealSense ROS wrapper](https://github.com/IntelRealSense/realsense-ros).
+If you plan to use Intel RealSense cameras with OpenMANIPULATOR-X, please follow the official instructions for installing and using the [RealSense ROS wrapper](https://github.com/IntelRealSense/realsense-ros).
 
 This will ensure you have the latest and most compatible version for your system and camera. -->
 

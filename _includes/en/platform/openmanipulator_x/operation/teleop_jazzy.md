@@ -14,7 +14,7 @@ $ ros2 launch open_manipulator_bringup omx.launch.py
 $ ros2 run open_manipulator_teleop omx_teleop
 ```
 
-You will see the interface below in the terminal window after a successful launch, and you can now easily control the OMX using the keyboard.
+You will see the interface below in the terminal window after a successful launch, and you can now easily control the OpenMANIPULATOR-X using the keyboard.
 
 ```
 [INFO] [1751512149.624709736] [keyboard_controller]: Waiting for /joint_states...

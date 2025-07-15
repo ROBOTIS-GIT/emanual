@@ -31,7 +31,7 @@ page_number: 5
 
 ## [Basic Operation](#basic-operation)
 
-Please note that this instruction is written for the **ROBOTIS official OMX package**. If you are operating a home made OMX, make sure to configure each DYNAMIXEL as below before operating.
+Please note that this instruction is written for the **ROBOTIS official OpenMANIPULATOR-X package**. If you are operating a home made OpenMANIPULATOR-X, make sure to configure each DYNAMIXEL as below before operating.
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_id_baudrate.png)
 

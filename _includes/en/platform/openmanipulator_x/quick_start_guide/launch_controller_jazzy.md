@@ -1,4 +1,4 @@
-After running this section, software controller that controls the OMX will be launched and each joint of the OMX will be locked (Torque On).  
+After running this section, software controller that controls the OpenMANIPULATOR-X will be launched and each joint of the OpenMANIPULATOR-X will be locked (Torque On).  
 
 #### Option 1: Using Docker
 
@@ -40,8 +40,8 @@ $ ros2 launch open_manipulator_bringup omx.launch.py port_name:=/dev/ttyACM0
 
 {% capture warning_01 %}
 **WARNING** :  
-Please check each joint position before running OMX. If joints are set inappropriately, OMX might not start operating.
-The picture of OMX below is showing you the ideal pose of OMX. Please adjust each joint to match the following picture when DYNAMIXEL torque is not enabled.
+Please check each joint position before running OpenMANIPULATOR-X. If joints are set inappropriately, OpenMANIPULATOR-X might not start operating.
+The picture of OpenMANIPULATOR-X below is showing you the ideal pose of OpenMANIPULATOR-X. Please adjust each joint to match the following picture when DYNAMIXEL torque is not enabled.
         
 <img src="/assets/images/platform/openmanipulator_x/real_omx_init_pose.png" width="250">
 {% endcapture %}

@@ -1,6 +1,6 @@
 #### [Topic Monitor](#topic-monitor)
 
-In order to check the topics of OMX controller, you can use [rqt](http://wiki.ros.org/rqt) GUI tool. Rqt is a Qt-based framework for GUI development in ROS environment. Rqt allows users to easily read topics. Various information such as topic name, type, bandwidth, Hz and value are shown on the Topic monitor plugin of rqt.
+In order to check the topics of OpenMANIPULATOR-X controller, you can use [rqt](http://wiki.ros.org/rqt) GUI tool. Rqt is a Qt-based framework for GUI development in ROS environment. Rqt allows users to easily read topics. Various information such as topic name, type, bandwidth, Hz and value are shown on the Topic monitor plugin of rqt.
 
 ```bash
 $ rqt
@@ -27,13 +27,13 @@ A list of topics that the open_manipulator_controller publishes.
 
 ##### /states
 - [open_manipulator_msgs/OpenManipulatorState]{: .popup}  
-- The message indicating the status of OMX.  
+- The message indicating the status of OpenMANIPULATOR-X.  
 - ***"open_manipulator_actuator_state"*** indicates whether actuators are enabled `ACTUATOR_ENABLE` or disabled `ACTUATOR_DISABLE`.  
-- ***"open_manipulator_moving_state"*** indicates whether OMX is moving along the trajectory `IS_MOVING` or stopped `STOPPED`.
+- ***"open_manipulator_moving_state"*** indicates whether OpenMANIPULATOR-X is moving along the trajectory `IS_MOVING` or stopped `STOPPED`.
 
 ##### /joint_states
 - [sensor_msgs/JointState]{: .popup}
-- The message indicating the states of joints of OMX.
+- The message indicating the states of joints of OpenMANIPULATOR-X.
 - ***"name"*** indicates joint component names.
 - ***"effort"*** shows current consumption of each DYNAMIXEL.
 - ***"position"*** and ***"velocity"*** indicates angles and angular velocities of joints.
@@ -53,12 +53,12 @@ A list of topics that the open_manipulator_controller subscribes.
 
 ##### /option
 - [std_msgs/String]{: .popup}
-- This topic is used when setting the OMX options.
+- This topic is used when setting the OpenMANIPULATOR-X options.
 - ***"print_open_manipulator_setting"*** requests the open_manipulator_controller to display "Manipulator Description".
 
 ##### /joint_states
 - [sensor_msgs/JointState]{: .popup}
-- The message indicating the states of joints of OMX.
+- The message indicating the states of joints of OpenMANIPULATOR-X.
 - ***"name"*** indicates joint component names.
 - ***"effort"*** shows current consumption of each DYNAMIXEL.
 - ***"position"*** and ***"velocity"*** indicates angles and angular velocities of joints.

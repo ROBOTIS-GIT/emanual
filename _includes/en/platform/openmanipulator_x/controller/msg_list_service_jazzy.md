@@ -1,6 +1,6 @@
 #### [Service Server List](#service-server-list)
 
-**NOTE**: These services are messages to operate OMX or to change the status of DYNAMIXEL of OMX.
+**NOTE**: These services are messages to operate OpenMANIPULATOR-X or to change the status of DYNAMIXEL of OpenMANIPULATOR-X.
 {: .notice--info}
 
 A list of service servers that open_manipulator_controller has.
@@ -14,32 +14,32 @@ A list of service servers that open_manipulator_controller has.
 ##### /goal_joint_space_path_to_kinematics_pose
 - [open_manipulator_msgs/SetKinematicsPose]{: .popup}
 - The user can use this service to create a trajectory in the [joint space]{: .popup}.
-- The user inputs the kinematics pose of the OMX end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+- The user inputs the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 ##### /goal_joint_space_path_to_kinematics_position
 - [open_manipulator_msgs/SetKinematicsPose]{: .popup}
 - The user can use this service to create a trajectory in the [joint space]{: .popup}.
-- The user inputs the kinematics pose(position only) of the OMX end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+- The user inputs the kinematics pose(position only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 ##### /goal_joint_space_path_to_kinematics_orientation
 - [open_manipulator_msgs/SetKinematicsPose]{: .popup}
 - The user can use this service to create a trajectory in the [joint space]{: .popup}.
-- The user inputs the kinematics pose(orientation only) of the OMX end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+- The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 ##### /goal_task_space_path
 - [open_manipulator_msgs/SetKinematicsPose]{: .popup}
 - The user can use this service to create a trajectory in the [task space]{: .popup}.
-- The user inputs the kinematics pose of the OMX end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+- The user inputs the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 ##### /goal_task_space_path_position_only
 - [open_manipulator_msgs/SetKinematicsPose]{: .popup}
 - The user can use this service to create a trajectory in the [task space]{: .popup}.
-- The user inputs the kinematics pose(position only) of the OMX end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+- The user inputs the kinematics pose(position only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 ##### /goal_task_space_path_orientation_only
 - [open_manipulator_msgs/SetKinematicsPose]{: .popup}
 - The user can use this service to create a trajectory in the [task space]{: .popup}.
-- The user inputs the kinematics pose(orientation only) of the OMX end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+- The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 ##### /goal_joint_space_path_from_present
 - [open_manipulator_msgs/SetJointPosition]{: .popup}
@@ -49,21 +49,21 @@ A list of service servers that open_manipulator_controller has.
 ##### /goal_task_space_path_from_present
 - [open_manipulator_msgs/SetKinematicsPose]{: .popup}
 - The user can use this service to create a trajectory from present kinematics pose in the task space.
-- The user inputs the kinematics pose to be changed of the OMX end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+- The user inputs the kinematics pose to be changed of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 ##### /goal_task_space_path_from_present_position_only
 - [open_manipulator_msgs/SetKinematicsPose]{: .popup}
 - The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}.
-- The user inputs the kinematics pose(position only) of the OMX end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+- The user inputs the kinematics pose(position only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 ##### /goal_task_space_path_from_present_orientation_only
 - [open_manipulator_msgs/SetKinematicsPose]{: .popup}
 - The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. 
-- The user inputs the kinematics pose(orientation only) of the OMX end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+- The user inputs the kinematics pose(orientation only) of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 ##### /goal_tool_control
 - [open_manipulator_msgs/SetJointPosition]{: .popup}
-- The user can use this service to move the tool of OMX.
+- The user can use this service to move the tool of OpenMANIPULATOR-X.
 
 ##### /set_actuator_state
 - [open_manipulator_msgs/SetActuatorState]{: .popup}

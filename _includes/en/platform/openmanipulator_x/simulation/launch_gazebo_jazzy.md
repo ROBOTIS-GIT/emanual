@@ -1,4 +1,4 @@
-1. Close all terminals, then open new terminals and enter the commands below to load OMX on the Gazebo simulator.
+1. Close all terminals, then open new terminals and enter the commands below to load OpenMANIPULATOR-X on the Gazebo simulator.
 ```bash
 $ ros2 launch open_manipulator_bringup omx_gazebo.launch.py
 ```

@@ -1,4 +1,4 @@
-There are two communication interface hardware options available for controlling the OMX. Please select one of the below options.  
+There are two communication interface hardware options available for controlling the OpenMANIPULATOR-X. Please select one of the below options.  
 After completing this section, turn on the power switch and check if all DYNAMIXEL LED blink once.
 
 <details open>
@@ -7,7 +7,7 @@ After completing this section, turn on the power switch and check if all DYNAMIX
 </summary>
 
 #### U2D2 Connection
-Connect micro USB (connected to PC), DYNAMIXEL's(OMX), and 12V Power to U2D2 and U2D2 power hub board as shown below.
+Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Power to U2D2 and U2D2 power hub board as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_u2d2_setup2.png" width="800">
 
@@ -49,11 +49,11 @@ $ cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer
 ![](/assets/images/icon_unfold.png) **Option 2 : Use OpenCR as a communication interface**
 </summary>
 
-This section describes how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL's of OMX.  
+This section describes how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL's of OpenMANIPULATOR-X.  
 
 #### OpenCR Connection
 
-Connect micro USB (connected to PC), DYNAMIXEL's(OMX), and 12V Power to OpenCR as shown below.
+Connect micro USB (connected to PC), DYNAMIXEL's(OpenMANIPULATOR-X), and 12V Power to OpenCR as shown below.
 
 <img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup2.png" width="800">
 

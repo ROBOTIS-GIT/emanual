@@ -7,7 +7,7 @@
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-Launch the GUI program for OMX with ROS 2 Jazzy.
+Launch the GUI program for OpenMANIPULATOR-X with ROS 2 Jazzy.
 
 **Terminal 1** - Launch the hardware controller:
 ```bash
@@ -27,16 +27,16 @@ $ ros2 launch open_manipulator_gui omx_gui.launch.py
 3. Click the `Timer Start` button.  
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_x_GUI2.png)  
 
-4. Check the status of OMX.  
+4. Check the status of OpenMANIPULATOR-X.  
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_x_GUI3.png)  
 
-5. To manipulate OMX in the [joint space]{: .popup}, enter the joint angles and total time for the trajectory. Then click the `send` button to start the motion.  
+5. To manipulate OpenMANIPULATOR-X in the [joint space]{: .popup}, enter the joint angles and total time for the trajectory. Then click the `send` button to start the motion.  
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_x_GUI4.png)  
 
-6. To manipulate OMX in the [task space]{: .popup}, enter the kinematics pose of the OMX end-effector(tool) in the [task space]{: .popup}. Then click the `send` button to start the motion.  
+6. To manipulate OpenMANIPULATOR-X in the [task space]{: .popup}, enter the kinematics pose of the OpenMANIPULATOR-X end-effector(tool) in the [task space]{: .popup}. Then click the `send` button to start the motion.  
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator_x_GUI5.png)  
 
-7. Create a task constructor with OMX.  
+7. Create a task constructor with OpenMANIPULATOR-X.  
 7.1. Click the `Read task` button to prepare for saving tasks.  
  (You can create or modify the pre-saved joint values in the **robot_joint_log.csv** file. The file's load path can be checked in the terminal when the GUI node is launched.)  
 7.2. Adjust the manipulator's posture and save it by clicking `Save pose`.  
