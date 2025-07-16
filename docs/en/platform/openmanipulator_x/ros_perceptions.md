@@ -7,9 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_perceptions/
 tabs: "ROS"
-# tab_title1: Jazzy
-tab_title1: Humble
-tab_title2: Noetic
+tab_title1: Jazzy
+tab_title2: Humble
+tab_title3: Noetic
 tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
@@ -30,21 +30,20 @@ Please run the instructions below on a PC with ROS packages installed.
 {: .notice--info}
 </section>
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+**NOTE**
+Please run the instructions below on a PC with ROS packages installed.
+{: .notice--info}
+</section>
+
 ## [Camera](#camera)
 
-<!-- <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/perceptions/camera_jazzy.md %}
-</section> -->
-
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/perceptions/camera_humble.md %}
-{: .notice--warning}
+{% include en/platform/openmanipulator_x/perceptions/camera_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-This example is not supported.  
-[https://github.com/ROBOTIS-GIT/open_manipulator_perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
-{: .notice--warning}
+{% include en/platform/openmanipulator_x/perceptions/camera_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
@@ -63,6 +62,10 @@ The Arduino sketch code can be found from [OpenCR examples](https://github.com/R
 ### [Install Camera Package](#install-camera-package)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/perceptions/install_camera_package_jazzy.md %}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/perceptions/install_camera_package_humble.md %}
 </section>
 
@@ -74,9 +77,15 @@ Not supported in Arduino
 ### [Install AR Marker Package](#install-ar-marker-package)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+Not supported in Jazzy yet.
+{: .notice--warning}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 Not supported in Humble yet.
 {: .notice--warning}
 </section>
+
 <section data-id="{{ page.tab_title6 }}" class="tab_contents">
 Not supported in Arduino
 {: .notice--warning}
@@ -85,6 +94,11 @@ Not supported in Arduino
 ### [Pick and Place Example](#pick-and-place-example)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
+Not supported in Jazzy yet.
+{: .notice--warning}
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 Not supported in Humble yet.
 {: .notice--warning}
 </section>
