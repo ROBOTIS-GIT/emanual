@@ -65,9 +65,9 @@ $ ros2 launch open_manipulator_bringup open_manipulator_x.launch.py
 [ros2_control_node-1] [INFO] [1751511730.761941839] [controller_manager]: Successful set up FIFO RT scheduling policy with priority 50.
 [spawner-2] [INFO] [1751511730.877470892] [spawner_arm_controller]: waiting for service /controller_manager/list_controllers to become available...
 [ros2_control_node-1] [INFO] [1751511730.884559092] [controller_manager]: Received robot description from topic.
-[ros2_control_node-1] [INFO] [1751511730.888920790] [controller_manager]: Loading hardware 'OMXSystem' 
-[ros2_control_node-1] [INFO] [1751511730.893746698] [controller_manager]: Loaded hardware 'OMXSystem' from plugin 'dynamixel_hardware_interface/DynamixelHardware'
-[ros2_control_node-1] [INFO] [1751511730.893797909] [controller_manager]: Initialize hardware 'OMXSystem' 
+[ros2_control_node-1] [INFO] [1751511730.888920790] [controller_manager]: Loading hardware 'OpenManipulatorXSystem' 
+[ros2_control_node-1] [INFO] [1751511730.893746698] [controller_manager]: Loaded hardware 'OpenManipulatorXSystem' from plugin 'dynamixel_hardware_interface/DynamixelHardware'
+[ros2_control_node-1] [INFO] [1751511730.893797909] [controller_manager]: Initialize hardware 'OpenManipulatorXSystem' 
 [ros2_control_node-1] transmission_to_joint_matrix_ 
 [ros2_control_node-1] [0][0] 1.000000, [0][1] 0.000000, [0][2] 0.000000, [0][3] 0.000000, [0][4] 0.000000, 
 [ros2_control_node-1] [1][0] 0.000000, [1][1] 1.000000, [1][2] 0.000000, [1][3] 0.000000, [1][4] 0.000000, 
@@ -218,10 +218,10 @@ $ ros2 launch open_manipulator_bringup open_manipulator_x.launch.py
 [ros2_control_node-1] Write items :     Goal Position
 [ros2_control_node-1] set sync write (indirect addr) : addr 224, size 4
 [ros2_control_node-1] Success to set SyncWrite handler using indirect address
-[ros2_control_node-1] [INFO] [1751511731.020262878] [controller_manager]: Successful initialization of hardware 'OMXSystem'
-[ros2_control_node-1] [INFO] [1751511731.020618988] [resource_manager]: 'configure' hardware 'OMXSystem' 
-[ros2_control_node-1] [INFO] [1751511731.020631268] [resource_manager]: Successful 'configure' of hardware 'OMXSystem'
-[ros2_control_node-1] [INFO] [1751511731.020641833] [resource_manager]: 'activate' hardware 'OMXSystem' 
+[ros2_control_node-1] [INFO] [1751511731.020262878] [controller_manager]: Successful initialization of hardware 'OpenManipulatorXSystem'
+[ros2_control_node-1] [INFO] [1751511731.020618988] [resource_manager]: 'configure' hardware 'OpenManipulatorXSystem' 
+[ros2_control_node-1] [INFO] [1751511731.020631268] [resource_manager]: Successful 'configure' of hardware 'OpenManipulatorXSystem'
+[ros2_control_node-1] [INFO] [1751511731.020641833] [resource_manager]: 'activate' hardware 'OpenManipulatorXSystem' 
 [ros2_control_node-1] [INFO] [1751511731.022185727] [dynamixel_hardware_interface]: Sync joint state to command (joint: joint1, position, -0.0659612 <- position, -0.0659612
 [ros2_control_node-1] [INFO] [1751511731.022225647] [dynamixel_hardware_interface]: Sync joint state to command (joint: joint2, position, -2.0632 <- position, -2.0632
 [ros2_control_node-1] [INFO] [1751511731.022240619] [dynamixel_hardware_interface]: Sync joint state to command (joint: joint3, position, 1.48408 <- position, 1.48408
@@ -234,7 +234,7 @@ $ ros2 launch open_manipulator_bringup open_manipulator_x.launch.py
 [ros2_control_node-1] [ID:014] Torque ON
 [ros2_control_node-1] [ID:015] Torque ON
 [ros2_control_node-1] [INFO] [1751511731.027148696] [dynamixel_hardware_interface]: Dynamixel Hardware Start!
-[ros2_control_node-1] [INFO] [1751511731.027197173] [resource_manager]: Successful 'activate' of hardware 'OMXSystem'
+[ros2_control_node-1] [INFO] [1751511731.027197173] [resource_manager]: Successful 'activate' of hardware 'OpenManipulatorXSystem'
 [ros2_control_node-1] [INFO] [1751511731.027289507] [controller_manager]: Resource Manager has been successfully initialized. Starting Controller Manager services...
 [ros2_control_node-1] [INFO] [1751511731.131317160] [controller_manager]: Loading controller : 'arm_controller' of type 'joint_trajectory_controller/JointTrajectoryController'
 [ros2_control_node-1] [INFO] [1751511731.131411607] [controller_manager]: Loading controller 'arm_controller'

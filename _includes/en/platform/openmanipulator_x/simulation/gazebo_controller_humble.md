@@ -8,7 +8,7 @@ $ ros2 launch open_manipulator_x_moveit_config moveit_core.launch.py
 If the OpenMANIPULATOR-X controller for Gazebo simulation Launched successfully, the below messages will be printed on the terminal.
 
 ```
-[INFO] [launch]: All log files can be found below /home/omx/.ros/log/2024-11-29-17-28-11-688953-omx-32077
+[INFO] [launch]: All log files can be found below /home/open_manipulator_x/.ros/log/2024-11-29-17-28-11-688953-open_manipulator_x-32077
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [rviz2-1]: process started with pid [32079]
 [INFO] [move_group-2]: process started with pid [32081]
