@@ -199,10 +199,12 @@ $ sudo apt install python3-argcomplete python3-colcon-common-extensions libboost
 $ sudo apt install ros-humble-hls-lfcd-lds-driver
 $ sudo apt install ros-humble-turtlebot3-msgs
 $ sudo apt install ros-humble-dynamixel-sdk
+$ sudo apt install ros-humble-xacro
 $ sudo apt install libudev-dev
 $ mkdir -p ~/turtlebot3_ws/src && cd ~/turtlebot3_ws/src
 $ git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ git clone -b humble https://github.com/ROBOTIS-GIT/ld08_driver.git
+$ git clone -b humble https://github.com/ROBOTIS-GIT/coin_d4_driver
 $ cd ~/turtlebot3_ws/src/turtlebot3
 $ rm -r turtlebot3_cartographer turtlebot3_navigation2
 $ cd ~/turtlebot3_ws/
@@ -235,17 +237,19 @@ $ source ~/.bashrc
 {: .notice--warning}
 
 ### LDS Configuration
-The TurtleBot3 LDS has been updated to the LDS-02 since 2022.  
-If you have purchased a TurtleBot3 after 2022, please use `LDS-02` for your LDS_MODEL.
 
-|LDS-01|LDS-02|
-|:---:|:---:|
-|![](/assets/images/platform/turtlebot3/more_info/appendix_lds/lds_small.png)|![](/assets/images/platform/turtlebot3/more_info/appendix_lds/lds_ld08_small.png)|
+|LDS-01|LDS-02|LDS-03|
+|:---:|:---:|:---:|
+|![](/assets/images/platform/turtlebot3/more_info/appendix_lds/lds_small.png)|![](/assets/images/platform/turtlebot3/more_info/appendix_lds/lds_ld08_small.png)|![](/assets/images/platform/turtlebot3/more_info/appendix_lds/lds_coind4_small.png)|  
 
-Depending on your LDS model, use `LDS-01` or `LDS-02`.  
+
+Depending on your LDS model, use the appropriate model: LDS-01, LDS-02, or LDS-03.  
 **[TurtleBot3 SBC]**  
 ```bash
-$ echo 'export LDS_MODEL=LDS-02' >> ~/.bashrc
+$ echo 'export LDS_MODEL=LDS-01' >> ~/.bashrc # If you are using LDS-01
+$ echo 'export LDS_MODEL=LDS-02' >> ~/.bashrc # If you are using LDS-02
+$ echo 'export LDS_MODEL=LDS-03' >> ~/.bashrc # If you are using LDS-03
+
 ```
 
 Apply changes with the command below.  
