@@ -7,8 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_controller_experiment/
 tabs: "ROS"
-tab_title1: Humble
-tab_title2: Noetic
+tab_title1: Jazzy
+tab_title2: Humble
+tab_title3: Noetic
 tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
@@ -30,7 +31,7 @@ page_number: 9
 
 ## [Experimental](#experimental)
 
-{% if page.tab_title1 != "Humble" %}
+{% if page.tab_title1 != "Jazzy" %}
 **WARNING**
 This section introduces other experimental controllers. These controllers may not fully compatible with OpenMANIPULATOR-X.
 {: .notice--warning}
@@ -39,10 +40,14 @@ This section introduces other experimental controllers. These controllers may no
 ### [MoveIt!](#moveit)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/moveit_humble.md %}
+{% include en/platform/openmanipulator_x/controller/moveit_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/moveit_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/moveit_noetic.md %}
 </section>
 
@@ -58,6 +63,10 @@ Not supported
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/gravity_compensation_dashing.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/gravity_compensation_noetic.md %}
 </section>
 
