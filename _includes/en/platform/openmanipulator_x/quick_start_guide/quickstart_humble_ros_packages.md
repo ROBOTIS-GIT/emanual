@@ -18,7 +18,7 @@ $ sudo apt install \
 ```
 
 ```bash
-$ mkdir -p colcon_ws/src
+$ mkdir -p ~/colcon_ws/src
 $ cd ~/colcon_ws/src/
 $ git clone -b humble https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone -b humble https://github.com/ROBOTIS-GIT/open_manipulator.git
