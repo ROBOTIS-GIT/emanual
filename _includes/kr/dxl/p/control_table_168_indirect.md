@@ -16,7 +16,7 @@ Control Table Item의 모든 byte를 Indirect Address로 세팅 해주어야 정
 <div class="notice--success">{{ indirect_ex1 | markdownify }}</div>
 
 {% capture indirect_ex2 %}
-**예제 2** : 4 바이트 길이의 Goal Position(532)를 Indirect Data 2(258)에 할당하기 위해서는 반드시 연속된 4 바이트를 모두 할당해야 함.
+**예제 2** : 4 바이트 길이의 Goal Position(532)를 Indirect Data 2(635)에 할당하기 위해서는 반드시 연속된 4 바이트를 모두 할당해야 함.
 1. Indirect Address 2(258) : 값을 Goal Position의 첫번째 주소인 `532`로 변경.
 2. Indirect Address 3(260) : 값을 Goal Position의 두번째 주소인 `533`로 변경.
 3. Indirect Address 4(262) : 값을 Goal Position의 세번째 주소인 `534`로 변경.
