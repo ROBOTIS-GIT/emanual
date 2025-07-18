@@ -10,7 +10,7 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 32
+page_number: 33
 ---
 
 <style>body {counter-reset: h1 13 !important;}</style>
@@ -22,15 +22,16 @@ page_number: 32
   <h2 id="dummy">Appendixes: Raspberry Pi Camera Module v2</h2>
 <![end dummy Header 1]-->
 
-### [Raspberry Pi Camera](#raspberry-pi-camera)
-
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/Pi-Camera-front.jpg)
-
 ### [Overview](#overview)
 
 [The Raspberry Pi Camera Module v2](https://www.raspberrypi.org/products/camera-module-v2/) replaced the original Camera Module in April 2016. The v2 Camera Module has a Sony IMX219 8-megapixel sensor (compared to the 5-megapixel OmniVision OV5647 sensor of the original camera).
 The Camera Module can be used to take high-definition video, as well as stills photographs. It’s easy to use for beginners, but has plenty to offer advanced users if you’re looking to expand your knowledge. There are lots of examples online of people using it for time-lapse, slow-motion, and other video cleverness. You can also use the libraries we bundle with the camera to create effects.
 
+### [Introduction Video](#introduction-video)
+
+The TurtleBot3 uses Raspberry Pi Camera Module v2 as a default vision sensor. Check this video out that shows how Raspberry Pi Camera Module v2 can be used in TurtleBot3.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UqYR_z3q9a0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### [Specifications](#specifications)
 
@@ -116,115 +117,136 @@ The Camera Module can be used to take high-definition video, as well as stills p
 Here is the detail specification document: [Raspberry Pi Camera Module v2 Datasheet](https://www.raspberrypi.org/documentation/hardware/camera/README.md)
 
 
-### [Raspberry Pi Camera for TurtleBot3](#raspberry-pi-camera-for-turtlebot3)
+### [Camera calibration](#camera-calibration)
 
-The Raspberry Pi Camera Module v2 is applied on TurtleBot3 Waffle Pi.
+1. **Prepare the Checkerboard pattern**  
+Use a black and white Checkerboard, usually 7×6 or 8×6 in size, print it out and attach it to a solid surface, and measure the squares of your checkerboard accurately.  
+<br>
 
-![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
+2. **Install the ROS 2 Camera Calibration Package**  
+**[Remote PC]**
+```bash
+$ sudo apt update
+$ sudo apt install ros-${ROS_DISTRO}-camera-calibration
+$ source /opt/ros/${ROS_DISTRO}/setup.bash
+```  
+<br>
 
-**WARNING**  
-This instruction can be applied to the Raspberry Pi with Raspbian OS installed.
-{: .notice--warning}
+3. **Run the Camera node**  
+Run the camera node based on the camera package you installed.
+- For `camera-ros`  
+**[TurtleBot3 SBC]**  
+```bash
+$ ros2 run camera_ros camera_node --ros-args -p format:='RGB888'
+```
+- For `v4l2-camera`  
+Adding `-r __ns:=/camera` organizes all topics published by the node under the `/camera` namespace.   
+**[TurtleBot3 SBC]**  
+```bash
+$ ros2 run v4l2_camera v4l2_camera_node --ros-args -r __ns:=/camera
+```
+<br>
 
-### [Introduction Video](#introduction-video)
+4. **Run calibration node**  
+Specify the size of the checkerboard and the size of the squares as execution arguments. The size of the checkerboard is the number of intersections.  
+**[Remote PC]**
+```bash
+$ ros2 run camera_calibration cameracalibrator \
+  --size 8x6 --square 0.023 \
+  image:=/camera/image_raw camera:=/camera
+```  
+<br>
 
-The TurtleBot3 Waffle Pi uses Raspberry Pi Camera Module v2 as a default vision sensor. Check this video out that shows how Raspberry Pi Camera Module v2 can be used in TurtleBot3 Waffle Pi.
+5. **Proceed with the calibration**  
+When a checkerboard is detected, each intersection is connected. Modify the position of the checkerboard until the green bar on the right is filled to activate the button.  
+    ![calibration](/assets/images/platform/turtlebot3/quick_start/sbc_setup/calibration.png)  
+<br>
+
+6. **Apply calibration**  
+Use the results to modify the format of the calibration yaml file you created when you installed the camera package.  
+**[Result]**
+    ```bash
+    **** Calibrating ****
+    mono pinhole calibration...
+    D = [0.03044862133677453, 1.051149543007478, -0.010043417242237722, -0.004408001911603297, 0.0]
+    K = [630.410302346659, 0.0, 153.7660597801437, 0.0, 630.2122426630051, 112.97681709327331, 0.0, 0.0, 1.0]
+    R = [1.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 1.0]
+    P = [638.0872192382812, 0.0, 152.86851810362077, 0.0, 0.0, 636.0022583007812, 111.61012624808154, 0.0, 0.0, 0.0, 1.0, 0.0]
+    None
+    # oST version 5.0 parameters
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AyZ5lcz5IzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    [image]
+
+    width
+    320
+
+    height
+    240
+
+    [narrow_stereo]
+
+    camera matrix
+    630.410302 0.000000 153.766060
+    0.000000 630.212243 112.976817
+    0.000000 0.000000 1.000000
+
+    distortion
+    0.030449 1.051150 -0.010043 -0.004408 0.000000
+
+    rectification
+    1.000000 0.000000 0.000000
+    0.000000 1.000000 0.000000
+    0.000000 0.000000 1.000000
+
+    projection
+    638.087219 0.000000 152.868518 0.000000
+    0.000000 636.002258 111.610126 0.000000
+    0.000000 0.000000 1.000000 0.000000
+    ```
+<br>
 
 
-### [User Guide](#user-guide)
+### [Trouble Shooting](#trouble-shooting)
 
-[Raspberry Pi Camera packages](https://github.com/UbiquityRobotics/raspicam_node) enable the use of Raspberry Pi Camera Module v1.x and v2.x with ROS. Below table describes packages required to operate Raspberry Pi Camera. You will be guided to install these packaged in the next section.
+The error message `Unable to open camera calibration file [/home/ubuntu/.ros/camera_info/<camera_name>.yaml]` appears when the camera calibration file is missing.  
 
-
-| Package                                                                  |                             Description                              |
-|:-------------------------------------------------------------------------|:--------------------------------------------------------------------:|
-| [Raspberry Pi Camera](https://github.com/UbiquityRobotics/raspicam_node) | Underlying library driver for communicating with Raspberry Pi Camera |
-
-
-#### [Installation](#installation)
-
-**[TurtleBot]** Setting up the camera hardware
-
-``` bash
-$ sudo raspi-config
+1. Create the calibration directory (if it doesn't exist)  
+**[TurtleBot3 SBC]**  
+```bash
+$ mkdir -p /home/ubuntu/.ros/camera_info/
 ```
 
-
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-1.png)
-
-
-Select **3 Interfacing Options**
-
-
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-2.png)
-
-
-Select **P1 Camera**
-
-
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-3.png)
-
-
-Enable camera interface
-
-
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-4.png)
-
-
-Enable camera interface
-
-
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-5.png)
-
-
-After reboot Raspberry Pi ,to test that the system is installed and working, try the following command:
-
-
-``` bash
-$ raspistill -v -o test.jpg
+2. Create the calibration file  
+**[TurtleBot3 SBC]**  
+```bash
+$ sudo nano /home/ubuntu/.ros/camera_info/<camera_name>.yaml
 ```
-
-The display should show a five-second preview from the camera and then take a picture, saved to the file *test.jpg*
-
-
-**[TurtleBot]** The following commands will install relevant Raspberry Pi Camera packages on your ROS system.
-
-``` bash
-$ cd ~/catkin_ws/src
-$ git clone https://github.com/UbiquityRobotics/raspicam_node.git
-$ sudo apt-get install ros-kinetic-compressed-image-transport ros-kinetic-camera-info-manager
-$ cd ~/catkin_ws && catkin_make
+**Calibration yaml file example**   
+Make sure to update the `image_width`, `image_height` values and `camera_name` to match your actual camera settings. Ensure the `camera_name` in the `.yaml` file matches the actual camera name.  
 ```
-
-#### [Run raspicam Node](#run-raspicam-node)
-
-**[TurtleBot]** Run the following command
-
-``` bash
-$ roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
-```
-
-or
-
-``` bash
-$ roslaunch raspicam_node camerav2_1280x960.launch
-```
-
-While the raspicam node is running, you can view various data from Raspberry Pi Camera by launching `rqt_image_view`.
-
-**Warning!** Before you run Rviz in Remote PC, check your Raspberry Pi 3 and Remote PC whether they are connected.
-{: .notice--warning}
-
-**[Remote PC]** Run the following command
-
-``` bash
-$ rqt_image_view
-```
-
-Once the gui application is appeared on the screen, you can select data topic name related to Raspberry Pi Camera from drop down menu at the top of the application.
+image_width: 320   # Update to your camera's actual resolution
+image_height: 240   # Update to your camera's actual resolution
+camera_name: imx219__base_soc_i2c0mux_i2c_1_imx219_10_320x240   # Replace with the actual camera name
+frame_id: camera
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [161.0352, 0, 99.6340, 0, 160.4337, 77.6267, 0, 0, 1]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [0.1639958, -0.2718400, 0.0010558, -0.0016656, 0]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [164.6242, 0, 99.2051, 0, 0, 164.5522, 77.7529, 0, 0, 0, 1, 0]
+```  
 
 ### [References](#references)
 
@@ -232,5 +254,4 @@ Once the gui application is appeared on the screen, you can select data topic na
 - [Hardware Configuration](https://www.raspberrypi.org/documentation/configuration/camera.md)
 - [Software Configuration](https://www.raspberrypi.org/documentation/raspbian/applications/camera.md)
 - [Getting Started](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)
-- [ROS Node](https://github.com/UbiquityRobotics/raspicam_node)
 - [Purchase](https://www.raspberrypi.org/products/camera-module-v2/)

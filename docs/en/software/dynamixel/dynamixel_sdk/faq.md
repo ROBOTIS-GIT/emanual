@@ -15,43 +15,59 @@ sidebar:
 
 # [FAQ](#faq)
 
-## Difference between the read write example, the sync read write example, the bulk read write example, and the Indirect Address example
+## What is the Difference between Read/Write example, Sync Read/Write example, and Bulk Read/Write?
 
-For systematical description or the details of communication method in the DYNAMIXEL, check [Protocol 1.0](http://emanual.robotis.com/docs/en/dxl/protocol1/) and [Protocol 2.0](http://emanual.robotis.com/docs/en/dxl/protocol2/)
 
-### Normal Read and Write controls only one DYNAMIXEL
+### Normal Read/Write
+This method interfaces with a single DYNAMIXEL actuator at a time.
 
-To make a single wheel turn, or to make LED blink, for becoming familiar with the DYNAMIXEL, or if the operation you planned is not restricted by the time sequence, use this. 
+It is ideal for simple tasks such as operating a single joint, especially when you're new to DYNAMIXEL or when precise timing isn't critical.
 
-### Sync Read and Write controls more than two DYNAMIXEL's simultaneously, targeting same items on each of them
+Use case example:
+Turn one actuator or test basic functionality during setup or debugging.
 
-To make a multi-joint mechanism or something that should be operated at the same time, use this. 
-This sends the packet once as:
- * let them : [ID:1] _turn wheel_ to 200 + [ID:3] _turn wheel_ to 1500 + [ID:9] _turn wheel_ to 40 + ...
+### Sync Read and Write
+This method controls multiple DYNAMIXEL actuators simultaneously, but is limited to reading or writing the same control table item for all actuators (e.g., position or speed).
 
-While using **Normal Read and Write control** in the situation, there is a time gap between former and latter signal transmission. 
+Instead of sending separate commands for each ID, one combined packet is sent, using Normal Read/Write in a situation requiring synchronized movement can introduce time delays between commands, which can affect synchronization.
 
-### Bulk Read and Write controls more than two DYNAMIXEL's simultaneously, targeting different items in each other of them
+Use case example:
+Coordinate a multi-jointed mechanism like a robotic arm, where actuators must move at the same time.
 
-This is as nearly the same as **Sync Read and Write control**, though, it can control different items. For instance:
- * let them : [ID:1] _turn wheel_ to 200 + [ID:3]  _blink LED_ 1(1) + [ID:9] - _set P gain_ 150 + ...
+### Bulk Read/Write
+This method also controls multiple actuators simultaneously, but is capable of targeting different control table items for each actuator.
 
-While using **Normal Read and Write control** or **Sync Read and Write control** in the situation, the signal should be transmitted in single items so whole process would be long.  
+Compared to Sync Read/Write, Bulk Read/Write is a little slower and more flexible but still sends all instructions in a single transmission—saving time and improving efficiency over individual Read/Writes.
 
-### Indirect Address control (is available only in DYNAMIXEL PRO and X series but its very useful!)
-To control multiple items in multiple dynamixel, and when you want to use **Sync Read and Write control** rather than **Bulk Read and Write control**, use this. Copy the buffer of targeted items to another address on the memory using **Normal Read and Write control**, then **Sync Read and Write control** them.
+Use case example:
+Send simultaneous mixed commands like-
+[ID:1] Move to 200
+[ID:3] Turn on LED
+[ID:9] Set P Gain to 150
 
-## I have a question. Where should I put it??
-- Any **questions** related with DYNAMIXEL SDK are always welcomed. Just let me know at [ISSUES](https://github.com/ROBOTIS-GIT/DynamixelSDK/issues).
-- For the other questions, including **Hardware-wise problems** on your DYNAMIXEL's, please contact to `support@robotis.com` or use [ROBOTIS Forum](http://en.robotis.com/service/forum.php).
-- Join our **developer community** on the [RobotSource](https://community.robotsource.org/).
+For more information on the DYNAMIXEL protocol refer to the [Protocol 1.0](http://emanual.robotis.com/docs/en/dxl/protocol1/) and [Protocol 2.0](http://emanual.robotis.com/docs/en/dxl/protocol2/) documentation for full technical details.
 
-## How to change an USB latency in DYNAMIXEL SDK?
+## What are Indirect Addresses?
 
-The defalut of USB latency in DYNAMIXEL SDK is 16 ms. If you want to change it, refer to follow table.
+### Indirect Addressing (Available on DYNAMIXEL X,Y, and P Series)
+Indirect Addressing lets you map multiple separate control items to occupy a continuous memory space. You can then use Sync Read/Write to access this continuous region to interact with the control table items as if they were in a continuous address range.
+
+This method is especially useful when you prefer the performance of Sync Read/Write but need the flexibility typically offered by Bulk Read/Write.
+
+Use case example:
+When you want to control multiple parameters (e.g., position, speed, torque) on multiple actuators using Sync Read/Write, set up Indirect Addressing first using Normal Write, then control them all at once with a single Sync Read/Write.
+
+## Have Questions?
+If you have any questions related to the DYNAMIXEL SDK, feel free to open an issue in on the [GitHub repository](https://github.com/ROBOTIS-GIT/DynamixelSDK/issues).
+For hardware-related issues or other technical support, please contact us at support@robotis.com or visit the [ROBOTIS Community Forum](https://forum.robotis.com).
+
+## How to Change USB Latency in the DYNAMIXEL SDK
+The default USB latency in the DYNAMIXEL SDK is 16 ms. If you need to reduce it for faster communication, modify the following settings in your code:
 
 | Language | File                  | Name          | Default |
 |:---------|:----------------------|:--------------|:--------|
-| c        | port_handler_[OS].c   | LATENCY_TIMER | 16      |
-| c++      | port_handler_[OS].cpp | LATENCY_TIMER | 16      |
-| python   | port_handler.py       | LATENCY_TIMER | 16      |
+| C        | port_handler_[OS].c   | LATENCY_TIMER | 16      |
+| C++      | port_handler_[OS].cpp | LATENCY_TIMER | 16      |
+| Python   | port_handler.py       | LATENCY_TIMER | 16      |
+
+Make sure your system permits changing USB latency settings, as this may require administrative privileges.

@@ -25,7 +25,7 @@ Follwing message will be shown in the Terminal after the process done successful
 ```
 $ ros2 launch open_manipulator_x_bringup hardware.launch.py
 
-[INFO] [launch]: All log files can be found below /home/omx/.ros/log/2024-12-10-16-13-03-846807-omx-3063
+[INFO] [launch]: All log files can be found below /home/open_manipulator_x/.ros/log/2024-12-10-16-13-03-846807-open_manipulator_x-3063
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [ros2_control_node-1]: process started with pid [3066]
 [INFO] [robot_state_publisher-2]: process started with pid [3068]

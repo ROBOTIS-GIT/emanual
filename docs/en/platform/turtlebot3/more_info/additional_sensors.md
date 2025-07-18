@@ -10,7 +10,7 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 product_group: turtlebot3
-page_number: 34
+page_number: 35
 ---
 
 <style>body {counter-reset: h1 13 !important;}</style>
@@ -30,15 +30,15 @@ TurtleBot3 can be attach to additional sensors. Examples shown here can be that 
  * Device - [Touch_sensor (TS-10)](http://emanual.robotis.com/docs/en/parts/sensor/ts-10/)
 
 
-![](/assets/images/platform/turtlebot3/additional_sensors/touch_sensor.png)
+![](/assets/images/platform/turtlebot3/more_info/additional_sensors/touch_sensor.png)
 
 (Front side)
 
-![](/assets/images/platform/turtlebot3/additional_sensors/touch_sensor_front.png)
+![](/assets/images/platform/turtlebot3/more_info/additional_sensors/touch_sensor_front.png)
 
 (Back side)
 
-![](/assets/images/platform/turtlebot3/additional_sensors/touch_sensor_back.png)
+![](/assets/images/platform/turtlebot3/more_info/additional_sensors/touch_sensor_back.png)
 
 * Default PIN      
 
@@ -82,9 +82,9 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 * Device - [IR_sensor (IRSS-10)](http://emanual.robotis.com/docs/en/parts/sensor/irss-10/)
 
 
-![](/assets/images/platform/turtlebot3/additional_sensors/IR_sensor.png)
+![](/assets/images/platform/turtlebot3/more_info/additional_sensors/IR_sensor.png)
 
-![](/assets/images/platform/turtlebot3/additional_sensors/IR_sensor_front.png)
+![](/assets/images/platform/turtlebot3/more_info/additional_sensors/IR_sensor_front.png)
 
 * Default PIN
 
@@ -123,7 +123,7 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 ### [Ultrasonic](#Ultrasonic)
 * Device - Ultrasonic sensor (HC-SR04)
 
-![](/assets/images/platform/turtlebot3/additional_sensors/sonar.png)
+![](/assets/images/platform/turtlebot3/more_info/additional_sensors/sonar.png)
 
 
 * Default PIN:
@@ -163,9 +163,9 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 ### [Illumination](#Illumination)
 *  Device - LDR sensor (Flying-Fish MH-sensor)
 
-![](/assets/images/platform/turtlebot3/additional_sensors/illumination.png)
+![](/assets/images/platform/turtlebot3/more_info/additional_sensors/illumination.png)
 
-![](/assets/images/platform/turtlebot3/additional_sensors/illumination_front.png)
+![](/assets/images/platform/turtlebot3/more_info/additional_sensors/illumination_front.png)
 
 *  Default PIN
 
@@ -201,9 +201,9 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 ### [LED](#LED)
 *  Device - led (led101)
 
-![](/assets/images/platform/turtlebot3/additional_sensors/led.png)
+![](/assets/images/platform/turtlebot3/more_info/additional_sensors/led.png)
 
-![](/assets/images/platform/turtlebot3/additional_sensors/led_top.png)
+![](/assets/images/platform/turtlebot3/more_info/additional_sensors/led_top.png)
 
 *  Default PIN
 

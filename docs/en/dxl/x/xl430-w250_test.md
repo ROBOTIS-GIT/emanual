@@ -169,7 +169,7 @@ product_group: dxl_xl430
 
 <details>
 <summary> 
-### <a name="max-voltage-limit"></a><a name="min-voltage-limit"></a>**[Min/Max Voltage Limit(32, 34)](#minmax-voltage-limit32-34)**
+### <a name="max-voltage-limit"></a><a name="min-voltage-limit"></a>**[Min/Max Voltage Limit(34, 32)](#minmax-voltage-limit34-32)**
 </summary>
 
 These values are maximum and minimum operating voltages.  
@@ -198,7 +198,7 @@ For more details, please refer to the [Shutdown(63)] section.
 
 <details>
 <summary> 
-### <a name="max-position-limit"></a><a name="min-position-limit"></a>**[Min/Max Position Limit(48, 52)](#minmax-position-limit48-52)**
+### <a name="max-position-limit"></a><a name="min-position-limit"></a>**[Min/Max Position Limit(52, 48)](#minmax-position-limit52-48)**
 </summary>
 
 These values limit maximum and minimum target positions for Position Control Mode(Joint Mode) within the range of 1 rotation(0 ~ 4,095). Therefore, Goal Position(116) should be configured within the position limit range. These values are not used in Extended Position Control Mode.

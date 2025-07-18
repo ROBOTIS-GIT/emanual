@@ -33,7 +33,7 @@ X : Unavailable<br>
 |         Teleop         |   ✓    |    ✓     |   ✓      |
 |          SLAM          |   ✓    |    ✓     |   ✓      |
 |       Navigation       |   ✓    |    ✓     |   ✓      |
-|       Simulation       |   ✓    |    ✓     |   X      |
+|       Simulation       |   ✓    |    ✓     |   ✓      |
 |      Manipulation      |   ✓    |    ✓     |   X      |
 | Home Service Challenge |   ✓    |    X     |   X      |
 |   Autonomous Driving   |   ✓    |    ✓     |   X      |
@@ -41,15 +41,15 @@ X : Unavailable<br>
 
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_humble.md %}
+{% include en/platform/turtlebot3/quick_start/quickstart_humble.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_jazzy.md %}
+{% include en/platform/turtlebot3/quick_start/quickstart_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title3 }}" class="tab_contents">
-{% include en/platform/turtlebot3/quickstart_noetic.md %}
+{% include en/platform/turtlebot3/quick_start/quickstart_noetic.md %}
 </section>
 
 <!--

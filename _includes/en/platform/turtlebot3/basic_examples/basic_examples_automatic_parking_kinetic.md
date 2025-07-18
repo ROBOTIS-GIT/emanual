@@ -48,8 +48,8 @@ $ roslaunch turtlebot3_automatic_parking turtlebot3_automatic_parking.launch
 
     - `/scan`
 
-    ![](/assets/images/platform/turtlebot3/application/scan.png)
+    ![](/assets/images/platform/turtlebot3/basic_examples/automatic_parking/scan.png)
 
     - `/scan_spot`
 
-    ![](/assets/images/platform/turtlebot3/application/scan_spot.png)
+    ![](/assets/images/platform/turtlebot3/basic_examples/automatic_parking/scan_spot.png)

@@ -12,7 +12,7 @@ $ cd ~/catkin_ws && catkin_make
 #### [Set Operating Mode to Current Mode](#set-operating-mode-to-current-mode)
 Set your DYNAMXEL's Operating Mode to Current Mode via [DYNAMIXEL Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/)
 
-![](/assets/images/platform/openmanipulator_x/omx_gravity_current_mode_setting.png)
+![](/assets/images/platform/openmanipulator_x/OpenMANIPULATORX_gravity_current_mode_setting.png)
 
 #### [Run Gravity Compensation Package](#run-gravity-compensation-package)
 Run the gravity compensation package with OpenMANIPULATOR-X.

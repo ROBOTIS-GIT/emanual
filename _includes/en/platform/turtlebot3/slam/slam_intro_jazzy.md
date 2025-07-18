@@ -9,5 +9,3 @@
 **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a map by estimating current location in an arbitrary space.  The video here shows you how accurately TurtleBot3 can draw a map using SLAM techniques.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/_-bv8VPwkZs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

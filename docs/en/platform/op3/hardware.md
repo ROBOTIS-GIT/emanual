@@ -13,10 +13,10 @@ sidebar:
   title: ROBOTIS OP3
   nav: "op3"
 product_group: op3
-page_number: 7
+page_number: 8
 ---
 
-<style>body {counter-reset: h1 6 !important;}</style>
+<style>body {counter-reset: h1 7 !important;}</style>
 
 {::options parse_block_html="true" /}
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
@@ -26,7 +26,7 @@ page_number: 7
 ## [Assemble Data](#assemble-data)
 
 ### Overview
-ROBOTIS provides STP files for ROBOTIS-OP3 parts and assembly. Users can view frame shapes and assembled figure.  
+ROBOTIS provides STP files for all OP3 mechanical components, allowing users to view and modify OP3 frames and assemble their own.
 
 ### Description
 
@@ -38,7 +38,7 @@ ROBOTIS provides STP files for ROBOTIS-OP3 parts and assembly. Users can view fr
 ## [Cover Skin Data](#cover-skin-data)
 
 ### Overview
- ROBOTIS provides cover data for ROBOTIS-OP3. Covers for the head, body, arms and legs are provided so users can download and modify the design with 3D printer.  
+ ROBOTIS provides STP files for creating frame covers for the ROBOTIS-OP3. Covers for the head, body, arms and legs are provided so users can download and modify the design to create custom covers using a 3D printer.  
 
 
 ### Description

@@ -7,8 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_x/ros_controller_package/
 tabs: "ROS"
-tab_title1: Humble
-tab_title2: Noetic
+tab_title1: Jazzy
+tab_title2: Humble
+tab_title3: Noetic
 tab_title6: Arduino
 sidebar:
   title: "OpenMANIPULATOR-X"
@@ -24,10 +25,14 @@ page_number: 6
 # [Controller](#controller)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/launch_controller_pkg_humble.md %}
+{% include en/platform/openmanipulator_x/controller/launch_controller_pkg_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/launch_controller_pkg_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/launch_controller_pkg_noetic.md %}
 </section>
 
@@ -39,10 +44,14 @@ Arduino sketch for OpenCR OpenMANIPULATOR-X includes the controller in the code.
 ## [Launch Controller](#launch-controller)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
-{% include en/platform/openmanipulator_x/controller/launch_controller_humble.md %}
+{% include en/platform/openmanipulator_x/controller/launch_controller_jazzy.md %}
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
+{% include en/platform/openmanipulator_x/controller/launch_controller_humble.md %}
+</section>
+
+<section data-id="{{ page.tab_title3 }}" class="tab_contents">
 {% include en/platform/openmanipulator_x/controller/launch_controller_noetic.md %}
 </section>
 
