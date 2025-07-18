@@ -18,10 +18,10 @@ One thing to note is when setting a Control Table with a length of 2 bytes or mo
 
 {% capture indirect_ex2 %}
 **Example 2** : To allocate 4 byte Goal Position(532) to Indirect Data 2(635), all 4 consecutive bytes must be allocated.
-1. Indirect Address 2(257) : Write 532 which is the first address of Goal Position.
-2. Indirect Address 3(258) : Write 533 which is the second address of Goal Position.
-3. Indirect Address 4(259) : Write 534 which is the third address of Goal Position.
-4. Indirect Address 5(260) : Write 535 which is the fourth address of Goal Position.
+1. Indirect Address 2(258) : Write 532 which is the first address of Goal Position.
+2. Indirect Address 3(260) : Write 533 which is the second address of Goal Position.
+3. Indirect Address 4(262) : Write 534 which is the third address of Goal Position.
+4. Indirect Address 5(264) : Write 535 which is the fourth address of Goal Position.
 5. Write 4 byte desired position value of 250,961(0x0003D451) to Indirect Data 2 ~ 5 : The value of Goal Position(532) will reflect these changes and update to 250,961(0x0003D451).
 
 
