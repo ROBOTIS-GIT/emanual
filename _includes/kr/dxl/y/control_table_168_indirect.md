@@ -20,7 +20,7 @@ Control Table Item의 모든 byte를 Indirect Address로 세팅 해주어야 정
 1. Indirect Address 2(258) : 값을 Goal Position의 첫번째 주소인 `532`로 변경.
 2. Indirect Address 3(260) : 값을 Goal Position의 두번째 주소인 `533`로 변경.
 3. Indirect Address 4(262) : 값을 Goal Position의 세번째 주소인 `534`로 변경.
-4. Indirect Address 5(264) : 값을 Goal Position의 첫번째 주소인 `535`로 변경.
+4. Indirect Address 5(264) : 값을 Goal Position의 네번째 주소인 `535`로 변경.
 5. Indirect Data 2부터 5까지의 4바이트를 250,961(0x0003D451)로 변경 : Goal Position(532) 역시 250,961(0x0003D451)로 변경됨.
 
 | Indirect Data 주소 | Goal Position 주소 | 저장된 HEX 값 |
