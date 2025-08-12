@@ -11,165 +11,102 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<style>body {counter-reset: h1 4 !important;}</style>
-<div style="counter-reset: h2 4"></div>
+<div class="main-header">
+  <h1>Library Setup <C++ Linux></h1>
+</div>
+<style>
+  .main-header h1::before {
+    content: none !important;
+  }
+</style>
 
-<!--[dummy Header 1]>
-  <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
-<![end dummy Header 1]-->
+This section provides instructions on building the SDK.
 
-## [CPP Linux](#cpp-linux)
+# [Install requirements](#install-requirements)
 
-### [Compiler and Builder](#compiler-and-builder)
+- The DYNAMIXEL SKD requires GNU gcc ver. 5.4.0 20160609 or higher
+- To check the version of your gcc compiler
+``` bash
+$ gcc -v
+```
 
-#### [Compiler](#compiler)
+- Download the requirements
+``` bash
+$ sudo apt-get install gcc
+$ sudo apt-get install build-essential
+$ sudo apt-get install gcc-multilib g++-multilib # For cross-compiling
+```
 
-* The DYNAMIXEL SKD requires GNU gcc ver. 5.4.0 20160609 or higher
-* To check the version of your gcc compiler:  
+# [Build the SDK](#build-the-SDK)
+- Check your system architecture
+``` bash
+$ uname -m
+```
 
-  ``` bash
-  $ gcc -v 
-  ```
+- Enter the appropriate build folder depending on your system and build the SDK
+``` bash
+$ cd DynamixelSDK/c++/build/linux64 # for 64-bit systems
+$ sudo make install
+```
+- make sure to enter the correct folder according to your system architecture.
+  - `linux64` for 64-bit systems
+  - `linux32` for 32-bit systems
+  - `linux_sbc` for ARM-based SBCs like Raspberry Pi
 
-* Download the required compiler:  
+- If the build completes successfully, you should see the .so file generated inside the build folder.
+``` bash
+$ ls
+libdxl_x86_cpp.so Makefile
+```
 
-  ``` bash 
-  $ sudo apt-get install gcc
-  ```
+<br>
+- Common `make` commands for building the SDK
+``` bash
+$ make              # Compile the source code and generate binaries
+$ make install      # Install the library files to the system
+$ make clean        # Remove all build files and reset the build environment
+$ make uninstall    # Remove files installed by 'make install' from the system
+$ make reinstall    # Reinstall by cleaning, rebuilding, and installing again
+```
+{: .notice--success}
 
-#### [Builder](#builder)
-
-* Build-essential pkg → make
-* Download:  
-
-  ``` bash 
-  $ sudo apt-get install build-essential
-  ```
-
-#### [Dependent Packages](#dependent-packages) 
-
-* Packages needed for cross-compiling 
-* Download:  
-
-  ``` bash 
-  $ sudo apt-get install gcc-multilib g++-multilib
-  ```
-
-#### [Build the Library](#build-the-library)
-
-* Choose which format (32bit or 64bit) of the library you will be bulding.
-  The Makefile is located in the following folder: `[DynamixelSDK folder]/cpp/build/linux32` OR `[DynamixelSDK folder]/cpp/build/linux64` folder for 32/64-bit platforms OR `[DynamixelSDK folder]/cpp/build/linux_sbc` folder for ARM SBCs.  
-  Please note that if you intend to use the 32-bit example applications, you must build the 32-bit library.
-
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp6.png)
-
-
-* Go to the Makefile's directory located in `[DynamixelSDK folder]/cpp/build/linux32` OR `[DynamixelSDK folder]/cpp/build/linux64` OR `[DynamixelSDK folder]/cpp/build/linux_sbc` using $ `cd`.
-
-* To build the library file:  
-
-  ``` bash
-  $ make
-  ```
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp1.png)
-
-* If there is an error, try rebuilding the package after cleaning any leftover files.
-
-  ``` bash
-  $ make clean && make
-  ```
-
-* To delete the library file and object files after a successful build:
-
-  ``` bash
-  $ make clean
-  ```
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp2.png)
-
-##### Copy (Install) the Library to the Root Directory
-
-* To make library file and copy it to the root directory (to handle the serial port):  
-
-  ``` bash
-  $ sudo make install
-  ```
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp3.png)
-
-* If there is an error, you can retry the installation:
-
-  ``` bash
-  $ sudo make uninstall && sudo make install
-  ```
- 
-  OR
-
-  ``` bash
-  $ sudo make reinstall
-  ```
-
-* To delete the library file from the root directory:  
-
-  ``` bash
-  $ sudo make uninstall
-  ```
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp4.png)
-
-* To recopy the library file to the root directory:  
-
-  ``` bash
-  $ sudo make reinstall
-  ```
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp5.png)
-
-* You will see the built library file in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_cpp.so`
-
-### [Building and Running the Sample Code](#building-and-running-the-sample-code)
+# [Test with Sample Code](#test-with-sample-code)
 
 The DYNAMIXEL SDK sample code for CPP uses a .so (Linux Shared Object) library built in the CPP language.
 
-The previous instructions walk you thorough building the latest library files `[DynamixelSDK folder]/c++/build/[linuxXX]/libdxl_xYY_cpp.so` with its own source code. 
+- Go to the folder containing the sample code and build it.
+``` bash
+$ cd DynamixelSDK/c++/example/protocol2.0/read_write/linux64
+$ make
+```
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp4.png)
+- Grant permission to access the port and run the sample code
+```bash
+$ sudo chmod 666 /dev/ttyUSB0
+$ ./read_write
+```
 
-* Go to the Makefile's directory using `cd`:  
-
-* To build executable file, type: 
-
-  ```bash
-  $ make
-  ```
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp1.png)
-
-
-* If there is an error, `$ make clean` then `$ make` again.
-
-* To delete the executable file, `$ make clean`.
-
-  ```bash
-  $ make clean
-  ```
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp2.png)
-
-* Access the port you will be using to communicate with DYNAMIXEL: 
-
-  ```bash
-  $ sudo chmod a+rw /dev/ttyUSB0
-  ```
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp3.png)
-
-* Run the executable code
-
-  ```bash
-  $ ./read_write
-  ```
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp5.png)
+- When you Press any key, Dynamixel will start moving to the goal position.
+```bash
+pc@pc:~/DynamixelSDK/c++/example/protocol2.0/read_write/linux64$ ./read_write
+Succeeded to open the port!
+Succeeded to change the baudrate!
+Succeeded enabling DYNAMIXEL Torque.
+Press any key to continue. (Press [ESC] to exit)
+[ID:001] Goal Position:000  Present Position:005
+[ID:001] Goal Position:4095  Present Position:005
+[ID:001] Goal Position:4095  Present Position:005
+[ID:001] Goal Position:4095  Present Position:021
+[ID:001] Goal Position:4095  Present Position:044
+[ID:001] Goal Position:4095  Present Position:071
+[ID:001] Goal Position:4095  Present Position:100
+[ID:001] Goal Position:4095  Present Position:131
+[ID:001] Goal Position:4095  Present Position:162
+[ID:001] Goal Position:4095  Present Position:196
+[ID:001] Goal Position:4095  Present Position:226
+[ID:001] Goal Position:4095  Present Position:261
+...
+...
+...
+```
+``` 

@@ -11,150 +11,56 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<style>body {counter-reset: h1 2 !important;}</style>
+<div class="main-header">
+  <h1>Device Setup</h1>
+</div>
+<style>
+  .main-header h1::before {
+    content: none !important;
+  }
+</style>
 
-# [Device Setup](#device-setup)
+This section provides instructions on how to configure the device.
 
-![](/assets/images/parts/interface/u2d2_01.png)
- 
-In order to use the DYNAMIXEL SDK, you'll need to set up your [Controller](#controller) and [DYNAMIXEL](#dynamixel).
+# [Requirements](#requirements)
+{% capture note1%}
+**NOTE** : The Quick Start Guide explains how to use DYNAMIXEL with a PC as the controller. Instead of a PC, controllers such as `OpenCR`, `OpenRB`, or `Arduino` can also be used.  
+  - [OpenRB-150](/docs/en/parts/controller/openrb-150/)  
+  - [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/)  
+  - [OpenCM9.04](http://emanual.robotis.com/docs/en/parts/controller/opencm904/)  
+  - Most other Arduino boards.  
+{% endcapture %}
+<div class="notice--success">{{note1 | markdownify }}</div>
 
-## [Controller](#controller)
+In order to use DYNAMIXEL with a PC, you need a `U2D2` to convert USB signals to `TTL` or `RS-485`.  
+The U2D2 does not supply power to the DYNAMIXEL, so a `U2D2 Power Hub Board` is also required to provide power.  
+![](/assets/images/parts/interface/u2d2_01.png)  
 
-### [Signal Interface](#signal-interface)
-DYNAMIXEL servos communicate using one of the following digital serial interfaces:
-* TTL: TTL-based DYNAMIXEL's have 3 pin connectors
-* RS485: RS485-based DYNAMIXEL's have 4 pin connectors. 
-
-The SDK and its examples were written for compatibility with the ROBOTIS [U2D2](docs/en/parts/interface/u2d2/) USB to Serial converter, which is shown below. You can use any other converter as long as it generates half-duplex TTL or RS485 signals. 
-
-![](/assets/images/parts/interface/u2d2_product.jpg)
-
-Since other signal ports, such as UART, I2C, etc., may differ based on your controller specification, advanced users may wish to modify the SDK themselves to optimize for their specific controllers.
-
-The U2D2 requires the configuration of the following settings for communication with connected DYNAMIXEL servos:
- * DEVICENAME: The default is `/dev/ttyUSB0` for Linux and Mac or `COM1` for Windows
- * DYNAMIXEL ID: Each connected DYNAMIXEL must have a unique ID.
-
-### [Controllers](#controllers)
-The SDK was tested on desktop PCs and common SBCs such as the Raspberry Pi and ODROID, in the following OS configurations:
-
-|                 | PC | Intel Joule | Up Board | Raspberry Pi | ODROID |
-|:---------------:|:--:|:-----------:|:--------:|:------------:|:------:|
-|   **Windows**   |    |             |          |              |        |
-|       10        | ✓  |             |          |              |        |
-|       IoT       |    |             |          |              |        |
-|   **Ubuntu**    |    |             |          |              |        |
-|      14.04      | ✓  |             |    ✓     |              |   ✓    |
-|      16.04      | ✓  |      ✓      |    ✓     |              |   ✓    |
-| **Ubuntu Mate** |    |             |          |              |        |
-|      16.04      | ✓  |             |          |      ✓       |   ✓    |
-|  **Raspbian**   |    |             |          |              |        |
-|     Wheezy      | ✓  |             |          |      ✓       |        |
-|     Jessie      | ✓  |             |          |      ✓       |        |
-|     Stretch     | ✓  |             |          |      ✓       |        |
-|    **macOS**    |    |             |          |              |        |
-|     Sierra      | ✓  |             |          |              |        |
-
-  > ✓: Test Successful  
-  > X: Test Failed  
-  > Blank: Not tested yet
-
-The DYNAMIXEL SDK also supports various microcontroller boards through the Arduino IDE:
-
-* [OpenRB-150](/docs/en/parts/controller/openrb-150/)
-* [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/)
-* [OpenCM9.04](http://emanual.robotis.com/docs/en/parts/controller/opencm904/)
-* Most other Arduino boards.
-
-### [USB2DYNAMIXEL Driver Installation](#usb2dynamixel-driver-installation)
-
-* [Installation in Windows](#installation-in-windows)
-
-* [Installation in Linux](#installation-in-linux)
-
-**NOTE** : The FTDI driver may not be compatible with some devices.
+# [USB2DYNAMIXEL Driver Installation](#usb2dynamixel-driver-installation)
+**NOTE** : Recent Linux include the kernel which contains the FT232RL driver for the FTDI driver used by the U2D2. **Most Linux users won't need to install the driver manually.**
 {: .notice}
 
-#### [Installation in Windows](#installation-in-windows)
+Windows users need to install the FTDI driver to enable USB-to-serial communication.  
+Install the latest VCP driver from the [FTDI Driver Download page](http://www.ftdichip.com/Drivers/VCP.htm).  
 
-If you installed ROBOTIS' R+ software - a suite of software that allows you to easily interface with all of ROBOTIS’ hardware, including ROBOTIS controllers, DYNAMIXEL's, sensors, and other hardware components - the FTDI driver will be automatically installed. 
+# [Connecting The Motor](#connecting-the-motor)
+Please use an SMPS that matches the operating voltage of the motor you are using.
+* 12V for `X Series` (also for `AX`, `EX`, `RX`, and `MX` series)
+* 24V for `P` and `Y` series  
 
-If you don't want to install R+, install the latest VCP driver from the [FTDI Driver Download page](http://www.ftdichip.com/Drivers/VCP.htm).
+Connect as shown below.  
+You can either daisy-chain the U2D2 and Power Hub Board (PHB) to the motor, or connect them separately.  
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_connection.png)
 
-##### Manually Installing the FTDI Driver
- 
-* If the FTDI driver isn't automatically installed, the Found New Hardware Wizard will pop up after connecting the U2D2 to your controller. Select **Install from a list or specific location** and click **Next**.
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_01.png)
+**NOTE** : You should match the port according to whether your DYNAMIXEL supports TTL or RS485.  
+`TTL`: TTL-based DYNAMIXEL's have 3 pin connectors  
+`RS485`: RS485-based DYNAMIXEL's have 4 pin connectors.  
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_3pin_4pin.png)
+{: .notice--info}  
 
-* Choose your driver's directory.  
-a. The driver must be in the **LN101** folder of the R+ installation folder.  
-b. If you don't want to install R+, install the latest VCP driver from the [FTDI Driver Download page](http://www.ftdichip.com/Drivers/VCP.htm).
- 
-* Click **Next** to start the installation. 
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_03.png)
-
-* Click **Finish** to complete installation of the **USB Serial Port** driver. 
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_06.png)
-
-#### [Installation in Linux](#installation-in-linux)
-
-Recent Linux releases include the kernel which contains the FT232RL driver for the FTDI driver used by the U2D2. **Most users won't need to install the driver manually.**
-
-## [DYNAMIXEL](#dynamixel)
-
-The SDK and SDK examples were developed based on the MX-28 and H54-200 PRO DYNAMIXEL's. 
-
-SDK examples were tested with the following DYNAMIXEL's: 
-
-|              | AX  | EX  | RX  | MX  | MX  |  X  |  X  | PRO |   P  |   Y  |
-|:------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:----:|:----:|
-| **Protocol** | 1.0 | 1.0 | 1.0 | 1.0 | 2.0 | 1.0 | 2.0 | 2.0 | 2.0  | 2.0  |
-|              |     |     |     |     |     |     |     |     |      |      |
-|  **Series**  |     |     |     |     |     |     |     |     |      |      |
-|      12      |  ✓  |  -  |  -  |  ✓  |  -  |  -  |  -  |  -  |  -   |  -   |
-|      18      |  ✓  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -   |  -   |
-|      24      |  -  |  -  |  ✓  |  ✓  |  ✓  |  -  |  -  |  -  |  -   |  -   |
-|      28      |  -  |  -  |  ✓  |  ✓  |  ✓  |  -  |  -  |  -  |  -   |  -   |
-|      64      |  -  |  -  |  ✓  |  ✓  |  ✓  |  -  |  -  |  -  |  -   |  -   |
-|     106      |  -  |  ✓  |  -  |  ✓  |  ✓  |  -  |  -  |  -  |  -   |  -   |
-|     320      |  -  |  -  |  -  |  -  |  -  |  -  |  ✓  |  -  |  -   |  -   |
-|     330      |  -  |  -  |  -  |  -  |  -  |  ✓  |  ✓  |  -  |  -   |  -   |
-|     430      |  -  |  -  |  -  |  -  |  -  |  ✓  |  ✓  |  -  |  -   |  -   |
-|     540      |  -  |  -  |  -  |  -  |  -  |  ✓  |  ✓  |  -  |  -   |  -   |
-|              |     |     |     |     |     |     |     |     |      |      |
-|      42      |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  ✓  |  ✓   |  -   |
-|      54      |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  ✓  |  ✓   |  -   |
-|              |     |     |     |     |     |     |     |     |      |      |
-|      70      |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -   |  ✓   |
-|      80      |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  -   |  ✓   |
-
-> ✓ : Compatible  
-> X : Incompatible  
-> -- : Doesn't exist  
-> blank : Not tested yet
-
-### [Power Requirements](#power-requirements)
-
-* 12V for X Series (also for AX, EX, RX, and MX series)
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/1.png)
-
-* 24V for P and Y series
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/2.png)
-
-### [DYNAMIXEL Parameters](#dynamixel-parameters)
-
-To run the SDK examples, the following DYNAMIXEL parameters may need to be changed: 
-* ID = 1 (and 2, when the example uses two DYNAMIXELs) 
-* Baud Rate = 57600 bps (baud value = 34 for MX, 1 for PRO.)
-
-To change DYNAMIXEL parameters, use [DYNAMIXEL Wizard](http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/#introduction) or [RoboPlus Manager](http://emanual.robotis.com/docs/en/software/rplus2/manager/).
-
-![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/3.png)
-
-![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/4.png)
+# [Verifying Connection](#verifying-connection)
+Once all the above settings are complete, you can use the `Dynamixel wizard 2.0` to ensure the connection is working properly  
+1. [Install Dynamixel Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#software-installation)
+2. [Scan the motor and Operate it](/docs/en/software/dynamixel/dynamixel_wizard2/#basic-features)
+3. [If the firmware is outdated, update it.](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update)
