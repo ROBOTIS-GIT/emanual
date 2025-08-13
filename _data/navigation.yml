@@ -29648,14 +29648,14 @@ dynamixel_sdk:
       url: /software/dynamixel/dynamixel_sdk/overview/#supported-languages
 ##
   - title: "Quick Start Guide"
-    url: /software/dynamixel/dynamixel_sdk/quick_start_guide/
+    url: /software/dynamixel/dynamixel_sdk/quick_start_guide/#quick-start-guide
     children:
     - title: "Download SDK"
-      url: /software/dynamixel/dynamixel_sdk/download/
+      url: /software/dynamixel/dynamixel_sdk/download/#download-sdk
     - title: "Device Setup"
-      url: /software/dynamixel/dynamixel_sdk/device_setup/
+      url: /software/dynamixel/dynamixel_sdk/device_setup/#device-setup
     - title: "Library Setup"
-      url: /software/dynamixel/dynamixel_sdk/library_setup/
+      url: /software/dynamixel/dynamixel_sdk/library_setup/#library-setup
       children:
       - title: "C Windows"
         url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/#c-windows
@@ -29666,7 +29666,7 @@ dynamixel_sdk:
       - title: "CPP Windows"
         url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_windows/#cpp-windows
       - title: "CPP Linux"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_linux
+        url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#library-setup-cpp-linux
       - title: "CPP macOS"
         url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_macos/#cpp-macos
       - title: "Csharp Windows"
@@ -29695,17 +29695,17 @@ dynamixel_sdk:
       url: /software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/
       children:
       - title: "CPP Basic Read/Write"
-        url: /software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/basic_read_write_tutorial_cpp/
+        url: /software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/basic_read_write_tutorial_cpp/#basic-read-write-tutorial
     - title: Sync Read/Write tutorial
       url: /software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/
       children:
       - title: "CPP Sync Read/Write"
-        url: /software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_cpp/
+        url: /software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_cpp/#sync-read-write-tutorial
     - title: Bulk Read/Write tutorial
       url: /software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/
       children:
       - title: "CPP Bulk Read/Write"
-        url: /software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_cpp/
+        url: /software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_cpp/#bulk-read-write-tutorial
   - title: "Sample Code"
     url: /software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/
     children:

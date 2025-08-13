@@ -21,4 +21,4 @@ sidebar:
 </style>
 
 - Sync Read/Write Tutorial provides examples of how to write the code to sync_read and sync_write data to DYNAMIXEL motors.
-  - [C++](/docs/en/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_cpp/)
+  - [C++](/docs/en/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_cpp/#sync-read-write-tutorial)

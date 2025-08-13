@@ -14,7 +14,7 @@ sidebar:
 {::options parse_block_html="true" /}
 
 <div class="main-header">
-  <h1>Bulk Read/Write Tutorial <C++></h1>
+  <h1 id="bulk-read-write-tutorial">Bulk Read/Write Tutorial <C++></h1>
 </div>
 <style>
   .main-header h1::before {

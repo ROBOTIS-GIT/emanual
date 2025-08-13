@@ -11,8 +11,10 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+{::options parse_block_html="true" /}
+
 <div class="main-header">
-  <h1>Library Setup</h1>
+  <h1 id="library-setup">Library Setup</h1>
 </div>
 <style>
   .main-header h1::before {
@@ -25,7 +27,7 @@ sidebar:
   - [C Linux](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/c_linux)
   - [C macOS](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/c_macos)
   - [C++ Windows](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_windows)
-  - [C++ Linux](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_linux)
+  - [C++ Linux](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#library-setup-cpp-linux)
   - [C++ macOS](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_macos)
   - [Python Windows](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/python_windows)
   - [Python Linux](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/python_linux)

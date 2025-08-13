@@ -12,7 +12,7 @@ sidebar:
 ---
 
 <div class="main-header">
-  <h1>Bulk Read/Write Tutorial</h1>
+  <h1 id="bulk-read-write-tutorial">Bulk Read/Write Tutorial</h1>
 </div>
 <style>
   .main-header h1::before {
@@ -21,4 +21,4 @@ sidebar:
 </style>
 
 - Bulk Read/Write Tutorial provides examples of how to write the code to bulk_read and bulk_write data to DYNAMIXEL motors.
-  - [C++](/docs/en/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_cpp/)
+  - [C++](/docs/en/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_cpp/#bulk-read-write-tutorial)

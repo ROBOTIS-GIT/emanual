@@ -11,8 +11,10 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+{::options parse_block_html="true" /}
+
 <div class="main-header">
-  <h1>Device Setup</h1>
+  <h1 id="device-setup">Device Setup</h1>
 </div>
 <style>
   .main-header h1::before {
@@ -34,7 +36,7 @@ This section provides instructions on how to configure the device.
 
 In order to use DYNAMIXEL with a PC, you need a `U2D2` to convert USB signals to `TTL` or `RS-485`.  
 The U2D2 does not supply power to the DYNAMIXEL, so a `U2D2 Power Hub Board` is also required to provide power.  
-![](/assets/images/parts/interface/u2d2_01.png)  
+![](/assets/images/parts/interface/u2d2_01.jpg)  
 
 # [USB2DYNAMIXEL Driver Installation](#usb2dynamixel-driver-installation)
 **NOTE** : Recent Linux include the kernel which contains the FT232RL driver for the FTDI driver used by the U2D2. **Most Linux users won't need to install the driver manually.**

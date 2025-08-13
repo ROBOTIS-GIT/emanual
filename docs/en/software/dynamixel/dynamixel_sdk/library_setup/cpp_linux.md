@@ -11,8 +11,10 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+{::options parse_block_html="true" /}
+
 <div class="main-header">
-  <h1>Library Setup <C++ Linux></h1>
+  <h1 id="library-setup-cpp-linux">Library Setup <C++ Linux></h1>
 </div>
 <style>
   .main-header h1::before {
