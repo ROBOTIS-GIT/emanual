@@ -18,7 +18,7 @@ This will ensure you have the latest and most compatible version for your system
 #### Clone the Repository
 
 ```bash
-$ mkdir -p ros2_ws/src
+$ mkdir -p ~/ros2_ws/src
 $ cd ~/ros2_ws/src
 $ git clone -b jazzy https://github.com/ROBOTIS-GIT/DynamixelSDK.git && \
   git clone -b jazzy https://github.com/ROBOTIS-GIT/dynamixel_interfaces.git && \
