@@ -11,6 +11,8 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+{::options parse_block_html="true" /}
+
 <div class="main-header">
   <h1>Basic Read/Write Tutorial <C++></h1>
 </div>
@@ -41,21 +43,47 @@ $ code my_read_write.cpp
 - Add `dynamixel_sdk/dynamixel_sdk.h` to the top of your CPP file. This header file includes all necessary functions and classes from the DYNAMIXEL SDK.
 ```cpp
   #include "dynamixel_sdk/dynamixel_sdk.h"
-  #include <iostream> // For standard input/output
-  #include <unistd.h> // For usleep function
+  #include <iostream>
 ```
 
 ### [Initialize Handler Objects](#make-objects)
-- Make main function and initialize the `PortHandler` and `PacketHandler`. Set the `port name` and `baud rate` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `57600` as the baud rate.
+- Make main function and initialize the `PortHandler` and `PacketHandler`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `2.0` as the protocol version.
 ```cpp
   int main(){
     dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler("/dev/ttyUSB0"); // your dxl port name
     dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(2.0); //protocol version
+```
+
+### [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
+- Open the port and set the baud rate. The example below uses `57600` as the baud rate.
+```cpp
     portHandler->openPort();
     portHandler->setBaudRate(57600);
 ```
+<details>
+<summary>
+  ![](/assets/images/icon_unfold.png) **ERROR LOGGING**
+</summary>
 
-### [Write data to turn torque on](#write-data-to-turn-torque-on)
+`openPort()` and `setBaudRate()` functions return a boolean value indicating success or failure. If you want to check for failure, you can write like below to print an error message and exit the program.
+```cpp
+  if (portHandler->openPort()) {
+    std::cout << "Succeeded to open the port!\n";
+  } else {
+    std::cout << "Failed to open the port!\n";
+    return 0;
+  }
+
+  if (portHandler->setBaudRate(57600)) {
+    std::cout << "Succeeded to change the baudrate!\n";
+  } else {
+    std::cout << "Failed to change the baudrate!\n";
+    return 0;
+  }
+```
+</details>
+
+### [Write data to enable torque](#write-data-to-enable-torque)
 - Turn on the torque of the DYNAMIXEL.
   ```cpp
     uint8_t dxl_id = 1;
@@ -66,8 +94,32 @@ $ code my_read_write.cpp
   - `id` : Dynamixel ID you set
   - `address` : The address of the data you want to write. Refer to the [**Control Table**](/docs/en/dxl/x/xc430-w240/#control-table) of your DYNAMIXEL model, which can be found in its **specification manual** or **Dynamixel Wizard 2.0**. In this example, we use X series.
   - `data` : The data you want to write to the specified address.
+<details>
+<summary>
+  ![](/assets/images/icon_unfold.png) **ERROR LOGGING**
+</summary>
 
-### [Get User Input and Write Data](#get-user-input-and-write-data)
+`write1ByteTxRx()` returns a communication result. If you want to check the communication result and error, you can write the code as shown below.  
+The `dxl_comm_result`, `dxl_error` variable should be declared beforehand.
+```cpp
+  uint8_t dxl_error = 0;
+  int dxl_comm_result = COMM_TX_FAIL;  //COMM_TX_FAIL is a constant defined in the SDK
+  ...
+```
+```cpp
+  dxl_comm_result = packetHandler->write1ByteTxRx(portHandler, dxl_id, torque_on_address, data, &dxl_error);
+
+  if (dxl_comm_result != COMM_SUCCESS) {
+    std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+  } else if (dxl_error != 0) {
+    std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
+  } else {
+    std::cout << "Dynamixel#1 has been successfully connected \n";
+  }
+```
+</details>
+
+### [Get User Input](#get-user-input-and-write-data)
 - Get user input for the target position.
 ```cpp
     int target_position;
@@ -88,28 +140,68 @@ $ code my_read_write.cpp
       uint16_t goal_position_address = 116;
       packetHandler->write4ByteTxRx(portHandler, dxl_id, goal_position_address, uint32_t(target_position));
 ```
+<details>
+<summary>
+  ![](/assets/images/icon_unfold.png) **ERROR LOGGING**
+</summary>
 
-### [Read data to get current position](#read-data-to-get-current-position)
-- Check if the DYNAMIXEL is moving before read the motor position.
+`write4ByteTxRx()` returns a communication result. If you want to check the communication result and error, you can write the code as shown below.  
+The `dxl_comm_result`, `dxl_error` variable should be declared beforehand.
 ```cpp
-      usleep(100000);
-      while(true){
-        uint16_t moving_address = 122;
-        uint8_t moving;
-        packetHandler->read1ByteTxRx(portHandler, dxl_id, moving_address, &moving);
-        if(moving == 0) break;
-        usleep(100000);
-      }
+  uint8_t dxl_error = 0;
+  int dxl_comm_result = COMM_TX_FAIL;  //COMM_TX_FAIL is a constant defined in the SDK
+  ...
 ```
+```cpp
+  dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, dxl_id, goal_position_address, uint32_t(target_position), &dxl_error);
+  if (dxl_comm_result != COMM_SUCCESS) {
+    std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+  } else if (dxl_error != 0) {
+    std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
+  }
+```
+</details>
 
-- Read the current position from the DYNAMIXEL and close the port.
+### [Read data from DYNAMIXEL](#read-data-from-dynamixel)
+- Read the current position from the DYNAMIXEL.
 ```cpp
       uint16_t present_position_address = 132;
       uint32_t present_position;
-      packetHandler->read4ByteTxRx(portHandler, dxl_id, present_position_address, &present_position);
-      std::cout << "Current Position: " << present_position << std::endl;
+      do {
+        packetHandler->read4ByteTxRx(portHandler, dxl_id, present_position_address, &present_position);
+        std::cout << "Current Position: " << present_position << std::endl;
+      } while (abs(target_position - present_position) > 10);
     }
+```
+<details>
+<summary>
+  ![](/assets/images/icon_unfold.png) **ERROR LOGGING**
+</summary>
+
+`read4ByteTxRx()` returns a communication result. If you want to check the communication result and error, you can write the code as shown below.  
+The `dxl_comm_result`, `dxl_error` variable should be declared beforehand.
+```cpp
+  uint8_t dxl_error = 0;
+  int dxl_comm_result = COMM_TX_FAIL;  //COMM_TX_FAIL is a constant defined in the SDK
+  ...
+```
+```cpp
+  dxl_comm_result = packetHandler->read4ByteTxRx(portHandler, dxl_id, present_position_address, &present_position, &dxl_error);
+  if (dxl_comm_result != COMM_SUCCESS) {
+    std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+  } else if (dxl_error != 0) {
+    std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
+  }
+```
+</details>
+
+- Turn off the torque when while loop is exited. And close the port.
+```cpp
+    data = 0; // 0 to turn off the torque
+    packetHandler->write1ByteTxRx(portHandler, dxl_id, torque_on_address, data);
     portHandler->closePort();
+
+    return 0;
   }
 ```
 
@@ -119,44 +211,3 @@ $ code my_read_write.cpp
 $ g++ my_read_write.cpp -o my_read_write -ldxl_x64_cpp
 $ ./my_read_write
 ```
-
-# [Error Logging](#error-logging)
-
-## [Error when opening port or setting baud rate](#error-when-opening-port-or-setting-baud-rate)
-- `openPort()` and `setBaudRate()` functions return a boolean value indicating success or failure. If you want to check for failure, you can write like below to print an error message and exit the program.
-```cpp
-  if (portHandler->openPort())
-  {
-    printf("Succeeded to open the port!\n");
-  }
-  else
-  {
-    printf("Failed to open the port!\n");
-    return 0;
-  }
-
-  if (portHandler->setBaudRate(57600))
-  {
-    printf("Succeeded to change the baudrate!\n");
-  }
-  else
-  {
-    printf("Failed to change the baudrate!\n");
-    return 0;
-  }
-```
-<br>
-
-## [Error when writing data](#error-when-writing-data)
-- `write` functions return an int type result code. If you want to check for failure, you can write like below to print an error message and exit the program. You can use the `getTxRxResult` and `getRxPacketError` functions to get a string representation of the error code. Add the `dxl_comm_result` and `dxl_error` variables when **writing data(ex. write4ByteTxRx)** to the DYNAMIXEL.
-```cpp
-  int dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, dxl_id, goal_position_address, uint32_t(target_position), &dxl_error);
-  if (dxl_comm_result != COMM_SUCCESS) {
-  std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
-  } else if (dxl_error != 0) {
-  std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
-  }
-```
-  - If `dxl_comm_result` is not `COMM_SUCCESS`, it indicates a communication error.
-  - If `dxl_error` is not 0, it indicates an error in the DYNAMIXEL itself.
-

@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sync_read_write_tutorial_cpp
+ref: dynamixel_sdk_bulk_read_write_tutorial_cpp
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_cpp/
+permalink: /docs/en/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_cpp/
 sidebar:
   title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
@@ -14,7 +14,7 @@ sidebar:
 {::options parse_block_html="true" /}
 
 <div class="main-header">
-  <h1>Sync Read/Write Tutorial <C++></h1>
+  <h1>Bulk Read/Write Tutorial <C++></h1>
 </div>
 <style>
   .main-header h1::before {
@@ -22,21 +22,22 @@ sidebar:
   }
 </style>
 
-This section provides examples of how to write code in C++ to sync_read and sync_write data to DYNAMIXEL motors.
+This section provides examples of how to write code in C++ to bulk_read and bulk_write data to DYNAMIXEL motors.
 
 **NOTE**: This tutorial is based on **XL-series** DYNAMIXEL motors and uses **Protocol 2.0**.
 {: .notice--warning}
 
-# [Sync_Read/Write Example](#sync-read-write-example)
-Sync Read/Write allows simultaneous access to the same address on multiple DYNAMIXEL motors.  
-We need two motors to operate simultaneously.  
+# [Bulk_Read/Write Example](#bulk-read-write-example)
+**Bulk Read/Write** enables simultaneous control of multiple motors.  
+Unlike **Sync Read/Write**, which can only access the same address across multiple motors, **Bulk Read/Write** can access different addresses on multiple motors in a single instruction.  
+In this example, we need two motors to operate simultaneously.
 
 ## [Make cpp file](#make-cpp-file)
 - Create a CPP file and open it in a text editor.
 ```bash
 $ mkdir -p my_dxl_project/src
 $ cd my_dxl_project/src
-$ code my_sync_read_write.cpp
+$ code my_bulk_read_write.cpp
 ```
 
 ## [Source Code](#source-code)
@@ -49,17 +50,13 @@ $ code my_sync_read_write.cpp
 ```
 
 ### [Initialize Handler Objects](#make-objects)
-- Make main function and initialize the `PortHandler`,`PacketHandler`,`GroupSyncWrite` and `GroupSyncRead`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `2.0` as the protocol version.
+- Make main function and initialize the `PortHandler`,`PacketHandler`,`GroupBulkWrite` and `GroupBulkRead`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `2.0` as the protocol version.
 ```cpp
   int main(){
     dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler("/dev/ttyUSB0"); // your dxl port name
     dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(2.0); //protocol version
-
-    uint16_t goal_position_address = 116;
-    uint16_t present_position_address = 132;
-    uint16_t data_length_4byte = 4;
-    dynamixel::GroupSyncWrite groupSyncWrite(portHandler, packetHandler, goal_position_address, data_length_4byte);
-    dynamixel::GroupSyncRead groupSyncRead(portHandler, packetHandler, present_position_address, data_length_4byte);
+    dynamixel::GroupBulkWrite groupBulkWrite(portHandler, packetHandler);
+    dynamixel::GroupBulkRead groupBulkRead(portHandler, packetHandler);
 ```
 
 ### [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
@@ -91,7 +88,7 @@ $ code my_sync_read_write.cpp
 ```
 </details>
 
-### [Write data to turn torque on](#write-data-to-turn-torque-on)
+### [Write data to enable torque](#write-data-to-enable-torque)
 - Turn on the torque of the DYNAMIXEL.
   ```cpp
     uint8_t dxl_id1 = 1;
@@ -102,7 +99,7 @@ $ code my_sync_read_write.cpp
     packetHandler->write1ByteTxRx(portHandler, dxl_id2, torque_on_address, data);
   ```
   - `id` : Dynamixel ID you set
-  - `address` : The address of the data you want to write. Refer to the [**Control Table**](/docs/en/dxl/x/xc430-w240/#control-table) of your DYNAMIXEL model, which can be found in its **specification manual** or **Dynamixel Wizard 2.0**. In this example, we use X series.
+  - `address` : The address of the data you want to write. Refer to the [**Control Table**](/docs/en/dxl/x/xc430-w240/#control-table) of your DYNAMIXEL model, which can be found in its **specification manual** or **Dynamixel Wizard 2.0**. In this example, we use XL series.
   - `data` : The data you want to write to the specified address.
 <details>
 <summary>
@@ -137,11 +134,16 @@ The `dxl_comm_result`, `dxl_error` variable should be declared beforehand.
 ```
 </details>
 
-### [Add parameters to GroupSyncRead](#add-parameters-to-groupsyncread)
-- Add the DYNAMIXEL IDs to the `GroupSyncRead`.
+### [Add Parameters to GroupBulkRead](#add-parameters-to-groupbulkread)
+- Add the DYNAMIXEL IDs and addresses to access to the `GroupBulkRead`.
 ```cpp
-    groupSyncRead.addParam(dxl_id1);
-    groupSyncRead.addParam(dxl_id2);
+    uint16_t present_position_address = 132;
+    uint16_t data_length_4byte = 4;
+    groupBulkRead.addParam(dxl_id1, present_position_address, data_length_4byte);
+
+    uint16_t led_address = 65;
+    uint16_t data_length_1byte = 1;
+    groupBulkRead.addParam(dxl_id2, led_address, data_length_1byte);
 ```
 <details>
 <summary>
@@ -154,25 +156,25 @@ The `dxl_addparam_result` variable should be declared beforehand.
   bool dxl_addparam_result = false;
 ```
 ```cpp
-  dxl_addparam_result = groupSyncRead.addParam(dxl_id1);
+  dxl_addparam_result = groupBulkRead.addParam(dxl_id1, present_position_address, data_length_4byte);
   if (!dxl_addparam_result) {
-    std::cout <<"[ID:" << (int)dxl_id1  <<"]groupSyncRead addparam failed" << std::endl;
+    std::cout <<"[ID:" << (int)dxl_id1  <<"]groupBulkRead addparam failed" << std::endl;
     return 0;
   }
 
-  dxl_addparam_result = groupSyncRead.addParam(dxl_id2);
+  dxl_addparam_result = groupBulkRead.addParam(dxl_id2, led_address, data_length_1byte);
   if (!dxl_addparam_result) {
-    std::cout <<"[ID:" << (int)dxl_id2  <<"]groupSyncRead addparam failed" << std::endl;
+    std::cout <<"[ID:" << (int)dxl_id2  <<"]groupBulkRead addparam failed" << std::endl;
     return 0;
   }
 ```
 </details>
 
-
 ### [Get User Input and Set Data](#get-user-input-and-write-data)
 - Get user input for the target position.
 ```cpp
-    int target_position;
+    int target_position = 0;
+    uint8_t dxl2_led_value_read = 0;
     while(true){
       std::cout << "Enter target position (0 ~ 4095): ";
       std::cin >> target_position;
@@ -183,21 +185,30 @@ The `dxl_addparam_result` variable should be declared beforehand.
         continue;
       }
 ```
-- Since `addParam()` requires a `uint8_t *` as its input, the data must be provided as a byte array.
+- Since `addParam()` requires a `uint8_t *` as its input, the data must be provided as a byte array. Also set the LED data to toggle the LED on the second DYNAMIXEL.
 ```cpp
       uint8_t param_goal_position[4];
       param_goal_position[0] = DXL_LOBYTE(DXL_LOWORD(target_position));
       param_goal_position[1] = DXL_HIBYTE(DXL_LOWORD(target_position));
       param_goal_position[2] = DXL_LOBYTE(DXL_HIWORD(target_position));
       param_goal_position[3] = DXL_HIBYTE(DXL_HIWORD(target_position));
+
+      uint8_t led_data = 0;
+      if (dxl2_led_value_read == 0){
+        led_data = 1;
+      } else {
+        led_data = 0;
+      }
 ```
-### [Add parameters to GroupSyncWrite](#add-parameters-to-groupsyncwrite)
+
+### [Add parameter to GroupBulkWrite and Write Data](#add-parameters-to-groupbulkwrite)
 - Add parameter to the `GroupBulkWrite` and tranfer the data to the DYNAMIXEL.
 ```cpp
-      groupSyncWrite.addParam(dxl_id1, param_goal_position);
-      groupSyncWrite.addParam(dxl_id2, param_goal_position);
-      groupSyncWrite.txPacket();
-      groupSyncWrite.clearParam();
+      uint16_t goal_position_address = 116;
+      groupBulkWrite.addParam(dxl_id1, goal_position_address, data_length_4byte, param_goal_position);
+      groupBulkWrite.addParam(dxl_id2, led_address, data_length_1byte, &led_data);
+      groupBulkWrite.txPacket();
+      groupBulkWrite.clearParam();
 ```
 <details>
 <summary>
@@ -211,39 +222,36 @@ The `dxl_addparam_result`, `dxl_comm_result` variables should be declared before
   int dxl_comm_result = COMM_TX_FAIL;  //COMM_TX_FAIL is a constant defined in the SDK
 ```
 ```cpp
-  dxl_addparam_result = groupSyncWrite.addParam(dxl_id1, param_goal_position);
+  dxl_addparam_result = groupBulkWrite.addParam(dxl_id1, goal_position_address, data_length_4byte, param_goal_position);
   if (!dxl_addparam_result) {
-    std::cout <<"[ID:" << (int)dxl_id1  <<"]groupSyncWrite addparam failed" << std::endl;
-    return 0;
-  }
-  dxl_addparam_result = groupSyncWrite.addParam(dxl_id2, param_goal_position);
-  if (!dxl_addparam_result) {
-    std::cout <<"[ID:" << (int)dxl_id2  <<"]groupSyncWrite addparam failed" << std::endl;
+    std::cout <<"[ID:" << (int)dxl_id1  <<"]groupBulkWrite addparam failed" << std::endl;
     return 0;
   }
 
-  dxl_comm_result = groupSyncWrite.txPacket();
+  dxl_addparam_result = groupBulkWrite.addParam(dxl_id2, led_address, data_length_1byte, &led_data);
+  if (!dxl_addparam_result) {
+    std::cout <<"[ID:" << (int)dxl_id2  <<"]groupBulkWrite addparam failed" << std::endl;
+    return 0;
+  }
+
+  dxl_comm_result = groupBulkWrite.txPacket();
   if (dxl_comm_result != COMM_SUCCESS) {
     std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
   }
 ```
 </details>
 
-### [Read data to get current position](#read-data-to-get-current-position)
-- Read the current position from the DYNAMIXEL until it reaches the target position.
+### [Read data from DYNAMIXEL](#read-data-from-dynamixel)
+- Read the current position and LED data from the DYNAMIXEL until it reaches the target position.
 ```cpp
       int dxl1_present_position;
-      int dxl2_present_position;
-      do {
-        groupSyncRead.txRxPacket();
-        dxl1_present_position = groupSyncRead.getData(dxl_id1, present_position_address, data_length_4byte);
-        dxl2_present_position = groupSyncRead.getData(dxl_id2, present_position_address, data_length_4byte);
-        printf("[ID:%03d] GoalPos:%03d  PresPos:%03d\t[ID:%03d] GoalPos:%03d  PresPos:%03d\n", dxl_id1, target_position, dxl1_present_position, dxl_id2, target_position, dxl2_present_position);
-      } while((abs(target_position - dxl1_present_position) > 10) || (abs(target_position - dxl2_present_position) > 10));
+      do{
+        groupBulkRead.txRxPacket();
+        dxl1_present_position = groupBulkRead.getData(dxl_id1, present_position_address, data_length_4byte);
+        dxl2_led_value_read = groupBulkRead.getData(dxl_id2, led_address, data_length_1byte);
+        printf("[ID:%03d] Present Position : %d \t [ID:%03d] LED Value: %d\n", dxl_id1, dxl1_present_position, dxl_id2, dxl2_led_value_read);
+      } while (abs(target_position - dxl1_present_position) > 10);
     }
-    portHandler->closePort();
-    return 0;
-  }
 ```
 <details>
 <summary>
@@ -257,30 +265,42 @@ The `dxl_getdata_result`, `dxl_comm_result` variables should be declared beforeh
   int dxl_comm_result = COMM_TX_FAIL;  //COMM_TX_FAIL is a constant defined in the SDK
 ```
 ```cpp
-  dxl_comm_result = groupSyncRead.txRxPacket();
+  dxl_comm_result = groupBulkRead.txRxPacket();
   if (dxl_comm_result != COMM_SUCCESS) {
     std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
   }
 ```
-You can also check if the data is available in the `GroupSyncRead` by using the `isAvailable()` function. If the data is not available, you can print an error message and exit the program.
+You can also check if the data is available in the `GroupBulkRead` by using the `isAvailable()` function. If the data is not available, you can print an error message and exit the program.
 ```cpp
-  dxl_getdata_result = groupSyncRead.isAvailable(dxl_id1, present_position_address, data_length_4byte);
+  dxl_getdata_result = groupBulkRead.isAvailable(dxl_id1, present_position_address, data_length_4byte);
   if (dxl_getdata_result != true) {
-    std::cout << "[ID:" << (int)dxl_id1 << "] groupSyncRead getdata failed" << std::endl;
+    std::cout << "[ID:" << (int)dxl_id1 << "] groupBulkRead getdata failed" << std::endl;
     return 0;
   }
 
-  dxl_getdata_result = groupSyncRead.isAvailable(dxl_id2, present_position_address, data_length_4byte);
+  dxl_getdata_result = groupBulkRead.isAvailable(dxl_id2, led_address, data_length_1byte);
   if (dxl_getdata_result != true) {
-    std::cout << "[ID:" << (int)dxl_id2 << "] groupSyncRead getdata failed" << std::endl;
+    std::cout << "[ID:" << (int)dxl_id2 << "] groupBulkRead getdata failed" << std::endl;
     return 0;
   }
 ```
 </details>
 
+- Turn off the torque when while loop is exited. And close the port.
+```cpp
+    data = 0; // 0 to turn off the torque
+    packetHandler->write1ByteTxRx(portHandler, dxl_id1, torque_on_address, data);
+    packetHandler->write1ByteTxRx(portHandler, dxl_id2, torque_on_address, data);
+    portHandler->closePort();
+
+    return 0;
+  }
+```
+
+
 ## [Compile and Run](#compile-and-run)
 - Compile the code using g++.
 ```bash
-$ g++ my_sync_read_write.cpp -o my_sync_read_write -ldxl_x64_cpp
-$ ./my_sync_read_write
+$ g++ my_bulk_read_write.cpp -o my_bulk_read_write -ldxl_x64_cpp
+$ ./my_bulk_read_write
 ```
