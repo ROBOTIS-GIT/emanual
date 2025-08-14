@@ -9,6 +9,8 @@ permalink: /docs/en/software/dynamixel/dynamixel_sdk/download/
 sidebar:
   title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
+product_group: dynamixel_sdk_quick_start_guide
+page_number: 2
 ---
 
 <div class="main-header">

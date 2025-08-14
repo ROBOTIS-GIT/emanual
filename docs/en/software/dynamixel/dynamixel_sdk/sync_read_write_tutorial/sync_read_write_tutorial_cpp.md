@@ -191,6 +191,7 @@ The `dxl_addparam_result` variable should be declared beforehand.
       param_goal_position[2] = DXL_LOBYTE(DXL_HIWORD(target_position));
       param_goal_position[3] = DXL_HIBYTE(DXL_HIWORD(target_position));
 ```
+
 ### [Add parameters to GroupSyncWrite](#add-parameters-to-groupsyncwrite)
 - Add parameter to the `GroupBulkWrite` and tranfer the data to the DYNAMIXEL.
 ```cpp

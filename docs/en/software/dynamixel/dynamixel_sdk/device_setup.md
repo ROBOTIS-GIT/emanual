@@ -9,6 +9,8 @@ permalink: /docs/en/software/dynamixel/dynamixel_sdk/device_setup/
 sidebar:
   title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
+product_group: dynamixel_sdk_quick_start_guide
+page_number: 3
 ---
 
 {::options parse_block_html="true" /}
@@ -50,9 +52,13 @@ Please use an SMPS that matches the operating voltage of the motor you are using
 * 12V for `X Series` (also for `AX`, `EX`, `RX`, and `MX` series)
 * 24V for `P` and `Y` series  
 
+## [How to connect the motor](#how-to-connect-the-motor)
 Connect as shown below.  
 You can either daisy-chain the U2D2 and Power Hub Board (PHB) to the motor, or connect them separately.  
-![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_connection.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_connection.png)  
+
+You can connect multiple DYNAMIXELs in a daisy-chain configuration as shown below.  
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_multi_connection.jpg)  
 
 
 **NOTE** : You should match the port according to whether your DYNAMIXEL supports TTL or RS485.  
@@ -63,6 +69,11 @@ You can either daisy-chain the U2D2 and Power Hub Board (PHB) to the motor, or c
 
 # [Verifying Connection](#verifying-connection)
 Once all the above settings are complete, you can use the `Dynamixel wizard 2.0` to ensure the connection is working properly  
+
+**DON'T SKIP THIS STEP!**  
+**For checking and setting Motor ID, this process is essential.**  
+{: .notice--warning}
 1. [Install Dynamixel Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#software-installation)
 2. [Scan the motor and Operate it](/docs/en/software/dynamixel/dynamixel_wizard2/#basic-features)
-3. [If the firmware is outdated, update it.](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update)
+3. [Check and set the motor ID](/docs/en/software/dynamixel/dynamixel_wizard2/#id-inspection)
+4. [If the firmware is outdated, update it.](/docs/en/software/dynamixel/dynamixel_wizard2/#firmware-update)

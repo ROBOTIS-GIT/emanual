@@ -9,6 +9,8 @@ permalink: /docs/en/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/
 sidebar:
   title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
+product_group: dynamixel_sdk_quick_start_guide
+page_number: 5
 ---
 
 <div class="main-header">
