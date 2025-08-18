@@ -14,7 +14,7 @@ page_number: 5
 ---
 
 <div class="main-header">
-  <h1>Sync Read/Write Tutorial</h1>
+  <h1>Basic Read/Write Tutorial</h1>
 </div>
 <style>
   .main-header h1::before {
@@ -22,5 +22,6 @@ page_number: 5
   }
 </style>
 
-- Sync Read/Write Tutorial provides examples of how to write the code to sync_read and sync_write data to DYNAMIXEL motors.
+- Basic Read/Write Tutorial provides examples of how to write the code to read and write data to DYNAMIXEL motors.
   - [C++](/docs/en/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/basic_read_write_tutorial_cpp/#basic-read-write-tutorial)
+  - [Python](/docs/en/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/basic_read_write_tutorial_python/#basic-read-write-tutorial)

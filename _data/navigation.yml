@@ -29696,16 +29696,22 @@ dynamixel_sdk:
       children:
       - title: "CPP Basic Read/Write"
         url: /software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/basic_read_write_tutorial_cpp/#basic-read-write-tutorial
+      - title: "Python Basic Read/Write"
+        url: /software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/basic_read_write_tutorial_python/#basic-read-write-tutorial
     - title: Sync Read/Write tutorial
       url: /software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/
       children:
       - title: "CPP Sync Read/Write"
         url: /software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_cpp/#sync-read-write-tutorial
+      - title: "Python Sync Read/Write"
+        url: /software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_python/#sync-read-write-tutorial
     - title: Bulk Read/Write tutorial
       url: /software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/
       children:
       - title: "CPP Bulk Read/Write"
         url: /software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_cpp/#bulk-read-write-tutorial
+      - title: "Python Bulk Read/Write"
+        url: /software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_python/#bulk-read-write-tutorial
   - title: "Sample Code"
     url: /software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/
     children:

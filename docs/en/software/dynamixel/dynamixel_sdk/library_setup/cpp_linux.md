@@ -72,7 +72,7 @@ $ make reinstall    # Reinstall by cleaning, rebuilding, and installing again
 ```
 {: .notice--success}
 
-# [Test with Sample Code](#test-with-sample-code)
+<!-- # [Test with Sample Code](#test-with-sample-code)
 
 The DYNAMIXEL SDK sample code for CPP uses a .so (Linux Shared Object) library built in the CPP language.
 
@@ -111,4 +111,4 @@ Press any key to continue. (Press [ESC] to exit)
 ...
 ...
 ```
-``` 
+```  -->

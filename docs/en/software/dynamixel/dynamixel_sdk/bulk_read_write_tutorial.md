@@ -24,3 +24,4 @@ page_number: 7
 
 - Bulk Read/Write Tutorial provides examples of how to write the code to bulk_read and bulk_write data to DYNAMIXEL motors.
   - [C++](/docs/en/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_cpp/#bulk-read-write-tutorial)
+  - [Python](/docs/en/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_python/#bulk-read-write-tutorial)

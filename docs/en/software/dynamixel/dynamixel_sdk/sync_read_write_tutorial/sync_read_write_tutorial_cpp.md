@@ -154,17 +154,17 @@ The `dxl_addparam_result` variable should be declared beforehand.
   bool dxl_addparam_result = false;
 ```
 ```cpp
-  dxl_addparam_result = groupSyncRead.addParam(dxl_id1);
-  if (!dxl_addparam_result) {
-    std::cout <<"[ID:" << (int)dxl_id1  <<"]groupSyncRead addparam failed" << std::endl;
-    return 0;
-  }
+    dxl_addparam_result = groupSyncRead.addParam(dxl_id1);
+    if (!dxl_addparam_result) {
+      std::cout <<"[ID:" << (int)dxl_id1  <<"]groupSyncRead addparam failed" << std::endl;
+      return 0;
+    }
 
-  dxl_addparam_result = groupSyncRead.addParam(dxl_id2);
-  if (!dxl_addparam_result) {
-    std::cout <<"[ID:" << (int)dxl_id2  <<"]groupSyncRead addparam failed" << std::endl;
-    return 0;
-  }
+    dxl_addparam_result = groupSyncRead.addParam(dxl_id2);
+    if (!dxl_addparam_result) {
+      std::cout <<"[ID:" << (int)dxl_id2  <<"]groupSyncRead addparam failed" << std::endl;
+      return 0;
+    }
 ```
 </details>
 
@@ -258,24 +258,24 @@ The `dxl_getdata_result`, `dxl_comm_result` variables should be declared beforeh
   int dxl_comm_result = COMM_TX_FAIL;  //COMM_TX_FAIL is a constant defined in the SDK
 ```
 ```cpp
-  dxl_comm_result = groupSyncRead.txRxPacket();
-  if (dxl_comm_result != COMM_SUCCESS) {
-    std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
-  }
+      dxl_comm_result = groupSyncRead.txRxPacket();
+      if (dxl_comm_result != COMM_SUCCESS) {
+        std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+      }
 ```
 You can also check if the data is available in the `GroupSyncRead` by using the `isAvailable()` function. If the data is not available, you can print an error message and exit the program.
 ```cpp
-  dxl_getdata_result = groupSyncRead.isAvailable(dxl_id1, present_position_address, data_length_4byte);
-  if (dxl_getdata_result != true) {
-    std::cout << "[ID:" << (int)dxl_id1 << "] groupSyncRead getdata failed" << std::endl;
-    return 0;
-  }
+      dxl_getdata_result = groupSyncRead.isAvailable(dxl_id1, present_position_address, data_length_4byte);
+      if (dxl_getdata_result != true) {
+        std::cout << "[ID:" << (int)dxl_id1 << "] groupSyncRead getdata failed" << std::endl;
+        return 0;
+      }
 
-  dxl_getdata_result = groupSyncRead.isAvailable(dxl_id2, present_position_address, data_length_4byte);
-  if (dxl_getdata_result != true) {
-    std::cout << "[ID:" << (int)dxl_id2 << "] groupSyncRead getdata failed" << std::endl;
-    return 0;
-  }
+      dxl_getdata_result = groupSyncRead.isAvailable(dxl_id2, present_position_address, data_length_4byte);
+      if (dxl_getdata_result != true) {
+        std::cout << "[ID:" << (int)dxl_id2 << "] groupSyncRead getdata failed" << std::endl;
+        return 0;
+      }
 ```
 </details>
 

@@ -85,12 +85,12 @@ $ code my_read_write.cpp
 
 ### [Write data to enable torque](#write-data-to-enable-torque)
 - Turn on the torque of the DYNAMIXEL.
-  ```cpp
+```cpp
     uint8_t dxl_id = 1;
     uint16_t torque_on_address = 64;
     uint8_t data = 1; // 1 to turn on the torque, 0 to turn off
     packetHandler->write1ByteTxRx(portHandler, dxl_id, torque_on_address, data);
-  ```
+```
   - `id` : Dynamixel ID you set
   - `address` : The address of the data you want to write. Refer to the [**Control Table**](/docs/en/dxl/x/xc430-w240/#control-table) of your DYNAMIXEL model, which can be found in its **specification manual** or **Dynamixel Wizard 2.0**. In this example, we use X series.
   - `data` : The data you want to write to the specified address.
@@ -153,12 +153,12 @@ The `dxl_comm_result`, `dxl_error` variable should be declared beforehand.
   ...
 ```
 ```cpp
-  dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, dxl_id, goal_position_address, uint32_t(target_position), &dxl_error);
-  if (dxl_comm_result != COMM_SUCCESS) {
-    std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
-  } else if (dxl_error != 0) {
-    std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
-  }
+    dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, dxl_id, goal_position_address, uint32_t(target_position), &dxl_error);
+    if (dxl_comm_result != COMM_SUCCESS) {
+      std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+    } else if (dxl_error != 0) {
+      std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
+    }
 ```
 </details>
 
@@ -186,12 +186,12 @@ The `dxl_comm_result`, `dxl_error` variable should be declared beforehand.
   ...
 ```
 ```cpp
-  dxl_comm_result = packetHandler->read4ByteTxRx(portHandler, dxl_id, present_position_address, &present_position, &dxl_error);
-  if (dxl_comm_result != COMM_SUCCESS) {
-    std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
-  } else if (dxl_error != 0) {
-    std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
-  }
+      dxl_comm_result = packetHandler->read4ByteTxRx(portHandler, dxl_id, present_position_address, &present_position, &dxl_error);
+      if (dxl_comm_result != COMM_SUCCESS) {
+        std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+      } else if (dxl_error != 0) {
+        std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
+      }
 ```
 </details>
 
