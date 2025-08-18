@@ -304,3 +304,146 @@ You can also check if the data is available in the `GroupBulkRead` by using the 
 $ g++ my_bulk_read_write.cpp -o my_bulk_read_write -ldxl_x64_cpp
 $ ./my_bulk_read_write
 ```
+
+# [Full Source Code](#full-source-code)
+```cpp
+#include "dynamixel_sdk/dynamixel_sdk.h"
+#include <iostream>
+
+int main(){
+  dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler("/dev/ttyUSB0");
+  dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(2.0);
+  dynamixel::GroupBulkWrite groupBulkWrite(portHandler, packetHandler);
+  dynamixel::GroupBulkRead groupBulkRead(portHandler, packetHandler);
+
+  uint8_t dxl_error = 0;
+  int dxl_comm_result = COMM_TX_FAIL;
+  bool dxl_addparam_result = false;
+  bool dxl_getdata_result = false;
+
+  if (portHandler->openPort()) {
+    std::cout << "Succeeded to open the port!\n";
+  } else {
+    std::cout << "Failed to open the port!\n";
+    return 0;
+  }
+
+  if (portHandler->setBaudRate(57600)) {
+    std::cout << "Succeeded to change the baudrate!\n";
+  } else {
+    std::cout << "Failed to change the baudrate!\n";
+    return 0;
+  }
+
+  uint8_t dxl_id1 = 1;
+  uint8_t dxl_id2 = 2;
+  uint16_t torque_on_address = 64;
+  uint8_t data = 1;
+  dxl_comm_result = packetHandler->write1ByteTxRx(portHandler, dxl_id1, torque_on_address, data, &dxl_error);
+  if (dxl_comm_result != COMM_SUCCESS) {
+    std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+  } else if (dxl_error != 0) {
+    std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
+  } else {
+    std::cout << "Dynamixel#1 has been successfully connected \n";
+  }
+
+  dxl_comm_result = packetHandler->write1ByteTxRx(portHandler, dxl_id2, torque_on_address, data, &dxl_error);
+  if (dxl_comm_result != COMM_SUCCESS) {
+    std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+  } else if (dxl_error != 0) {
+    std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
+  } else {
+    std::cout << "Dynamixel#2 has been successfully connected \n";
+  }
+
+  uint16_t present_position_address = 132;
+  uint16_t data_length_4byte = 4;
+  dxl_addparam_result = groupBulkRead.addParam(dxl_id1, present_position_address, data_length_4byte);
+  if (!dxl_addparam_result) {
+    std::cout <<"[ID:" << (int)dxl_id1  <<"]groupBulkRead addparam failed" << std::endl;
+    return 0;
+  }
+
+  uint16_t led_address = 65;
+  uint16_t data_length_1byte = 1;
+  dxl_addparam_result = groupBulkRead.addParam(dxl_id2, led_address, data_length_1byte);
+  if (!dxl_addparam_result) {
+    std::cout <<"[ID:" << (int)dxl_id2  <<"]groupBulkRead addparam failed" << std::endl;
+    return 0;
+  }
+
+  int target_position = 0;
+  uint8_t dxl2_led_value_read = 0;
+  while(true){
+    std::cout << "Enter target position (0 ~ 4095): ";
+    std::cin >> target_position;
+    if(target_position == -1){
+      break;
+    } else if(target_position < 0 || target_position > 4095){
+      std::cout << "Position must be between 0 and 4095." << std::endl;
+      continue;
+    }
+
+    uint8_t param_goal_position[4];
+    param_goal_position[0] = DXL_LOBYTE(DXL_LOWORD(target_position));
+    param_goal_position[1] = DXL_HIBYTE(DXL_LOWORD(target_position));
+    param_goal_position[2] = DXL_LOBYTE(DXL_HIWORD(target_position));
+    param_goal_position[3] = DXL_HIBYTE(DXL_HIWORD(target_position));
+
+    uint8_t led_data = 0;
+    if (dxl2_led_value_read == 0){
+      led_data = 1;
+    } else {
+      led_data = 0;
+    }
+
+    uint16_t goal_position_address = 116;
+    dxl_addparam_result = groupBulkWrite.addParam(dxl_id1, goal_position_address, data_length_4byte, param_goal_position);
+    if (!dxl_addparam_result) {
+      std::cout <<"[ID:" << (int)dxl_id1  <<"]groupBulkWrite addparam failed" << std::endl;
+      return 0;
+    }
+
+    dxl_addparam_result = groupBulkWrite.addParam(dxl_id2, led_address, data_length_1byte, &led_data);
+    if (!dxl_addparam_result) {
+      std::cout <<"[ID:" << (int)dxl_id2  <<"]groupBulkWrite addparam failed" << std::endl;
+      return 0;
+    }
+
+    dxl_comm_result = groupBulkWrite.txPacket();
+    if (dxl_comm_result != COMM_SUCCESS) {
+      std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+    }
+    groupBulkWrite.clearParam();
+
+    int dxl1_present_position;
+    do{
+      dxl_comm_result = groupBulkRead.txRxPacket();
+      if (dxl_comm_result != COMM_SUCCESS) {
+        std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+      }
+      dxl_getdata_result = groupBulkRead.isAvailable(dxl_id1, present_position_address, data_length_4byte);
+      if (dxl_getdata_result != true) {
+        std::cout << "[ID:" << (int)dxl_id1 << "] groupBulkRead getdata failed" << std::endl;
+        return 0;
+      }
+
+      dxl_getdata_result = groupBulkRead.isAvailable(dxl_id2, led_address, data_length_1byte);
+      if (dxl_getdata_result != true) {
+        std::cout << "[ID:" << (int)dxl_id2 << "] groupBulkRead getdata failed" << std::endl;
+        return 0;
+      }
+      dxl1_present_position = groupBulkRead.getData(dxl_id1, present_position_address, data_length_4byte);
+      dxl2_led_value_read = groupBulkRead.getData(dxl_id2, led_address, data_length_1byte);
+      printf("[ID:%03d] Present Position : %d \t [ID:%03d] LED Value: %d\n", dxl_id1, dxl1_present_position, dxl_id2, dxl2_led_value_read);
+    } while (abs(target_position - dxl1_present_position) > 10);
+  }
+  data = 0;
+  packetHandler->write1ByteTxRx(portHandler, dxl_id1, torque_on_address, data);
+  packetHandler->write1ByteTxRx(portHandler, dxl_id2, torque_on_address, data);
+  portHandler->closePort();
+
+  return 0;
+}
+```

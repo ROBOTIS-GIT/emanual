@@ -263,3 +263,127 @@ You can also check if the data is available in the `GroupBulkRead` by using the 
 ```bash
 $ python3 my_bulk_read_write.py
 ```
+
+# [Full Source Code](#full-source-code)
+```python
+#!/usr/bin/env python3
+
+from dynamixel_sdk import *
+
+
+portHandler = PortHandler('/dev/ttyUSB0')
+packetHandler = PacketHandler(2.0)
+
+goal_position_address = 116
+present_position_address = 132
+groupBulkWrite = GroupBulkWrite(portHandler, packetHandler)
+groupBulkRead = GroupBulkRead(portHandler, packetHandler)
+
+if portHandler.openPort():
+  print("Succeeded to open the port!")
+else:
+  print("Failed to open the port!")
+  exit()
+
+if portHandler.setBaudRate(57600):
+  print("Succeeded to change the baudrate!")
+else:
+  print("Failed to change the baudrate!")
+  exit()
+
+dxl_id1 = 1
+dxl_id2 = 2
+torque_on_address = 64
+data = 1
+dxl_comm_result, dxl_error = packetHandler.write1ByteTxRx(portHandler, dxl_id1, torque_on_address, data)
+if dxl_comm_result != COMM_SUCCESS:
+    print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+elif dxl_error != 0:
+    print("%s" % packetHandler.getRxPacketError(dxl_error))
+else:
+    print("Dynamixel#1 has been successfully connected")
+
+dxl_comm_result, dxl_error = packetHandler.write1ByteTxRx(portHandler, dxl_id2, torque_on_address, data)
+if dxl_comm_result != COMM_SUCCESS:
+    print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+elif dxl_error != 0:
+    print("%s" % packetHandler.getRxPacketError(dxl_error))
+else:
+    print("Dynamixel#2 has been successfully connected")
+
+present_position_address = 132
+data_length_4byte = 4
+dxl_addparam_result = groupBulkRead.addParam(dxl_id1, present_position_address, data_length_4byte)
+if dxl_addparam_result != True:
+    print("[ID:%03d] groupBulkRead addparam failed" % dxl_id1)
+    exit()
+
+led_address = 65
+data_length_1byte = 1
+dxl_addparam_result = groupBulkRead.addParam(dxl_id2, led_address, data_length_1byte)
+if dxl_addparam_result != True:
+    print("[ID:%03d] groupBulkRead addparam failed" % dxl_id2)
+    exit()
+
+dxl2_led_value_read = 0
+while True:
+    try:
+        target_position = int(input("Enter target position (0 ~ 4095, -1 to exit): "))
+    except ValueError:
+        print("Please enter an integer.")
+        continue
+
+    if target_position == -1:
+        break
+    elif target_position < 0 or target_position > 4095:
+        print("Position must be between 0 and 4095.")
+        continue
+
+    param_goal_position = [
+        DXL_LOBYTE(DXL_LOWORD(target_position)),
+        DXL_HIBYTE(DXL_LOWORD(target_position)),
+        DXL_LOBYTE(DXL_HIWORD(target_position)),
+        DXL_HIBYTE(DXL_HIWORD(target_position))
+    ]
+
+    if (dxl2_led_value_read == 0):
+        led_data = [1]
+    else:
+        led_data = [0]
+
+
+    dxl_addparam_result = groupBulkWrite.addParam(dxl_id1, goal_position_address, data_length_4byte, param_goal_position)
+    if not dxl_addparam_result:
+        print("[ID:%03d] groupBulkWrite addparam failed" % dxl_id1)
+        exit()
+
+    dxl_addparam_result = groupBulkWrite.addParam(dxl_id2, led_address, data_length_1byte, led_data)
+    if not dxl_addparam_result:
+        print("[ID:%03d] groupBulkWrite addparam failed" % dxl_id2)
+        exit()
+
+    dxl_comm_result = groupBulkWrite.txPacket()
+    if dxl_comm_result != COMM_SUCCESS:
+        print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+    groupBulkWrite.clearParam()
+
+    while True:
+        dxl_comm_result = groupBulkRead.txRxPacket()
+        if dxl_comm_result != COMM_SUCCESS:
+            print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+        dxl_getdata_result = groupBulkRead.isAvailable(dxl_id1, present_position_address, data_length_4byte)
+        if dxl_getdata_result != True:
+            print("[ID:%03d] groupBulkRead getdata failed" % dxl_id1)
+            quit()
+
+        dxl_getdata_result = groupBulkRead.isAvailable(dxl_id2, led_address, data_length_1byte)
+        if dxl_getdata_result != True:
+            print("[ID:%03d] groupBulkRead getdata failed" % dxl_id2)
+            quit()
+        dxl1_present_position = groupBulkRead.getData(dxl_id1, present_position_address, data_length_4byte)
+        dxl2_led_value_read = groupBulkRead.getData(dxl_id2, led_address, data_length_1byte)
+        print("[ID:%03d] Present Position : %d \t [ID:%03d] LED Value: %d" % (dxl_id1, dxl1_present_position, dxl_id2, dxl2_led_value_read))
+        if abs(target_position - dxl1_present_position) <= 10:
+            break
+portHandler.closePort()
+```
