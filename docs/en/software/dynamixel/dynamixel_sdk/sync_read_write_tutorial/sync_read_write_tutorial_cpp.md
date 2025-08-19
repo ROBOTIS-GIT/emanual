@@ -193,7 +193,7 @@ The `dxl_addparam_result` variable should be declared beforehand.
 ```
 
 ### [Add parameters to GroupSyncWrite](#add-parameters-to-groupsyncwrite)
-- Add parameter to the `GroupSyncWrite` and tranfer the data to the DYNAMIXEL.
+- Add parameter to the `GroupSyncWrite` and transfer the data to the DYNAMIXEL.
 ```cpp
       groupSyncWrite.addParam(dxl_id1, param_goal_position);
       groupSyncWrite.addParam(dxl_id2, param_goal_position);
