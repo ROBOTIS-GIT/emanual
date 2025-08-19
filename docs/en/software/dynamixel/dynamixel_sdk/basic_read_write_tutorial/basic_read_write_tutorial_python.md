@@ -29,7 +29,7 @@ This section provides examples of how to write code in Python to read and write 
 
 # [Read/Write Example](#read-write-example)
 
-## [Make python file](#make-cpp-file)
+## [Make python file](#make-python-file)
 - Create a python file and open it in a text editor.
 ```bash
 $ mkdir -p my_dxl_project/python

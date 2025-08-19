@@ -26,7 +26,7 @@ This section provides instructions on building the SDK.
 
 # [Install requirements](#install-requirements)
 
-- The DYNAMIXEL SKD requires GNU gcc ver. 5.4.0 20160609 or higher
+- The DYNAMIXEL SDK requires GNU gcc ver. 5.4.0 20160609 or higher
 - To check the version of your gcc compiler
 ``` bash
 $ gcc -v
@@ -61,6 +61,11 @@ $ ls
 libdxl_x86_cpp.so Makefile
 ```
 
+- Grant permission to access the port
+```bash
+$ sudo chmod 666 /dev/ttyUSB0
+```
+
 <br>
 - Common `make` commands for building the SDK
 ``` bash
@@ -71,44 +76,3 @@ $ make uninstall    # Remove files installed by 'make install' from the system
 $ make reinstall    # Reinstall by cleaning, rebuilding, and installing again
 ```
 {: .notice--success}
-
-<!-- # [Test with Sample Code](#test-with-sample-code)
-
-The DYNAMIXEL SDK sample code for CPP uses a .so (Linux Shared Object) library built in the CPP language.
-
-- Go to the folder containing the sample code and build it.
-``` bash
-$ cd DynamixelSDK/c++/example/protocol2.0/read_write/linux64
-$ make
-```
-
-- Grant permission to access the port and run the sample code
-```bash
-$ sudo chmod 666 /dev/ttyUSB0
-$ ./read_write
-```
-
-- When you Press any key, Dynamixel will start moving to the goal position.
-```bash
-pc@pc:~/DynamixelSDK/c++/example/protocol2.0/read_write/linux64$ ./read_write
-Succeeded to open the port!
-Succeeded to change the baudrate!
-Succeeded enabling DYNAMIXEL Torque.
-Press any key to continue. (Press [ESC] to exit)
-[ID:001] Goal Position:000  Present Position:005
-[ID:001] Goal Position:4095  Present Position:005
-[ID:001] Goal Position:4095  Present Position:005
-[ID:001] Goal Position:4095  Present Position:021
-[ID:001] Goal Position:4095  Present Position:044
-[ID:001] Goal Position:4095  Present Position:071
-[ID:001] Goal Position:4095  Present Position:100
-[ID:001] Goal Position:4095  Present Position:131
-[ID:001] Goal Position:4095  Present Position:162
-[ID:001] Goal Position:4095  Present Position:196
-[ID:001] Goal Position:4095  Present Position:226
-[ID:001] Goal Position:4095  Present Position:261
-...
-...
-...
-```
-```  -->

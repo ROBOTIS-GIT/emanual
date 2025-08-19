@@ -181,8 +181,8 @@ if dxl_addparam_result != True:
 ```
 
 ### [Add parameters to GroupSyncWrite](#add-parameters-to-groupsyncwrite)
-- Add parameter to the `GroupBulkWrite` and tranfer the data to the DYNAMIXEL.
-```cpp
+- Add parameter to the `GroupSyncWrite` and tranfer the data to the DYNAMIXEL.
+```python
       groupSyncWrite.addParam(dxl_id1, param_goal_position)
       groupSyncWrite.addParam(dxl_id2, param_goal_position)
       groupSyncWrite.txPacket()
