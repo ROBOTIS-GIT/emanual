@@ -218,7 +218,7 @@ if dxl_addparam_result != True:
           groupSyncRead.txRxPacket()
           dxl1_present_position = groupSyncRead.getData(dxl_id1, present_position_address, data_length_4byte)
           dxl2_present_position = groupSyncRead.getData(dxl_id2, present_position_address, data_length_4byte)
-          print("[ID:%03d] GoalPos:%03d  PresPos:%03d\t[ID:%03d] GoalPos:%03d  PresPos:%03d\t[ID:%03d] GoalPos:%03d  PresPos:%03d" % (dxl_id1, target_position, dxl1_present_position, dxl_id2, target_position, dxl2_present_position))
+          print("[ID:%03d] GoalPos:%03d  PresPos:%03d\t[ID:%03d] GoalPos:%03d  PresPos:%03d" % (dxl_id1, target_position, dxl1_present_position, dxl_id2, target_position, dxl2_present_position))
           if abs(target_position - dxl1_present_position) <= 10 and abs(target_position - dxl2_present_position) <= 10:
               break
   portHandler.closePort()
