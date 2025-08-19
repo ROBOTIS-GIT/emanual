@@ -22,14 +22,15 @@ sidebar:
   }
 </style>
 
-This section provides examples of how to write code in python to sync_read and sync_write data to DYNAMIXEL motors.
+This section provides examples of how to write code in python to bulk_read and bulk_write data to DYNAMIXEL motors.
 
 **NOTE**: This tutorial is based on **XL-series** DYNAMIXEL motors and uses **Protocol 2.0**.
 {: .notice--warning}
 
 # [Bulk_Read/Write Example](#bulk-read-write-example)
-Bulk Read/Write allows simultaneous access to the same address on multiple DYNAMIXEL motors.  
-We need two motors to operate simultaneously.  
+**Bulk Read/Write** enables simultaneous control of multiple motors.  
+Unlike **Sync Read/Write**, which can only access the same address across multiple motors, **Bulk Read/Write** can access different addresses on multiple motors in a single instruction.  
+In this example, we need two motors to operate simultaneously.
 
 ## [Make python file](#make-python-file)
 - Create a python file and open it in a text editor.
@@ -127,7 +128,7 @@ else:
 ```
 </details>
 
-### [Add parameters to GroupSyncRead](#add-parameters-to-groupsyncread)
+### [Add parameters to GroupBulkRead](#add-parameters-to-groupbulkread)
 - Add the DYNAMIXEL IDs to the `GroupBulkRead`.
 ```python
   present_position_address = 132
@@ -189,7 +190,7 @@ if dxl_addparam_result != True:
           led_data = 0
 ```
 
-### [Add parameters to GroupBulkWrite](#add-parameters-to-groupsyncwrite)
+### [Add parameters to GroupBulkWrite](#add-parameters-to-groupbulkwrite)
 - Add parameter to the `GroupBulkWrite` and tranfer the data to the DYNAMIXEL. Also set the LED data to toggle the LED on the second DYNAMIXEL.
 ```python
       groupBulkWrite.addParam(dxl_id1, goal_position_address, data_length_4byte, param_goal_position)
