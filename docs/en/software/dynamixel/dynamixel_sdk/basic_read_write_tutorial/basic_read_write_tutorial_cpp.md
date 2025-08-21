@@ -24,13 +24,13 @@ sidebar:
 
 This section provides examples of how to write code in C++ to read and write data to DYNAMIXEL motors.
 
-**NOTE**: This tutorial is based on **XL-series** DYNAMIXEL motors and uses **Protocol 2.0**.
+**NOTE**: This tutorial is based on **XL-430-W250** DYNAMIXEL motors and uses **Protocol 2.0**.
 {: .notice--warning}
 
 # [Read/Write Example](#read-write-example)
 
 ## [Make cpp file](#make-cpp-file)
-- Create a CPP file and open it in a text editor.
+- Create a CPP file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
 $ mkdir -p my_dxl_project/src
 $ cd my_dxl_project/src
@@ -210,6 +210,10 @@ The `dxl_comm_result`, `dxl_error` variable should be declared beforehand.
 ```bash
 $ g++ my_read_write.cpp -o my_read_write -ldxl_x64_cpp
 $ ./my_read_write
+```
+
+- You will see the following output if the build is successful.
+```bash
 ```
 
 # [Full Source Code](#full-source-code)

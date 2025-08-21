@@ -37,7 +37,7 @@ $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 
 **Option 3**: Install ROS library (It is only available in environments where ROS is installed, and only C++ and Python versions are provided.)
 ```bash
-$ sudo apt-get install ros-[ROS Distribution]-dynamixel-sdk
+$ sudo apt-get install ros-$ROS_DISTRO-dynamixel-sdk
 ```
 
 # [File Structure](#file-structure)

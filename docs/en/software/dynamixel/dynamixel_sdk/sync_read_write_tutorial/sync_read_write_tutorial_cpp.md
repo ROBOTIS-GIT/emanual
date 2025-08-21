@@ -24,7 +24,7 @@ sidebar:
 
 This section provides examples of how to write code in C++ to sync_read and sync_write data to DYNAMIXEL motors.
 
-**NOTE**: This tutorial is based on **XL-series** DYNAMIXEL motors and uses **Protocol 2.0**.
+**NOTE**: This tutorial is based on **XL-430-W250** DYNAMIXEL motors and uses **Protocol 2.0**.
 {: .notice--warning}
 
 # [Sync_Read/Write Example](#sync-read-write-example)
@@ -32,7 +32,7 @@ Sync Read/Write allows simultaneous access to the same address on multiple DYNAM
 We need two motors to operate simultaneously.  
 
 ## [Make cpp file](#make-cpp-file)
-- Create a CPP file and open it in a text editor.
+- Create a CPP file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
 $ mkdir -p my_dxl_project/src
 $ cd my_dxl_project/src
@@ -420,3 +420,4 @@ int main(){
 
   return 0;
 }
+```

@@ -24,7 +24,7 @@ sidebar:
 
 This section provides examples of how to write code in python to bulk_read and bulk_write data to DYNAMIXEL motors.
 
-**NOTE**: This tutorial is based on **XL-series** DYNAMIXEL motors and uses **Protocol 2.0**.
+**NOTE**: This tutorial is based on **XL-430-W250** DYNAMIXEL motors and uses **Protocol 2.0**.
 {: .notice--warning}
 
 # [Bulk_Read/Write Example](#bulk-read-write-example)
@@ -33,7 +33,7 @@ Unlike **Sync Read/Write**, which can only access the same address across multip
 In this example, we need two motors to operate simultaneously.
 
 ## [Make python file](#make-python-file)
-- Create a python file and open it in a text editor.
+- Create a python file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
 $ mkdir -p my_dxl_project/python
 $ cd my_dxl_project/python
@@ -185,9 +185,9 @@ if dxl_addparam_result != True:
       ]
 
       if (dxl2_led_value_read == 0):
-          led_data = 1
+          led_data = [1]
       else:
-          led_data = 0
+          led_data = [0]
 ```
 
 ### [Add parameters to GroupBulkWrite](#add-parameters-to-groupbulkwrite)

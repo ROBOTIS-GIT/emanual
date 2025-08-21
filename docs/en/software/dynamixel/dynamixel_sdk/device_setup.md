@@ -61,18 +61,18 @@ You can connect multiple DYNAMIXELs in a daisy-chain configuration as shown belo
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_multi_connection.jpg)  
 
 
-**NOTE** : You should match the port according to whether your DYNAMIXEL supports TTL or RS485.  
+**NOTE** : You should match the port according to whether your DYNAMIXEL supports TTL or RS-485.  
 `TTL`: TTL-based DYNAMIXEL's have 3 pin connectors  
-`RS485`: RS485-based DYNAMIXEL's have 4 pin connectors.  
+`RS-485`: RS-485-based DYNAMIXEL's have 4 pin connectors.  
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_3pin_4pin.png)
 {: .notice--info}  
 
 # [Verifying Connection](#verifying-connection)
-Once all the above settings are complete, you can use the `Dynamixel wizard 2.0` to ensure the connection is working properly  
+Once all the above settings are complete, you can use the `Dynamixel Wizard 2.0` to ensure the connection is working properly  
 
 **DON'T SKIP THIS STEP!**  
 **For checking and setting Motor ID, this process is essential.**  
-{: .notice--warning}
+{: .notice--danger}
 1. [Install Dynamixel Wizard 2.0](/docs/en/software/dynamixel/dynamixel_wizard2/#software-installation)
 2. [Scan the motor and Operate it](/docs/en/software/dynamixel/dynamixel_wizard2/#basic-features)
 3. [Check and set the motor ID](/docs/en/software/dynamixel/dynamixel_wizard2/#id-inspection)
