@@ -9,33 +9,38 @@ permalink: /docs/en/software/dynamixel/dynamixel_sdk/download/
 sidebar:
   title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
+product_group: dynamixel_sdk_quick_start_guide
+page_number: 2
 ---
 
-<style>body {counter-reset: h1 1 !important;}</style>
+<div class="main-header">
+  <h1>Download SDK</h1>
+</div>
+<style>
+  .main-header h1::before {
+    content: none !important;
+  }
+</style>
 
-# [Download](#download)
+This section provides how to download DYNAMIXEL SDK.
 
-## [Repository](#repository)
+# [Download SDK](#download-sdk)
 
-- The complete Cross-compilable, all-in-one SDK is available for download from the [ROBOTIS Open Source Repository](https://github.com/ROBOTIS-GIT/DynamixelSDK).
-- If you are a ROS user, you can [install the ROS library](https://index.ros.org/p/dynamixel_sdk/#rolling) and Python module for DYNAMIXEL SDK directly through ROS.
+There are three ways to install the Dynamixel SDK.  
+**Option 1**: Download the SDK source code directly via Git clone.
+```bash
+$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+```
 
-1) **Option 1**: Git command
-  
-  ```
-  $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-  ```
-  
-2) **Option 2**: Direct Download
+**Option 2**: Direct Download in git release page.
 - [DYNAMIXEL SDK Releases](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
 
-3) **Option 3**: Install ROS library (C++ library and Python module)
+**Option 3**: Install ROS library (It is only available in environments where ROS is installed, and only C++ and Python versions are provided.)
+```bash
+$ sudo apt-get install ros-$ROS_DISTRO-dynamixel-sdk
+```
 
-  ```
-  $ sudo apt-get install ros-[ROS Distribution]-dynamixel-sdk
-  ```
-
-## [File Structure](#file-structure)
+# [File Structure](#file-structure)
 
 The code examples use either the C or C++ version of the DLL. After extracting the ZIP file, you will see the folder structure shown below.
 

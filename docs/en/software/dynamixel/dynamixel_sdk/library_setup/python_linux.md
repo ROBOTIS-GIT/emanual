@@ -11,45 +11,52 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<style>body {counter-reset: h1 4 !important;}</style>
-<div style="counter-reset: h2 8"></div>
+{::options parse_block_html="true" /}
 
-<!--[dummy Header 1]>
-  <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
-<![end dummy Header 1]-->
+<div class="main-header">
+  <h1 id="library-setup-python-linux">Library Setup <Python Linux></h1>
+</div>
+<style>
+  .main-header h1::before {
+    content: none !important;
+  }
+</style>
 
-## [Python Linux](#python-linux)
+# [Install requirements](#install-requirements)
 
-### [Recommended Editor](#recommended-editor)
+- Install python3 and pip3.
+```bash
+$ sudo apt update
+$ sudo apt install python3 python3-pip python3-serial
+```
 
-* [Zed Editor for Linux (`.deb` or `.rpm`)](https://zed.dev/)
+- You can also install in web browser using the following link:  
+  [Download Python3 for Linux](https://www.python.org/downloads/)
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/a1.png)
+- If you downloaded SDK as source code, you should install it using pip3.
+```bash
+$ cd DynamixelSDK/python
+$ pip install .
+```
 
-### [Compiler and Builder](#compiler-and-builder)
+# [Check whether pip recognizes the SDK](#check-whether-pip-recognizes-the-sdk)
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/python.png)
+- You can check whether pip recognizes the SDK by running the following command:
+```bash
+$ pip show dynamixel_sdk
+Name: dynamixel-sdk
+Version: *.*.*
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author:
+Author-email:
+License: UNKNOWN
+Location: location your sdk installed in # ex. /home/robotis/.local/lib/python3.10/site-packages OR /opt/ros/humble/local/lib/python3.10/dist-packages
+Requires:
+Required-by:
+```
 
-* [Download Python3 for Linux](https://www.python.org/downloads/)
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/b1.png)
-* Or install it using your distribution's package manager
-  ``` bash
-  $ sudo apt update; sudo apt upgrade; sudo apt install python3
-  ```
-### [Building the Library](#building-the-library)
-
-* Navigate to the [`DynamixelSDK python folder`] in your terminal (`cd [DynamixelSDK folder]\python`) and run the command `pip install .` to start the installation.
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/py1.png)
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/py3.png)
-
-### [Building and Running the Sample Code](#building-and-running-the-sample-code)
-
-The DYNAMIXEL SDK example code for Python uses the library files installed in the previous step.
-
-#### Run Example
+<!-- # [Test with Sample Code](#test-with-sample-code)
 
 * Open the `python` folder with your preferred editor. Modify any required settings that is needed for control of your specific DYNAMIXEL servos. 
 
@@ -62,4 +69,4 @@ The DYNAMIXEL SDK example code for Python uses the library files installed in th
 
 * Or run it manually through the command prompt.
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py4.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py4.png) -->
