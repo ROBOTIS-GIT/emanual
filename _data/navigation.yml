@@ -29646,7 +29646,6 @@ dynamixel_sdk:
       url: /software/dynamixel/dynamixel_sdk/overview/#supported-operating-systems
     - title: "Supported Languages"
       url: /software/dynamixel/dynamixel_sdk/overview/#supported-languages
-##
   - title: "Quick Start Guide"
     url: /software/dynamixel/dynamixel_sdk/quick_start_guide/#quick-start-guide
     children:
@@ -29664,7 +29663,7 @@ dynamixel_sdk:
       - title: "C macOS"
         url: /software/dynamixel/dynamixel_sdk/library_setup/c_macos/#c-macos
       - title: "CPP Windows"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_windows/#cpp-windows
+        url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_windows/#library-setup-cpp-windows
       - title: "CPP Linux"
         url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#library-setup-cpp-linux
       - title: "CPP macOS"
