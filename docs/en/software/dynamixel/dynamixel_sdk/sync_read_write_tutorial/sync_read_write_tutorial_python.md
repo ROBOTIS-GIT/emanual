@@ -22,16 +22,14 @@ sidebar:
   }
 </style>
 
-This section provides examples of how to write code in python to sync_read and sync_write data to DYNAMIXEL motors.
-
 **NOTE**: This tutorial is based on **XL-430-W250** DYNAMIXEL motors and uses **Protocol 2.0**.
 {: .notice--warning}
 
-# [Sync_Read/Write Example](#sync-read-write-example)
+This section provides examples of how to write code in python to sync_read and sync_write data to DYNAMIXEL motors.  
 Sync Read/Write allows simultaneous access to the same address on multiple DYNAMIXEL motors.  
 We need two motors to operate simultaneously.  
 
-## [Make python file](#make-python-file)
+# [Make python file](#make-python-file)
 - Create a python file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
 $ mkdir -p my_dxl_project/python
@@ -39,9 +37,9 @@ $ cd my_dxl_project/python
 $ code my_sync_read_write.py
 ```
 
-## [Source Code](#source-code)
+# [Source Code Description](#source-code-description)
 
-### [Add Header Files](#add-header-files)
+## [Add Header Files](#add-header-files)
 - Add   `#!/usr/bin/env python3` and import `dynamixel_sdk` to the top of your py file. This includes all necessary functions and classes from the DYNAMIXEL SDK.
 ```python
   #!/usr/bin/env python3
@@ -49,7 +47,7 @@ $ code my_sync_read_write.py
   from dynamixel_sdk import *
 ```
 
-### [Initialize Handler Objects](#make-objects)
+## [Initialize Handler Objects](#make-objects)
 - Initialize the `PortHandler`,`PacketHandler`,`GroupSyncWrite` and `GroupSyncRead`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `2.0` as the protocol version.
 ```python
   portHandler = PortHandler('/dev/ttyUSB0')
@@ -63,7 +61,7 @@ $ code my_sync_read_write.py
 ```
 
 
-### [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
+## [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
 - Open the port and set the baud rate. The example below uses `57600` as the baud rate.
 ```python
   portHandler.openPort()
@@ -90,7 +88,7 @@ else:
 ```
 </details>
 
-### [Write data to enable torque](#write-data-to-enable-torque)
+## [Write data to enable torque](#write-data-to-enable-torque)
 - Turn on the torque of the DYNAMIXEL.
 ```python
   dxl_id1 = 1
@@ -128,7 +126,7 @@ else:
 ```
 </details>
 
-### [Add parameters to GroupSyncRead](#add-parameters-to-groupsyncread)
+## [Add parameters to GroupSyncRead](#add-parameters-to-groupsyncread)
 - Add the DYNAMIXEL IDs to the `GroupSyncRead`.
 ```python
   groupSyncRead.addParam(dxl_id1)
@@ -154,7 +152,7 @@ if dxl_addparam_result != True:
 </details>
 
 
-### [Get User Input and Set Data](#get-user-input-and-write-data)
+## [Get User Input and Set Data](#get-user-input-and-write-data)
 - Get user input for the target position.
 ```python
   while True:
@@ -180,7 +178,7 @@ if dxl_addparam_result != True:
       ]
 ```
 
-### [Add parameters to GroupSyncWrite](#add-parameters-to-groupsyncwrite)
+## [Add parameters to GroupSyncWrite](#add-parameters-to-groupsyncwrite)
 - Add parameter to the `GroupSyncWrite` and transfer the data to the DYNAMIXEL.
 ```python
       groupSyncWrite.addParam(dxl_id1, param_goal_position)
@@ -211,7 +209,7 @@ if dxl_addparam_result != True:
 ```
 </details>
 
-### [Read data to get current position](#read-data-to-get-current-position)
+## [Read data to get current position](#read-data-to-get-current-position)
 - Read the current position from the DYNAMIXEL until it reaches the target position.
 ```python
       while True:
@@ -248,7 +246,7 @@ You can also check if the data is available in the `GroupSyncRead` by using the 
 ```
 </details>
 
-## [Run the Code](#run-the-code)
+# [Run the Code](#run-the-code)
 - Run the code using python3.
 ```bash
 $ python3 my_sync_read_write.py

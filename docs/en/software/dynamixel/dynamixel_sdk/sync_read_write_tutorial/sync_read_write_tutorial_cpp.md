@@ -22,16 +22,14 @@ sidebar:
   }
 </style>
 
-This section provides examples of how to write code in C++ to sync_read and sync_write data to DYNAMIXEL motors.
-
 **NOTE**: This tutorial is based on **XL-430-W250** DYNAMIXEL motors and uses **Protocol 2.0**.
 {: .notice--warning}
 
-# [Sync_Read/Write Example](#sync-read-write-example)
+This section provides examples of how to write code in C++ to sync_read and sync_write data to DYNAMIXEL motors.  
 Sync Read/Write allows simultaneous access to the same address on multiple DYNAMIXEL motors.  
 We need two motors to operate simultaneously.  
 
-## [Make cpp file](#make-cpp-file)
+# [Make cpp file](#make-cpp-file)
 - Create a CPP file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
 $ mkdir -p my_dxl_project/src
@@ -39,16 +37,16 @@ $ cd my_dxl_project/src
 $ code my_sync_read_write.cpp
 ```
 
-## [Source Code](#source-code)
+# [Source Code Description](#source-code-description)
 
-### [Add Header Files](#add-header-files)
+## [Add Header Files](#add-header-files)
 - Add `dynamixel_sdk/dynamixel_sdk.h` to the top of your CPP file. This header file includes all necessary functions and classes from the DYNAMIXEL SDK.
 ```cpp
   #include "dynamixel_sdk/dynamixel_sdk.h"
   #include <iostream>
 ```
 
-### [Initialize Handler Objects](#make-objects)
+## [Initialize Handler Objects](#make-objects)
 - Make main function and initialize the `PortHandler`,`PacketHandler`,`GroupSyncWrite` and `GroupSyncRead`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `2.0` as the protocol version.
 ```cpp
   int main(){
@@ -62,7 +60,7 @@ $ code my_sync_read_write.cpp
     dynamixel::GroupSyncRead groupSyncRead(portHandler, packetHandler, present_position_address, data_length_4byte);
 ```
 
-### [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
+## [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
 - Open the port and set the baud rate. The example below uses `57600` as the baud rate.
 ```cpp
     portHandler->openPort();
@@ -91,7 +89,7 @@ $ code my_sync_read_write.cpp
 ```
 </details>
 
-### [Write data to turn torque on](#write-data-to-turn-torque-on)
+## [Write data to turn torque on](#write-data-to-turn-torque-on)
 - Turn on the torque of the DYNAMIXEL.
   ```cpp
     uint8_t dxl_id1 = 1;
@@ -137,7 +135,7 @@ The `dxl_comm_result`, `dxl_error` variable should be declared beforehand.
 ```
 </details>
 
-### [Add parameters to GroupSyncRead](#add-parameters-to-groupsyncread)
+## [Add parameters to GroupSyncRead](#add-parameters-to-groupsyncread)
 - Add the DYNAMIXEL IDs to the `GroupSyncRead`.
 ```cpp
     groupSyncRead.addParam(dxl_id1);
@@ -169,7 +167,7 @@ The `dxl_addparam_result` variable should be declared beforehand.
 </details>
 
 
-### [Get User Input and Set Data](#get-user-input-and-write-data)
+## [Get User Input and Set Data](#get-user-input-and-write-data)
 - Get user input for the target position.
 ```cpp
     int target_position;
@@ -192,7 +190,7 @@ The `dxl_addparam_result` variable should be declared beforehand.
       param_goal_position[3] = DXL_HIBYTE(DXL_HIWORD(target_position));
 ```
 
-### [Add parameters to GroupSyncWrite](#add-parameters-to-groupsyncwrite)
+## [Add parameters to GroupSyncWrite](#add-parameters-to-groupsyncwrite)
 - Add parameter to the `GroupSyncWrite` and transfer the data to the DYNAMIXEL.
 ```cpp
       groupSyncWrite.addParam(dxl_id1, param_goal_position);
@@ -230,7 +228,7 @@ The `dxl_addparam_result`, `dxl_comm_result` variables should be declared before
 ```
 </details>
 
-### [Read data to get current position](#read-data-to-get-current-position)
+## [Read data to get current position](#read-data-to-get-current-position)
 - Read the current position from the DYNAMIXEL until it reaches the target position.
 ```cpp
       int dxl1_present_position;
@@ -279,7 +277,7 @@ You can also check if the data is available in the `GroupSyncRead` by using the 
 ```
 </details>
 
-## [Compile and Run](#compile-and-run)
+# [Compile and Run](#compile-and-run)
 - Compile the code using g++.
 ```bash
 $ g++ my_sync_read_write.cpp -o my_sync_read_write -ldxl_x64_cpp

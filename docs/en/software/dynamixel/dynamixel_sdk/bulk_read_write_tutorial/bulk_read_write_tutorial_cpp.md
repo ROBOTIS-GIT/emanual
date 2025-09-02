@@ -22,17 +22,15 @@ sidebar:
   }
 </style>
 
-This section provides examples of how to write code in C++ to bulk_read and bulk_write data to DYNAMIXEL motors.
-
 **NOTE**: This tutorial is based on **XL-430-W250** DYNAMIXEL motors and uses **Protocol 2.0**.
 {: .notice--warning}
 
-# [Bulk_Read/Write Example](#bulk-read-write-example)
+This section provides examples of how to write code in C++ to bulk_read and bulk_write data to DYNAMIXEL motors.  
 **Bulk Read/Write** enables simultaneous control of multiple motors.  
 Unlike **Sync Read/Write**, which can only access the same address across multiple motors, **Bulk Read/Write** can access different addresses on multiple motors in a single instruction.  
 In this example, we need two motors to operate simultaneously.
 
-## [Make cpp file](#make-cpp-file)
+# [Make cpp file](#make-cpp-file)
 - Create a CPP file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
 $ mkdir -p my_dxl_project/src
@@ -40,16 +38,16 @@ $ cd my_dxl_project/src
 $ code my_bulk_read_write.cpp
 ```
 
-## [Source Code](#source-code)
+# [Source Code Description](#source-code-description)
 
-### [Add Header Files](#add-header-files)
+## [Add Header Files](#add-header-files)
 - Add `dynamixel_sdk/dynamixel_sdk.h` to the top of your CPP file. This header file includes all necessary functions and classes from the DYNAMIXEL SDK.
 ```cpp
   #include "dynamixel_sdk/dynamixel_sdk.h"
   #include <iostream>
 ```
 
-### [Initialize Handler Objects](#make-objects)
+## [Initialize Handler Objects](#make-objects)
 - Make main function and initialize the `PortHandler`,`PacketHandler`,`GroupBulkWrite` and `GroupBulkRead`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `2.0` as the protocol version.
 ```cpp
   int main(){
@@ -59,7 +57,7 @@ $ code my_bulk_read_write.cpp
     dynamixel::GroupBulkRead groupBulkRead(portHandler, packetHandler);
 ```
 
-### [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
+## [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
 - Open the port and set the baud rate. The example below uses `57600` as the baud rate.
 ```cpp
     portHandler->openPort();
@@ -88,7 +86,7 @@ $ code my_bulk_read_write.cpp
 ```
 </details>
 
-### [Write data to enable torque](#write-data-to-enable-torque)
+## [Write data to enable torque](#write-data-to-enable-torque)
 - Turn on the torque of the DYNAMIXEL.
   ```cpp
     uint8_t dxl_id1 = 1;
@@ -134,7 +132,7 @@ The `dxl_comm_result`, `dxl_error` variable should be declared beforehand.
 ```
 </details>
 
-### [Add Parameters to GroupBulkRead](#add-parameters-to-groupbulkread)
+## [Add Parameters to GroupBulkRead](#add-parameters-to-groupbulkread)
 - Add the DYNAMIXEL IDs and addresses to access to the `GroupBulkRead`.
 ```cpp
     uint16_t present_position_address = 132;
@@ -170,7 +168,7 @@ The `dxl_addparam_result` variable should be declared beforehand.
 ```
 </details>
 
-### [Get User Input and Set Data](#get-user-input-and-write-data)
+## [Get User Input and Set Data](#get-user-input-and-write-data)
 - Get user input for the target position.
 ```cpp
     int target_position = 0;
@@ -201,7 +199,7 @@ The `dxl_addparam_result` variable should be declared beforehand.
       }
 ```
 
-### [Add parameter to GroupBulkWrite and Write Data](#add-parameters-to-groupbulkwrite)
+## [Add parameter to GroupBulkWrite and Write Data](#add-parameters-to-groupbulkwrite)
 - Add parameter to the `GroupBulkWrite` and tranfer the data to the DYNAMIXEL.
 ```cpp
       uint16_t goal_position_address = 116;
@@ -241,7 +239,7 @@ The `dxl_addparam_result`, `dxl_comm_result` variables should be declared before
 ```
 </details>
 
-### [Read data from DYNAMIXEL](#read-data-from-dynamixel)
+## [Read data from DYNAMIXEL](#read-data-from-dynamixel)
 - Read the current position and LED data from the DYNAMIXEL until it reaches the target position.
 ```cpp
       int dxl1_present_position;
@@ -298,7 +296,7 @@ You can also check if the data is available in the `GroupBulkRead` by using the 
 ```
 
 
-## [Compile and Run](#compile-and-run)
+# [Compile and Run](#compile-and-run)
 - Compile the code using g++.
 ```bash
 $ g++ my_bulk_read_write.cpp -o my_bulk_read_write -ldxl_x64_cpp

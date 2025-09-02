@@ -27,9 +27,7 @@ This section provides examples of how to write code in Python to read and write 
 **NOTE**: This tutorial is based on **XL-430-W250** DYNAMIXEL motors and uses **Protocol 2.0**.
 {: .notice--warning}
 
-# [Read/Write Example](#read-write-example)
-
-## [Make python file](#make-python-file)
+# [Make python file](#make-python-file)
 - Create a python file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
 $ mkdir -p my_dxl_project/python
@@ -37,9 +35,9 @@ $ cd my_dxl_project/python
 $ code my_read_write.py
 ```
 
-## [Source Code](#source-code)
+# [Source Code Description](#source-code-description)
 
-### [Add Header Files](#add-header-files)
+## [Add Header Files](#add-header-files)
 - Add   `#!/usr/bin/env python3` and import `dynamixel_sdk` to the top of your py file. This includes all necessary functions and classes from the DYNAMIXEL SDK.
 ```python
   #!/usr/bin/env python3
@@ -47,14 +45,14 @@ $ code my_read_write.py
   from dynamixel_sdk import *
 ```
 
-### [Initialize Handler Objects](#make-objects)
+## [Initialize Handler Objects](#make-objects)
 - Initialize the `PortHandler` and `PacketHandler`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `2.0` as the protocol version.
 ```python
   portHandler = PortHandler("/dev/ttyUSB0")  # your dxl port name
   packetHandler = PacketHandler(2.0)  # protocol version
 ```
 
-### [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
+## [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
 - Open the port and set the baud rate. The example below uses `57600` as the baud rate.
 ```python
   portHandler.openPort()
@@ -81,7 +79,7 @@ else:
 ```
 </details>
 
-### [Write data to enable torque](#write-data-to-enable-torque)
+## [Write data to enable torque](#write-data-to-enable-torque)
 - Turn on the torque of the DYNAMIXEL.
 ```python
   dxl_id = 1
@@ -109,7 +107,7 @@ else:
 ```
 </details>
 
-### [Get User Input](#get-user-input-and-write-data)
+## [Get User Input](#get-user-input-and-write-data)
 - Get user input for the target position.
 ```python
   while True:
@@ -126,7 +124,7 @@ else:
           continue
 ```
 
-### [Write data to set target position](#write-data-to-set-target-position)
+## [Write data to set target position](#write-data-to-set-target-position)
 - Write the target position to the DYNAMIXEL.
 ```python
       goal_position_address = 116
@@ -147,7 +145,7 @@ else:
 ```
 </details>
 
-### [Read data from DYNAMIXEL](#read-data-from-dynamixel)
+## [Read data from DYNAMIXEL](#read-data-from-dynamixel)
 - Read the current position from the DYNAMIXEL.
 ```python
       while True:
@@ -180,7 +178,7 @@ else:
   portHandler.closePort()
 ```
 
-## [Run the Code](#run-the-code)
+# [Run the Code](#run-the-code)
 - Run the code using python3.
 ```bash
 $ python3 my_read_write.py
