@@ -258,6 +258,10 @@ $ ./my_read_write
 
 - **Build properties setup is complete. You can now build and run the project.**
 
+  ![](/assets/images/sw/sdk/dynamixel_sdk/basic_read_write_tutorial/buildandrun.png)
+- **After building, you can find the executable file( .exe ) in the output directory :** `{$YOUR_SLN_DIR\x64\}`
+
+
 **WARNING**: If you execute the .exe file directly(not through the IDE), you might encounter a `missing DLL` error. To fix this, ensure that `dxl_x64_cpp.dll` is either in your system PATH or in the same directory as the application.
 {: .notice--warning}
 </section>
