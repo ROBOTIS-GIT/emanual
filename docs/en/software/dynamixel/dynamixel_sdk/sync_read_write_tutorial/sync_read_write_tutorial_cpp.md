@@ -6,6 +6,9 @@ read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_cpp/
+tabs: "OS"
+tab_title1: Linux
+tab_title2: Windows
 sidebar:
   title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
@@ -30,12 +33,22 @@ Sync Read/Write allows simultaneous access to the same address on multiple DYNAM
 We need two motors to operate simultaneously.  
 
 # [Make cpp file](#make-cpp-file)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 - Create a CPP file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
 $ mkdir -p my_dxl_project/src
 $ cd my_dxl_project/src
 $ code my_sync_read_write.cpp
 ```
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+- Open Visual Studio and create a new project as a Console Application.
+  ![](/assets/images/sw/sdk/dynamixel_sdk/basic_read_write_tutorial/makeproject.png)
+</section>
 
 # [Source Code Description](#source-code-description)
 
@@ -238,7 +251,7 @@ The `dxl_addparam_result`, `dxl_comm_result` variables should be declared before
         dxl1_present_position = groupSyncRead.getData(dxl_id1, present_position_address, data_length_4byte);
         dxl2_present_position = groupSyncRead.getData(dxl_id2, present_position_address, data_length_4byte);
         printf("[ID:%03d] GoalPos:%03d  PresPos:%03d\t[ID:%03d] GoalPos:%03d  PresPos:%03d\n", dxl_id1, target_position, dxl1_present_position, dxl_id2, target_position, dxl2_present_position);
-      } while((abs(target_position - dxl1_present_position) > 10) || (abs(target_position - dxl2_present_position) > 10));
+      } while((abs(static_cast<int>(target_position - dxl1_present_position)) > 10) || (abs(static_cast<int>(target_position - dxl2_present_position)) > 10));
     }
     portHandler->closePort();
     return 0;
@@ -278,11 +291,35 @@ You can also check if the data is available in the `GroupSyncRead` by using the 
 </details>
 
 # [Compile and Run](#compile-and-run)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 - Compile the code using g++.
 ```bash
 $ g++ my_sync_read_write.cpp -o my_sync_read_write -ldxl_x64_cpp
 $ ./my_sync_read_write
 ```
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+- Set build properties.
+
+  ![](/assets/images/sw/sdk/dynamixel_sdk/basic_read_write_tutorial/buildproperties.png)
+  - `C/C++ → Additional Include Directories` : `{$Dynamixel_SDK_PATH\c++\include}`
+  - `Debugging → Environment` : `PATH=%PATH%;{$Dynamixel_SDK_PATH\c++\build\win64\output}` (if you use 32bit architecture, use `{$Dynamixel_SDK_PATH\c++\build\win32\output}`)
+
+  ![](/assets/images/sw/sdk/dynamixel_sdk/basic_read_write_tutorial/buildproperties2.png)
+  - `Linker` → `Additional Library Directories` : `{$Dynamixel_SDK_PATH\c++\build\win64\output}` (if you use 32bit architecture, use `{$Dynamixel_SDK_PATH\c++\build\win32\output}`)
+  - `Linker` → `Input` → `Additional Dependencies` : `dxl_x64_cpp.lib`
+
+<br>
+
+- **Build properties setup is complete. You can now build and run the project.**
+
+**WARNING**: If you execute the .exe file directly(not through the IDE), you might encounter a `missing DLL` error. To fix this, ensure that dxl_x64_cpp.dll is either in your system PATH or in the same directory as the application.
+{: .notice--warning}
+</section>
 
 # [Full Source Code](#full-source-code)
 ```cpp
@@ -412,7 +449,7 @@ int main(){
       dxl1_present_position = groupSyncRead.getData(dxl_id1, present_position_address, data_length_4byte);
       dxl2_present_position = groupSyncRead.getData(dxl_id2, present_position_address, data_length_4byte);
       printf("[ID:%03d] GoalPos:%03d  PresPos:%03d\t[ID:%03d] GoalPos:%03d  PresPos:%03d\n", dxl_id1, target_position, dxl1_present_position, dxl_id2, target_position, dxl2_present_position);
-    } while((abs(target_position - dxl1_present_position) > 10) || (abs(target_position - dxl2_present_position) > 10));
+    } while((abs(static_cast<int>(target_position - dxl1_present_position)) > 10) || (abs(static_cast<int>(target_position - dxl2_present_position)) > 10));
   }
   portHandler->closePort();
 

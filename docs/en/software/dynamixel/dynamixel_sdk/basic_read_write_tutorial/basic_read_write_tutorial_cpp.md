@@ -243,6 +243,9 @@ $ ./my_read_write
 <br>
 
 - **Build properties setup is complete. You can now build and run the project.**
+
+**WARNING**: If you execute the .exe file directly(not through the IDE), you might encounter a `missing DLL` error. To fix this, ensure that dxl_x64_cpp.dll is either in your system PATH or in the same directory as the application.
+{: .notice--warning}
 </section>
 
 # [Full Source Code](#full-source-code)
@@ -311,7 +314,7 @@ int main(){
         std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
       }
       std::cout << "Current Position: " << present_position << std::endl;
-    } while (abs(target_position - present_position) > 10);
+    } while (abs(static_cast<int>(target_position - present_position)) > 10);
   }
 
   data = 0;
