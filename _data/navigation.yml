@@ -29671,9 +29671,9 @@ dynamixel_sdk:
       - title: "Csharp Windows"
         url: /software/dynamixel/dynamixel_sdk/library_setup/csharp_windows/#csharp-windows
       - title: "Python Windows"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/python_windows/#python-windows
+        url: /software/dynamixel/dynamixel_sdk/library_setup/python_windows/#library-setup-python-windows
       - title: "Python Linux"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/python_linux/#python-linux
+        url: /software/dynamixel/dynamixel_sdk/library_setup/python_linux/#library-setup-python-linux
       - title: "Python macOS"
         url: /software/dynamixel/dynamixel_sdk/library_setup/python_macos/#python-macos
       - title: "Java Windows"

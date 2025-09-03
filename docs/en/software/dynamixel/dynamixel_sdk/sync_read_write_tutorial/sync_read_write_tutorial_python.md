@@ -6,6 +6,9 @@ read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/sync_read_write_tutorial/sync_read_write_tutorial_python/
+tabs: "OS"
+tab_title1: Linux
+tab_title2: Windows
 sidebar:
   title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
@@ -29,6 +32,8 @@ This section provides examples of how to write code in python to sync_read and s
 Sync Read/Write allows simultaneous access to the same address on multiple DYNAMIXEL motors.  
 We need two motors to operate simultaneously.  
 
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 # [Make python file](#make-python-file)
 - Create a python file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
@@ -36,6 +41,15 @@ $ mkdir -p my_dxl_project/python
 $ cd my_dxl_project/python
 $ code my_sync_read_write.py
 ```
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+# [Make python file](#make-python-file)
+- Open the Visual Studio Code and create a python file in your workspace.
+
+  ![](/assets/images/sw/sdk/dynamixel_sdk/basic_read_write_tutorial/vscodepython.png)
+</section>
 
 # [Source Code Description](#source-code-description)
 
@@ -48,6 +62,9 @@ $ code my_sync_read_write.py
 ```
 
 ## [Initialize Handler Objects](#make-objects)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 - Initialize the `PortHandler`,`PacketHandler`,`GroupSyncWrite` and `GroupSyncRead`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `2.0` as the protocol version.
 ```python
   portHandler = PortHandler('/dev/ttyUSB0')
@@ -59,7 +76,22 @@ $ code my_sync_read_write.py
   groupSyncWrite = GroupSyncWrite(portHandler, packetHandler, goal_position_address, data_length_4byte)
   groupSyncRead  = GroupSyncRead(portHandler, packetHandler, present_position_address, data_length_4byte)
 ```
+</section>
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+- Initialize the `PortHandler`,`PacketHandler`,`GroupSyncWrite` and `GroupSyncRead`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `COM3` as the port name and `2.0` as the protocol version.
+```python
+  portHandler = PortHandler('COM3')
+  packetHandler = PacketHandler(2.0)
+
+  goal_position_address = 116
+  present_position_address = 132
+  data_length_4byte = 4
+  groupSyncWrite = GroupSyncWrite(portHandler, packetHandler, goal_position_address, data_length_4byte)
+  groupSyncRead  = GroupSyncRead(portHandler, packetHandler, present_position_address, data_length_4byte)
+```
+</section>
 
 ## [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
 - Open the port and set the baud rate. The example below uses `57600` as the baud rate.
@@ -247,12 +279,25 @@ You can also check if the data is available in the `GroupSyncRead` by using the 
 </details>
 
 # [Run the Code](#run-the-code)
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 - Run the code using python3.
 ```bash
 $ python3 my_sync_read_write.py
 ```
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+- Run the code through Visual Studio Code.
+
+  ![](/assets/images/sw/sdk/dynamixel_sdk/basic_read_write_tutorial/runbutton.png)
+</section>
 
 # [Full Source Code](#full-source-code)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 ```python
 #!/usr/bin/env python3
 
@@ -365,3 +410,120 @@ while True:
             break
 portHandler.closePort()
 ```
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+```python
+#!/usr/bin/env python3
+
+from dynamixel_sdk import *
+
+
+portHandler = PortHandler('COM3')
+packetHandler = PacketHandler(2.0)
+
+goal_position_address = 116
+present_position_address = 132
+data_length_4byte = 4
+groupSyncWrite = GroupSyncWrite(portHandler, packetHandler, goal_position_address, data_length_4byte)
+groupSyncRead  = GroupSyncRead(portHandler, packetHandler, present_position_address, data_length_4byte)
+
+if portHandler.openPort():
+  print("Succeeded to open the port!")
+else:
+  print("Failed to open the port!")
+  exit()
+
+if portHandler.setBaudRate(57600):
+  print("Succeeded to change the baudrate!")
+else:
+  print("Failed to change the baudrate!")
+  exit()
+
+dxl_id1 = 1
+dxl_id2 = 2
+torque_on_address = 64
+data = 1
+dxl_comm_result, dxl_error = packetHandler.write1ByteTxRx(portHandler, dxl_id1, torque_on_address, data)
+if dxl_comm_result != COMM_SUCCESS:
+    print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+elif dxl_error != 0:
+    print("%s" % packetHandler.getRxPacketError(dxl_error))
+else:
+    print("Dynamixel#1 has been successfully connected")
+
+dxl_comm_result, dxl_error = packetHandler.write1ByteTxRx(portHandler, dxl_id2, torque_on_address, data)
+if dxl_comm_result != COMM_SUCCESS:
+    print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+elif dxl_error != 0:
+    print("%s" % packetHandler.getRxPacketError(dxl_error))
+else:
+    print("Dynamixel#2 has been successfully connected")
+
+dxl_addparam_result = groupSyncRead.addParam(dxl_id1)
+if dxl_addparam_result != True:
+    print("[ID:%03d] groupSyncRead addparam failed" % dxl_id1)
+    exit()
+
+dxl_addparam_result = groupSyncRead.addParam(dxl_id2)
+if dxl_addparam_result != True:
+    print("[ID:%03d] groupSyncRead addparam failed" % dxl_id2)
+    exit()
+
+while True:
+    try:
+        target_position = int(input("Enter target position (0 ~ 4095, -1 to exit): "))
+    except ValueError:
+        print("Please enter an integer.")
+        continue
+
+    if target_position == -1:
+        break
+    elif target_position < 0 or target_position > 4095:
+        print("Position must be between 0 and 4095.")
+        continue
+
+    param_goal_position = [
+        DXL_LOBYTE(DXL_LOWORD(target_position)),
+        DXL_HIBYTE(DXL_LOWORD(target_position)),
+        DXL_LOBYTE(DXL_HIWORD(target_position)),
+        DXL_HIBYTE(DXL_HIWORD(target_position))
+    ]
+
+    dxl_addparam_result = groupSyncWrite.addParam(dxl_id1, param_goal_position)
+    if not dxl_addparam_result:
+        print("[ID:%03d] groupSyncWrite addparam failed" % dxl_id1)
+        exit()
+
+    dxl_addparam_result = groupSyncWrite.addParam(dxl_id2, param_goal_position)
+    if not dxl_addparam_result:
+        print("[ID:%03d] groupSyncWrite addparam failed" % dxl_id2)
+        exit()
+
+    dxl_comm_result = groupSyncWrite.txPacket()
+    if dxl_comm_result != COMM_SUCCESS:
+        print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+
+    groupSyncWrite.clearParam()
+    while True:
+        dxl_comm_result = groupSyncRead.txRxPacket()
+        if dxl_comm_result != COMM_SUCCESS:
+            print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+        dxl_getdata_result = groupSyncRead.isAvailable(dxl_id1, present_position_address, data_length_4byte)
+        if dxl_getdata_result != True:
+            print("[ID:%03d] groupSyncRead getdata failed" % dxl_id1)
+            quit()
+
+        dxl_getdata_result = groupSyncRead.isAvailable(dxl_id2, present_position_address, data_length_4byte)
+        if dxl_getdata_result != True:
+            print("[ID:%03d] groupSyncRead getdata failed" % dxl_id2)
+            quit()
+        dxl1_present_position = groupSyncRead.getData(dxl_id1, present_position_address, data_length_4byte)
+        dxl2_present_position = groupSyncRead.getData(dxl_id2, present_position_address, data_length_4byte)
+        print("[ID:%03d] GoalPos:%03d  PresPos:%03d\t[ID:%03d] GoalPos:%03d  PresPos:%03d" % (dxl_id1, target_position, dxl1_present_position, dxl_id2, target_position, dxl2_present_position))
+        if abs(target_position - dxl1_present_position) <= 10 and abs(target_position - dxl2_present_position) <= 10:
+            break
+portHandler.closePort()
+```
+</section>

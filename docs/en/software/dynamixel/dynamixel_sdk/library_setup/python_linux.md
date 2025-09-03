@@ -33,13 +33,13 @@ $ sudo apt install python3 python3-pip python3-serial
 - You can also install in web browser using the following link:  
   [Download Python3 for Linux](https://www.python.org/downloads/)
 
-- If you downloaded SDK as source code, you should install it using pip3.
+# [Build and Install the SDK](#build-and-install-the-SDK)
+
+- If you downloaded the SDK as source code, you should install it using pip3 (excluding those who installed via pip3 install).
 ```bash
 $ cd DynamixelSDK/python
 $ pip install .
 ```
-
-# [Check whether pip recognizes the SDK](#check-whether-pip-recognizes-the-sdk)
 
 - You can check whether pip recognizes the SDK by running the following command:
 ```bash
@@ -55,18 +55,3 @@ Location: location your sdk installed in # ex. /home/robotis/.local/lib/python3.
 Requires:
 Required-by:
 ```
-
-<!-- # [Test with Sample Code](#test-with-sample-code)
-
-* Open the `python` folder with your preferred editor. Modify any required settings that is needed for control of your specific DYNAMIXEL servos. 
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py5.png)
-
-
-* Run `read_write.py` by double clicking the file,
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py2.png)
-
-* Or run it manually through the command prompt.
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py4.png) -->
