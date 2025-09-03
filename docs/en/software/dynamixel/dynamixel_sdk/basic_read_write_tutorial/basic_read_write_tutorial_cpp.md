@@ -59,12 +59,26 @@ $ code my_read_write.cpp
 ```
 
 ## [Initialize Handler Objects](#make-objects)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 - Make main function and initialize the `PortHandler` and `PacketHandler`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `2.0` as the protocol version.
 ```cpp
   int main(){
     dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler("/dev/ttyUSB0"); // your dxl port name
     dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(2.0); //protocol version
 ```
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+- Make main function and initialize the `PortHandler` and `PacketHandler`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `COM3` as the port name and `2.0` as the protocol version.
+```cpp
+  int main(){
+    dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler("COM3"); // your dxl port name
+    dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(2.0); //protocol version
+```
+</section>
 
 ## [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
 - Open the port and set the baud rate. The example below uses `57600` as the baud rate.
@@ -244,11 +258,14 @@ $ ./my_read_write
 
 - **Build properties setup is complete. You can now build and run the project.**
 
-**WARNING**: If you execute the .exe file directly(not through the IDE), you might encounter a `missing DLL` error. To fix this, ensure that dxl_x64_cpp.dll is either in your system PATH or in the same directory as the application.
+**WARNING**: If you execute the .exe file directly(not through the IDE), you might encounter a `missing DLL` error. To fix this, ensure that `dxl_x64_cpp.dll` is either in your system PATH or in the same directory as the application.
 {: .notice--warning}
 </section>
 
 # [Full Source Code](#full-source-code)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 ```cpp
 #include "dynamixel_sdk/dynamixel_sdk.h"
 #include <iostream>
@@ -324,3 +341,83 @@ int main(){
   return 0;
 }
 ```
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+```cpp
+#include "dynamixel_sdk/dynamixel_sdk.h"
+#include <iostream>
+
+int main(){
+  dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler("COM3");
+  dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(2.0);
+  if (portHandler->openPort()) {
+    std::cout << "Succeeded to open the port!\n";
+  } else {
+    std::cout << "Failed to open the port!\n";
+    return 0;
+  }
+
+  if (portHandler->setBaudRate(57600)) {
+    std::cout << "Succeeded to change the baudrate!\n";
+  } else {
+    std::cout << "Failed to change the baudrate!\n";
+    return 0;
+  }
+
+  uint8_t dxl_id = 1;
+  uint16_t torque_on_address = 64;
+  uint8_t data = 1;
+  uint8_t dxl_error = 0;
+  int dxl_comm_result = COMM_TX_FAIL;
+
+  dxl_comm_result = packetHandler->write1ByteTxRx(portHandler, dxl_id, torque_on_address, data, &dxl_error);
+  if (dxl_comm_result != COMM_SUCCESS) {
+    std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+  } else if (dxl_error != 0) {
+    std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
+  } else {
+    std::cout << "Dynamixel#1 has been successfully connected \n";
+  }
+
+  int target_position;
+  while(true){
+    std::cout << "Enter target position (0 ~ 4095): ";
+    std::cin >> target_position;
+    if(target_position == -1){
+      break; // Exit on -1 input
+    } else if(target_position < 0 || target_position > 4095){
+      std::cout << "Position must be between 0 and 4095." << std::endl;
+      continue;
+    }
+
+    uint16_t goal_position_address = 116;
+    dxl_comm_result = packetHandler->write4ByteTxRx(portHandler, dxl_id, goal_position_address, uint32_t(target_position), &dxl_error);
+    if (dxl_comm_result != COMM_SUCCESS) {
+      std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+    } else if (dxl_error != 0) {
+      std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
+    }
+
+    uint16_t present_position_address = 132;
+    uint32_t present_position;
+    do {
+      dxl_comm_result = packetHandler->read4ByteTxRx(portHandler, dxl_id, present_position_address, &present_position, &dxl_error);
+      if (dxl_comm_result != COMM_SUCCESS) {
+        std::cout << packetHandler->getTxRxResult(dxl_comm_result) << std::endl;
+      } else if (dxl_error != 0) {
+        std::cout << packetHandler->getRxPacketError(dxl_error) << std::endl;
+      }
+      std::cout << "Current Position: " << present_position << std::endl;
+    } while (abs(static_cast<int>(target_position - present_position)) > 10);
+  }
+
+  data = 0;
+  packetHandler->write1ByteTxRx(portHandler, dxl_id, torque_on_address, data);
+  portHandler->closePort();
+
+  return 0;
+}
+```
+</section>
