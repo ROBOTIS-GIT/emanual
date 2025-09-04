@@ -35,7 +35,7 @@ In this example, we need two motors to operate simultaneously.
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
-## [Make python file](#make-python-file)
+# [Make python file](#make-python-file)
 - Create a python file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
 $ mkdir -p my_dxl_project/python
@@ -52,9 +52,9 @@ $ code my_bulk_read_write.py
   ![](/assets/images/sw/sdk/dynamixel_sdk/basic_read_write_tutorial/vscodepython.png)
 </section>
 
-## [Source Code Description](#source-code-description)
+# [Source Code Description](#source-code-description)
 
-### [Add Header Files](#add-header-files)
+## [Add Header Files](#add-header-files)
 - Add   `#!/usr/bin/env python3` and import `dynamixel_sdk` to the top of your py file. This includes all necessary functions and classes from the DYNAMIXEL SDK.
 ```python
   #!/usr/bin/env python3
@@ -62,7 +62,7 @@ $ code my_bulk_read_write.py
   from dynamixel_sdk import *
 ```
 
-### [Initialize Handler Objects](#make-objects)
+## [Initialize Handler Objects](#make-objects)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
@@ -92,7 +92,7 @@ $ code my_bulk_read_write.py
 ```
 </section>
 
-### [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
+## [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
 - Open the port and set the baud rate. The example below uses `57600` as the baud rate.
 ```python
   portHandler.openPort()
@@ -119,7 +119,7 @@ else:
 ```
 </details>
 
-### [Write data to enable torque](#write-data-to-enable-torque)
+## [Write data to enable torque](#write-data-to-enable-torque)
 - Turn on the torque of the DYNAMIXEL.
 ```python
   dxl_id1 = 1
@@ -157,7 +157,7 @@ else:
 ```
 </details>
 
-### [Add parameters to GroupBulkRead](#add-parameters-to-groupbulkread)
+## [Add parameters to GroupBulkRead](#add-parameters-to-groupbulkread)
 - Add the DYNAMIXEL IDs to the `GroupBulkRead`.
 ```python
   present_position_address = 132
@@ -187,7 +187,7 @@ if dxl_addparam_result != True:
 </details>
 
 
-### [Get User Input and Set Data](#get-user-input-and-write-data)
+## [Get User Input and Set Data](#get-user-input-and-write-data)
 - Get user input for the target position.
 ```python
   dxl2_led_value_read = 0
@@ -219,7 +219,7 @@ if dxl_addparam_result != True:
           led_data = [0]
 ```
 
-### [Add parameters to GroupBulkWrite](#add-parameters-to-groupbulkwrite)
+## [Add parameters to GroupBulkWrite](#add-parameters-to-groupbulkwrite)
 - Add parameter to the `GroupBulkWrite` and tranfer the data to the DYNAMIXEL. Also set the LED data to toggle the LED on the second DYNAMIXEL.
 ```python
       groupBulkWrite.addParam(dxl_id1, goal_position_address, data_length_4byte, param_goal_position)
@@ -250,7 +250,7 @@ if dxl_addparam_result != True:
 ```
 </details>
 
-### [Read data to get current position](#read-data-to-get-current-position)
+## [Read data to get current position](#read-data-to-get-current-position)
 - Read the current position from the DYNAMIXEL until it reaches the target position.
 ```python
       while True:
@@ -288,7 +288,7 @@ You can also check if the data is available in the `GroupBulkRead` by using the 
 ```
 </details>
 
-## [Run the Code](#run-the-code)
+# [Run the Code](#run-the-code)
 
 <section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
