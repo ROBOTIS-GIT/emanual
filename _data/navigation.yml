@@ -29662,13 +29662,13 @@ dynamixel_sdk:
         url: /software/dynamixel/dynamixel_sdk/library_setup/cpp/#library-setup-cpp-linux
       - title: "Python"
         url: /software/dynamixel/dynamixel_sdk/library_setup/python/#library-setup-python-linux
-      - title: "Csharp Windows"
+      - title: "Csharp"
         url: /software/dynamixel/dynamixel_sdk/library_setup/csharp/#library-setup-csharp-windows
       - title: "Java"
         url: /software/dynamixel/dynamixel_sdk/library_setup/java/#library-setup-java-linux
       - title: "MATLAB"
         url: /software/dynamixel/dynamixel_sdk/library_setup/matlab/#library-setup-matlab-linux
-      - title: "LabVIEW Windows"
+      - title: "LabVIEW"
         url: /software/dynamixel/dynamixel_sdk/library_setup/labview/#library-setup-labview-windows
     - title: Basic Read/Write tutorial
       url: /software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/
