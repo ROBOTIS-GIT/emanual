@@ -1,26 +1,15 @@
----
-layout: archive
-lang: en
-ref: matlab_windows
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab_windows/
-sidebar:
-  title: DYNAMIXEL SDK
-  nav: "dynamixel_sdk"
----
+{::options parse_block_html="true" /}
 
-<style>body {counter-reset: h1 4 !important;}</style>
-<div style="counter-reset: h2 13"></div>
+<div class="main-header">
+  <h1 id="library-setup-matlab-windows">Library Setup &lt;Matlab Windows&gt;</h1>
+</div>
+<style>
+  .main-header h1::before {
+    content: none !important;
+  }
+</style>
 
-<!--[dummy Header 1]>
-  <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
-<![end dummy Header 1]-->
-
-## [Matlab Windows](#matlab-windows)
-
-### [Compiler and Builder](#compiler-and-builder)
+# [Compiler and Builder](#compiler-and-builder)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/matlab.png)
 
@@ -30,7 +19,7 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/windows/library_file/a2.png)
 
-### [Function Reference](#function-reference)
+# [Function Reference](#function-reference)
 {% capture notice_01 %}
 **WARNING**:
 When some error that are related with `.dll file version is higher than the MATLAB's version` is appeared, the `.dll` file should be rebuilt in lower version Visual Studio.
@@ -47,13 +36,13 @@ When some error that are related with `.dll file version is higher than the MATL
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/windows/library_file/1.png)
 
 
-### [Building and Running the Sample Code](#building-and-running-the-sample-code)
+# [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
 DYNAMIXEL SDK example code for MATLAB uses the library files(.dll for Windows) built in C language.
 
 Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/c/build/[winXX]/output/dxl_xYY_c.dll` which were built by its own source code.
 
-#### Import libraries
+# Import libraries
 
 * Click `Set Path`
 
@@ -76,7 +65,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/windows/sample_code/5.png)
 
 
-#### Import function reference
+# Import function reference
 
 * Click `Add with Subfolders...`
 
@@ -91,7 +80,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/windows/sample_code/8.png)
 
 
-#### Run example
+# Run example
 
 * Click `Browse for folder`
 

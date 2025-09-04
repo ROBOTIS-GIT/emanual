@@ -1,26 +1,17 @@
----
-layout: archive
-lang: en
-ref: java_windows
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/java_windows/
-sidebar:
-  title: DYNAMIXEL SDK
-  nav: "dynamixel_sdk"
----
+{::options parse_block_html="true" /}
 
-<style>body {counter-reset: h1 4 !important;}</style>
-<div style="counter-reset: h2 10"></div>
+<div class="main-header">
+  <h1 id="library-setup-java-windows">Library Setup &lt;Java Windows&gt;</h1>
+</div>
+<style>
+  .main-header h1::before {
+    content: none !important;
+  }
+</style>
 
-<!--[dummy Header 1]>
-  <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
-<![end dummy Header 1]-->
+# [Install requirements](#install-requirements)
 
-## [Java Windows](#java-windows)
-
-### [Compiler and Builder](#compiler-and-builder)
+## [Compiler and Builder](#compiler-and-builder)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/eclipse.png)
 
@@ -28,7 +19,7 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/library_file/a1.png)
 
-### [Required Packages](#required-packages)
+## [Required Packages](#required-packages)
 
 * [Download Java Development Kit (JDK) (`Windows 32-bit` or `Windows 64-bit`)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
@@ -42,7 +33,7 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/library_file/b3.png)
 
-### [Java Native Access(JNA)](#java-native-accessjna)
+## [Java Native Access(JNA)](#java-native-accessjna)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/jna.jpg)
 
@@ -54,7 +45,7 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/library_file/b5.png)
 
-## [Function Reference](#function-reference)
+# [Function Reference](#function-reference)
 
 * The function reference file is located in `[DynamixelSDK folder]/java/dynamixel_functions_java/x86 or x64/Dynamixel.java`
 
@@ -62,13 +53,13 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/library_file/1.png)
 
-### [Building and Running the Sample Code](#building-and-running-the-sample-code)
+# [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
 The DYNAMIXEL SDK example code for Java uses the library files(.dll for Windows) built in C language.
 
 Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/c/build/[winXX]/output/dxl_xYY_c.dll` which were built by its own source code.
 
-#### Make Java Project
+## Make Java Project
 
 * Set workspace
 
@@ -86,7 +77,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/5.png)
 
-#### Import function reference
+## Import function reference
 
 * Open `Configure Build Path`
 
@@ -109,7 +100,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/10.png)
 
 
-##### Import DynamixelSDK library
+## Import DynamixelSDK library
 
 * Click `Link Additional Source to Project`
 
@@ -128,7 +119,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/14.png)
 
-#### Import JNA
+## Import JNA
 
 * Go to `Libraries` tap and Click `Add External JARs`.
 
@@ -142,7 +133,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/17.png)
 
-#### Run example
+# Run example
 
 * Put `ReadWrite.java` source into the folder `src` on the screen
 

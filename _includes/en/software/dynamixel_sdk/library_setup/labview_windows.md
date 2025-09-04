@@ -1,26 +1,15 @@
----
-layout: archive
-lang: en
-ref: labview_windows
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/labview_windows/
-sidebar:
-  title: DYNAMIXEL SDK
-  nav: "dynamixel_sdk"
----
+{::options parse_block_html="true" /}
 
-<style>body {counter-reset: h1 4 !important;}</style>
-<div style="counter-reset: h2 16"></div>
+<div class="main-header">
+  <h1 id="library-setup-labview-windows">Library Setup &lt;LabVIEW Windows&gt;</h1>
+</div>
+<style>
+  .main-header h1::before {
+    content: none !important;
+  }
+</style>
 
-<!--[dummy Header 1]>
-  <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
-<![end dummy Header 1]-->
-
-## [LabVIEW Windows](#labview-windows)
-
-### [Compiler and Builder](#compiler-and-builder)
+# [Compiler and Builder](#compiler-and-builder)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/labview_logo.png)
 
@@ -28,7 +17,7 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/library_file/a1.png)
 
-### [Building the Library](#building-the-library)
+# [Building the Library](#building-the-library)
 
 Note that if following procedure imports the DYNAMIXEL SDK c ver. 32bit library, the built library for LabVIEW only can be used by LabVIEW 32bit. Choose the platform target to either 32bit or 64bit, at first.
 
@@ -86,7 +75,7 @@ Besides, when some error that are related with `.dll file version is higher than
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/library_file/b12.png)
 
-### [Function Reference](#function-reference)
+# [Function Reference](#function-reference)
 
 * The function reference file is located in `[DynamixelSDK folder]/labview/dxl_x86_c.lvlib/dxl_x86_c.lvlib`
 
@@ -96,7 +85,7 @@ Besides, when some error that are related with `.dll file version is higher than
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/library_file/1.png)
 
-### [Building and Running the Sample Code](#building-and-running-the-sample-code)
+# [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
 DYNAMIXEL SDK example code for LabVIEW uses the library files(.dll for Windows) built in C language.
 

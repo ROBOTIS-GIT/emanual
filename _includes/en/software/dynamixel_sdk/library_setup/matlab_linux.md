@@ -1,26 +1,15 @@
----
-layout: archive
-lang: en
-ref: matlab_linux
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab_linux/
-sidebar:
-  title: DYNAMIXEL SDK
-  nav: "dynamixel_sdk"
----
+{::options parse_block_html="true" /}
 
-<style>body {counter-reset: h1 4 !important;}</style>
-<div style="counter-reset: h2 14"></div>
+<div class="main-header">
+  <h1 id="library-setup-matlab-linux">Library Setup &lt;Matlab Linux&gt;</h1>
+</div>
+<style>
+  .main-header h1::before {
+    content: none !important;
+  }
+</style>
 
-<!--[dummy Header 1]>
-  <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
-<![end dummy Header 1]-->
-
-## [Matlab Linux](#matlab-linux)
-
-### [Compiler and Builder](#compiler-and-builder)
+# [Compiler and Builder](#compiler-and-builder)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/matlab.png)
 
@@ -30,7 +19,7 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/linux/library_file/a2.png)
 
-### [Function Reference](#function-reference)
+# [Function Reference](#function-reference)
 
 * The function reference file is located in `[DynamixelSDK folder]/matlab/m_basic_function/`
 
@@ -40,13 +29,13 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/linux/library_file/1.png)
 
-### [Building and Running the Sample Code](#building-and-running-the-sample-code)
+# [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
 DYNAMIXEL SDK example code for Python uses the library files(.so for Linux) built in C language.
 
 Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so` which should be built by its own source code.
 
-#### Import libraries
+# Import libraries
 
 * Click `Set Path`
 
@@ -70,7 +59,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/linux/sample_code/5.png)
 
 
-#### Import function reference
+# Import function reference
 
 * Click `Add with Subfolders...`
 
@@ -85,7 +74,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/linux/sample_code/8.png)
 
 
-#### Run example
+# Run example
 
 * Make the port be able to be used
 

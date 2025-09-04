@@ -1,20 +1,7 @@
----
-layout: archive
-lang: en
-ref: cpp_linux
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/
-sidebar:
-  title: DYNAMIXEL SDK
-  nav: "dynamixel_sdk"
----
-
 {::options parse_block_html="true" /}
 
 <div class="main-header">
-  <h1 id="library-setup-cpp-linux">Library Setup <C++ Linux></h1>
+  <h1 id="library-setup-cpp-linux">Library Setup &lt;C++ Linux&gt;</h1>
 </div>
 <style>
   .main-header h1::before {

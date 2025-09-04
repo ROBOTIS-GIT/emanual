@@ -1,20 +1,7 @@
----
-layout: archive
-lang: en
-ref: python_windows
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/python_windows/
-sidebar:
-  title: DYNAMIXEL SDK
-  nav: "dynamixel_sdk"
----
-
 {::options parse_block_html="true" /}
 
 <div class="main-header">
-  <h1 id="library-setup-python-windows">Library Setup <Python Windows></h1>
+  <h1 id="library-setup-python-windows">Library Setup &lt;Python Windows&gt;</h1>
 </div>
 <style>
   .main-header h1::before {
@@ -33,4 +20,19 @@ sidebar:
 - Build and install Dynamixel_SDK through below command.
 ```bash
 $ pip install .
+```
+
+- You can check whether pip recognizes the SDK by running the following command:
+```bash
+$ pip show dynamixel_sdk
+Name: dynamixel-sdk
+Version: *.*.*
+Summary: ~
+Home-page: ~
+Author: ~
+Author-email: ~
+License: ~
+Location: ~
+Requires:
+Required-by:
 ```

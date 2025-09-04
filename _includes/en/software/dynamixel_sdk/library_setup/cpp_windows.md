@@ -1,20 +1,7 @@
----
-layout: archive
-lang: en
-ref: cpp_windows
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/cpp_windows/
-sidebar:
-  title: DYNAMIXEL SDK
-  nav: "dynamixel_sdk"
----
-
 {::options parse_block_html="true" /}
 
 <div class="main-header">
-  <h1 id="library-setup-cpp-windows">Library Setup <C++ WINDOWS></h1>
+  <h1 id="library-setup-cpp-windows">Library Setup &lt;C++ Windows&gt;</h1>
 </div>
 <style>
   .main-header h1::before {

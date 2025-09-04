@@ -29656,40 +29656,20 @@ dynamixel_sdk:
     - title: "Library Setup"
       url: /software/dynamixel/dynamixel_sdk/library_setup/#library-setup
       children:
-      - title: "C Windows"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/#c-windows
-      - title: "C Linux"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/c_linux/#c-linux
-      - title: "C macOS"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/c_macos/#c-macos
-      - title: "CPP Windows"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_windows/#library-setup-cpp-windows
-      - title: "CPP Linux"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#library-setup-cpp-linux
-      - title: "CPP macOS"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_macos/#cpp-macos
+      - title: "C"
+        url: /software/dynamixel/dynamixel_sdk/library_setup/c/#library-setup-c-linux
+      - title: "CPP"
+        url: /software/dynamixel/dynamixel_sdk/library_setup/cpp/#library-setup-cpp-linux
+      - title: "Python"
+        url: /software/dynamixel/dynamixel_sdk/library_setup/python/#library-setup-python-linux
       - title: "Csharp Windows"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/csharp_windows/#csharp-windows
-      - title: "Python Windows"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/python_windows/#library-setup-python-windows
-      - title: "Python Linux"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/python_linux/#library-setup-python-linux
-      - title: "Python macOS"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/python_macos/#python-macos
-      - title: "Java Windows"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/java_windows/#java-windows
-      - title: "Java Linux"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/java_linux/#java-linux
-      - title: "Java macOS"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/java_macos/#java-macos
-      - title: "MATLAB Windows"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_windows/#matlab-windows
-      - title: "MATLAB Linux"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_linux/#matlab-linux
-      - title: "MATLAB macOS"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_macos/#matlab-macos
+        url: /software/dynamixel/dynamixel_sdk/library_setup/csharp/#library-setup-csharp-windows
+      - title: "Java"
+        url: /software/dynamixel/dynamixel_sdk/library_setup/java/#library-setup-java-linux
+      - title: "MATLAB"
+        url: /software/dynamixel/dynamixel_sdk/library_setup/matlab/#library-setup-matlab-linux
       - title: "LabVIEW Windows"
-        url: /software/dynamixel/dynamixel_sdk/library_setup/labview_windows/#labview-windows
+        url: /software/dynamixel/dynamixel_sdk/library_setup/labview/#library-setup-labview-windows
     - title: Basic Read/Write tutorial
       url: /software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/
       children:

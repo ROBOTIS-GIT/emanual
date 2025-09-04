@@ -1,34 +1,25 @@
----
-layout: archive
-lang: en
-ref: java_linux
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/java_linux/
-sidebar:
-  title: DYNAMIXEL SDK
-  nav: "dynamixel_sdk"
----
+{::options parse_block_html="true" /}
 
-<style>body {counter-reset: h1 4 !important;}</style>
-<div style="counter-reset: h2 11"></div>
+<div class="main-header">
+  <h1 id="library-setup-java-linux">Library Setup &lt;Java Linux&gt;</h1>
+</div>
+<style>
+  .main-header h1::before {
+    content: none !important;
+  }
+</style>
 
-<!--[dummy Header 1]>
-  <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
-<![end dummy Header 1]-->
+# [Install requirements](#install-requirements)
 
-## [Java Linux](#java-linux)
 
-### [Compiler and Builder](#compiler-and-builder)
-
+## [Compiler and Builder](#compiler-and-builder)
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/eclipse.png)
 
 * [Download the Eclipse IDE for Java (`Linux 32-bit` or `Linux 64-bit`)](http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/neonr)
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/linux/library_file/a1.png)
 
-### [Required Packages](#required-packages)
+## [Required Packages](#required-packages)
 
 * [Download Java Development Kit (JDK) (`Linux 32-bit` or `Linux 64-bit`)](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
@@ -42,7 +33,7 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/linux/library_file/b3.png)
 
-### [Java Native Access(JNA)](#java-native-accessjna)
+## [Java Native Access(JNA)](#java-native-accessjna)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/jna.jpg)
 
@@ -54,7 +45,7 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/linux/library_file/b5.png)
 
-### [Function Reference](#function-reference)
+# [Function Reference](#function-reference)
 
 * The function reference file is located in `[DynamixelSDK folder]/java/dynamixel_functions_java/x86 or x64/Dynamixel.java`
 
@@ -64,13 +55,13 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/linux/library_file/1.png)
 
-### [Building and Running the Sample Code](#building-and-running-the-sample-code)
+# [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
 The DYNAMIXEL SDK example code for Java uses the library files(.so for Linux) built in C language.
 
 Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so` which should be built by its own source code.
 
-#### Make Java Project
+## Make Java Project
 
 * Set workspace 
 
@@ -88,7 +79,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/linux/sample_code/4.png)
 
-#### Import function reference
+## Import function reference
 
 * Click `Link Additional Source to Project`
 
@@ -108,7 +99,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/linux/sample_code/8.png)
 
 
-#### Import DynamixelSDK library
+## Import DynamixelSDK library
 
 * Click `Link Additional Source to Project`
 
@@ -127,7 +118,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/linux/sample_code/13.png)
 
 
-#### Import JNA
+## Import JNA
 
 * Go to Libraries on the screen. 
 
@@ -146,7 +137,7 @@ Each released DYNAMIXEL SDK have latest library files in `[DynamixelSDK folder]/
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/linux/sample_code/17.png)
 
 
-#### Run example
+# Run example
 
 * Make the port be able to be used
 

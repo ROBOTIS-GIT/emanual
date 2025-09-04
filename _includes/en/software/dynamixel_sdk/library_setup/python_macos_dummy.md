@@ -1,24 +1,20 @@
----
-layout: archive
-lang: en
-ref: matlab_macos
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/matlab_macos/
-sidebar:
-  title: DYNAMIXEL SDK
-  nav: "dynamixel_sdk"
----
-
-<style>body {counter-reset: h1 4 !important;}</style>
-<div style="counter-reset: h2 15"></div>
+<!-- <style>body {counter-reset: h1 4 !important;}</style>
+<div style="counter-reset: h2 9"></div> -->
 
 <!--[dummy Header 1]>
   <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
 <![end dummy Header 1]-->
 
-## [Matlab macOS](#matlab-macos)
+{::options parse_block_html="true" /}
+
+<div class="main-header">
+  <h1 id="library-setup-python-macos">Library Setup &lt;Python macOS&gt;</h1>
+</div>
+<style>
+  .main-header h1::before {
+    content: none !important;
+  }
+</style>
 
 {% include en/maintenance_is_in_progress.md %}
 

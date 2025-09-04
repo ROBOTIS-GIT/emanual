@@ -1,24 +1,20 @@
----
-layout: archive
-lang: en
-ref: java_macos
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/java_macos/
-sidebar:
-  title: DYNAMIXEL SDK
-  nav: "dynamixel_sdk"
----
-
-<style>body {counter-reset: h1 4 !important;}</style>
-<div style="counter-reset: h2 12"></div>
+<!-- <style>body {counter-reset: h1 4 !important;}</style>
+<div style="counter-reset: h2 5"></div> -->
 
 <!--[dummy Header 1]>
   <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
 <![end dummy Header 1]-->
 
-## [Java macOS](#java-macos)
+{::options parse_block_html="true" /}
+
+<div class="main-header">
+  <h1 id="library-setup-cpp-macos">Library Setup &lt;C++ macOS&gt;</h1>
+</div>
+<style>
+  .main-header h1::before {
+    content: none !important;
+  }
+</style>
 
 {% include en/maintenance_is_in_progress.md %}
 
