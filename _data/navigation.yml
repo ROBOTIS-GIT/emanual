@@ -29628,7 +29628,6 @@ robotis_manipulator_libs:
     - title: "Step4 Use it"
       url: /software/robotis_manipulator_libs/#step4-use-it
 
-
 #DYNAMIXEL SDK sidebar
 dynamixel_sdk:
   - title: "Overview"
@@ -30110,6 +30109,15 @@ dynamixel_sdk:
     url: /software/dynamixel/dynamixel_sdk/quick_start_video/
   - title: "FAQ"
     url: /software/dynamixel/dynamixel_sdk/faq/
+  - title: "Dynamixel API"
+    url: /software/dynamixel/dynamixel_sdk/dynamixel_api/introduction
+    children:
+    - title: "Introduction"
+      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/introduction
+    - title: "API Reference"
+      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/api_reference
+    - title: "Tutorials"
+      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/tutorials
 
 #DYNAMIXEL Workbench sidebar
 dynamixel_workbench:
