@@ -45,7 +45,7 @@ $ sudo make install
 - If the build completes successfully, you should see the .so file generated inside the build folder.
 ``` bash
 $ ls
-libdxl_x86_cpp.so Makefile
+libdxl_x86_c.so Makefile
 ```
 
 - Grant permission to access the port

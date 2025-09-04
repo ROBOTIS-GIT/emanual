@@ -1,7 +1,7 @@
 {::options parse_block_html="true" /}
 
 <div class="main-header">
-  <h1 id="library-setup-c-linux">Library Setup &lt;C Windows&gt;</h1>
+  <h1 id="library-setup-c-windows">Library Setup &lt;C Windows&gt;</h1>
 </div>
 <style>
   .main-header h1::before {

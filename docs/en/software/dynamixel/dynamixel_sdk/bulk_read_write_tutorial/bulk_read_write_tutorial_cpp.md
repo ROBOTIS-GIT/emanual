@@ -79,7 +79,7 @@ $ code my_bulk_read_write.cpp
 - Make main function and initialize the `PortHandler`,`PacketHandler`,`GroupBulkWrite` and `GroupBulkRead`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `COM3` as the port name and `2.0` as the protocol version.
 ```cpp
   int main(){
-    dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler("COM3 "); // your dxl port name
+    dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler("COM3"); // your dxl port name
     dynamixel::PacketHandler *packetHandler = dynamixel::PacketHandler::getPacketHandler(2.0); //protocol version
     dynamixel::GroupBulkWrite groupBulkWrite(portHandler, packetHandler);
     dynamixel::GroupBulkRead groupBulkRead(portHandler, packetHandler);
