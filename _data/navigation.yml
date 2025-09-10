@@ -30118,6 +30118,8 @@ dynamixel_sdk:
       url: /software/dynamixel/dynamixel_sdk/dynamixel_api/api_reference
     - title: "Tutorials"
       url: /software/dynamixel/dynamixel_sdk/dynamixel_api/tutorials
+    - title: "Examples"
+      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/examples
 
 #DYNAMIXEL Workbench sidebar
 dynamixel_workbench:
