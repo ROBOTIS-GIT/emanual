@@ -30116,8 +30116,15 @@ dynamixel_sdk:
       url: /software/dynamixel/dynamixel_sdk/dynamixel_api/introduction
     - title: "API Reference"
       url: /software/dynamixel/dynamixel_sdk/dynamixel_api/api_reference
-    - title: "Tutorials"
-      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/tutorials
+    - title: "Single Motor Control Tutorial"
+      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/single_motor_tutorial
+      children:
+      - title: "Step 1: Moving DYNAMIXEL"
+        url: /software/dynamixel/dynamixel_sdk/dynamixel_api/single_motor_tutorial_step1/#make-cpp-file
+      - title: "Step 2: Read Data from DYNAMIXEL"
+        url: /software/dynamixel/dynamixel_sdk/dynamixel_api/single_motor_tutorial_step2/#make-cpp-file
+    - title: "Group Motor Control Tutorial"
+      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/group_motor_tutorial
     - title: "Examples"
       url: /software/dynamixel/dynamixel_sdk/dynamixel_api/examples
 

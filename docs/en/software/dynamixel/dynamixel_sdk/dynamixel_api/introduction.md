@@ -25,7 +25,8 @@ sidebar:
 <style>body {counter-reset: h1 0 !important;}</style>
 
 # [Overview](#overview)
-The dynamixel_api is a high-level, object-oriented C++ library designed to wrap the standard low-level Dynamixel SDK. Its primary goal is to provide a more intuitive, safer, and easier-to-use interface for controlling Dynamixel servos, allowing developers to focus on their robotics application instead of low-level communication protocols.
+- The **dynamixel_api** is a library that wraps the low-level Dynamixel SDK in a **motor-object-oriented design**, making it easier for first-time users to work with Dynamixel.
+- Its primary goal is to provide a more **intuitive** and **easier-to-use** interface for controlling Dynamixel servos.
 
 # [Features](#features)
 - **Object-Oriented Design**: Each Dynamixel servo is managed as a distinct Motor object. By mapping the physical motor to a software object on a 1:1 basis, users can intuitively control a specific motor.
