@@ -30136,8 +30136,6 @@ dynamixel_sdk:
         url: /software/dynamixel/dynamixel_sdk/dynamixel_api/group_motor_tutorial_step6/#make-cpp-file
       - title: "Step 7: OMX Position Control Example"
         url: /software/dynamixel/dynamixel_sdk/dynamixel_api/group_motor_tutorial_step7/#make-cpp-file
-    - title: "Examples"
-      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/examples
 
 #DYNAMIXEL Workbench sidebar
 dynamixel_workbench:
