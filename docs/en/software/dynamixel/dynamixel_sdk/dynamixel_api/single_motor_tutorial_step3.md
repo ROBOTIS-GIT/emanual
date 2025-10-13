@@ -22,12 +22,12 @@ sidebar:
   }
 </style>
 
+![](/assets/images/sw/sdk/dynamixel_sdk/api/dxl_step3.gif)
 - This tutorial shows you how to read data from one Dynamixel and write the read value to another Dynamixel using the Dynamixel API.  
 
 **NOTE**: It assumes that you have already installed and built the SDK.
 {:.notice--warning}
 
-![](/assets/images/sw/sdk/dynamixel_sdk/api/dxl_step3.gif)
 # [Make cpp file](#make-cpp-file)
 - Open a code editor and create a new C++ source file. In this example, we use visual studio code.
 ```bash

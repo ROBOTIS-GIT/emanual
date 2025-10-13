@@ -97,7 +97,7 @@ int main(){
 
   **Example**
   ``` cpp
-    auto result_void = motor1->disableTorque(); // type of 'result_void' variable is Result<void, Error>
+    auto result_void = motor1->disableTorque(); // type of 'result_void' variable is Result<void, DxlError>
     if (!result_void.isSuccess()) {
       std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
       return 1;
@@ -120,7 +120,7 @@ int main(){
   std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
 
   //Disble torque to change operating mode
-  auto result_void = motor1->disableTorque(); // type of 'result_void' variable is Result<void, Error>
+  auto result_void = motor1->disableTorque(); // type of 'result_void' variable is Result<void, DxlError>
   if (!result_void.isSuccess()) {
     std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
     return 1;
