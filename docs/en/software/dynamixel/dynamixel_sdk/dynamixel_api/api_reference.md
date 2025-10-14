@@ -24,14 +24,20 @@ sidebar:
 
 # [Connector Class](#connector-class)
 
+**Connector Class**
+
 | Return Type                         | Method                                                                                   | Description                                                           |
 | ----------------------------------- | -----------------------------------------------------------------------------------------| ----------------------------------------------------------------------|
 | —                                   | Connector(const std::string & port_name, float protocol_version, int baud_rate)          | Initializes the connector.                                            |
 | std::unique_ptr<Motor>              | createMotor(uint8_t id)                                                                  | Returns a `Motor` instance for the specified ID.                      |
 | std::vector<std::unique_ptr<Motor>> | createAllMotors(int start_id = 0, int end_id = 252)                                      | Returns a vector of all `Motor` instances within the given ID range.  |
 | std::unique_ptr<GroupExecutor>      | createGroupExecutor()                                                                    | Closes the communication port.                                        |
+| PortHandler *                       | getPortHandler() const                                                                   | Returns the underlying PortHandler instance.                          |
+| PacketHandler *                     | getPacketHandler() const                                                                 | Returns the underlying PacketHandler instance.                        |
 
 # [Motor Class](#motor-class)
+
+**Motor Class**
 
 | Return Type                     | Method                                               | Description                                                   |
 | :--------------------------     | :----------------------------------------------------| :------------------------------------------------------------ |
@@ -111,33 +117,19 @@ sidebar:
 |NORMAL   |  0  |
 |REVERSE  |  1  |
 
-# [Motor Group](#motor-group)
+# [Group Executor](#group-executor)
 
-| Return Type                | Method                                       | Description                                      |
-| :--------------------------| :--------------------------------------------| :----------------------------------------------- |
-| MotorProxy *               | addMotor(uint8_t id)                         | Adds a motor with the specified ID to the group. |
-| Result<void, DxlError>     | executeWrite()                               | Executes the synchronized write operations staged in the list.|
-| Result<std::vector<Result<int32_t, DxlError>, DxlError>> | executeRead()                                | Executes the synchronized read operations staged in the list.|
+**GroupExecutor Class**
 
-## [Motor Group::Motor Proxy](#motor-proxy)
-
-| Return Type                | Method                                     | Description                                      |
-| :--------------------------| :------------------------------------------| :----------------------------------------------- |
-| Result<void, DxlError>     | stageEnableTorque();                       | Stage command to enable torque.                  |
-| Result<void, DxlError>     | stageDisableTorque();                      | Stage command to disable torque.                 |
-| Result<void, DxlError>     | stageSetGoalPosition(uint32_t position);   | Stage command to set the goal position.          |
-| Result<void, DxlError>     | stageSetGoalVelocity(uint32_t velocity);   | Stage command to set the goal velocity.          |
-| Result<void, DxlError>     | stageLEDOn();                              | Stage command to turn the LED on.                |
-| Result<void, DxlError>     | stageLEDOff();                             | Stage command to turn the LED off.               |
-| Result<void, DxlError>     | stageIsTorqueOn();                         | Stage command to check if torque is enabled.     |
-| Result<void, DxlError>     | stageIsLEDOn();                            | Stage command to check if LED is on.             |
-| Result<void, DxlError>     | stageGetPresentPosition();                 | Stage command to get the present position.       |
-| Result<void, DxlError>     | stageGetPresentVelocity();                 | Stage command to get the present velocity.       |
-| uint8_t                    | getID()                                    | Returns the motor ID.                            |
-| uint16_t                   | getModelNumber()                           | Returns the motor model number.                  |
-| std::string                | getModelName()                             | Returns the motor model name.                    |
+| Return Type                | Method                                         | Description                                      |
+| :--------------------------| :----------------------------------------------| :----------------------------------------------- |
+| void                       | addCmd(StagedCommand cmd)                      | Adds a command to the group excutor.             |
+| void                       | addCmd(Result<StagedCommand, DxlError> result) | Adds a command to the group excutor.             |
+| Result<void, DxlError>     | executeWrite()                                 | Executes the write operations staged in the list. It automatically determines whether to use Bulk or Sync Write based on the command list and sends the corresponding packet.|
+| Result<std::vector<Result<int32_t, DxlError>, DxlError>> | executeRead()    | Executes the read operations staged in the list. It automatically determines whether to use Bulk or Sync Read based on the command list and sends the corresponding packet.|
 
 # [DxlError Enum](#dxlerror-enum)
+
 **DxlError**
 
 | DxlError                   | Value |Description                                      |
@@ -163,6 +155,15 @@ sidebar:
 | API_COMMAND_IS_EMPTY       | 22    |Command list is empty                            |
 | API_DUPLICATE_ID           | 23    |Duplicate ID in staged commands                  |
 | API_FAIL_TO_GET_DATA       | 24    |Failed to get data from motor                    |
+
+**Result Class**
+
+| Return Type                | Function                                   | Description                                      |
+| :--------------------------| :------------------------------------------| :----------------------------------------------- |
+| T                         | value() const                               | Returns the contained value.                     |
+| E                         | error() const                               | Returns the contained error.                     |
+| bool                      | isSuccess() const                           | Returns true if the result is Success, false if Failure.|
+
 
 **Global Function**
 
