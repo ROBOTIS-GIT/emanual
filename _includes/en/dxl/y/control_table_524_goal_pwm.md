@@ -4,4 +4,4 @@ Goal PWM is used as an upper limiting value for the output PWM of the motor in a
 
 | Unit      | Range                               |  Control Mode                                      |               Description                  |
 |:---------:|:-----------------------------------:| :---------------------------------------------------|:-------------------------------------------|
-| 0.01 [V]  | - PWM Limit(64) ~ PWM Limit(64)     | Current control, Velocity control, Position control |  500 = Maximum output voltage limited to 50[%]<br />1,000 = Maximum output voltage limited to 100[%] |
+| 0.1 [%]  | - PWM Limit(64) ~ PWM Limit(64)     | Current control, Velocity control, Position control |  500 = Maximum output voltage limited to 50[%]<br />1,000 = Maximum output voltage limited to 100[%] |
