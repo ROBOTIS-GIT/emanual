@@ -532,6 +532,9 @@ main:
     - title: "DYNAMIXEL"
       titlekr: "다이나믹셀"
       children:
+      - title: "DYNAMIXEL Easy SDK"
+        titlekr: "다이나믹셀 Easy SDK"
+        url: /software/dynamixel/dynamixel_easy_sdk/getting_started/
       - title: "DYNAMIXEL SDK"
         titlekr: "다이나믹셀 SDK"
         url: /software/dynamixel/dynamixel_sdk/overview/
@@ -29628,6 +29631,44 @@ robotis_manipulator_libs:
     - title: "Step4 Use it"
       url: /software/robotis_manipulator_libs/#step4-use-it
 
+#DYNAMIXEL EASY SDK sidebar
+dynamixel_easy_sdk:
+  - title: "Getting Started"
+    url: /software/dynamixel/dynamixel_easy_sdk/getting_started/#requirements
+    children:
+    - title: "Requirements"
+      url: /software/dynamixel/dynamixel_easy_sdk/getting_started/#requirements
+    - title: "Download and Build SDK"
+      url: /software/dynamixel/dynamixel_easy_sdk/getting_started/#download-and-build-sdk
+    - title: "Hardware Setup"
+      url: /software/dynamixel/dynamixel_easy_sdk/getting_started/#hardware-setup
+    - title: "Move Motor to target position"
+      url: /software/dynamixel/dynamixel_easy_sdk/getting_started/#move-motor-to-target-position
+  - title: "Introduction"
+    url: /software/dynamixel/dynamixel_easy_sdk/introduction/#dynamixel-easy-sdk-introduction
+  - title: "Single Motor Control Tutorial"
+    url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial
+    children:
+    - title: "Moving DYNAMIXEL"
+      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step1/#make-cpp-file
+    - title: "Read Data from DYNAMIXEL"
+      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step2/#make-cpp-file
+    - title: "Leader and Follower"
+      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step3/#make-cpp-file
+    - title: "OMX Teleoperation"
+      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step4/#make-cpp-file
+  - title: "Group Motor Control Tutorial"
+    url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial
+    children:
+    - title: "Simultaneous Control"
+      url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step5/#make-cpp-file
+    - title: "Simultaneous Reading"
+      url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step6/#make-cpp-file
+    - title: "OMX Teleoperation"
+      url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step7/#make-cpp-file
+  - title: "API Reference"
+    url: /software/dynamixel/dynamixel_easy_sdk/api_reference/#api-reference
+
 #DYNAMIXEL SDK sidebar
 dynamixel_sdk:
   - title: "Overview"
@@ -30109,33 +30150,6 @@ dynamixel_sdk:
     url: /software/dynamixel/dynamixel_sdk/quick_start_video/
   - title: "FAQ"
     url: /software/dynamixel/dynamixel_sdk/faq/
-  - title: "Dynamixel API"
-    url: /software/dynamixel/dynamixel_sdk/dynamixel_api/introduction
-    children:
-    - title: "Introduction"
-      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/introduction
-    - title: "API Reference"
-      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/api_reference
-    - title: "Single Motor Control Tutorial"
-      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/single_motor_tutorial
-      children:
-      - title: "Step 1: Moving DYNAMIXEL"
-        url: /software/dynamixel/dynamixel_sdk/dynamixel_api/single_motor_tutorial_step1/#make-cpp-file
-      - title: "Step 2: Read Data from DYNAMIXEL"
-        url: /software/dynamixel/dynamixel_sdk/dynamixel_api/single_motor_tutorial_step2/#make-cpp-file
-      - title: "Step 3: Leader and Follower Example"
-        url: /software/dynamixel/dynamixel_sdk/dynamixel_api/single_motor_tutorial_step3/#make-cpp-file
-      - title: "Step 4: OMX Teleoperation Example"
-        url: /software/dynamixel/dynamixel_sdk/dynamixel_api/single_motor_tutorial_step4/#make-cpp-file
-    - title: "Group Motor Control Tutorial"
-      url: /software/dynamixel/dynamixel_sdk/dynamixel_api/group_motor_tutorial
-      children:
-      - title: "Step 5: Moving Multiple DYNAMIXELs simultaneously"
-        url: /software/dynamixel/dynamixel_sdk/dynamixel_api/group_motor_tutorial_step5/#make-cpp-file
-      - title: "Step 6: Read Data from Multiple DYNAMIXELs simultaneously"
-        url: /software/dynamixel/dynamixel_sdk/dynamixel_api/group_motor_tutorial_step6/#make-cpp-file
-      - title: "Step 7: OMX Position Control Example"
-        url: /software/dynamixel/dynamixel_sdk/dynamixel_api/group_motor_tutorial_step7/#make-cpp-file
 
 #DYNAMIXEL Workbench sidebar
 dynamixel_workbench:
