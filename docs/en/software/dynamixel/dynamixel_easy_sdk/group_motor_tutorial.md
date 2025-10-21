@@ -7,8 +7,8 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial/
 sidebar:
-  title: DYNAMIXEL SDK
-  nav: "dynamixel_sdk"
+  title: DYNAMIXEL Easy SDK
+  nav: "dynamixel_easy_sdk"
 ---
 
 {::options parse_block_html="true" /}
