@@ -176,6 +176,8 @@ sidebar:
 | SDK_ERRNUM_DATA_LIMIT      | 6     |Data limit exceeded                              |
 | SDK_ERRNUM_ACCESS          | 7     |Access denied                                    |
 | API_FUNCTION_NOT_SUPPORTED | 11    |The Dynamixel API does not support this motor model|
+| EASY_SDK_MOTOR_TORQUE_OFF  | 12    |Motor torque is off                              |
+| EASY_SDK_OPERATING_MODE_MISMATCH | 13 |Operating mode is mismatched                     |
 | API_ADD_PARAM_FAIL         | 21    |Failed to add parameter                          |
 | API_COMMAND_IS_EMPTY       | 22    |Command list is empty                            |
 | API_DUPLICATE_ID           | 23    |Duplicate ID in staged commands                  |
