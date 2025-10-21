@@ -29650,22 +29650,22 @@ dynamixel_easy_sdk:
     url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial
     children:
     - title: "Moving DYNAMIXEL"
-      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step1
+      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step1/#dynamixel-easy-sdk-tutorial-step1
     - title: "Read Data from DYNAMIXEL"
-      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step2
+      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step2/#dynamixel-easy-sdk-tutorial-step2
     - title: "Leader and Follower"
-      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step3
+      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step3/#dynamixel-easy-sdk-tutorial-step3
     - title: "OMX Teleoperation"
-      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step4
+      url: /software/dynamixel/dynamixel_easy_sdk/single_motor_tutorial_step4/#dynamixel-easy-sdk-tutorial-step4
   - title: "Group Motor Control Tutorial"
     url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial
     children:
     - title: "Simultaneous Control"
-      url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step5
+      url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step5/#dynamixel-easy-sdk-tutorial-step5
     - title: "Simultaneous Reading"
-      url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step6
+      url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step6/#dynamixel-easy-sdk-tutorial-step6
     - title: "OMX Teleoperation"
-      url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step7
+      url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step7/#dynamixel-easy-sdk-tutorial-step7
   - title: "API Reference"
     url: /software/dynamixel/dynamixel_easy_sdk/api_reference/#api-reference
 
