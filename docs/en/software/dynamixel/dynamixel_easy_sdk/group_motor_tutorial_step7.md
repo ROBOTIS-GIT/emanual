@@ -117,7 +117,11 @@ int main(){
 - Create a `Connector` object.
 - In OMX, two separate OpenRB adapters are used for the leader and follower motors, so create two `Connector` objects with different port names.
 - On OMX, the default baud rate is 1,000,000.
+<div class="notice--warning">
+  <strong>NOTE</strong>:
 - Port names may vary depending on your system configuration.
+</div>
+
 ```cpp
   int main(){
     dynamixel::Connector connector_leader("/dev/ttyACM1", 1000000);
