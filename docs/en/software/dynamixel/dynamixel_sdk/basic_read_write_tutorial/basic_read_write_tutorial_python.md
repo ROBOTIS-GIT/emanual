@@ -6,6 +6,9 @@ read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/basic_read_write_tutorial/basic_read_write_tutorial_python/
+tabs: "OS"
+tab_title1: Linux
+tab_title2: Windows
 sidebar:
   title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
@@ -27,19 +30,28 @@ This section provides examples of how to write code in Python to read and write 
 **NOTE**: This tutorial is based on **XL-430-W250** DYNAMIXEL motors and uses **Protocol 2.0**.
 {: .notice--warning}
 
-# [Read/Write Example](#read-write-example)
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
 
-## [Make python file](#make-python-file)
+# [Make python file](#make-python-file)
 - Create a python file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
 $ mkdir -p my_dxl_project/python
 $ cd my_dxl_project/python
 $ code my_read_write.py
 ```
+</section>
 
-## [Source Code](#source-code)
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
-### [Add Header Files](#add-header-files)
+# [Make python file](#make-python-file)
+- Open the Visual Studio Code and create a python file in your workspace.
+
+  ![](/assets/images/sw/sdk/dynamixel_sdk/basic_read_write_tutorial/vscodepython.png)
+</section>
+
+# [Source Code Description](#source-code-description)
+
+## [Add Header Files](#add-header-files)
 - Add   `#!/usr/bin/env python3` and import `dynamixel_sdk` to the top of your py file. This includes all necessary functions and classes from the DYNAMIXEL SDK.
 ```python
   #!/usr/bin/env python3
@@ -47,14 +59,27 @@ $ code my_read_write.py
   from dynamixel_sdk import *
 ```
 
-### [Initialize Handler Objects](#make-objects)
+## [Initialize Handler Objects](#make-objects)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 - Initialize the `PortHandler` and `PacketHandler`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `2.0` as the protocol version.
 ```python
   portHandler = PortHandler("/dev/ttyUSB0")  # your dxl port name
   packetHandler = PacketHandler(2.0)  # protocol version
 ```
+</section>
 
-### [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+- Initialize the `PortHandler` and `PacketHandler`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `COM3` as the port name and `2.0` as the protocol version.
+```python
+  portHandler = PortHandler("COM3")  # your dxl port name
+  packetHandler = PacketHandler(2.0)  # protocol version
+```
+</section>
+
+## [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
 - Open the port and set the baud rate. The example below uses `57600` as the baud rate.
 ```python
   portHandler.openPort()
@@ -81,7 +106,7 @@ else:
 ```
 </details>
 
-### [Write data to enable torque](#write-data-to-enable-torque)
+## [Write data to enable torque](#write-data-to-enable-torque)
 - Turn on the torque of the DYNAMIXEL.
 ```python
   dxl_id = 1
@@ -109,7 +134,7 @@ else:
 ```
 </details>
 
-### [Get User Input](#get-user-input-and-write-data)
+## [Get User Input](#get-user-input-and-write-data)
 - Get user input for the target position.
 ```python
   while True:
@@ -126,7 +151,7 @@ else:
           continue
 ```
 
-### [Write data to set target position](#write-data-to-set-target-position)
+## [Write data to set target position](#write-data-to-set-target-position)
 - Write the target position to the DYNAMIXEL.
 ```python
       goal_position_address = 116
@@ -147,7 +172,7 @@ else:
 ```
 </details>
 
-### [Read data from DYNAMIXEL](#read-data-from-dynamixel)
+## [Read data from DYNAMIXEL](#read-data-from-dynamixel)
 - Read the current position from the DYNAMIXEL.
 ```python
       while True:
@@ -180,13 +205,25 @@ else:
   portHandler.closePort()
 ```
 
-## [Run the Code](#run-the-code)
+# [Run the Code](#run-the-code)
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 - Run the code using python3.
 ```bash
 $ python3 my_read_write.py
 ```
+</section>
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+- Run the code through Visual Studio Code.
+
+  ![](/assets/images/sw/sdk/dynamixel_sdk/basic_read_write_tutorial/runbutton.png)
+</section>
 
 # [Full Source Code](#full-source-code)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 ```python
 #!/usr/bin/env python3
 
@@ -255,3 +292,75 @@ data = 0
 packetHandler.write1ByteTxRx(portHandler, dxl_id, torque_on_address, data)
 portHandler.closePort()
 ```
+</section>
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+```python
+#!/usr/bin/env python3
+
+from dynamixel_sdk import *
+
+
+portHandler = PortHandler("COM3")
+packetHandler = PacketHandler(2.0)
+
+if portHandler.openPort():
+  print("Succeeded to open the port!")
+else:
+  print("Failed to open the port!")
+  exit()
+
+if portHandler.setBaudRate(57600):
+  print("Succeeded to change the baudrate!")
+else:
+  print("Failed to change the baudrate!")
+  exit()
+
+dxl_id = 1
+torque_on_address = 64
+data = 1
+dxl_comm_result, dxl_error = packetHandler.write1ByteTxRx(portHandler, dxl_id, torque_on_address, data)
+if dxl_comm_result != COMM_SUCCESS:
+    print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+elif dxl_error != 0:
+    print("%s" % packetHandler.getRxPacketError(dxl_error))
+else:
+    print("Dynamixel has been successfully connected")
+
+while True:
+    try:
+        target_position = int(input("Enter target position (0 ~ 4095, -1 to exit): "))
+    except ValueError:
+        print("Please enter an integer.")
+        continue
+
+    if target_position == -1:
+        break
+    elif target_position < 0 or target_position > 4095:
+        print("Position must be between 0 and 4095.")
+        continue
+
+    goal_position_address = 116
+    dxl_comm_result, dxl_error = packetHandler.write4ByteTxRx(portHandler, dxl_id, goal_position_address, target_position)
+    if dxl_comm_result != COMM_SUCCESS:
+        print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+    elif dxl_error != 0:
+        print("%s" % packetHandler.getRxPacketError(dxl_error))
+
+    while True:
+        present_position_address = 132
+        present_position, dxl_comm_result, dxl_error = packetHandler.read4ByteTxRx(portHandler, dxl_id, present_position_address)
+        if dxl_comm_result != COMM_SUCCESS:
+            print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+        elif dxl_error != 0:
+            print("%s" % packetHandler.getRxPacketError(dxl_error))
+        print(f"Current Position: {present_position}")
+
+        if abs(target_position - present_position) <= 10:
+            break
+
+data = 0
+packetHandler.write1ByteTxRx(portHandler, dxl_id, torque_on_address, data)
+portHandler.closePort()
+```
+</section>

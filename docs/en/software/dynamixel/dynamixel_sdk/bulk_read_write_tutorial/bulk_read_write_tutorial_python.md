@@ -6,6 +6,9 @@ read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_sdk/bulk_read_write_tutorial/bulk_read_write_tutorial_python/
+tabs: "OS"
+tab_title1: Linux
+tab_title2: Windows
 sidebar:
   title: DYNAMIXEL SDK
   nav: "dynamixel_sdk"
@@ -22,27 +25,36 @@ sidebar:
   }
 </style>
 
-This section provides examples of how to write code in python to bulk_read and bulk_write data to DYNAMIXEL motors.
-
 **NOTE**: This tutorial is based on **XL-430-W250** DYNAMIXEL motors and uses **Protocol 2.0**.
 {: .notice--warning}
 
-# [Bulk_Read/Write Example](#bulk-read-write-example)
+This section provides examples of how to write code in python to bulk_read and bulk_write data to DYNAMIXEL motors.  
 **Bulk Read/Write** enables simultaneous control of multiple motors.  
 Unlike **Sync Read/Write**, which can only access the same address across multiple motors, **Bulk Read/Write** can access different addresses on multiple motors in a single instruction.  
 In this example, we need two motors to operate simultaneously.
 
-## [Make python file](#make-python-file)
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
+# [Make python file](#make-python-file)
 - Create a python file and open it in a text editor. In this case, we use visual studio code, but you can use any text editor you prefer.
 ```bash
 $ mkdir -p my_dxl_project/python
 $ cd my_dxl_project/python
 $ code my_bulk_read_write.py
 ```
+</section>
 
-## [Source Code](#source-code)
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
-### [Add Header Files](#add-header-files)
+# [Make python file](#make-python-file)
+- Open the Visual Studio Code and create a python file in your workspace.
+
+  ![](/assets/images/sw/sdk/dynamixel_sdk/basic_read_write_tutorial/vscodepython.png)
+</section>
+
+# [Source Code Description](#source-code-description)
+
+## [Add Header Files](#add-header-files)
 - Add   `#!/usr/bin/env python3` and import `dynamixel_sdk` to the top of your py file. This includes all necessary functions and classes from the DYNAMIXEL SDK.
 ```python
   #!/usr/bin/env python3
@@ -50,7 +62,10 @@ $ code my_bulk_read_write.py
   from dynamixel_sdk import *
 ```
 
-### [Initialize Handler Objects](#make-objects)
+## [Initialize Handler Objects](#make-objects)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 - Initialize the `PortHandler`,`PacketHandler`,`GroupBulkWrite` and `GroupBulkRead`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `/dev/ttyUSB0` as the port name and `2.0` as the protocol version.
 ```python
   portHandler = PortHandler('/dev/ttyUSB0')
@@ -61,9 +76,23 @@ $ code my_bulk_read_write.py
   groupBulkWrite = GroupBulkWrite(portHandler, packetHandler)
   groupBulkRead = GroupBulkRead(portHandler, packetHandler)
 ```
+</section>
 
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
-### [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
+- Initialize the `PortHandler`,`PacketHandler`,`GroupBulkWrite` and `GroupBulkRead`. Set the `port name` and `protocol version` according to your DYNAMIXEL setup. The example below uses `COM3` as the port name and `2.0` as the protocol version.
+```python
+  portHandler = PortHandler('COM3')
+  packetHandler = PacketHandler(2.0)
+
+  goal_position_address = 116
+  present_position_address = 132
+  groupBulkWrite = GroupBulkWrite(portHandler, packetHandler)
+  groupBulkRead = GroupBulkRead(portHandler, packetHandler)
+```
+</section>
+
+## [Open Port and Set Baud Rate](#open-port-and-set-baud-rate)
 - Open the port and set the baud rate. The example below uses `57600` as the baud rate.
 ```python
   portHandler.openPort()
@@ -90,7 +119,7 @@ else:
 ```
 </details>
 
-### [Write data to enable torque](#write-data-to-enable-torque)
+## [Write data to enable torque](#write-data-to-enable-torque)
 - Turn on the torque of the DYNAMIXEL.
 ```python
   dxl_id1 = 1
@@ -128,7 +157,7 @@ else:
 ```
 </details>
 
-### [Add parameters to GroupBulkRead](#add-parameters-to-groupbulkread)
+## [Add parameters to GroupBulkRead](#add-parameters-to-groupbulkread)
 - Add the DYNAMIXEL IDs to the `GroupBulkRead`.
 ```python
   present_position_address = 132
@@ -158,7 +187,7 @@ if dxl_addparam_result != True:
 </details>
 
 
-### [Get User Input and Set Data](#get-user-input-and-write-data)
+## [Get User Input and Set Data](#get-user-input-and-write-data)
 - Get user input for the target position.
 ```python
   dxl2_led_value_read = 0
@@ -190,7 +219,7 @@ if dxl_addparam_result != True:
           led_data = [0]
 ```
 
-### [Add parameters to GroupBulkWrite](#add-parameters-to-groupbulkwrite)
+## [Add parameters to GroupBulkWrite](#add-parameters-to-groupbulkwrite)
 - Add parameter to the `GroupBulkWrite` and tranfer the data to the DYNAMIXEL. Also set the LED data to toggle the LED on the second DYNAMIXEL.
 ```python
       groupBulkWrite.addParam(dxl_id1, goal_position_address, data_length_4byte, param_goal_position)
@@ -221,7 +250,7 @@ if dxl_addparam_result != True:
 ```
 </details>
 
-### [Read data to get current position](#read-data-to-get-current-position)
+## [Read data to get current position](#read-data-to-get-current-position)
 - Read the current position from the DYNAMIXEL until it reaches the target position.
 ```python
       while True:
@@ -259,13 +288,27 @@ You can also check if the data is available in the `GroupBulkRead` by using the 
 ```
 </details>
 
-## [Run the Code](#run-the-code)
+# [Run the Code](#run-the-code)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 - Run the code using python3.
 ```bash
 $ python3 my_bulk_read_write.py
 ```
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+- Run the code through Visual Studio Code.
+
+  ![](/assets/images/sw/sdk/dynamixel_sdk/basic_read_write_tutorial/runbutton.png)
+</section>
 
 # [Full Source Code](#full-source-code)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
 ```python
 #!/usr/bin/env python3
 
@@ -388,3 +431,130 @@ while True:
             break
 portHandler.closePort()
 ```
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
+```python
+#!/usr/bin/env python3
+
+from dynamixel_sdk import *
+
+
+portHandler = PortHandler('COM3')
+packetHandler = PacketHandler(2.0)
+
+goal_position_address = 116
+present_position_address = 132
+groupBulkWrite = GroupBulkWrite(portHandler, packetHandler)
+groupBulkRead = GroupBulkRead(portHandler, packetHandler)
+
+if portHandler.openPort():
+  print("Succeeded to open the port!")
+else:
+  print("Failed to open the port!")
+  exit()
+
+if portHandler.setBaudRate(57600):
+  print("Succeeded to change the baudrate!")
+else:
+  print("Failed to change the baudrate!")
+  exit()
+
+dxl_id1 = 1
+dxl_id2 = 2
+torque_on_address = 64
+data = 1
+dxl_comm_result, dxl_error = packetHandler.write1ByteTxRx(portHandler, dxl_id1, torque_on_address, data)
+if dxl_comm_result != COMM_SUCCESS:
+    print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+elif dxl_error != 0:
+    print("%s" % packetHandler.getRxPacketError(dxl_error))
+else:
+    print("Dynamixel#1 has been successfully connected")
+
+dxl_comm_result, dxl_error = packetHandler.write1ByteTxRx(portHandler, dxl_id2, torque_on_address, data)
+if dxl_comm_result != COMM_SUCCESS:
+    print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+elif dxl_error != 0:
+    print("%s" % packetHandler.getRxPacketError(dxl_error))
+else:
+    print("Dynamixel#2 has been successfully connected")
+
+present_position_address = 132
+data_length_4byte = 4
+dxl_addparam_result = groupBulkRead.addParam(dxl_id1, present_position_address, data_length_4byte)
+if dxl_addparam_result != True:
+    print("[ID:%03d] groupBulkRead addparam failed" % dxl_id1)
+    exit()
+
+led_address = 65
+data_length_1byte = 1
+dxl_addparam_result = groupBulkRead.addParam(dxl_id2, led_address, data_length_1byte)
+if dxl_addparam_result != True:
+    print("[ID:%03d] groupBulkRead addparam failed" % dxl_id2)
+    exit()
+
+dxl2_led_value_read = 0
+while True:
+    try:
+        target_position = int(input("Enter target position (0 ~ 4095, -1 to exit): "))
+    except ValueError:
+        print("Please enter an integer.")
+        continue
+
+    if target_position == -1:
+        break
+    elif target_position < 0 or target_position > 4095:
+        print("Position must be between 0 and 4095.")
+        continue
+
+    param_goal_position = [
+        DXL_LOBYTE(DXL_LOWORD(target_position)),
+        DXL_HIBYTE(DXL_LOWORD(target_position)),
+        DXL_LOBYTE(DXL_HIWORD(target_position)),
+        DXL_HIBYTE(DXL_HIWORD(target_position))
+    ]
+
+    if (dxl2_led_value_read == 0):
+        led_data = [1]
+    else:
+        led_data = [0]
+
+
+    dxl_addparam_result = groupBulkWrite.addParam(dxl_id1, goal_position_address, data_length_4byte, param_goal_position)
+    if not dxl_addparam_result:
+        print("[ID:%03d] groupBulkWrite addparam failed" % dxl_id1)
+        exit()
+
+    dxl_addparam_result = groupBulkWrite.addParam(dxl_id2, led_address, data_length_1byte, led_data)
+    if not dxl_addparam_result:
+        print("[ID:%03d] groupBulkWrite addparam failed" % dxl_id2)
+        exit()
+
+    dxl_comm_result = groupBulkWrite.txPacket()
+    if dxl_comm_result != COMM_SUCCESS:
+        print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+    groupBulkWrite.clearParam()
+
+    while True:
+        dxl_comm_result = groupBulkRead.txRxPacket()
+        if dxl_comm_result != COMM_SUCCESS:
+            print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
+        dxl_getdata_result = groupBulkRead.isAvailable(dxl_id1, present_position_address, data_length_4byte)
+        if dxl_getdata_result != True:
+            print("[ID:%03d] groupBulkRead getdata failed" % dxl_id1)
+            quit()
+
+        dxl_getdata_result = groupBulkRead.isAvailable(dxl_id2, led_address, data_length_1byte)
+        if dxl_getdata_result != True:
+            print("[ID:%03d] groupBulkRead getdata failed" % dxl_id2)
+            quit()
+        dxl1_present_position = groupBulkRead.getData(dxl_id1, present_position_address, data_length_4byte)
+        dxl2_led_value_read = groupBulkRead.getData(dxl_id2, led_address, data_length_1byte)
+        print("[ID:%03d] Present Position : %d \t [ID:%03d] LED Value: %d" % (dxl_id1, dxl1_present_position, dxl_id2, dxl2_led_value_read))
+        if abs(target_position - dxl1_present_position) <= 10:
+            break
+portHandler.closePort()
+```
+</section>
