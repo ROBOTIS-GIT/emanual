@@ -58,7 +58,7 @@ sidebar:
 | changeID(new_id: int)                                  | -                    | Changes the ID of the motor.                     |
 | setOperatingMode(mode: OperatingMode)                  | -                    | Sets the operating mode of the motor.            |
 | setProfileConfiguration(config: ProfileConfiguration)  | -                    | Sets the profile configuration of the motor.     |
-| setDirection(drection: Direction)                      | -                    | Sets the direction of the motor.                 |
+| setDirection(direction: Direction)                     | -                    | Sets the direction of the motor.                 |
 | setPositionPGain(value: int)                           | -                    | Sets the position P gain of the motor.           |
 | setPositionIGain(value: int)                           | -                    | Sets the position I gain of the motor.           |
 | setPositionDGain(value: int)                           | -                    | Sets the position D gain of the motor.           |
@@ -112,10 +112,10 @@ sidebar:
 | Motor(uint8_t id, uint16_t model_number, Connector * connector)     | -                    | Initializes the Motor instance.                  |
 | enableTorque()                                          | Result<void, DxlError>           | Enables the motor torque.                        |
 | disableTorque()                                         | Result<void, DxlError>           | Disables the motor torque.                       |
-| setGoalPosition(uint32_t position)                      | Result<void, DxlError>           | Sets the motor position.                         |
-| setGoalVelocity(uint32_t velocity)                      | Result<void, DxlError>           | Sets the motor velocity.                         |
-| setGoalCurrent(uint16_t current)                        | Result<void, DxlError>           | Sets the motor current.                          |
-| setGoalPWM(uint16_t pwm)                                | Result<void, DxlError>           | Sets the motor PWM.                              |
+| setGoalPosition(int32_t position)                       | Result<void, DxlError>           | Sets the motor position.                         |
+| setGoalVelocity(int32_t velocity)                       | Result<void, DxlError>           | Sets the motor velocity.                         |
+| setGoalCurrent(int16_t current)                         | Result<void, DxlError>           | Sets the motor current.                          |
+| setGoalPWM(int16_t pwm)                                 | Result<void, DxlError>           | Sets the motor PWM.                              |
 | LEDOn()                                                 | Result<void, DxlError>           | Turns the motor LED on.                          |
 | LEDOff()                                                | Result<void, DxlError>           | Turns the motor LED off.                         |
 | ping()                                                  | Result<uint16_t, DxlError>       | Pings the motor.                                 |
@@ -131,7 +131,7 @@ sidebar:
 | getCurrentLimit()                                       | Result<uint16_t, DxlError>       | Gets the current limit of the motor.             |
 | getPWMLimit()                                           | Result<uint16_t, DxlError>       | Gets the PWM limit of the motor.                 |
 | getOperatingMode()                                      | Result<OperatingMode, DxlError>  | Gets the operating mode of the motor.            |
-| changeID(uint32_t new_id)                               | Result<void, DxlError>           | Changes the ID of the motor.                     |
+| changeID(uint8_t new_id)                                | Result<void, DxlError>           | Changes the ID of the motor.                     |
 | setOperatingMode(OperatingMode mode)                    | Result<void, DxlError>           | Sets the operating mode of the motor.            |
 | setProfileConfiguration(ProfileConfiguration config)    | Result<void, DxlError>           | Sets the profile configuration of the motor.     |
 | setDirection(Direction direction)                       | Result<void, DxlError>           | Sets the direction of the motor.                 |
@@ -140,7 +140,7 @@ sidebar:
 | setPositionDGain(uint16_t value)                        | Result<void, DxlError>           | Sets the position D gain of the motor.           |
 | setVelocityPGain(uint16_t value)                        | Result<void, DxlError>           | Sets the velocity P gain of the motor.           |
 | setVelocityIGain(uint16_t value)                        | Result<void, DxlError>           | Sets the velocity I gain of the motor.           |
-| setHomingOffset(uint32_t offset)                        | Result<void, DxlError>           | Sets the homing offset of the motor.             |
+| setHomingOffset(int32_t offset)                        | Result<void, DxlError>           | Sets the homing offset of the motor.             |
 | setMaxPositionLimit(uint32_t limit)                     | Result<void, DxlError>           | Sets the maximum position limit of the motor.    |
 | setMinPositionLimit(uint32_t limit)                     | Result<void, DxlError>           | Sets the minimum position limit of the motor.    |
 | setVelocityLimit(uint32_t limit)                        | Result<void, DxlError>           | Sets the velocity limit of the motor.            |
@@ -152,10 +152,10 @@ sidebar:
 | factoryResetExceptIDAndBaudRate()                       | Result<void, DxlError>           | Performs factory reset on the motor except ID and baud rate. |
 | stageEnableTorque()                                     | Result<StagedCommand, DxlError>  | Stages enabling the motor torque.                |
 | stageDisableTorque()                                    | Result<StagedCommand, DxlError>  | Stages disabling the motor torque.               |
-| stageSetGoalPosition(uint32_t position)                 | Result<StagedCommand, DxlError>  | Stages setting the motor position.               |
-| stageSetGoalVelocity(uint32_t velocity)                 | Result<StagedCommand, DxlError>  | Stages setting the motor velocity.               |
-| stageSetGoalCurrent(uint16_t current)                   | Result<StagedCommand, DxlError>  | Stages setting the motor current.                |
-| stageSetGoalPWM(uint16_t pwm)                           | Result<StagedCommand, DxlError>  | Stages setting the motor PWM.                    |
+| stageSetGoalPosition(int32_t position)                 | Result<StagedCommand, DxlError>  | Stages setting the motor position.               |
+| stageSetGoalVelocity(int32_t velocity)                 | Result<StagedCommand, DxlError>  | Stages setting the motor velocity.               |
+| stageSetGoalCurrent(int16_t current)                   | Result<StagedCommand, DxlError>  | Stages setting the motor current.                |
+| stageSetGoalPWM(int16_t pwm)                           | Result<StagedCommand, DxlError>  | Stages setting the motor PWM.                    |
 | stageLEDOn()                                            | Result<StagedCommand, DxlError>  | Stages turning the motor LED on.                 |
 | stageLEDOff()                                           | Result<StagedCommand, DxlError>  | Stages turning the motor LED off.                |
 | stageIsTorqueOn()                                       | Result<StagedCommand, DxlError>  | Stages checking if the motor torque is enabled.  |
