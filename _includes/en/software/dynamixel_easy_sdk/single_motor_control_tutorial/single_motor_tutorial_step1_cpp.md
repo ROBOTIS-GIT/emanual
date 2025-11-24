@@ -98,7 +98,7 @@ $ ./tutorial_step1
 #include "dynamixel_easy_sdk/dynamixel_easy_sdk.hpp"
 
 int main(){
-  dynamixel::Connector connector("/dev/ttyUSB0", 57600);
+  dynamixel::Connector connector("/dev/ttyACM0", 57600);
   std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
 
   auto result_void = motor1->disableTorque(); // type of 'result_void' variable is Result<void, DxlError>

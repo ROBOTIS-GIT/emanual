@@ -138,7 +138,7 @@ $ ./tutorial_step6
 
 int main(){
 
-  dynamixel::Connector connector("/dev/ttyUSB0", 57600);
+  dynamixel::Connector connector("/dev/ttyACM0", 57600);
   std::unique_ptr<dynamixel::GroupExecutor> group_executor = connector.createGroupExecutor();
   std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
   std::unique_ptr<dynamixel::Motor> motor2 = connector.createMotor(2);

@@ -28,7 +28,7 @@ def main():
     motor1 = connector.createMotor(1)
 
     motor1.disableTorque()
-    motor1.setOperatingMode(Motor.OperatingMode.POSITION)
+    motor1.setOperatingMode(OperatingMode.POSITION)
     motor1.enableTorque()
 
     target_position = 500

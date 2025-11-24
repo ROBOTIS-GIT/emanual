@@ -91,7 +91,7 @@ $ ./tutorial_step2
 #include "dynamixel_easy_sdk/dynamixel_easy_sdk.hpp"
 
 int main(){
-  dynamixel::Connector connector("/dev/ttyUSB0", 2.0, 57600);
+  dynamixel::Connector connector("/dev/ttyACM0", 57600);
   std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
 
   auto result_int32_t = motor1->getPresentPosition();
