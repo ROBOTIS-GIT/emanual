@@ -6,6 +6,9 @@ read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_easy_sdk/getting_started/
+tabs: "Languages"
+tab_title1: Python
+tab_title2: C++
 sidebar:
   title: DYNAMIXEL Easy SDK
   nav: "dynamixel_easy_sdk"
@@ -22,6 +25,7 @@ sidebar:
   }
 </style>
 - In this chapter, you will use the **Dynamixel Easy SDK** with the **OpenRB-150 Tutorial Kit** to make the motor move.
+
 <style>body {counter-reset: h1 0 !important;}</style>
 
 # [Requirements](#requirements)
@@ -33,6 +37,25 @@ sidebar:
 ```bash
 git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 ```
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
+- Enter the Python directory and install the SDK using pip
+```bash
+cd DynamixelSDK/python
+pip install .
+```
+
+<div class="notice--info">
+- **NOTE:** Also you can install the SDK directly using pip without cloning the repository.
+```bash
+pip install dynamixel-sdk
+```
+</div>
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
 - Build the SDK by following the instructions below
 ```bash
 cd DynamixelSDK/c++/build/linux64
@@ -52,11 +75,37 @@ cp -r ../../../control_table /usr/local/share/dynamixel_sdk/
 ldconfig
 ```
 
+</section>
+
 # [Hardware Setup](#connect-openrb-150-tutorial-kit)
 - Connect the OpenRB-150 to the Dynamixel using a TTL cable, and connect it to your computer using a USB-C cable.  
 ![](/assets/images/sw/dynamixel_easy_sdk/getting_started/hw_setup.jpg)
 
 # [Move Motor to target position](#move-motor-to-targetposition)
+
+<section data-id="{{ page.tab_title1 }}" class="tab_contents">
+
+- Open a terminal and enter the Python interactive shell by typing `python` or `python3`.
+```bash
+python3
+```
+- Copy and paste the following code into the Python shell.
+```python
+from dynamixel_easy_sdk import *
+connector = Connector("/dev/ttyACM0", 57600)
+motor1 = connector.createMotor(1)
+motor1.disableTorque()
+motor1.setOperatingMode(OperatingMode.POSITION)
+motor1.enableTorque()
+target_position = 2000
+motor1.setGoalPosition(target_position)
+```
+
+![](/assets/images/sw/dynamixel_easy_sdk/getting_started/move_motor_python.gif)
+</section>
+
+<section data-id="{{ page.tab_title2 }}" class="tab_contents">
+
 - Create a new C++ source file named `move_motor.cpp` and open it in your favorite code editor.
 ```bash
 touch move_motor.cpp
@@ -79,4 +128,6 @@ touch move_motor.cpp
 g++ -o move_motor move_motor.cpp -ldxl_x64_cpp
 ./move_motor
 ```
+
 ![](/assets/images/sw/dynamixel_easy_sdk/getting_started/move_motor.gif)
+</section>

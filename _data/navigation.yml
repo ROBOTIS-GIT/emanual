@@ -29668,6 +29668,17 @@ dynamixel_easy_sdk:
       url: /software/dynamixel/dynamixel_easy_sdk/group_motor_tutorial_step7/#dynamixel-easy-sdk-tutorial-step7
   - title: "API Reference"
     url: /software/dynamixel/dynamixel_easy_sdk/api_reference/#api-reference
+    children:
+    - title: "Connector"
+      url: /software/dynamixel/dynamixel_easy_sdk/api_reference_connector/#connector-reference
+    - title: "Motor"
+      url: /software/dynamixel/dynamixel_easy_sdk/api_reference_motor/#motor-reference
+    - title: "GroupExecutor"
+      url: /software/dynamixel/dynamixel_easy_sdk/api_reference_group_executor/#group_executor-reference
+    - title: "Data Types"
+      url: /software/dynamixel/dynamixel_easy_sdk/api_reference_data_types/#data-types-reference
+    - title: "Dynamixel Error"
+      url: /software/dynamixel/dynamixel_easy_sdk/api_reference_dynamixel_error/#dynamixel-error-reference
 
 #DYNAMIXEL SDK sidebar
 dynamixel_sdk:
