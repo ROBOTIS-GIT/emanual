@@ -31,10 +31,13 @@ def main():
     present_positions = group_executor.executeRead()
     group_executor.clearStagedReadCommands()
 
-    motor1_position = present_positions[0].value()
-    motor2_position = present_positions[1].value()
+    motor1_position = present_positions[0]
+    motor2_position = present_positions[1]
     print("Motor1 Present Position:", motor1_position)
     print("Motor2 Present Position:", motor2_position)
+
+if __name__ == "__main__":
+    main()
 ```
 
 ## [Import Library](#import-library)
@@ -77,46 +80,31 @@ def main():
 
 - This will send the commands to both motors at the same time and read the present position of each motor.
 - The return type of this method is `List[int]`.
-- You can get the actual position values using the `value()` method of the `Result` object.
 ```python
-    motor1_position = present_positions[0].value()
-    motor2_position = present_positions[1].value()
+    motor1_position = present_positions[0]
+    motor2_position = present_positions[1]
     print("Motor1 Present Position:", motor1_position)
     print("Motor2 Present Position:", motor2_position)
 ```
 - This method decides the communication packet type automatically between Sync and Bulk based on the staged commands.
 
 # [Error Handling](#error-handling)
-- To ensure your code is robust, every method that sends a command to the motor returns a **Result** object that encapsulates errors.
-- This object lets you safely check for any communication or device errors before proceeding.
-- executeRead() method returns **Result<std::vector<Result<int32_t, Error>>, Error>** type. So you need to check for errors twice.
-- You can check for communication errors and device(dynamixel) errors using the **Result** object.
-
-  **Example**
-  ``` cpp
-    auto result = group_executor->executeRead(); // type of 'result_void' variable is Result<void, DxlError>
-    if (!result_void.isSuccess()) {
-      std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
-      return 1;
-    }
-    std::vector<int> positions;
-    for (const auto& result : result.value()) {
-      if (!result.isSuccess()) {
-        std::cerr << dynamixel::getErrorMessage(result.error()) << std::endl;
-        return 1;
-      }
-      positions.push_back(result.value());
-    }
-  ```
-
-- stage functions return **Result<void, Error>** type.
-- You can either pass this value directly to the addCmd() function, or perform error checking first and then pass the resulting command value.
-  **Example**
-  ``` cpp
-    auto result_cmd = motor1->stageGetPresentPosition(); // type of 'result_cmd' variable is Result<stagedCommand, DxlError>
-    if (!result_cmd.isSuccess()) {
-      std::cerr << dynamixel::getErrorMessage(result_cmd.error()) << std::endl;
-      return 1;
-    }
-    group_executor->addCmd(result_cmd.value());
-  ```
+- When an error occurs, `DxlRuntimeError` is raised.
+- You can catch this error using a try-except block.
+```python
+  try:
+      group_executor.ReadWrite()
+  except DxlRuntimeError as e:
+      print(e)
+```
+- `DxlRuntimeError` contains `DxlError` Enum that provides detailed information about the error.
+```python
+  try:
+      group_executor.ReadWrite()
+  except DxlRuntimeError as e:
+      if e.dxl_error == DxlError.EASY_SDK_ADD_PARAM_FAIL:
+          print("Failed to add param.")
+      elif e.dxl_error == DxlError.EASY_SDK_COMMAND_IS_EMPTY:
+          print("Command is empty.")
+```
+- If only certain values among those read by group control have errors, those values are displayed as None.

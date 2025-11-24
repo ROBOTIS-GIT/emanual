@@ -94,27 +94,21 @@ def main():
 ```
 
 # [Error Handling](#error-handling)
-- To ensure your code is robust, every method that sends a command to the motor returns a **Result** object that encapsulates errors.
-- This object lets you safely check for any communication or device errors before proceeding.
-- You can check for communication errors and device(dynamixel) errors using the **Result** object.
-
-  **Example**
-  ``` python
-    result_void = group_executor.executeWrite()  # type of 'result_void' variable is Result<void, DxlError>
-    if not result_void.isSuccess():
-      print(dynamixel.getErrorMessage(result_void.error()))
-      return 1
-  ```
-
-- stage functions return **Result<void, Error>** type.
-- You can either pass this value directly to the addCmd() function, or perform error checking first and then pass the resulting command value.
-  **Example**
-  ``` cpp
-    auto result_cmd = motor1->stageSetGoalPosition(target_position); // type of 'result_cmd' variable is Result<stagedCommand, DxlError>
-    if (!result_cmd.isSuccess()) {
-      std::cerr << dynamixel::getErrorMessage(result_cmd.error()) << std::endl;
-      return 1;
-    }
-    group_executor->addCmd(result_cmd.value());
-  ```
-
+- When an error occurs, `DxlRuntimeError` is raised.
+- You can catch this error using a try-except block.
+```python
+  try:
+      group_executor.executeWrite()
+  except DxlRuntimeError as e:
+      print(e)
+```
+- `DxlRuntimeError` contains `DxlError` Enum that provides detailed information about the error.
+```python
+  try:
+      group_executor.executeWrite()
+  except DxlRuntimeError as e:
+      if e.dxl_error == DxlError.EASY_SDK_ADD_PARAM_FAIL:
+          print("Failed to add param.")
+      elif e.dxl_error == DxlError.EASY_SDK_COMMAND_IS_EMPTY:
+          print("Command is empty.")
+```
