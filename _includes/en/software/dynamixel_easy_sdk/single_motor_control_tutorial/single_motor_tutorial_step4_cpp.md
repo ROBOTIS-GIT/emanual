@@ -155,6 +155,6 @@ int main(){
 # [Compile and Run](#compile-and-run)
 - You can compile and run the code using the following commands
 ```bash
-$ g++ dxl_tutorial_4.cpp -o dxl_tutorial_4 -l dxl_x64_cpp
+$ g++ dxl_tutorial_step4.cpp -o dxl_tutorial_4 -l dxl_x64_cpp
 $ ./dxl_tutorial_4
 ```

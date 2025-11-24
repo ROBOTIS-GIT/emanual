@@ -60,6 +60,7 @@ int main(){
     auto result_int32_t = motor1->getPresentPosition();
     int present_position = result_int32_t.value();
     std::cout << "Present Position: " << present_position << std::endl;
+  }
 ```
 
 # [Error Handling](#error-handling)
@@ -100,6 +101,5 @@ int main(){
   }
   int present_position = result_int32_t.value();
   std::cout << "Present Position: " << present_position << std::endl;
-  }
 }
 ```

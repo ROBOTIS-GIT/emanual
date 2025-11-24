@@ -72,7 +72,7 @@ if __name__ == "__main__":
   try:
       motor1.getPresentPosition()
   except DxlRuntimeError as e:
-      if e.dxl_error == DxlError.SDK_COMM_RX_FAIL:
+      if e.dxl_error == DxlError.SDK_COMM_TX_FAIL:
           print("Transmission failed.")
       elif e.dxl_error == DxlError.SDK_COMM_RX_FAIL:
           print("Receive failed.")
