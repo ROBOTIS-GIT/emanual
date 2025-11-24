@@ -54,8 +54,8 @@ if __name__ == "__main__":
 ## [Get Present Position](#get-present-position)
 - You can read the present position of the motor using the `getPresentPosition` method.
 ```python
-    present_position = motor1.getPresentPosition()
-    print("Present Position:", present_position)
+      present_position = motor1.getPresentPosition()
+      print("Present Position:", present_position)
 ```
 
 # [Error Handling](#error-handling)

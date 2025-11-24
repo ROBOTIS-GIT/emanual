@@ -59,16 +59,16 @@ if __name__ == "__main__":
 - Use the methods provided by the `Motor` class to control the Dynamixel servo.
 - Set the operating mode to position control mode.
 ```python
-    motor1.disableTorque()
-    motor1.setOperatingMode(OperatingMode.POSITION)
-    motor1.enableTorque()
+      motor1.disableTorque()
+      motor1.setOperatingMode(OperatingMode.POSITION)
+      motor1.enableTorque()
 ```
 
 ## [Move Motor to Goal Position](#move-motor-to-goal-position)
 - Move the motor to the goal position that you want.
 ```python
-    target_position = 500
-    motor1.setGoalPosition(target_position)
+      target_position = 500
+      motor1.setGoalPosition(target_position)
 ```
 
 # [Error Handling](#error-handling)

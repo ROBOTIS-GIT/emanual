@@ -67,30 +67,30 @@ def main():
 - Use the methods provided by the `Motor` class to control the Dynamixel servo.
 - Set the operating mode to position control mode.
 ```python
-    motor1.disableTorque()
-    motor2.disableTorque()
-    motor1.setOperatingMode(OperatingMode.POSITION)
-    motor2.setOperatingMode(OperatingMode.POSITION)
-    motor1.enableTorque()
-    motor2.enableTorque()
+      motor1.disableTorque()
+      motor2.disableTorque()
+      motor1.setOperatingMode(OperatingMode.POSITION)
+      motor2.setOperatingMode(OperatingMode.POSITION)
+      motor1.enableTorque()
+      motor2.enableTorque()
 ```
 
 ## [Move Motor to Goal Position](#move-motor-to-goal-position)
 - Add commands to set the goal position of each motor using the `stageSetGoalPosition` method of the `Motor` class.
 ```python
-    target_position = 500
-    group_executor.addCmd(motor1.stageSetGoalPosition(target_position))
-    group_executor.addCmd(motor2.stageSetGoalPosition(target_position))
+      target_position = 500
+      group_executor.addCmd(motor1.stageSetGoalPosition(target_position))
+      group_executor.addCmd(motor2.stageSetGoalPosition(target_position))
 ```
 - Execute all the staged commands simultaneously using the `execute` method of the `GroupExecutor` class.
 ```python
-    group_executor.executeWrite()
+      group_executor.executeWrite()
 ```
 - This will send the commands to both motors at the same time, causing them to move to the specified goal position simultaneously.
 - This method decides the communication packet type automatically between Sync and Bulk based on the staged commands.
 - Clear the staged commands after execution using the `clearStagedWriteCommands` method of the `GroupExecutor` class.
 ```python
-    group_executor.clearStagedWriteCommands()
+      group_executor.clearStagedWriteCommands()
 ```
 
 # [Error Handling](#error-handling)

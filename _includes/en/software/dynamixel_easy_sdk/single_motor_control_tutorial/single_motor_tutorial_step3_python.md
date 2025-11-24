@@ -75,56 +75,56 @@ if __name__ == "__main__":
 - Create a `Motor` object for each Dynamixel servo you want to control with its ID, using the `createMotor` method of the `Connector` class.
 - Create motor objects while carefully distinguishing between the leader and follower IDs.
 ```python
-    leader_motor = connector.createMotor(1)
-    follower_motor = connector.createMotor(2)
+      leader_motor = connector.createMotor(1)
+      follower_motor = connector.createMotor(2)
 ```
 
 ## [Set Position Limits](#set-position-limits)
 - Get the position limits of the leader motor using the `getMinPositionLimit` and `getMaxPositionLimit` methods.
 ```python
-    min_position = leader_motor.getMinPositionLimit() + 100
-    max_position = leader_motor.getMaxPositionLimit() - 100
+      min_position = leader_motor.getMinPositionLimit() + 100
+      max_position = leader_motor.getMaxPositionLimit() - 100
 ```
 
 ## [Set Operating Mode to Position Control Mode](#set-operating-mode-to-position-control-mode)
 - Use the methods provided by the `Motor` class to control the Dynamixel servo.
 - Set the operating mode of follower motor to position control mode.
 ```python
-    leader_motor.disableTorque()
-    follower_motor.disableTorque()
-    follower_motor.setOperatingMode(OperatingMode.POSITION)
-    follower_motor.enableTorque()
+      leader_motor.disableTorque()
+      follower_motor.disableTorque()
+      follower_motor.setOperatingMode(OperatingMode.POSITION)
+      follower_motor.enableTorque()
 ```
 
 ## [Leader and Follower Control Loop](#leader-and-follower-control-loop)
 - In a loop, read the present position of the leader motor using the `getPresentPosition` method.
 ```python
-    while (True):
-        present_position = leader_motor.getPresentPosition()
-        print(f"Leader Position: {present_position}     ", end='\r')
+      while (True):
+          present_position = leader_motor.getPresentPosition()
+          print(f"Leader Position: {present_position}     ", end='\r')
 ```
 - If the leader motor's position exceeds the defined range, move it back within the range.
 ```python
-        if (present_position < min_position):
-            leader_motor.enableTorque()
-            leader_motor.setGoalPosition(min_position)
-            while (True):
-                present_position = leader_motor.getPresentPosition()
-                if (present_position >= min_position):
-                    break
-            leader_motor.disableTorque()
-        elif (present_position > max_position):
-            leader_motor.enableTorque()
-            leader_motor.setGoalPosition(max_position)
-            while (True):
-                present_position = leader_motor.getPresentPosition()
-                if (present_position <= max_position):
-                    break
-            leader_motor.disableTorque()
+          if (present_position < min_position):
+              leader_motor.enableTorque()
+              leader_motor.setGoalPosition(min_position)
+              while (True):
+                  present_position = leader_motor.getPresentPosition()
+                  if (present_position >= min_position):
+                      break
+              leader_motor.disableTorque()
+          elif (present_position > max_position):
+              leader_motor.enableTorque()
+              leader_motor.setGoalPosition(max_position)
+              while (True):
+                  present_position = leader_motor.getPresentPosition()
+                  if (present_position <= max_position):
+                      break
+              leader_motor.disableTorque()
 ```
 - Set the goal position of the follower motor to the present position of the leader motor.
 ```python
-        follower_motor.setGoalPosition(present_position)
+      follower_motor.setGoalPosition(present_position)
 ```
 
 # [Error Handling](#error-handling)

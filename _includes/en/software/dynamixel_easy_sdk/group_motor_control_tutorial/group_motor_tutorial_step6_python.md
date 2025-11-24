@@ -66,25 +66,25 @@ if __name__ == "__main__":
 ## [Read Data from Multiple Motors Simultaneously](#read-data-from-multiple-motors-simultaneously)
 - Add commands to read the present position of each motor using the `stageGetPresentPosition` method of the `Motor` class.
 ```python
-    group_executor.addCmd(motor1.stageGetPresentPosition())
-    group_executor.addCmd(motor2.stageGetPresentPosition())
+      group_executor.addCmd(motor1.stageGetPresentPosition())
+      group_executor.addCmd(motor2.stageGetPresentPosition())
 ```
 - Execute all the staged commands simultaneously using the `executeRead` method of the `GroupExecutor` class.
 ```python
-    present_positions = group_executor.executeRead()
+      present_positions = group_executor.executeRead()
 ```
 - Clear the staged read commands after execution using the `clearStagedReadCommands` method of the `GroupExecutor` class.
 ```python
-    group_executor.clearStagedReadCommands()
+      group_executor.clearStagedReadCommands()
 ```
 
 - This will send the commands to both motors at the same time and read the present position of each motor.
 - The return type of this method is `List[int]`.
 ```python
-    motor1_position = present_positions[0]
-    motor2_position = present_positions[1]
-    print("Motor1 Present Position:", motor1_position)
-    print("Motor2 Present Position:", motor2_position)
+      motor1_position = present_positions[0]
+      motor2_position = present_positions[1]
+      print("Motor1 Present Position:", motor1_position)
+      print("Motor2 Present Position:", motor2_position)
 ```
 - This method decides the communication packet type automatically between Sync and Bulk based on the staged commands.
 
