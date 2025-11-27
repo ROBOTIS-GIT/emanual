@@ -39,9 +39,10 @@ sidebar:
   - The **Dynamixel Easy SDK** can automatically detect the connected Dynamixel model and load its corresponding control table, eliminating the need for manual configuration and simplifying development.
 
 **Error Handling**:  
-  - Instead of returning a raw int, the **Dynamixel Easy SDK** now uses a result object that encapsulates both communication errors and Dynamixel-specific errors. This allows developers to handle all error cases in a unified way, making error logging code more concise and improving readability.
+  - **Python :** The **Dynamixel Easy SDK** introduces a unified exception handling mechanism for both communication errors and Dynamixel-specific errors. This allows developers to catch all error cases using a single exception type, simplifying error handling code and improving readability.
+  - **C++ :** Instead of returning a raw int, the **Dynamixel Easy SDK** now uses a result object that encapsulates both communication errors and Dynamixel-specific errors. This allows developers to handle all error cases in a unified way, making error logging code more concise and improving readability.
 
 # [Supported Environments](#supported-environments)
-- **Programming Languages**: `C++ (17 standard or later)`
-- **Operating Systems**: `Linux 64-bit`
+- **Programming Languages**: `Python>=3.6`, `C++ (17 standard or later)`
+- **Operating Systems**: `Python`, `Linux 64-bit`
 - **Protocols**: `2.0`
