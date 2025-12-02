@@ -11,21 +11,26 @@ sidebar:
 **참고**: 매뉴얼은 현재 영문으로만 제공됩니다 (로봇핸드 MX28/RX28 제외).
 {: .notice}
 
+# [AI Worker](#ai-worker)
+
+|                                                         AI Worker                                                          |
+| :------------------------------------------------------------------------------------------------------------------------: | 
+| [![](/assets/images/platform/aiworker/aiworker_product.jpg)](https://ai.robotis.com/ai_worker/introduction_ai_worker.html) | 
+
+# [AI 매니퓰레이터](#ai-매니퓰레이터)
+
+|                                               OMY                        |                                                OMX                                               |
+| :----------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
+| [![](/assets/images/platform/omy/omy_product.png)](https://ai.robotis.com/omy/introduction_omy.html) | [![](/assets/images/platform/omx/omx_product.png)](https://ai.robotis.com/omx/introduction_omx.html) |
+
 # [터틀봇3](#터틀봇3)
 
 |                                   터틀봇3                                    |
 | :--------------------------------------------------------------------------: |
 | [![](/assets/tb3_burger_Waffle.png)](/docs/en/platform/turtlebot3/overview/) |
 
-# [AI 매니퓰레이터](#ai-매니퓰레이터)
-<!--
-|                                                    OMY                                                     |                                                OpenMANIPULATOR-P                                                |                                                        OpenMANIPULATOR-X                                                         |                                                    Manipulator-H                                                    |
-| :--------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/platform/omy/omy_product.png)](/docs/en/platform/omy/overview/) | [![](/assets/images/platform/openmanipulator_p/product_img.png)](/docs/en/platform/openmanipulator_p/overview/) | [![](/assets/images/platform/openmanipulator_x/OpenManipulator_Introduction.jpg)](/docs/en/platform/openmanipulator_x/overview/) | [![](/assets/images/platform/manipulator_h/manipulator_product.png)](/docs/en/platform/manipulator_h/introduction/) |
 
-**주의** : Manipulator-H 는 현재 단종되어 더 이상 판매되지 않습니다.
-{: .notice--warning}
--->
+# [오픈매니퓰레이터](#오픈매니퓰레이터)
 
 |                                                OpenMANIPULATOR-P                                                |                                                        OpenMANIPULATOR-X                                                         |                                                    Manipulator-H                                                    |
 | :-------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: |

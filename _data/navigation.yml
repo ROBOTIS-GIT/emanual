@@ -342,16 +342,25 @@ main:
     url: /platform/
     urlkr: /platform/
     children:
+    - title: "AI-Worker"
+      titlekr: "AI-Worker"
+      url: https://ai.robotis.com/ai_worker/introduction_ai_worker.html
+    - title: "AI Manipulator"
+      titlekr: " AI 매니퓰레이터"
+      children:
+      - title: "OMY"
+        titlekr: "OMY"
+        url: https://ai.robotis.com/omy/introduction_omy.html
+      - title: "OMX"
+        titlekr: "OMX"
+        url: https://ai.robotis.com/omx/introduction_omx.html
     - title: "TurtleBot3"
       titlekr: "터틀봇3"
       url: /platform/turtlebot3/overview/
-    - title: "AI Manipulator"
-      titlekr: " AI 매니퓰레이터"
+    - title: "OpenManipulator"
+      titlekr: "오픈매니퓰레이터"
       url: /platform/ai_manipulator_main
       children:
-      #- title: "OMY"
-      #  titlekr: "OMY"
-      #  url: /platform/omy/overview/
       - title: "OpenMANIPULATOR-P"
         titlekr: "OpenMANIPULATOR-P"
         url: /platform/openmanipulator_p/overview/
