@@ -25961,6 +25961,8 @@ turtlebot3:
         url: /platform/turtlebot3/basic_operation/#teleoperation
       - title: "Topic Monitor"
         url: /platform/turtlebot3/basic_operation/#topic-monitor
+    - title: "Docker Container Setup"
+      url: /platform/turtlebot3/docker_container_setup/#docker-container-setup
   - title: "SLAM"
     url: /platform/turtlebot3/slam/
     children:
