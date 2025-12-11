@@ -290,7 +290,7 @@ $ sudo apt install ros-humble-camera-ros
 This step clones the official Raspberry Pi fork of libcamera, which provides full compatibility and optimized support for Raspberry Pi camera modules.   
 **[TurtleBot3 SBC]**   
 ```bash
-$ git clone https://github.com/raspberrypi/libcamera.git
+$ git clone -b v0.5.2 https://github.com/raspberrypi/libcamera.git
 ```
 
 **3. Build and Install libcamera**  
@@ -299,9 +299,14 @@ This installs *libcamera* to /usr/local and makes it available system-wide.
 ```bash
 $ cd libcamera
 $ meson setup build --buildtype=release -Dpipelines=rpi/vc4,rpi/pisp -Dipas=rpi/vc4,rpi/pisp -Dv4l2=true -Dgstreamer=enabled -Dtest=false -Dlc-compliance=disabled -Dcam=disabled -Dqcam=disabled -Ddocumentation=disabled -Dpycamera=enabled
-$ ninja -C build
-$ sudo ninja -C build install
+$ ninja -C build -j 1
+$ sudo ninja -C build install -j 1
 $ sudo ldconfig
+```
+
+After installation, add the installation path of the built libcamera to LD_LIBRARY_PATH so that it is used.
+```bash
+$ export LD_LIBRARY_PATH=/usr/local/lib/aarch64-linux-gnu:$LD_LIBRARY_PATH
 ```
 
 **4. Launch the Camera Node**  
