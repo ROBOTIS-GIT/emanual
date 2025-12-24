@@ -45,7 +45,7 @@ Unlike the U2D2, the DYNAMIXEL Communication Bridge features a signal conversion
 |:------------------|:---------------|
 | Operating Voltage | 3.5 V ~ 30.0 V |
 | Current Raiting   | 3.0 A          |
-| Baud Rate         | Max 6 Mbps     |
+| Baud Rate         | Max 4 Mbps     |
 
 {% include en/dxl/warning.md %}
 

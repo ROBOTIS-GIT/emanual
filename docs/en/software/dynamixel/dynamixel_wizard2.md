@@ -19,9 +19,13 @@ sidebar:
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
 **Software Download**  
-[Windows](http://www.robotis.com/service/download.php?no=1670)  
-[Linux](http://www.robotis.com/service/download.php?no=1671)  
-[Mac](http://www.robotis.com/service/download.php?no=1760)  
+[Windows X64](http://www.robotis.com/service/download.php?no=1670)  
+[Linux X64](http://www.robotis.com/service/download.php?no=1671)  
+[Linux ARM64](https://www.robotis.com/service/download.php?no=2233)  
+[Mac OS](http://www.robotis.com/service/download.php?no=1760)  
+
+**Note**: ARM64 runs on Jetson AGX Orin, Raspberry Pi5.
+{: .notice}
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
@@ -47,18 +51,10 @@ The following features are provided with DYNAMIXEL Wizard 2.0.
 
 ## [Supported OS](#supported-os)
 
-- Windows 7 / 8.1 / 10 (32 bit and 64 bit)
+- Windows 10 / 11 (64 bit)
 - Linux
-  - Ubuntu 18.04 (64 bit)
-  - Ubuntu 16.04 (64 bit)
-- MacOS 10.12 / 10.13 / 10.14 (64bit)
-
-{% capture supported_platform %}
-**WARNING**:
-- DYNAMIXEL Wizard 2.0 is tested with a desktop and laptop only.
-- Only x86 architectures support DYNAMIXEL Wizard 2.0.
-{% endcapture %}
-<div class="notice--warning">{{ supported_platform | markdownify }}</div>
+  - Ubuntu 22.04 / 24.04 (64bit)  
+- MacOS 13+
 
 ## [Definition of Firmware](#definition-of-firmware)
 

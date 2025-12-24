@@ -18,9 +18,13 @@ sidebar:
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_000.jpg)
 
 **소프트웨어 다운로드**  
-[윈도우](http://www.robotis.com/service/download.php?no=1670)  
-[리눅스](http://www.robotis.com/service/download.php?no=1671)  
-[맥 OS](http://www.robotis.com/service/download.php?no=1760)  
+[Windows X64](http://www.robotis.com/service/download.php?no=1670)  
+[Linux X64](http://www.robotis.com/service/download.php?no=1671)  
+[Linux ARM64](https://www.robotis.com/service/download.php?no=2233)  
+[Mac OS](http://www.robotis.com/service/download.php?no=1760)
+
+**참고**: ARM64는 Jetson AGX Orin, Raspberry Pi5에서 동작합니다.
+{: .notice}
 
 ## [다이나믹셀 위자드 2.0](#다이나믹셀-위자드-20)
 
@@ -47,18 +51,10 @@ sidebar:
 
 ## [지원 운영체제](#지원-운영체제)
 
-- 윈도우 7 / 8.1 / 10 (32 bit and 64 bit)
+- 윈도우 10 / 11 (32 bit and 64 bit)
 - 리눅스
-  - 우분투 18.04 (64 bit)
-  - 우분투 16.04 (64 bit)
-- 맥 OS 10.12 / 10.13 / 10.14 (64bit)
-
-{% capture supported_platform %}
-**경고**:
-- 다이나믹셀 위자드 2.0은 노트북 및 데스크탑 환경에서만 테스트 되었습니다.
-- x86기반 플랫폼에서 다이나믹셀 위자드 2.0을 사용 해주세요.
-{% endcapture %}
-<div class="notice--warning">{{ supported_platform | markdownify }}</div>
+  - 우분투 22.04 / 24.04 (64bit)  
+- 맥 OS 13 이상
 
 ## [펌웨어 정의](#펌웨어-정의)
 
