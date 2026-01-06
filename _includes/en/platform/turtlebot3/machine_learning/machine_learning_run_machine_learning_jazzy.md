@@ -9,19 +9,19 @@ Stage 1 is a 4x4 map with no obstacles.
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_1.jpg)  
 <br>
 
-1. **Stage 2 (Static Obstacle)**  
+2. **Stage 2 (Static Obstacle)**  
 Stage 2 is a 4x4 map with four cylinders of static obstacles.
 
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_2.jpg)  
 <br>
 
-1. **Stage 3 (Moving Obstacle)**  
+3. **Stage 3 (Moving Obstacle)**  
 Stage 3 is a 4x4 map with four cylinders of moving obstacles.
 
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_3.jpg)  
 <br>
 
-1. **Stage 4 (Combination Obstacle)**  
+4. **Stage 4 (Combination Obstacle)**  
 Stage 4 is a 5x5 map with walls and two cylinders of moving obstacles.
 
     ![](/assets/images/platform/turtlebot3/machine_learning/stage_4.jpg)  
@@ -48,53 +48,70 @@ The behavior is determined by epsilon value, which decreases as training progres
 After the robot performs an action, it receives a reward or penalty for its behavior and checks to see if it reached its goal.  
 <br>
 
-**Machine Learning launch argument**  
-`stage_num`
-- default: 1
-- describtion: The integer value of stage you want to run. This package has stations numbered 1 through 4, as described above.  
-
-`max_training_episodes`
-- default: 1000
-- describtion: The integer value of an episode you want to run.  
-
-`load_episode`
-- default: 600
-- describtion: The integer value of an episode you want to test. More complex stages may require more episodes to learn enough.  
-<br>
-
 **Run machine learning**  
 1. **Bring the stage in Gazebo map.**
 ``` bash
-$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage{$stage_num}.launch.py
+$ ros2 launch turtlebot3_gazebo turtlebot3_dqn_{$stage_num}.launch.py
 ```  
+**argument**  
+- `stage_num`
+- default: 1
+- description: The integer value of stage you want to run. This package has stations numbered 1 through 4, as described above.  
 <br>
 
-1. **Run Gazebo environment node.**  
+2. **Run Gazebo environment node.**  
 This node manages the Gazebo environment. It regenerates the Goal and initializes the TurtleBot's location when an episode starts anew.
 ```bash
 $ ros2 run turtlebot3_dqn dqn_gazebo {$stage_num}
 ```  
 <br>
 
-1. **Run DQN environment node.**  
+3. **Run DQN environment node.**  
 This node manages the DQN environment. It calculates the state of the TurtleBot and uses it to determine rewards, success, and failure.
 ```bash
 $ ros2 run turtlebot3_dqn dqn_environment
 ```  
 <br>
 
-1. **Run DQN agent node.**  
+4. **Run DQN agent node.**  
 This node trains the TurtleBot. It trains TurtleBot with calculated rewards and determines its next behavior.
 ```bash
-$ ros2 run turtlebot3_dqn dqn_agent {$stage_num} {$max_training_episodes}
+$ ros2 run turtlebot3_dqn dqn_agent --ros-args -p epsilon_decay:=6000 -p max_training_episodes:=1000 -p use_gpu:=true -p model_file:=model1.h5 -p verbose:=true
 ```  
+**argument**  
+- `epsilon_decay`
+- default: 6000
+- description: The integer value of epsilon decay. This value is used to determine the probability of an agent doing an `Exploration`. A larger `epsilon_decay` results in more `Exploration` over time  
+- `max_training_episodes`
+- default: 1000
+- description: The integer value of max training episodes. This value is used to determine the maximum number of episodes to train the model.  
+- `use_gpu`
+- default: true
+- description: The boolean value of use gpu.  
+- `model_file`
+- default: None
+- description: Name of the model file located in the `saved_model` directory. If provided, the specified pretrained model will be loaded. If empty, the model will be trained from scratch.
+- `verbose`
+- default: true
+- description: The boolean value of verbose. If true, the training process will be printed to the terminal.
 <br>
 
-1. **Test traind model.**  
+5. **Test traind model.**  
 After training, to test the trained model, run test node instead of DQN agent node.
 ``` bash
-$ ros2 run turtlebot3_dqn dqn_test {$stage_num} {$load_episode}
+$ ros2 run turtlebot3_dqn dqn_test --ros-args -p model_file:=model1.h5 -p use_gpu:=true -p verbose:=true
 ```  
+**argument**  
+- `use_gpu`
+- default: true
+- description: The boolean value of use gpu.  
+
+`model_file`
+- default: None
+- description: Name of the model file located in the `saved_model` directory. It is used to test the pretrained model.
+- `verbose`
+- default: true
+- description: The boolean value of verbose. If true, the test process will be printed to the terminal.
 <br>
 
 **Run machine learning graph**
