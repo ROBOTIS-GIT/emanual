@@ -79,7 +79,7 @@ $ ros2 run turtlebot3_dqn dqn_environment
 4. **Run DQN agent node.**  
 This node trains the TurtleBot. It trains TurtleBot with calculated rewards and determines its next behavior.
 ```bash
-$ ros2 run turtlebot3_dqn dqn_agent --ros-args -p epsilon_decay:=6000 -p max_training_episodes:=800 -p use_gpu:=true -p model_file:=model1.h5
+$ ros2 run turtlebot3_dqn dqn_agent --ros-args -p epsilon_decay:=6000 -p max_training_episodes:=1000 -p use_gpu:=true -p model_file:=model1.h5 -p verbose:=true
 ```  
 **argument**  
 - `epsilon_decay`
@@ -94,12 +94,15 @@ $ ros2 run turtlebot3_dqn dqn_agent --ros-args -p epsilon_decay:=6000 -p max_tra
 - `model_file`
 - default: None
 - description: Name of the model file located in the `saved_model` directory. If provided, the specified pretrained model will be loaded. If empty, the model will be trained from scratch.
+- `verbose`
+- default: true
+- description: The boolean value of verbose. If true, the training process will be printed to the terminal.
 <br>
 
-1. **Test traind model.**  
+5. **Test traind model.**  
 After training, to test the trained model, run test node instead of DQN agent node.
 ``` bash
-$ ros2 run turtlebot3_dqn dqn_test --ros-args -p model_file:=model1.h5 -p use_gpu:=true
+$ ros2 run turtlebot3_dqn dqn_test --ros-args -p model_file:=model1.h5 -p use_gpu:=true -p verbose:=true
 ```  
 **argument**  
 - `use_gpu`
@@ -109,6 +112,9 @@ $ ros2 run turtlebot3_dqn dqn_test --ros-args -p model_file:=model1.h5 -p use_gp
 `model_file`
 - default: None
 - description: Name of the model file located in the `saved_model` directory. It is used to test the pretrained model.
+- `verbose`
+- default: true
+- description: The boolean value of verbose. If true, the test process will be printed to the terminal.
 <br>
 
 **Run machine learning graph**
