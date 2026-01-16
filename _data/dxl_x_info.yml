@@ -11,9 +11,11 @@ common_x_specs:
   motor_coreless_dc:  &motor_coreless_dc "Coreless DC"
   weight_xl330:       &weight_xl330   "18 [g]"
   weight_xc330:       &weight_xc330   "23 [g]"
+  weight_xm335:       &weight_xm335   "27 [g]"
   weight_430:         &weight_430     "82 [g]"
   weight_540:         &weight_540     "165 [g]"
   dimension_330:      &dimension_330  "20.0 x 34.0 x 26.0 [mm]"
+  dimension_335:      &dimension_335  "19.0 x 35.0 x 22.0 [mm]"
   dimension_430:      &dimension_430  "28.5 x 46.5 x 34 [mm]"
   dimension_540:      &dimension_540  "33.5 x 58.5 x 44 [mm]"
   radialload:         &radialload     "40 [N] (혼으로부터 10 [mm])"
@@ -211,6 +213,36 @@ xc330-t288:
   gearratio:          "288.35 : 1"
   noloadspeed:        "52 [rev/min] (at 9.0 [V]) <br /> **65 [rev/min] (at 11.1 [V])** <br /> 71 [rev/min] (at 12.0 [V])"
   stalltorque:        "0.76 [N.m] (at 9.0 [V], 0.61 [A], 1.246 [Nm/A]) <br /> **0.92 [N.m] (at 11.1 [V], 0.80 [A], 1.150 [Nm/A])** <br /> 1.00 [N.m] (at 12.0 [V], 0.88 [A], 1.136 [Nm/A])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +70 [&deg;C]"
+  voltage:            *voltage_6_12
+  voltage_en:         *voltage_6_12_en
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection_5v
+  id:                 *id
+  feedback:           *feedback
+  case_material:      "Engineering Plastic"
+  gear_material:      "Full Metal Gear, 2 Bearing"
+  standbycurrent:     17 [mA]
+
+xm335-t323:
+  mcu:                "ARM CORTEX-M0+ (64 [MHz], 32Bit)"
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              *motor_coreless_dc
+  baudrate:           "9,600 [bps] ~ 4 [Mbps]"
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_xm335
+  dimensions:         *dimension_335
+  gearratio:          "323.04 : 1"
+  noloadspeed:        "43 [rev/min] (at 9.0 [V]) <br /> **53 [rev/min] (at 11.1 [V])** <br /> 57 [rev/min] (at 12.0 [V])"
+  stalltorque:        "0.85 [N.m] (at 9.0 [V], 0.61[A], 1.397 [N.m/A]) <br /> **1.03 [N.m] (at 11.1 [V], 0.80[A], 1.290 [N.m/A])** <br /> 1.12 [N.m] (at 12.0 [V], 0.88[A], 1.274 [N.m/A])"
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
@@ -630,7 +662,7 @@ xh540-w150:
   dimensions:         *dimension_540
   gearratio:          "152.3 : 1"
   stalltorque:        "6.6 [N.m] (at 11.1 [V], 4.5 [A], 1.467 [Nm/A])<br />7.1 [N.m] (at 12.0 [V], 4.9 [A], 1.449 [Nm/A])<br />8.5 [N.m] (at 14.8 [V], 5.9 [A], 1.441 [Nm/A])"
-  noloadspeed:        "66 [rev/min] (at 11.1 [V])<br />70 [rev/min]) (at 12.0 [V])<br />86 [rev/min] (at 14.8 [V])"
+  noloadspeed:        "66 [rev/min] (at 11.1 [V])<br />70 [rev/min] (at 12.0 [V])<br />86 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
   axialload:          *axialload
@@ -780,7 +812,7 @@ xd540-t150:
   dimensions:         *dimension_540
   gearratio:          "152.3 : 1"
   stalltorque:        "6.6 [N.m] (at 11.1 [V], 4.5 [A], 1.467 [Nm/A])<br />7.1 [N.m] (at 12.0 [V], 4.9 [A], 1.449 [Nm/A])<br />8.5 [N.m] (at 14.8 [V], 5.9 [A], 1.441 [Nm/A])"
-  noloadspeed:        "66 [rev/min] (at 11.1 [V])<br />70 [rev/min]) (at 12.0 [V])<br />86 [rev/min] (at 14.8 [V])"
+  noloadspeed:        "66 [rev/min] (at 11.1 [V])<br />70 [rev/min] (at 12.0 [V])<br />86 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
   axialload:          *axialload
@@ -903,7 +935,7 @@ xw430-t333:
   dimensions:         "28.5 x 46.5 x 34.0 mm"
   gearratio:          "332.8 : 1"
   stalltorque:        "2.9 [N.m] (at 11.1 [V], 1.2 [A], 2.417 [Nm/A])<br />**3.1 [N.m] (at 12.0 [V], 1.3 [A], 2.385 [Nm/A])**<br />3.6 [N.m] (at 14.8 [V], 1.5 [A], 2.400 [Nm/A])"
-  noloadspeed:        "29 [rev/min] (at 11.1 [V]<br />**31 [rev/min] (at 12.0 [V]**<br />39 [rev/min] (at 14.8 [V])"
+  noloadspeed:        "29 [rev/min] (at 11.1 [V])<br />**31 [rev/min] (at 12.0 [V])**<br />39 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
   axialload:          *axialload
@@ -934,7 +966,7 @@ xw430-t200:
   dimensions:         "28.5 x 46.5 x 34.0 mm"
   gearratio:          "200.1 : 1"
   stalltorque:        "2.1 [N.m] (at 11.1 [V], 1.2 [A], 1.750 [Nm/A])<br />**2.3 [N.m] (at 12.0 [V], 1.3 [A], 1.769 [Nm/A])**<br />2.7 [N.m] (at 14.8 [V], 1.5 [A], 1.800 [Nm/A])"
-  noloadspeed:        "49 [rev/min] (at 11.1 [V]<br />**53 [rev/min] (at 12.0 [V]**<br />66 [rev/min] (at 14.8 [V])"
+  noloadspeed:        "49 [rev/min] (at 11.1 [V])<br />**53 [rev/min] (at 12.0 [V])**<br />66 [rev/min] (at 14.8 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
   axialload:          *axialload
