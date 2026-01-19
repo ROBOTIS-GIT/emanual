@@ -74,19 +74,21 @@ if __name__ == "__main__":
 # [Error Handling](#error-handling)
 - When an error occurs, `DxlRuntimeError` is raised.
 - You can catch this error using a try-except block.
+- The exception message automatically provides a description of the error.
 ```python
   try:
       motor1.setGoalPosition(target_position)
   except DxlRuntimeError as e:
+      # e.g.) [RxPacketError] The data value is out of range!
       print(e)
 ```
-- `DxlRuntimeError` contains `DxlError` Enum that provides detailed information about the error.
+- If you need to handle specific errors programmatically, you can check the `dxl_error` property.
 ```python
   try:
       motor1.setGoalPosition(target_position)
   except DxlRuntimeError as e:
       if e.dxl_error == DxlError.EASY_SDK_TORQUE_STATUS_MISMATCH:
-          print("Torque is off.")
-      elif e.dxl_error == DxlError.EASY_SDK_OPERATING_MODE_MISMATCH:
-          print("Operating mode is not position control.")
+          # Handle specific torque error
+          pass
+      print(e)
 ```

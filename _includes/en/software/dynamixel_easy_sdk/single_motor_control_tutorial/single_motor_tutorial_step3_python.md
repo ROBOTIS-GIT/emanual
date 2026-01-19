@@ -25,36 +25,43 @@ from dynamixel_easy_sdk import *
 
 def main():
     connector = Connector("/dev/ttyACM0", 57600)
+    
     leader_motor = connector.createMotor(1)
     follower_motor = connector.createMotor(2)
+
     min_position = leader_motor.getMinPositionLimit() + 100
     max_position = leader_motor.getMaxPositionLimit() - 100
 
     leader_motor.disableTorque()
     follower_motor.disableTorque()
+    
     follower_motor.setOperatingMode(OperatingMode.POSITION)
     follower_motor.enableTorque()
 
-    while (True):
+    while True:
         present_position = leader_motor.getPresentPosition()
         print(f"Leader Position: {present_position}     ", end='\r')
-        if (present_position < min_position):
+
+        under_limit = present_position < min_position
+        over_limit = present_position > max_position
+
+        if under_limit or over_limit:
+            target_position = min_position if under_limit else max_position
+            
             leader_motor.enableTorque()
-            leader_motor.setGoalPosition(min_position)
-            while (True):
+            leader_motor.setGoalPosition(target_position)
+
+            while True:
                 present_position = leader_motor.getPresentPosition()
-                if (present_position >= min_position):
+                follower_motor.setGoalPosition(target_position)
+
+                if (under_limit and present_position >= min_position) or \
+                   (over_limit and present_position <= max_position):
                     break
+            
             leader_motor.disableTorque()
-        elif (present_position > max_position):
-            leader_motor.enableTorque()
-            leader_motor.setGoalPosition(max_position)
-            while (True):
-                present_position = leader_motor.getPresentPosition()
-                if (present_position <= max_position):
-                    break
-            leader_motor.disableTorque()
-        follower_motor.setGoalPosition(present_position)
+        else:
+            follower_motor.setGoalPosition(present_position)
 
 if __name__ == "__main__":
     main()
@@ -99,50 +106,53 @@ if __name__ == "__main__":
 ## [Leader and Follower Control Loop](#leader-and-follower-control-loop)
 - In a loop, read the present position of the leader motor using the `getPresentPosition` method.
 ```python
-      while (True):
+      while True:
           present_position = leader_motor.getPresentPosition()
           print(f"Leader Position: {present_position}     ", end='\r')
 ```
 - If the leader motor's position exceeds the defined range, move it back within the range.
+- Follower motor always tracks the leader motor's position.
 ```python
-          if (present_position < min_position):
+          under_limit = present_position < min_position
+          over_limit = present_position > max_position
+
+          if under_limit or over_limit:
+              target_position = min_position if under_limit else max_position
+              
               leader_motor.enableTorque()
-              leader_motor.setGoalPosition(min_position)
-              while (True):
+              leader_motor.setGoalPosition(target_position)
+
+              while True:
                   present_position = leader_motor.getPresentPosition()
-                  if (present_position >= min_position):
+                  follower_motor.setGoalPosition(target_position)
+
+                  if (under_limit and present_position >= min_position) or \
+                     (over_limit and present_position <= max_position):
                       break
+              
               leader_motor.disableTorque()
-          elif (present_position > max_position):
-              leader_motor.enableTorque()
-              leader_motor.setGoalPosition(max_position)
-              while (True):
-                  present_position = leader_motor.getPresentPosition()
-                  if (present_position <= max_position):
-                      break
-              leader_motor.disableTorque()
-```
-- Set the goal position of the follower motor to the present position of the leader motor.
-```python
-      follower_motor.setGoalPosition(present_position)
+          else:
+              follower_motor.setGoalPosition(present_position)
 ```
 
 # [Error Handling](#error-handling)
 - When an error occurs, `DxlRuntimeError` is raised.
 - You can catch this error using a try-except block.
+- The exception message automatically provides a description of the error.
 ```python
   try:
-      motor1.getPresentPosition()
+      leader_motor.getPresentPosition()
   except DxlRuntimeError as e:
+      # e.g.) [TxRxResult] Failed to get status packet from device
       print(e)
 ```
-- `DxlRuntimeError` contains `DxlError` Enum that provides detailed information about the error.
+- If you need to handle specific errors programmatically, you can check the `dxl_error` property.
 ```python
   try:
-      motor1.getPresentPosition()
+      leader_motor.getPresentPosition()
   except DxlRuntimeError as e:
       if e.dxl_error == DxlError.SDK_COMM_RX_FAIL:
-          print("Transmission failed.")
-      elif e.dxl_error == DxlError.SDK_COMM_RX_FAIL:
-          print("Receive failed.")
+          # Handle specific communication error retry logic
+          pass
+      print(e)
 ```

@@ -18,185 +18,115 @@ $ sudo dmesg | grep tty
 # [Source Code Description](#source-code-description)
 
 ```cpp
+#include <iostream>
+#include <vector>
 #include "dynamixel_easy_sdk/dynamixel_easy_sdk.hpp"
 
-int main(){
-
+int main() {
   dynamixel::Connector connector("/dev/ttyACM0", 57600);
-  std::unique_ptr<dynamixel::GroupExecutor> group_executor = connector.createGroupExecutor();
-  std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
-  std::unique_ptr<dynamixel::Motor> motor2 = connector.createMotor(2);
+  
+  std::vector<uint8_t> ids = {1, 2};
 
-  motor1->disableTorque();
-  motor2->disableTorque();
-  motor1->setOperatingMode(dynamixel::Motor::OperatingMode::POSITION);
-  motor2->setOperatingMode(dynamixel::Motor::OperatingMode::POSITION);
-  motor1->enableTorque();
-  motor2->enableTorque();
+  // Turn off torque
+  connector.createWriter()->add(ids, "Torque_Enable", 0).write_or_throw();
+  // Set Operating Mode (Position Control)
+  connector.createWriter()->add(ids, "Operating_Mode", dynamixel::OperatingMode::POSITION).write_or_throw();
+  // Turn on torque
+  connector.createWriter()->add(ids, "Torque_Enable", 1).write_or_throw();
 
   int target_position = 500;
-  group_executor->addCmd(motor1->stageSetGoalPosition(target_position));
-  group_executor->addCmd(motor2->stageSetGoalPosition(target_position));
-  group_executor->executeWrite();
-  group_executor->clearStagedWriteCommands();
+  connector.createWriter()->add(ids, "Goal_Position", target_position).write_or_throw();
 }
 ```
 
 ## [Add Header Files](#add-header-files)
-- Add `dynamixel_easy_sdk/dynamixel_easy_sdk.hpp` to the top of your CPP file. This class is included in the Dynamixel SDK package.
+- Add `dynamixel_easy_sdk/dynamixel_easy_sdk.hpp` to the top of your CPP file.
+- Add `<iostream>` and `<vector>` for standard I/O and container operations.
 ```cpp
+  #include <iostream>
+  #include <vector>
   #include "dynamixel_easy_sdk/dynamixel_easy_sdk.hpp"
 ```
 
-## [Create Connector and Motor Object](#create-connector-and-motor-object)
-- Create a `Connector` object with port name, baud rate, and protocol version to manage the communication.(Only protocol 2.0 is supported)
+## [Create Connector](#create-connector)
+- Create a `Connector` object with port name, baud rate, and protocol version.
 ```cpp
   int main(){
     dynamixel::Connector connector("/dev/ttyACM0", 57600);
 ```
-- Create a `GroupExecutor` object using the `createGroupExecutor` method of the `Connector` class.
-- This object is used to execute multiple commands simultaneously.
-```cpp
-    std::unique_ptr<dynamixel::GroupExecutor> group_executor = connector.createGroupExecutor();
-```
-- Create a `Motor` object for each Dynamixel servo you want to control, using the `createMotor` method of the `Connector` class.
-- This method takes the motor ID as an argument and returns a unique pointer to a `Motor` instance. (shared_ptr is also available)
-```cpp
-    std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
-    std::unique_ptr<dynamixel::Motor> motor2 = connector.createMotor(2);
-```
-- This process throws a `DxlRuntimeError` if the object creation fails.
 
 ## [Set Operating Mode to Position Control Mode](#set-operating-mode-to-position-control-mode)
-- Use the methods provided by the `Motor` class to control the Dynamixel servo.
-- Set the operating mode to position control mode.
+- Prepare a list of motor IDs to control simultaneously.
 ```cpp
-    motor1->disableTorque();
-    motor2->disableTorque();
-    motor1->setOperatingMode(dynamixel::Motor::OperatingMode::POSITION);
-    motor2->setOperatingMode(dynamixel::Motor::OperatingMode::POSITION);
-    motor1->enableTorque();
-    motor2->enableTorque();
+    std::vector<uint8_t> ids = {1, 2};
+```
+- Use `createWriter()` and `add()` with the ID list to configure multiple motors at once.
+- This creates a **SmartGroupWriter** internally, adds the values, and sends the packet purely.
+- You can chain `write_or_throw()` immediately for concise code.
+```cpp
+    // Turn off torque to change operating mode
+    connector.createWriter()->add(ids, "Torque_Enable", 0).write_or_throw();
+    // Set to Position Control Mode (3)
+    connector.createWriter()->add(ids, "Operating_Mode", dynamixel::OperatingMode::POSITION).write_or_throw();
+    // Turn on torque
+    connector.createWriter()->add(ids, "Torque_Enable", 1).write_or_throw();
 ```
 
 ## [Move Motor to Goal Position](#move-motor-to-goal-position)
-- Add commands to set the goal position of each motor using the `stageSetGoalPosition` method of the `Motor` class.
+- Send the goal position to all motors in the list.
 ```cpp
     int target_position = 500;
-    group_executor->addCmd(motor1->stageSetGoalPosition(target_position));
-    group_executor->addCmd(motor2->stageSetGoalPosition(target_position));
+    connector.createWriter()->add(ids, "Goal_Position", target_position).write_or_throw();
 ```
-- Execute all the staged commands simultaneously using the `execute` method of the `GroupExecutor` class.
-```cpp
-    group_executor->executeWrite();
-```
-- This will send the commands to both motors at the same time, causing them to move to the specified goal position simultaneously.
-- This method decides the communication packet type automatically between Sync and Bulk based on the staged commands.
-- Clear the staged commands after execution using the `clearStagedWriteCommands` method of the `GroupExecutor` class.
-```cpp
-    group_executor->clearStagedWriteCommands();
-```
+- This method decides the communication packet type automatically between Sync and Bulk.
 
 # [Error Handling](#error-handling)
-- To ensure your code is robust, every method that sends a command to the motor returns a **Result** object that encapsulates errors.
-- This object lets you safely check for any communication or device errors before proceeding.
-- You can check for communication errors and device(dynamixel) errors using the **Result** object.
+- `write_or_throw` throws `DxlError` if communication fails.
+- You can use try-catch block.
 
   **Example**
   ``` cpp
-    auto result_void = group_executor->executeWrite(); // type of 'result_void' variable is Result<void, DxlError>
-    if (!result_void.isSuccess()) {
-      std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
+    try {
+      connector.createWriter()->add(ids, "Goal_Position", 500).write_or_throw();
+    } catch (const dynamixel::DxlError& e) {
+      std::cerr << "Error: " << e.what() << std::endl;
       return 1;
     }
-  ```
-
-- stage functions return **Result<void, Error>** type.
-- You can either pass this value directly to the addCmd() function, or perform error checking first and then pass the resulting command value.
-  **Example**
-  ``` cpp
-    auto result_cmd = motor1->stageSetGoalPosition(target_position); // type of 'result_cmd' variable is Result<stagedCommand, DxlError>
-    if (!result_cmd.isSuccess()) {
-      std::cerr << dynamixel::getErrorMessage(result_cmd.error()) << std::endl;
-      return 1;
-    }
-    group_executor->addCmd(result_cmd.value());
   ```
 
 # [Compile and Run](#compile-and-run)
 - You can compile and run the code using the following commands
 ```bash
-$ g++ tutorial_step5.cpp -o tutorial_step5 -l dxl_x64_cpp
+$ g++ tutorial_step5.cpp -o tutorial_step5 -ldxl_cpp
 $ ./tutorial_step5
 ```
 
 # [Full Source Code With Error Handling](#full-source-code-with-error-handling)
 ```cpp
+#include <iostream>
+#include <vector>
 #include "dynamixel_easy_sdk/dynamixel_easy_sdk.hpp"
 
-int main(){
+int main() {
+  // Check your port name! (e.g. /dev/ttyUSB0 for U2D2, /dev/ttyACM0 for OpenRB)
+  dynamixel::Connector connector("/dev/ttyACM0", 57600); 
+  std::vector<uint8_t> ids = {1, 2};
 
-  dynamixel::Connector connector("/dev/ttyACM0", 57600);
-  std::unique_ptr<dynamixel::GroupExecutor> group_executor = connector.createGroupExecutor();
-  std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
-  std::unique_ptr<dynamixel::Motor> motor2 = connector.createMotor(2);
+  try {
+    // Turn off torque
+    connector.createWriter()->add(ids, "Torque_Enable", 0).write_or_throw();
+    // Set Operating Mode (Position Control)
+    connector.createWriter()->add(ids, "Operating_Mode", dynamixel::OperatingMode::POSITION).write_or_throw();
+    // Turn on torque
+    connector.createWriter()->add(ids, "Torque_Enable", 1).write_or_throw();
 
-  auto result_void = motor1->disableTorque();
-  if (!result_void.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
-    return 1;
+    // Write Goal Position
+    int target_position = 500;
+    connector.createWriter()->add(ids, "Goal_Position", target_position).write_or_throw();
+    
+  } catch (const dynamixel::DxlError& e) {
+     std::cerr << "Dynamixel Error: " << e.what() << std::endl;
+     return 1;
   }
-
-  result_void = motor2->disableTorque();
-  if (!result_void.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
-    return 1;
-  }
-
-  result_void = motor1->setOperatingMode(dynamixel::Motor::OperatingMode::POSITION);
-  if (!result_void.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
-    return 1;
-  }
-
-  result_void = motor2->setOperatingMode(dynamixel::Motor::OperatingMode::POSITION);
-  if (!result_void.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
-    return 1;
-  }
-
-  result_void = motor1->enableTorque();
-  if (!result_void.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
-    return 1;
-  }
-  result_void = motor2->enableTorque();
-  if (!result_void.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
-    return 1;
-  }
-
-  int target_position = 500;
-  auto result_cmd = motor1->stageSetGoalPosition(target_position);
-  if (!result_cmd.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_cmd.error()) << std::endl;
-    return 1;
-  }
-  group_executor->addCmd(result_cmd.value());
-
-  result_cmd = motor2->stageSetGoalPosition(target_position);
-  if (!result_cmd.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_cmd.error()) << std::endl;
-    return 1;
-  }
-  group_executor->addCmd(result_cmd.value());
-
-  result_void = group_executor->executeWrite();
-  if (!result_void.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
-    return 1;
-  }
-
-  group_executor->clearStagedWriteCommands();
 }
 ```

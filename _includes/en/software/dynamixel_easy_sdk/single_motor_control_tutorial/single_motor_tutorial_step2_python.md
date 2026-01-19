@@ -61,19 +61,21 @@ if __name__ == "__main__":
 # [Error Handling](#error-handling)
 - When an error occurs, `DxlRuntimeError` is raised.
 - You can catch this error using a try-except block.
+- The exception message automatically provides a description of the error.
 ```python
   try:
       motor1.getPresentPosition()
   except DxlRuntimeError as e:
+      # e.g.) [TxRxResult] Failed to get status packet from device
       print(e)
 ```
-- `DxlRuntimeError` contains `DxlError` Enum that provides detailed information about the error.
+- If you need to handle specific errors programmatically, you can check the `dxl_error` property.
 ```python
   try:
       motor1.getPresentPosition()
   except DxlRuntimeError as e:
-      if e.dxl_error == DxlError.SDK_COMM_TX_FAIL:
-          print("Transmission failed.")
-      elif e.dxl_error == DxlError.SDK_COMM_RX_FAIL:
-          print("Receive failed.")
+      if e.dxl_error == DxlError.SDK_COMM_RX_FAIL:
+          # Handle specific communication error retry logic
+          pass
+      print(e)
 ```
