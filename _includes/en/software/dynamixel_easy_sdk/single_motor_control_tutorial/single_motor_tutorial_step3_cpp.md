@@ -41,7 +41,7 @@ int main() {
 
   while (true) {
     int present_position = leader_motor->getPresentPosition().value();
-    std::cout << "Leader Motor Present Position: " << present_position << std::endl;
+    std::cout << "Leader Motor Present Position: " << present_position << "     \r" << std::flush;
 
     bool under_limit = (present_position < min_position);
     bool over_limit = (present_position > max_position);
@@ -113,7 +113,7 @@ int main() {
 ```cpp
     while (true) {
       int present_position = leader_motor->getPresentPosition().value();
-      std::cout << "Leader Motor Present Position: " << present_position << std::endl;
+      std::cout << "Leader Motor Present Position: " << present_position << "     \r" << std::flush;
 ```
 - If the leader motor's position exceeds the defined range, move it back within the range.
 - Follower motor always tracks the leader motor's position.

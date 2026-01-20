@@ -36,6 +36,9 @@ def main():
 
     target_position = 500
     connector.createWriter(ids, "Goal_Position", target_position).write()
+
+if __name__ == "__main__":
+    main()
 ```
 
 ## [Import Library](#import-library)
