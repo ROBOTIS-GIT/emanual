@@ -85,6 +85,7 @@ XL-320의 사양은 다른 XL 모델들과 차이가 있습니다. 자세한 내
 | [XM540-W150-T/R] | 6.9 [N.m] (at 11.1 [V], 4.2 [A])<br>7.3 [N.m] (at 12.0 [V], 4.4 [A])<br>8.9 [N.m] (at 14.8 [V], 5.5 [A])   | 50 [rev/min] (at 11.1 [V])<br>53 [rev/min] (at 12.0 [V])<br>66 [rev/min] (at 14.8 [V]) |
 | [XM430-W350-T/R] | 3.8 [N.m] (at 11.1 [V], 2.1 [A])<br>4.1 [N.m] (at 12.0 [V], 2.3 [A])<br>4.8 [N.m] (at 14.8 [V], 2.7 [A])   | 43 [rev/min] (at 11.1 [V])<br>46 [rev/min] (at 12.0 [V])<br>57 [rev/min] (at 14.8 [V]) |
 | [XM430-W210-T/R] | 2.7 [N.m] (at 11.1 [V], 2.1 [A])<br>3.0 [N.m] (at 12.0 [V], 2.3 [A])<br>3.7 [N.m] (at 14.8 [V], 2.7 [A])   | 70 [rev/min] (at 11.1 [V])<br>77 [rev/min] (at 12.0 [V])<br>95 [rev/min] (at 14.8 [V]) |
+| [XM335-T323-T]   | 0.85 [N.m] (at 9.0 [V], 0.61[A])<br>1.03 [N.m] (at 11.1 [V], 0.80[A])<br>1.12 [N.m] (at 12.0 [V], 0.88[A]) | 43 [rev/min] (at 9.0 [V])<br>53 [rev/min] (at 11.1 [V])<br>57 [rev/min] (at 12.0 [V])  |
 
 ## [XC 시리즈](#xc-시리즈)
 
@@ -114,10 +115,10 @@ XL-320의 사양은 다른 XL 모델들과 차이가 있습니다. 자세한 내
 [XW540-T140-R]: /docs/kr/dxl/x/xw540-t140/
 [XW430-T200-R]: /docs/kr/dxl/x/xw430-t200/
 [XW430-T333-R]: /docs/kr/dxl/x/xw430-t333/
-[XD540-T270-R]: /docs/kr/dxl/x/xd540-t270
-[XD540-T150-R]: /docs/kr/dxl/x/xd540-t150
-[XD430-T350-R]: /docs/kr/dxl/x/xd430-t350
-[XD430-T210-R]: /docs/kr/dxl/x/xd430-t210
+[XD540-T270-R]: /docs/kr/dxl/x/xd540-t270/
+[XD540-T150-R]: /docs/kr/dxl/x/xd540-t150/
+[XD430-T350-R]: /docs/kr/dxl/x/xd430-t350/
+[XD430-T210-R]: /docs/kr/dxl/x/xd430-t210/
 [XH540-V270-R]: /docs/kr/dxl/x/xh540-v270/
 [XH540-W270-T/R]: /docs/kr/dxl/x/xh540-w270/
 [XH540-V150-R]: /docs/kr/dxl/x/xh540-v150/
@@ -130,15 +131,16 @@ XL-320의 사양은 다른 XL 모델들과 차이가 있습니다. 자세한 내
 [XM540-W150-T/R]: /docs/kr/dxl/x/xm540-w150/
 [XM430-W350-T/R]: /docs/kr/dxl/x/xm430-w350/
 [XM430-W210-T/R]: /docs/kr/dxl/x/xm430-w210/
+[XM335-T323-T]: /docs/en/dxl/x/xm335-t323/
 [2XC430-W250]: /docs/kr/dxl/x/2xc430-w250/
 [XC430-W240-T]: /docs/kr/dxl/x/xc430-w240/
 [XC430-W150-T]: /docs/kr/dxl/x/xc430-w150/
 [XC430-T240BB-T]: /docs/kr/dxl/x/xc430-t240bb/
 [XC430-T150BB-T]: /docs/kr/dxl/x/xc430-t150bb/
-[XC330-T288]: /docs/kr/dxl/x/xc330-t288
-[XC330-T181]: /docs/kr/dxl/x/xc330-t181
-[XC330-M288]: /docs/kr/dxl/x/xc330-m288
-[XC330-M181]: /docs/kr/dxl/x/xc330-m181
+[XC330-T288]: /docs/kr/dxl/x/xc330-t288/
+[XC330-T181]: /docs/kr/dxl/x/xc330-t181/
+[XC330-M288]: /docs/kr/dxl/x/xc330-m288/
+[XC330-M181]: /docs/kr/dxl/x/xc330-m181/
 [2XL430-W250-T]: /docs/kr/dxl/x/2xl430-w250/
 [XL430-W250-T]: /docs/kr/dxl/x/xl430-w250/
 [XL330-M288]: /docs/kr/dxl/x/xl330-m288/

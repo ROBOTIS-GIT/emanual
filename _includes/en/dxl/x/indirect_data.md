@@ -1,4 +1,4 @@
-{% if page.product_group=='xl330' or page.product_group=='xc330' %}
+{% if page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='xm335' %}
 The Indirect Address registers allow the assignment of other RAM area control table items to registers in the Indirect Data region. This allows users to map multiple control table items needed for their application to sequential memory addresses to improve Instruction Packet efficiency.
 If a specific address is allocated an Indirect Address, the corresponding Indirect Data register inherits all the features and properties of the assigned control table address. These properties include Size (Byte length), value range, and Access properties (Read Only, Read/Write). For instance, if 65 (LED) is allocated to Indirect Address 1(168), Indirect Data 1(208) will take on the properties of the [LED(65)] register. 
 

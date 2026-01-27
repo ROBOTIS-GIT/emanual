@@ -1,4 +1,4 @@
-{% if page.product_group=='xl330' or page.product_group=='xc330' %}
+{% if page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='xm335' %}
 
 To communicate with DYANMIXEL, it is important to select a proper protocol type.
 

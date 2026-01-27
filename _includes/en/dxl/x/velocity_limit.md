@@ -1,6 +1,6 @@
 The Velocity Limit(44) is used to limit the maximum acceptable value for the [Goal Velocity(104)]. For more details, see [Goal Velocity(104)].
 
-{% if page.product_group =='xl330' or page.product_group=='xc330'%}
+{% if page.product_group =='xl330' or page.product_group=='xc330' or page.product_group=='xm335' %}
 
 |   Unit   | Value Range |
 |:--------:|:-----------:|

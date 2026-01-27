@@ -73,16 +73,16 @@ main:
       children:
         - title: "DYD-11"
           titlekr: "DYD-11"
-          url: /all-dyd/dyd-11
-          urlkr: /all-dyd/dyd-11
+          url: /all-dyd/dyd-11/
+          urlkr: /all-dyd/dyd-11/
         - title: "DYD-14"
           titlekr: "DYD-14"
-          url: /all-dyd/dyd-14
-          urlkr: /all-dyd/dyd-14
+          url: /all-dyd/dyd-14/
+          urlkr: /all-dyd/dyd-14/
         - title: "DYD-17"
           titlekr: "DYD-17"
-          url: /all-dyd/dyd-17
-          urlkr: /all-dyd/dyd-17
+          url: /all-dyd/dyd-17/
+          urlkr: /all-dyd/dyd-17/
     - title: "X Series"
       titlekr: "X 시리즈"
       url: /dxl/x/
@@ -136,7 +136,7 @@ main:
         url: /dxl/x/xh430-w210/
       - title: "XH430-W350"
         titlekr: "XH430-W350"
-        url: /dxl/x/xh430-w350
+        url: /dxl/x/xh430-w350/
       - title: "XH430-V210"
         titlekr: "XH430-V210"
         url: /dxl/x/xh430-v210/
@@ -178,7 +178,7 @@ main:
         url: /dxl/x/xc430-t150bb/
       - title: "XC430-T240BB"
         titlekr: "XC430-T240BB"
-        url: /dxl/x/xc430-t240bb/        
+        url: /dxl/x/xc430-t240bb/
       - title: "XC330-T288"
         titlekr: "XC330-T288"
         url: /dxl/x/xc330-t288/
@@ -362,7 +362,7 @@ main:
       url: /platform/turtlebot3/overview/
     - title: "OpenManipulator"
       titlekr: "오픈매니퓰레이터"
-      url: /platform/ai_manipulator_main
+      url: /platform/ai_manipulator_main/
       children:
       - title: "OpenMANIPULATOR-P"
         titlekr: "OpenMANIPULATOR-P"
@@ -850,7 +850,7 @@ main:
         url: /faq/faq_parts/
       - title: "GENERAL"
         titlekr: "자주 묻는 질문"
-        url: /faq/general
+        url: /faq/general/
 
 all-dynamixel:
   - title: "Y Series"
@@ -5620,6 +5620,10 @@ xc330-t181:
       titlekr: "도면"
       url: /dxl/x/xc330-t181/#drawings
       urlkr: /dxl/x/xc330-t181/#도면
+    - title: "Moment of Inertia"
+      titlekr: "Moment of Inertia"
+      url: /dxl/x/xc330-t181/#moment-of-inertia
+      urlkr: /dxl/x/xc330-t181/#moment-of-inertia 
 
 #XC330-T288
 xc330-t288:
@@ -5850,6 +5854,10 @@ xc330-t288:
       titlekr: "도면"
       url: /dxl/x/xc330-t288/#drawings
       urlkr: /dxl/x/xc330-t288/#도면
+    - title: "Moment of Inertia"
+      titlekr: "Moment of Inertia"
+      url: /dxl/x/xc330-t288/#moment-of-inertia
+      urlkr: /dxl/x/xc330-t288/#moment-of-inertia
 
 #XM335-T323
 xm335-t323:
@@ -6080,6 +6088,10 @@ xm335-t323:
       titlekr: "도면"
       url: /dxl/x/xm335-t323/#drawings
       urlkr: /dxl/x/xm335-t323/#도면
+    - title: "Moment of Inertia"
+      titlekr: "Moment of Inertia"
+      url: /dxl/x/xm335-t323/#moment-of-inertia
+      urlkr: /dxl/x/xm335-t323/#moment-of-inertia
 
 # xl430 test demo nav
 xl430-w250-test:
