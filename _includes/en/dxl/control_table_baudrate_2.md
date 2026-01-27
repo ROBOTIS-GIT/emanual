@@ -12,6 +12,18 @@ The Baud Rate(8) determines serial communication speed between a controller and 
 | 1(Default) | 57,600 [bps]  |   0.0016 [%]    |
 |     0      |  9,600 [bps]  |    0.000 [%]    |
 
+{% elsif page.product_group=='xm335' %}
+
+|   Value    |   Baud Rate   | Margin of Error |
+|:----------:|:-------------:|:---------------:|
+|     6      |   4M [bps]    |    0.000 [%]    |
+|     5      |   3M [bps]    |    0.000 [%]    |
+|     4      |   2M [bps]    |    0.000 [%]    |
+| 3(Default) |   1M [bps]    |    0.000 [%]    |
+|     2      | 115,200 [bps] |   0.0064 [%]    |
+|     1      | 57,600 [bps]  |   0.0016 [%]    |
+|     0      |  9,600 [bps]  |    0.000 [%]    |
+
 {% else %}
 
 |   Value    |   Baud Rate   | Margin of Error |
