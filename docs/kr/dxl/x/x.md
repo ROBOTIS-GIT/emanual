@@ -131,7 +131,7 @@ XL-320의 사양은 다른 XL 모델들과 차이가 있습니다. 자세한 내
 [XM540-W150-T/R]: /docs/kr/dxl/x/xm540-w150/
 [XM430-W350-T/R]: /docs/kr/dxl/x/xm430-w350/
 [XM430-W210-T/R]: /docs/kr/dxl/x/xm430-w210/
-[XM335-T323-T]: /docs/en/dxl/x/xm335-t323/
+[XM335-T323-T]: /docs/kr/dxl/x/xm335-t323/
 [2XC430-W250]: /docs/kr/dxl/x/2xc430-w250/
 [XC430-W240-T]: /docs/kr/dxl/x/xc430-w240/
 [XC430-W150-T]: /docs/kr/dxl/x/xc430-w150/
