@@ -14,7 +14,7 @@ For more details, please refer to the [Shutdown(63)] section.
 |:-------------:|:-----------:|:-------------:|
 | About 0.1 [V] |   31 ~ 70   | 3.1 ~ 7.0 [V] |
 
-{% elsif page.ref == 'xc330-t181' or page.ref == 'xc330-t288' %}
+{% elsif page.ref == 'xc330-t181' or page.ref == 'xc330-t288' or page.ref == 'xm335-t323' %}
 
 |     Unit      | Value Range |  Description   |
 |:-------------:|:-----------:|:--------------:|

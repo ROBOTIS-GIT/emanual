@@ -71,7 +71,7 @@ A REBOOT is the only method to reset [{{ torque_enable }}] to ‘1’(Torque ON)
 | Bit 1 |                -                | Unused, Always '0'                                                               |
 | Bit 0 |  Input Voltage Error (default)  | Detects that input voltage exceeds the configured operating voltage              |
 
-{% elsif page.ref=='xc330-t181' or page.ref=='xc330-t288' %}
+{% elsif page.ref=='xc330-t181' or page.ref=='xc330-t288' or page.ref=='xm335-t323' %}
 
 |  Bit  |              Item               | Description                                                                      |
 |:-----:|:-------------------------------:|:---------------------------------------------------------------------------------|
@@ -114,7 +114,7 @@ A REBOOT is the only method to reset [{{ torque_enable }}] to ‘1’(Torque ON)
 {% capture shutdown_01 %}
 **NOTE** :
 {% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' %}1. If Shutdown occurs, **Dynamic brake** will be activated.{% else %}{% endif %}
-2. If Shutdown occurs, **the indicator LED will flicker every second**. {% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' or page.product_group=='xl330' or page.product_group=='xc330' %}{% else %}(**Firmware v41 or above**){% endif %}
+2. If Shutdown occurs, **the indicator LED will flicker every second**. {% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' or page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='xm335' %}{% else %}(**Firmware v41 or above**){% endif %}
 3. If a Shutdown occurs, **reboot the device** to restore functionality.
 - H/W REBOOT : Turn off and turn on the power to the actuator.
 - S/W REBOOT : Transmit REBOOT Instruction (For more details, refer to the [Reboot](/docs/en/dxl/protocol2/#reboot) section of the e-Manual.)

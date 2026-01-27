@@ -91,6 +91,7 @@ X : Incompatible
 
 | Model      | DYNAMIXEL Protocol 1.0  | DYNAMIXEL Protocol 2.0 |
 |:-----------|:-----------------------:|:----------------------:|
+| XM335-T323 |            X            |           O            |
 | XM430-W210 | O* <br>(F/W address 13) |           O            |
 | XM430-W350 | O* <br>(F/W address 13) |           O            |
 | XM540-W150 | O* <br>(F/W address 13) |           O            |

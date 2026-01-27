@@ -28,7 +28,7 @@
 {% assign target_file = 'dxl_proa_info' %}
 {% elsif page.product_group=='dxl_pro' %}
 {% assign target_file = 'dxl_pro_info' %}
-{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' or page.product_group=='xc330' or page.product_group=='dxl_xl320' or page.product_group=='xl330' %}
+{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xw540' or page.product_group=='dxl_xw430' or page.product_group=='xc330' or page.product_group=='xm335' or page.product_group=='dxl_xl320' or page.product_group=='xl330' %}
 {% assign target_file = 'dxl_x_info' %}
 {% elsif page.product_group=='rh_p12_rn' or page.product_group=='rh_p12_rna' %}
 {% assign target_file = 'rh_p12_rn_info' %}
@@ -53,7 +53,7 @@
 - Do not connect or disconnect DYNAMIXEL cables while power is being supplied.
 {% if page.product_group== 'xl330' or page.ref == 'xc330-m181' or page.ref == 'xc330-m288' %}
 - A ROBOTIS controller is recommended to ensure a stable power supply.
-{% elsif page.ref == 'xc330-t288' or page.ref == 'xc330-t181' %}
+{% elsif page.ref == 'xc330-t288' or page.ref == 'xc330-t181' or page.ref == 'xm335-t323' %}
 - A ROBOTIS controller is recommended to ensure a stable power supply.
 {% else %}
 {% endif %}
