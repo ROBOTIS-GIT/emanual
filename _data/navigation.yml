@@ -357,22 +357,6 @@ main:
       - title: "OMX"
         titlekr: "OMX"
         url: https://ai.robotis.com/omx/introduction_omx.html
-    - title: "TurtleBot3"
-      titlekr: "터틀봇3"
-      url: /platform/turtlebot3/overview/
-    - title: "OpenManipulator"
-      titlekr: "오픈매니퓰레이터"
-      url: /platform/ai_manipulator_main/
-      children:
-      - title: "OpenMANIPULATOR-P"
-        titlekr: "OpenMANIPULATOR-P"
-        url: /platform/openmanipulator_p/overview/
-      - title: "OpenMANIPULATOR-X"
-        titlekr: "OpenMANIPULATOR-X"
-        url: /platform/openmanipulator_x/overview/
-      - title: "*Manipulator-H"
-        titlekr: "*Manipulator-H"
-        url: /platform/manipulator_h/introduction/
     - title: "Robot Hands"
       titlekr: "로봇핸드"
       children:
@@ -391,6 +375,22 @@ main:
         url: /platform/robothand_rx28/
       - titlekr: "*로봇핸드 MX28"
         url: /platform/robothand_mx28/
+    - title: "OpenManipulator"
+      titlekr: "오픈매니퓰레이터"
+      url: /platform/ai_manipulator_main/
+      children:
+      - title: "OpenMANIPULATOR-P"
+        titlekr: "OpenMANIPULATOR-P"
+        url: /platform/openmanipulator_p/overview/
+      - title: "OpenMANIPULATOR-X"
+        titlekr: "OpenMANIPULATOR-X"
+        url: /platform/openmanipulator_x/overview/
+      - title: "*Manipulator-H"
+        titlekr: "*Manipulator-H"
+        url: /platform/manipulator_h/introduction/
+    - title: "TurtleBot3"
+      titlekr: "터틀봇3"
+      url: /platform/turtlebot3/overview/
     - title: "ROBOTIS OP"
       titlekr: "로보티즈 OP"
       url: /platform/op3/introduction/
@@ -958,18 +958,18 @@ all-platform:
     titlekr: "AI 매니퓰레이터"
     url: /platform/#ai-manipulator
     urlkr: /platform/#ai-매니퓰레이터
-  - title: "TurtleBot3"
-    titlekr: "터틀봇3"
-    url: /platform/#turtlebot3
-    urlkr: /platform/#터틀봇3
-  - title: "OpenManipulator"
-    titlekr: "오픈매니퓰레이터"
-    url: /platform/#openmanipulator
-    urlkr: /platform/#오픈매니퓰레이터
   - title: "Robot Hands"
     titlekr: "로봇핸드"
     url: /platform/#robot-hands
     urlkr: /platform/#로봇핸드
+  - title: "OpenManipulator"
+    titlekr: "오픈매니퓰레이터"
+    url: /platform/#openmanipulator
+    urlkr: /platform/#오픈매니퓰레이터
+  - title: "TurtleBot3"
+    titlekr: "터틀봇3"
+    url: /platform/#turtlebot3
+    urlkr: /platform/#터틀봇3
   - title: "ROBOTIS OP"
     titlekr: "로보티즈 OP"
     url: /platform/#robotis-op
