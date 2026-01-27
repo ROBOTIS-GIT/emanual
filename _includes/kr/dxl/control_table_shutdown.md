@@ -120,7 +120,7 @@ Revision: PRO+ > DYNAMIXEL-P.
 **참고** :
 {% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' %}1. Shutdown이 발생하면 **전기적 브레이크(Dynamic brake) 상태로 전환**됩니다.{% else %}{% endif %}
 1. Shutdown이 발생하면 **1초 주기로 LED가 점멸** 합니다.{% if page.product_group=='dxl_pro' or page.product_group=='dxl_pro_a' or page.product_group=='dxl_p' or page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='xm335' %}{% else %}(**펌웨어 버전 41 이상**) {% endif %}
-2. Shutdown이 발생하면 다음과 같은 방법으로 **장치를 REBOOT** 시켜 주세요.
+1. Shutdown이 발생하면 다음과 같은 방법으로 **장치를 REBOOT** 시켜 주세요.
 -  H/W REBOOT : 전원을 껐다 켜주세요.
 -  S/W REBOOT : REBOOT Instruction을 사용할수 있습니다. [Protocol 2.0](/docs/kr/dxl/protocol2/#reboot)을 참고해주세요.
 {% endcapture %}
