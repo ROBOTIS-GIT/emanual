@@ -21,12 +21,11 @@ sidebar:
 | :----------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------: |
 | [![](/assets/images/platform/omy/omy_product.png)](https://ai.robotis.com/omy/introduction_omy.html) | [![](/assets/images/platform/omx/omx_product.png)](https://ai.robotis.com/omx/introduction_omx.html) |
 
+# [Robot Hands](#robot-hands)
 
-# [TurtleBot3](#turtlebot3)
-
-|                                  TurtleBot3                                  |
-| :--------------------------------------------------------------------------: |
-| [![](/assets/tb3_burger_Waffle.png)](/docs/en/platform/turtlebot3/overview/) |
+|                                              HX5-D20                                              |                                           RH-P12-RN(A)                                            |                                                     RH-P12-RN-UR                                                      |
+| :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
+| [![](/assets/images/platform/hx/hx5-d20_product.png)](https://ai.robotis.com/hands/introduction_hands.html) | [![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_new.png)](/docs/en/platform/rh_p12_rna/) | [![](/assets/images/platform/rh_p12_rn/rh_p12_rn_ur/rh_p12_rn_ur_product_image.png)](/docs/en/platform/rh_p12_rn_ur/) |
 
 # [OpenManipulator](#openmanipulator)
 
@@ -37,11 +36,11 @@ sidebar:
 **WARNING** : Manipulator-H has been discontinued.
 {: .notice--warning}
 
-# [Robot Hands](#robot-hands)
+# [TurtleBot3](#turtlebot3)
 
-|                                              HX5-D20                                              |                                           RH-P12-RN(A)                                            |                                                     RH-P12-RN-UR                                                      |
-| :-----------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
-| [![](/assets/images/platform/hx/hx5-d20_product.png)](https://ai.robotis.com/hands/introduction_hands.html) | [![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product_new.png)](/docs/en/platform/rh_p12_rna/) | [![](/assets/images/platform/rh_p12_rn/rh_p12_rn_ur/rh_p12_rn_ur_product_image.png)](/docs/en/platform/rh_p12_rn_ur/) |
+|                                  TurtleBot3                                  |
+| :--------------------------------------------------------------------------: |
+| [![](/assets/tb3_burger_Waffle.png)](/docs/en/platform/turtlebot3/overview/) |
 
 # [ROBOTIS OP](#robotis-op)
 
@@ -49,7 +48,7 @@ sidebar:
 | :------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: |
 | [![](/assets/images/platform/op3/op3_product_rev2.png)](/docs/en/platform/op3/introduction/) | [![](/assets/images/platform/op2/op2_product.jpg)](/docs/en/platform/op2/getting_started/) | [![](/assets/images/platform/op/op_product.jpg)](/docs/en/platform/op/getting_started/) |
 
-**WARNING** : OP,OP2 and OP3 have been discontinued.
+**WARNING** : OP and OP2 have been discontinued.
 {: .notice--warning}
 
 # [THORMANG3](#thormang3)
