@@ -76,7 +76,7 @@ sidebar:
 
 |                                        XM540                                         |                                        XM430                                         |                                        XM335                                         |
 |:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------:|
-|                  ![](/assets/images/dxl/x/x540-series_product.png)                   |                    ![](/assets/images/dxl/x/x_series_product.png)                    |                ![](/assets/images/dxl/x/x335/x335_series_product.png)                |
+|                  ![](/assets/images/dxl/x/x540-series_product.png)                   |                    ![](/assets/images/dxl/x/x_series_product.png)                    |                ![](/assets/images/dxl/x/x335/xm335-series_product.png)               |
 | [XM540-W150](/docs/kr/dxl/x/xm540-w150/)<br>[XM540-W270](/docs/kr/dxl/x/xm540-w270/) | [XM430-W210](/docs/kr/dxl/x/xm430-w210/)<br>[XM430-W350](/docs/kr/dxl/x/xm430-w350/) |                         [XM335-T323](/docs/kr/dxl/x/xm335-t323/)                     |
 
 

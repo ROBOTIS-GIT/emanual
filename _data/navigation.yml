@@ -362,7 +362,7 @@ main:
       children:
       - title: "HX5-D20"
         titlekr: "HX5-D20"
-        url: https://ai.robotis.com/omx/introduction_omx.html
+        url: https://ai.robotis.com/hands/introduction_hands.html
       - title: "RH-P12-RN(A)"
         titlekr: "RH-P12-RN(A)"
         url: /platform/rh_p12_rna/
