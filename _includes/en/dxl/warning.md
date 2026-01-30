@@ -53,7 +53,7 @@
 - Do not connect or disconnect DYNAMIXEL cables while power is being supplied.
 {% if page.product_group== 'xl330' or page.ref == 'xc330-m181' or page.ref == 'xc330-m288' %}
 - A ROBOTIS controller is recommended to ensure a stable power supply.
-{% elsif page.ref == 'xc330-t288' or page.ref == 'xc330-t181' or page.ref == 'xm330-t288' %}
+{% elsif page.ref == 'xc330-t288' or page.ref == 'xc330-t181' or page.ref == 'xm335-t323' %}
 - A ROBOTIS controller is recommended to ensure a stable power supply.
 {% else %}
 {% endif %}
