@@ -254,7 +254,7 @@ xm335-t323:
   physicalconnection: *ttl_connection_5v
   id:                 *id
   feedback:           *feedback
-  case_material:      "Engineering Plastic"
+  case_material:      "Full Metal"
   gear_material:      "Full Metal Gear, 2 Bearing"
   standbycurrent:     17 [mA]
 
