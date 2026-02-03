@@ -14,11 +14,26 @@ To control the DYNAMIXEL actuators, the main controller needs to convert its UAR
 {% else %}
 
 ### [TTL Communication](#ttl-communication)
+{% if page.product_group=='xm335' %}
+![](/assets/images/dxl/x335_ttl_circuit.png)
+
+{% else %}
 ![](/assets/images/dxl/ttl_circuit.png)
+
+{% endif %}
 
 **NOTE**: Above circuit is designed for 5V or 5V tolerant MCU. Otherwise, use a Level Shifter to match the voltage of MCU.
 {: .notice}
 
 {% endif %}
 
-{% if page.ref=='2xl430-w250' or page.ref== '2xc430-w250'%} ![](/assets/images/dxl/x/2xl/2x_series_ttl_pin.png) {% else %}![](/assets/images/dxl/x/x_series_ttl_pin.png) {% endif %}
+{% if page.ref=='2xl430-w250' or page.ref=='2xc430-w250' %} 
+![](/assets/images/dxl/x/2xl/2x_series_ttl_pin.png)
+
+{% elsif page.product_group=='xm335' %}
+![](/assets/images/dxl/x/x335_series_ttl_pin.png) 
+
+{% else %}
+![](/assets/images/dxl/x/x_series_ttl_pin.png)
+
+{% endif %} 

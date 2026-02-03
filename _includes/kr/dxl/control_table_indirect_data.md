@@ -1,4 +1,4 @@
-{% if page.product_group=='xl330' or page.product_group=='xc330'%}
+{% if page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='xm335' %}
 
 Indirect Address와 Indirect Data 용도는 서로 떨어져있는 [컨트롤 테이블](#컨트롤-테이블)의 Address를 연속된 Address로 사용하기 위함입니다.  
 - 연속된 Address는 Instruction Packet의 효율성을 향상 시킬 수 있습니다.

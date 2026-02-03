@@ -1,4 +1,4 @@
-{% if page.product_group=='xl330' or page.product_group=='xc330' %}
+{% if page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='xm335' %}
 
 The Indirect Address and the Indirect Data are useful when accessing two remote addresses in the [Control Table](#control-table) as sequential addresses. 
 - Sequential addresses can increase Instruction Packet efficiency. Addresses that can be defined as Indirect Address is limited to [RAM area (Address 64 ~ 227)](#control-table-of-ram-area).

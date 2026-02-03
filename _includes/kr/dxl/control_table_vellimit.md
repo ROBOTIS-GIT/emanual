@@ -1,7 +1,7 @@
 
 [Goal Velocity(104)](#goal-velocity104)의 한계 값입니다. 자세한 설명은 Goal Velocity(104)을 참고하세요.
 
-{% if page.product_group =='xl330' or page.product_group=='xc330'%}
+{% if page.product_group =='xl330' or page.product_group=='xc330' or page.product_group=='xm335' %}
 
 |      단위       |   범위    |
 |:---------------:|:---------:|

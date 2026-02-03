@@ -10,7 +10,7 @@ Protocol Type(13) is used to set the communications protocol used by the DYNAMIX
 The following table lists available protocol types compatible with this model of DYNAMIXEL.
 
 
-{% if page.product_group=='xl330' or page.product_group=='xc330' %}
+{% if page.product_group=='xl330' or page.product_group=='xc330' or page.product_group=='xm335' %}
 
 
 |   Value    |                       Type                        |                     Descriptions                      |
