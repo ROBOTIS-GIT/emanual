@@ -86,7 +86,7 @@ page_number: 3
 | MCU                                | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)              | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)              |
 | Remote Controller                  | -                                                                | RC-100B + BT-410 Set (Bluetooth 4, BLE)                          |
 | Actuator                           | XL430-W250                                                       | XM430-W210                                                       |
-| LDS (Laser Distance Sensor)        | 360 Laser Distance Sensor [LDS-02]                               | 360 Laser Distance Sensor [LDS-02]                               |
+| LDS (Laser Distance Sensor)        | 360 Laser Distance Sensor [LDS-03]                               | 360 Laser Distance Sensor [LDS-03]                               |
 | Camera                             | -                                                                | Raspberry Pi Camera Module v2.1                                  |
 | IMU                                | Gyroscope 3 Axis<br />Accelerometer 3 Axis                       | Gyroscope 3 Axis<br />Accelerometer 3 Axis                       |
 | Power connectors                   | 3.3V / 800mA<br />5V / 4A<br />12V / 1A                          | 3.3V / 800mA<br />5V / 4A<br />12V / 1A                          |
@@ -140,7 +140,7 @@ The following table shows the lists of components. The major differences between
 | .                      | USB2LDS                           |      1 |         1 |
 | **Remote Controllers** | BT-410 Set (Bluetooth 4, BLE)     |      0 |         1 |
 | .                      | RC-100B (Remote Controller)       |      0 |         1 |
-| **Sensors**            | <sup>**</sup>[LDS-01] or [LDS-02] |      1 |         1 |
+| **Sensors**            | <sup>**</sup>[LDS-01] or [LDS-02] or [LDS-03] |      1 |         1 |
 | .                      | [Raspberry Pi Camera v2.1]        |      0 |         1 |
 | **Memory**            | MicroSD Card                      |      1 |         1 |
 | **Cables**             | Raspberry Pi Power Cable          |      1 |         1 |
@@ -174,7 +174,8 @@ The following table shows the lists of components. The major differences between
 
 <sup>*</sup> The [Raspberry Pi 3 Model B+] was included as standard starting in 2019. Earlier models are equipped with a [Raspberry Pi 3 Model B].  
 <sup>*</sup> The [Raspberry Pi 4 Model B] has been included as standard since 2021 September.<br>
-<sup>*</sup> The [LDS-02] has replaced the previous generation [LDS-01] since 2022.
+<sup>*</sup> The [LDS-02] has replaced the previous generation [LDS-01] since 2022.<br>
+<sup>*</sup> The [LDS-03] has replaced the previous generation [LDS-02] since 2025.
 
 The TurtleBot3 Waffle is discontinued due to the EOL of the [Intel® Joule™ 570x] SBC.
 {: .notice}
@@ -194,6 +195,7 @@ Complete CAD data is available in Onshape, a full-cloud 3D CAD editor accessible
 [LDS-01 (HLS-LFCD2)]: /docs/en/platform/turtlebot3/appendix_lds_01/
 [LDS-01]: /docs/en/platform/turtlebot3/appendix_lds_01/
 [LDS-02]: /docs/en/platform/turtlebot3/appendix_lds_02/
+[LDS-03]: /docs/en/platform/turtlebot3/appendix_lds_03/
 [Intel® Realsense™ R200]: https://software.intel.com/en-us/RealSense/R200Camera
 [Raspberry Pi Camera v2.1]: https://www.raspberrypi.org/products/camera-module-v2/
 [OpenCR1.0]: /docs/en/platform/turtlebot3/appendix_opencr1_0/
