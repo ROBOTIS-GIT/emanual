@@ -95,7 +95,7 @@ $ sudo cmake --build cmake_build --target install
 $ sudo cmake --build cmake_build --target uninstall # Uninstall the library files from the system
 ```
 
-Build result can be found in the `cmake_build` folder and the library files are installed to the system(`/usr/local/lib/libdxl_c.so`, `/usr/local/include/dynamixel_sdk_c/`).
+Build result can be found in the `cmake_build` folder and the library files are installed to the system(`/usr/local/lib/libdxl_cpp.so`, `/usr/local/include/dynamixel_sdk/`).
 
 ## Build the Example Code with CMake
 The example code also supports unified CMake build.  

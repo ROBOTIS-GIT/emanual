@@ -92,7 +92,7 @@ Start Visual Studio Installer and install the build tools.
 
 ![vs_build_tool_install](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/windows/cmake_build/vs_build_tool_install.png)
 
-After installation, open the `x64 Native Tools Command Prompt for VS` as **administrator** and navigate to the DynamixelSDK/c directory.  
+After installation, open the `x64 Native Tools Command Prompt for VS` as **administrator** and navigate to the DynamixelSDK/c++ directory.  
 Build the SDK. `--target install` option makes the library files installed to the system.  
 You can skip installing the library files by omitting the --target install option.  
 ``` bash
@@ -102,7 +102,7 @@ $ cmake --build cmake_build --target install
 $ cmake --build cmake_build --target uninstall # Uninstall the library files from the system
 ```
 
-Build result can be found in the `cmake_build` folder and the library files are installed to the system(C:\Program Files (x86)\dynamixel_sdk_c\).
+Build result can be found in the `cmake_build` folder and the library files are installed to the system(C:\Program Files (x86)\dynamixel_sdk\).
 
 ## Build the Example Code with CMake
 The example code also supports unified CMake build.  
