@@ -66,3 +66,53 @@ This section provides instructions on building the SDK.
 If the library file needs to be built in a lower or higher version of Visual Studio, change the `Platform Toolset` into the needed value. (ex: To use the DynamixelSDK c ver. library file in the MATLAB 2010 or LabVIEW 2010, the `Platform Toolset` should be changed to `Visual Studio 2009` lower.)
 {% endcapture %}
 <div class="notice--warning">{{ notice_01 | markdownify }}</div>
+
+# [CMake Build](#cmake-build)
+- Latest DYNAMIXEL SDK supports CMake build. 
+
+## Build System Update
+
+The existing OS-specific `make` build system has been unified into a single `CMake`-based build system.
+
+| Category               | Legacy (`sln`)         | New (`cmake`)                     |
+|------------------------|-------------------------|-----------------------------------|
+| Build file             | OS-dependent            | Unified across platforms          |
+| Generated Files        | `libdxl_{sys_env}_cpp.dll`| `libdxl_cpp.dll`                |
+| Install Include Paths  |                         | `C:\Program Files (x86)\dynamixel_sdk\include\dynamixel_sdk\` |
+
+## Build with CMake
+
+Install cmake from [cmake download](https://cmake.org/download/).  
+Download the msi file and install it.
+
+![cmake_install](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/windows/cmake_build/cmake_install.png)  
+
+Install Visual Studio build tools from [Visual Studio download](https://visualstudio.microsoft.com/downloads/).  
+Start Visual Studio Installer and install the build tools.  
+
+![vs_build_tool_install](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/windows/cmake_build/vs_build_tool_install.png)
+
+After installation, open the `x64 Native Tools Command Prompt for VS` as **administrator** and navigate to the DynamixelSDK/c++ directory.  
+Build the SDK. `--target install` option makes the library files installed to the system.  
+You can skip installing the library files by omitting the --target install option.  
+``` bash
+$ cd DynamixelSDK/c++
+$ cmake -B cmake_build
+$ cmake --build cmake_build --target install
+$ cmake --build cmake_build --target uninstall # Uninstall the library files from the system
+```
+
+Build result can be found in the `cmake_build` folder and the library files are installed to the system(C:\Program Files (x86)\dynamixel_sdk\).
+
+## Build the Example Code with CMake
+The example code also supports unified CMake build.  
+The executable file can be found in the `build/Debug` folder.
+
+``` bash
+$ cd DynamixelSDK/c++/example/protocol2.0
+$ cmake -B build
+$ cmake --build build
+$ cd build/Debug
+$ set PATH=C:\Program Files (x86)\dynamixel_sdk\bin;%PATH%
+$ broadcast_ping.exe
+```
