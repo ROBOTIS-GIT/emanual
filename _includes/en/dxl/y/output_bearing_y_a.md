@@ -87,7 +87,7 @@ Table.B3 Dynamic radial/axial factor
 
 | Classification                            | X    | Y    |
 |:------------------------------------------|:----:|:----:|
-| F_a/(F_r+2M/Dp)>1.5                       | 1.0  | 0.45 |
+| F_a/(F_r+2M/Dp)≤1.5                       | 1.0  | 0.45 |
 | F_a/(F_r+2M/Dp)>1.5                       | 0.67 | 0.67 |
 
 - If, Fr=0 and M=0, assuming X=0.67, Y=0.67
