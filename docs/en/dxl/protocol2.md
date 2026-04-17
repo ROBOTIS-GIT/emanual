@@ -985,7 +985,7 @@ Note that given examples use the following abbreviations for each packet section
 
 |  P9  | P10  | P11  | P12  | P13  | P14  | P15  | CRC1 | CRC2 |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 0x02 | 0x00 | 0x04 | 0x92 | 0x00 | 0x01 | 0x00 | 0x20 | 0xF2 |
+| 0x02 | 0x00 | 0x04 | 0x92 | 0x00 | 0x01 | 0x00 | 0xDA | 0x2D |
 
 #### ID 3 Status Packet
 
