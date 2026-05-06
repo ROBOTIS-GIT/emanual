@@ -25,6 +25,7 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "json"
   gem "webrick"
+  gem "csv"
   gem 'jekyll-livereload'
   gem 'kramdown-parser-gfm'
   gem "kramdown", ">= 2.3.1"
