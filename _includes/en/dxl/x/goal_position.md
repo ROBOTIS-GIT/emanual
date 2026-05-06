@@ -11,7 +11,7 @@ Goal Position(116) is used to set the actuator's desired output position.
 
 | Unit |    Description     |
 |:--------------------------:|:------------------:|
-|      0.088 [deg/pulse]      | 1[rev] : 0 ~ 4,095 (1 rotation (0 ~ 4,095, total 4,096 counts)) |
+|      0.088 [deg/pulse]      | 1[rev] : 0 ~ 4,095 |
 
 
 {% capture notice_01 %}
