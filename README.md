@@ -6,7 +6,7 @@
 - For general discussions, inquiries, and support for your projects, please visit User Community.
 - You can also find useful resources through the ROBOTIS Download Center, such as Drawings (2D/3D CAD), and Software.
 
-[User Community]: https://community.robotis.us/
+[User Community]: https://discord.com/invite/robotis
 [robotis download center]: http://en.robotis.com/service/downloadcenter.php
 
 # Quick References
