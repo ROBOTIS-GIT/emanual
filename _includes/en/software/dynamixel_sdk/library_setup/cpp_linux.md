@@ -63,3 +63,48 @@ $ make uninstall    # Remove files installed by 'make install' from the system
 $ make reinstall    # Reinstall by cleaning, rebuilding, and installing again
 ```
 {: .notice--success}
+
+
+# [CMake Build](#cmake-build)
+- Latest DYNAMIXEL SDK supports CMake build.  
+
+## Build System Update
+
+The existing OS-specific `make` build system has been unified into a single `CMake`-based build system.
+
+| Category               | Legacy (`make`)         | New (`cmake`)                     |
+|------------------------|-------------------------|-----------------------------------|
+| Build file           | OS-dependent            | Unified across platforms          |
+| Generated Files        | `libdxl_{sys_env}_cpp.so` | `libdxl_cpp.so` |
+| Install Include Paths  | `/usr/local/include/dynamixel_sdk/` | `/usr/local/include/dynamixel_sdk/` |
+
+## Build with CMake
+
+Install build-essential, and cmake.
+``` bash
+$ sudo apt-get install build-essential
+$ sudo apt-get install cmake
+```
+
+Build the SDK. `--target install` option makes the library files installed to the system.  
+You can skip installing the library files by omitting the --target install option.
+``` bash
+$ cd DynamixelSDK/c++
+$ sudo cmake -B cmake_build
+$ sudo cmake --build cmake_build --target install
+$ sudo cmake --build cmake_build --target uninstall # Uninstall the library files from the system
+```
+
+Build result can be found in the `cmake_build` folder and the library files are installed to the system(`/usr/local/lib/libdxl_cpp.so`, `/usr/local/include/dynamixel_sdk/`).
+
+## Build the Example Code with CMake
+The example code also supports unified CMake build.  
+The executable file can be found in the `build` folder.
+
+``` bash
+$ cd DynamixelSDK/c++/example/protocol2.0
+$ sudo cmake -B build
+$ sudo cmake --build build
+$ cd build
+$ ./broadcast_ping
+```
