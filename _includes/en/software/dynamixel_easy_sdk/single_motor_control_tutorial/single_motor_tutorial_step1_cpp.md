@@ -29,7 +29,7 @@ int main(){
   std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
 
   motor1->disableTorque();
-  motor1->setOperatingMode(dynamixel::Motor::OperatingMode::POSITION);
+  motor1->setOperatingMode(dynamixel::OperatingMode::POSITION);
   motor1->enableTorque();
 
   int target_position = 500;
@@ -61,7 +61,7 @@ int main(){
 - Set the operating mode to position control mode.
 ```cpp
     motor1->disableTorque();
-    motor1->setOperatingMode(dynamixel::Motor::OperatingMode::POSITION);
+    motor1->setOperatingMode(dynamixel::OperatingMode::POSITION);
     motor1->enableTorque();
 ```
 
@@ -81,7 +81,7 @@ int main(){
   ``` cpp
     auto result_void = motor1->disableTorque(); // type of 'result_void' variable is Result<void, DxlError>
     if (!result_void.isSuccess()) {
-      std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
+      std::cerr << result_void.error().what() << std::endl;
       return 1;
     }
   ```
@@ -89,41 +89,37 @@ int main(){
 # [Compile and Run](#compile-and-run)
 - You can compile and run the code using the following commands
 ```bash
-$ g++ tutorial_step1.cpp -o tutorial_step1 -l dxl_x64_cpp
+$ g++ tutorial_step1.cpp -o tutorial_step1 -ldxl_cpp
 $ ./tutorial_step1
 ```
 
 # [Full Source Code With Error Handling](#full-source-code-with-error-handling)
 ```cpp
+#include <iostream>
 #include "dynamixel_easy_sdk/dynamixel_easy_sdk.hpp"
 
-int main(){
-  dynamixel::Connector connector("/dev/ttyACM0", 57600);
-  std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
+int main() {
+  try {
+    dynamixel::Connector connector("/dev/ttyACM0", 57600);
+    std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
 
-  auto result_void = motor1->disableTorque(); // type of 'result_void' variable is Result<void, DxlError>
-  if (!result_void.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
+    // Use a lambda to handle errors cleanly
+    auto check = [](const auto& result) {
+      if (!result.isSuccess()) {
+        throw dynamixel::DxlRuntimeError(result.error().what());
+      }
+    };
+
+    check(motor1->disableTorque());
+    check(motor1->setOperatingMode(dynamixel::OperatingMode::POSITION));
+    check(motor1->enableTorque());
+    check(motor1->setGoalPosition(500));
+
+  } catch (const dynamixel::DxlRuntimeError& e) {
+    std::cerr << "Error: " << e.what() << std::endl;
     return 1;
   }
-
-  result_void = motor1->setOperatingMode(dynamixel::Motor::OperatingMode::POSITION);
-  if (!result_void.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
-    return 1;
-  }
-
-  result_void = motor1->enableTorque();
-  if (!result_void.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
-    return 1;
-  }
-
-  int target_position = 500;
-  result_void = motor1->setGoalPosition(target_position);
-  if (!result_void.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_void.error()) << std::endl;
-    return 1;
-  }
+  
+  return 0;
 }
 ```

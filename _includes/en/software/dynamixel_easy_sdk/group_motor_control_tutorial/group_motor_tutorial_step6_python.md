@@ -22,17 +22,15 @@ from dynamixel_easy_sdk import *
 
 def main():
     connector = Connector("/dev/ttyACM0", 57600)
-    group_executor = connector.createGroupExecutor()
-    motor1 = connector.createMotor(1)
-    motor2 = connector.createMotor(2)
 
-    group_executor.addCmd(motor1.stageGetPresentPosition())
-    group_executor.addCmd(motor2.stageGetPresentPosition())
-    present_positions = group_executor.executeRead()
-    group_executor.clearStagedReadCommands()
+    ids = [1, 2]
+    keys = ["pos1", "pos2"]
 
-    motor1_position = present_positions[0]
-    motor2_position = present_positions[1]
+    group_reader = connector.createReader(ids, "Present_Position", keys)
+    group_reader.read()
+
+    motor1_position = group_reader.get("pos1")
+    motor2_position = group_reader.get("pos2")
     print("Motor1 Present Position:", motor1_position)
     print("Motor2 Present Position:", motor2_position)
 
@@ -52,59 +50,48 @@ if __name__ == "__main__":
   def main():
       connector = Connector("/dev/ttyACM0", 57600)
 ```
-- Create a `GroupExecutor` object using the `createGroupExecutor` method of the `Connector` class.
-- This object is used to execute multiple commands simultaneously.
-```python
-      group_executor = connector.createGroupExecutor()
-```
-- Create a `Motor` object for each Dynamixel servo you want to control, using the `createMotor` method of the `Connector` class.
-```python
-      motor1 = connector.createMotor(1)
-      motor2 = connector.createMotor(2)
-```
 
 ## [Read Data from Multiple Motors Simultaneously](#read-data-from-multiple-motors-simultaneously)
-- Add commands to read the present position of each motor using the `stageGetPresentPosition` method of the `Motor` class.
+- Create a `SmartGroupReader` object using the `createReader` method of the `Connector` class.
+- You can initialize the `SmartGroupReader` with a list of IDs and Keys to add multiple motors at once (Short Form).
+- **Note**: Unlike C++, Python requires **unique keys** for each motor to prevent data overwriting in the dictionary.
 ```python
-      group_executor.addCmd(motor1.stageGetPresentPosition())
-      group_executor.addCmd(motor2.stageGetPresentPosition())
+      ids = [1, 2]
+      keys = ["pos1", "pos2"]
+      group_reader = connector.createReader(ids, "Present_Position", keys)
 ```
-- Execute all the staged commands simultaneously using the `executeRead` method of the `GroupExecutor` class.
+- Execute with `read()`.
 ```python
-      present_positions = group_executor.executeRead()
+      group_reader.read()
 ```
-- Clear the staged read commands after execution using the `clearStagedReadCommands` method of the `GroupExecutor` class.
+- This will send the commands to both motors simultaneously and read the requested data.
+- This method decides the communication packet type automatically between Sync and Bulk.
+- Retrieve the data using the `get` method with the unique key you specified.
 ```python
-      group_executor.clearStagedReadCommands()
-```
-
-- This will send the commands to both motors at the same time and read the present position of each motor.
-- The return type of this method is `List[int]`.
-```python
-      motor1_position = present_positions[0]
-      motor2_position = present_positions[1]
+      motor1_position = group_reader.get("pos1")
+      motor2_position = group_reader.get("pos2")
       print("Motor1 Present Position:", motor1_position)
       print("Motor2 Present Position:", motor2_position)
 ```
-- This method decides the communication packet type automatically between Sync and Bulk based on the staged commands.
+
 
 # [Error Handling](#error-handling)
 - When an error occurs, `DxlRuntimeError` is raised.
 - You can catch this error using a try-except block.
 ```python
   try:
-      group_executor.ReadWrite()
+      group_reader.read()
   except DxlRuntimeError as e:
       print(e)
 ```
 - `DxlRuntimeError` contains `DxlError` Enum that provides detailed information about the error.
 ```python
   try:
-      group_executor.ReadWrite()
+      group_reader.read()
   except DxlRuntimeError as e:
       if e.dxl_error == DxlError.EASY_SDK_ADD_PARAM_FAIL:
-          print("Failed to add param.")
+          print(f"Failed to add param: {e}")
       elif e.dxl_error == DxlError.EASY_SDK_COMMAND_IS_EMPTY:
-          print("Command is empty.")
+          print(f"Command is empty: {e}")
 ```
 - If only certain values among those read by group control have errors, those values are displayed as None.

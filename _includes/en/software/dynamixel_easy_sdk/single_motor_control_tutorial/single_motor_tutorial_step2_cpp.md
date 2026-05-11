@@ -55,7 +55,7 @@ int main(){
 
 ## [Get Present Position](#get-present-position)
 - You can read the present position of the motor using the `getPresentPosition` method.
-- Return type of this method is `Result<int32_t, Error>`. You can get the actual position value using the `value()` method of the `Result` object.
+- Return type of this method is `Result<int32_t, DxlError>`. You can get the actual position value using the `value()` method of the `Result` object.
 ```cpp
     auto result_int32_t = motor1->getPresentPosition();
     int present_position = result_int32_t.value();
@@ -66,40 +66,51 @@ int main(){
 # [Error Handling](#error-handling)
 - To ensure your code is robust, every method that sends a command to the motor returns a **Result** object that encapsulates values and errors.
 - This object lets you safely check for any communication or device errors before proceeding.
-- You can check for communication errors and device(dynamixel) errors using the **Result** object.
+- The `error()` method returns a **DxlError** object. Since `DxlError` inherits from `std::runtime_error`, you can retrieve the error description using the `.what()` method.
 - If you use `value()` when error occurred without checking for errors, it may throw an exception.
 
   **Example**
   ``` cpp
-    auto result_int32_t = motor1->getPresentPosition();
-    if (!result_int32_t.isSuccess()) {
-      std::cerr << dynamixel::getErrorMessage(result_int32_t.error()) << std::endl;
+    auto result = motor1->getPresentPosition();
+    if (!result.isSuccess()) {
+      // Direct access to the error message string
+      std::cerr << result.error().what() << std::endl;
       return 1;
     }
-    int present_position = result_int32_t.value();
+    int present_position = result.value();
   ```
 
 # [Compile and Run](#compile-and-run)
 - You can compile and run the code using the following commands
 ```bash
-$ g++ tutorial_step2.cpp -o tutorial_step2 -l dxl_x64_cpp
+$ g++ tutorial_step2.cpp -o tutorial_step2 -ldxl_cpp
 $ ./tutorial_step2
 ```
 
 # [Full Source Code With Error Handling](#full-source-code-with-error-handling)
 ```cpp
+#include <iostream>
 #include "dynamixel_easy_sdk/dynamixel_easy_sdk.hpp"
 
-int main(){
-  dynamixel::Connector connector("/dev/ttyACM0", 57600);
-  std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
+int main() {
+  try {
+    dynamixel::Connector connector("/dev/ttyACM0", 57600);
+    std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
 
-  auto result_int32_t = motor1->getPresentPosition();
-  if (!result_int32_t.isSuccess()) {
-    std::cerr << dynamixel::getErrorMessage(result_int32_t.error()) << std::endl;
+    auto result = motor1->getPresentPosition();
+    if (!result.isSuccess()) {
+      std::cerr << "Error reading position: " << result.error().what() << std::endl;
+      return 1;
+    }
+    
+    int present_position = result.value();
+    std::cout << "Present Position: " << present_position << std::endl;
+
+  } catch (const dynamixel::DxlRuntimeError& e) {
+    std::cerr << "Initialization Error: " << e.what() << std::endl;
     return 1;
   }
-  int present_position = result_int32_t.value();
-  std::cout << "Present Position: " << present_position << std::endl;
+  
+  return 0;
 }
 ```

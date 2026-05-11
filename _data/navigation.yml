@@ -29709,6 +29709,8 @@ dynamixel_easy_sdk:
       url: /software/dynamixel/dynamixel_easy_sdk/api_reference_connector/#connector-reference
     - title: "Motor"
       url: /software/dynamixel/dynamixel_easy_sdk/api_reference_motor/#motor-reference
+    - title: "SmartGroup"
+      url: /software/dynamixel/dynamixel_easy_sdk/api_reference_smart_group/
     - title: "GroupExecutor"
       url: /software/dynamixel/dynamixel_easy_sdk/api_reference_group_executor/#group_executor-reference
     - title: "Data Types"
