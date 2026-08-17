@@ -21,44 +21,52 @@ $ sudo dmesg | grep tty
 # [Source Code Description](#source-code-description)
 
 ```cpp
+#include <iostream>
 #include "dynamixel_easy_sdk/dynamixel_easy_sdk.hpp"
 
-int main(){
-
+int main() {
   dynamixel::Connector connector("/dev/ttyACM0", 57600);
-  std::unique_ptr<dynamixel::Motor> leader_motor = connector.createMotor(1);
-  std::unique_ptr<dynamixel::Motor> follower_motor = connector.createMotor(2);
+
+  auto leader_motor = connector.createMotor(1);
+  auto follower_motor = connector.createMotor(2);
+
   int min_position = leader_motor->getMinPositionLimit().value() + 100;
   int max_position = leader_motor->getMaxPositionLimit().value() - 100;
 
   leader_motor->disableTorque();
   follower_motor->disableTorque();
-  follower_motor->setOperatingMode(dynamixel::Motor::OperatingMode::POSITION);
+  
+  follower_motor->setOperatingMode(dynamixel::OperatingMode::POSITION);
   follower_motor->enableTorque();
 
   while (true) {
     int present_position = leader_motor->getPresentPosition().value();
-    std::cout << "Leader Motor Present Position: " << present_position << std::endl;
+    std::cout << "Leader Motor Present Position: " << present_position << "     \r" << std::flush;
 
-    if (present_position < min_position) {
+    bool under_limit = (present_position < min_position);
+    bool over_limit = (present_position > max_position);
+
+    if (under_limit || over_limit) {
+      int target_position = under_limit ? min_position : max_position;
+
       leader_motor->enableTorque();
-      leader_motor->setGoalPosition(min_position);
-      while(true){
+      leader_motor->setGoalPosition(target_position);
+
+      while (true) {
         present_position = leader_motor->getPresentPosition().value();
-        if(present_position >= min_position) break;
+        follower_motor->setGoalPosition(target_position);
+
+        if ((under_limit && present_position >= min_position) || 
+            (over_limit && present_position <= max_position)) {
+          break;
+        }
       }
       leader_motor->disableTorque();
-    } else if (present_position > max_position) {
-      leader_motor->enableTorque();
-      leader_motor->setGoalPosition(max_position);
-      while(true){
-        present_position = leader_motor->getPresentPosition().value();
-        if(present_position <= max_position) break;
-      }
-      leader_motor->disableTorque();
+    } else {
+      follower_motor->setGoalPosition(present_position);
     }
-    follower_motor->setGoalPosition(present_position);
   }
+  return 0;
 }
 ```
 
@@ -96,7 +104,7 @@ int main(){
 ```cpp
     leader_motor->disableTorque();
     follower_motor->disableTorque();
-    follower_motor->setOperatingMode(dynamixel::Motor::OperatingMode::POSITION);
+    follower_motor->setOperatingMode(dynamixel::OperatingMode::POSITION);
     follower_motor->enableTorque();
 ```
 
@@ -105,31 +113,33 @@ int main(){
 ```cpp
     while (true) {
       int present_position = leader_motor->getPresentPosition().value();
-      std::cout << "Leader Motor Present Position: " << present_position << std::endl;
+      std::cout << "Leader Motor Present Position: " << present_position << "     \r" << std::flush;
 ```
 - If the leader motor's position exceeds the defined range, move it back within the range.
+- Follower motor always tracks the leader motor's position.
 ```cpp
-      if (present_position < min_position) {
+      bool under_limit = (present_position < min_position);
+      bool over_limit = (present_position > max_position);
+
+      if (under_limit || over_limit) {
+        int target_position = under_limit ? min_position : max_position;
+
         leader_motor->enableTorque();
-        leader_motor->setGoalPosition(min_position);
-        while(true){
+        leader_motor->setGoalPosition(target_position);
+
+        while (true) {
           present_position = leader_motor->getPresentPosition().value();
-          if(present_position >= min_position) break;
+          follower_motor->setGoalPosition(target_position);
+
+          if ((under_limit && present_position >= min_position) || 
+              (over_limit && present_position <= max_position)) {
+            break;
+          }
         }
         leader_motor->disableTorque();
-      } else if (present_position > max_position) {
-        leader_motor->enableTorque();
-        leader_motor->setGoalPosition(max_position);
-        while(true){
-          present_position = leader_motor->getPresentPosition().value();
-          if(present_position <= max_position) break;
-        }
-        leader_motor->disableTorque();
+      } else {
+        follower_motor->setGoalPosition(present_position);
       }
-```
-- Set the goal position of the follower motor to the present position of the leader motor.
-```cpp
-      follower_motor->setGoalPosition(present_position);
     }
   }
 ```
@@ -137,22 +147,22 @@ int main(){
 # [Error Handling](#error-handling)
 - To ensure your code is robust, every method that sends a command to the motor returns a **Result** object that encapsulates values and errors.
 - This object lets you safely check for any communication or device errors before proceeding.
-- You can check for communication errors and device(dynamixel) errors using the **Result** object.
+- The `error()` method returns a **DxlError** object. Since `DxlError` inherits from `std::runtime_error`, you can retrieve the error description using the `.what()` method.
 - If you use `value()` when error occurred without checking for errors, it may throw an exception.
 
   **Example**
   ``` cpp
-    auto result_uint32 = leader_motor->getMinPositionLimit();
-    if (!result_uint32.isSuccess()) {
-      std::cerr << dynamixel::getErrorMessage(result_uint32.error()) << std::endl;
+    auto result = leader_motor->getMinPositionLimit();
+    if (!result.isSuccess()) {
+      std::cerr << result.error().what() << std::endl;
       return 1;
     }
-    int min_position = result_uint32.value();
+    int min_position = result.value();
   ```
 
 # [Compile and Run](#compile-and-run)
 - You can compile and run the code using the following commands
 ```bash
-$ g++ tutorial_step3.cpp -o tutorial_step3 -l dxl_x64_cpp
+$ g++ tutorial_step3.cpp -o tutorial_step3 -ldxl_cpp
 $ ./tutorial_step3
 ```

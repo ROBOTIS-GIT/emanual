@@ -28,6 +28,7 @@ sidebar:
 - This section provides a reference for the main classes and methods available in the Dynamixel API.
   - [**connector class**](/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference_connector/)
   - [**motor class**](/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference_motor/)
+  - [**smart_group class**](/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference_smart_group/)
   - [**group_executor class**](/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference_group_executor/)
   - [**data_types class**](/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference_data_types/)
   - [**dynamixel_error class**](/docs/en/software/dynamixel/dynamixel_easy_sdk/api_reference_dynamixel_error/)

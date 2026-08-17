@@ -35,14 +35,15 @@ sidebar:
 **Intuitive Abstraction**:  
   - The **Dynamixel Easy SDK** provides functions with clear and descriptive names, allowing users to control motors without needing to understand the underlying protocol. For example, calling `motor1.torque_enable()` directly conveys its purpose, making the **Dynamixel Easy SDK** easy to learn and use.
 
-**Automatic Model Recognition**:  
-  - The **Dynamixel Easy SDK** can automatically detect the connected Dynamixel model and load its corresponding control table, eliminating the need for manual configuration and simplifying development.
+**Automatic Model Recognition & Smart Control**:  
+  - The **Dynamixel Easy SDK** can automatically detect the connected Dynamixel model and load its corresponding control table, eliminating the need for manual configuration.
+  - Furthermore, the **Smart Group Control** feature allows users to read and write data using item names (e.g., "Goal_Position") instead of raw addresses. The SDK intelligently selects the optimal communication strategy (Sync or Bulk), maximizing performance without requiring complex code.
 
 **Error Handling**:  
   - **Python :** The **Dynamixel Easy SDK** introduces a unified exception handling mechanism for both communication errors and Dynamixel-specific errors. This allows developers to catch all error cases using a single exception type, simplifying error handling code and improving readability.
   - **C++ :** Instead of returning a raw int, the **Dynamixel Easy SDK** now uses a result object that encapsulates both communication errors and Dynamixel-specific errors. This allows developers to handle all error cases in a unified way, making error logging code more concise and improving readability.
 
 # [Supported Environments](#supported-environments)
-- **Programming Languages**: `Python>=3.6`, `C++ (17 standard or later)`
-- **Operating Systems**: `Python`, `Linux 64-bit`
-- **Protocols**: `2.0`
+- **Programming Languages**: `Python` (3.6 or later), `C++` (C++17 or later)
+- **Operating Systems**: `Linux`, `Windows`, `macOS`
+- **Protocols**: `DXL Protocol 2.0`

@@ -45,34 +45,39 @@ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 cd DynamixelSDK/python
 pip install .
 ```
-
-<div class="notice--info">
-- **NOTE:** Also you can install the SDK directly using pip without cloning the repository.
-```bash
-pip install dynamixel-sdk
-```
-</div>
 </section>
 
 <section data-id="{{ page.tab_title2 }}" class="tab_contents">
 
-- Build the SDK by following the instructions below
+- Build the SDK using the unified CMake build system
+- **Note**: The `-DIS_ROS_BUILD=OFF` flag forces the SDK to build in standalone mode, ignoring any ROS 2 installation.
 ```bash
-cd DynamixelSDK/c++/build/linux64
+cd DynamixelSDK
+mkdir build && cd build
+cmake .. -DIS_ROS_BUILD=OFF
+make
 sudo make install
 ```
 - Successful output log:
 ```bash
-mkdir -p ./.objects/
-g++ -shared -fPIC -m64 -o ./libdxl_x64_cpp.so ./.objects/group_bulk_read.o ./.objects/group_bulk_write.o ./.objects/group_sync_read.o ./.objects/group_sync_write.o ./.objects/group_fast_bulk_read.o ./.objects/group_fast_sync_read.o ./.objects/group_handler.o ./.objects/packet_handler.o ./.objects/port_handler.o ./.objects/protocol1_packet_handler.o ./.objects/protocol2_packet_handler.o ./.objects/port_handler_linux.o ./.objects/connector.o ./.objects/control_table.o ./.objects/motor.o ./.objects/dynamixel_error.o ./.objects/group_executor.o -lrt
-cp "./libdxl_x64_cpp.so" "/usr/local/lib/libdxl_x64_cpp.so"
-ln -s "/usr/local/lib/libdxl_x64_cpp.so" "/usr/local/lib/libdxl_x64_cpp.so.2"
-ln -s "/usr/local/lib/libdxl_x64_cpp.so" "/usr/local/lib/libdxl_x64_cpp.so.2.0"
-ln -s "/usr/local/lib/libdxl_x64_cpp.so" "/usr/local/lib/libdxl_x64_cpp.so.2.0.0"
-cp -r ../../include/dynamixel_sdk/* /usr/local/include/dynamixel_sdk
-cp -r ../../include/dynamixel_easy_sdk/* /usr/local/include/dynamixel_easy_sdk
-cp -r ../../../control_table /usr/local/share/dynamixel_sdk/
-ldconfig
+[ 34%] Built target dynamixel_c
+[100%] Built target dynamixel_cpp
+[100%] Built target ament_cmake_python_copy_dynamixel_sdk
+running egg_info
+writing dynamixel_sdk.egg-info/PKG-INFO
+writing dependency_links to dynamixel_sdk.egg-info/dependency_links.txt
+writing top-level names to dynamixel_sdk.egg-info/top_level.txt
+reading manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+writing manifest file 'dynamixel_sdk.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_dynamixel_sdk_egg
+Install the project...
+-- Install configuration: ""
+-- Installing: /usr/local/include/dynamixel_sdk_c/dynamixel_sdk
+-- Installing: /usr/local/include/dynamixel_sdk_c/dynamixel_sdk/port_handler_mac.h
+-- Installing: /usr/local/include/dynamixel_sdk_c/dynamixel_sdk/group_bulk_read.h
+-- Installing: /usr/local/include/dynamixel_sdk_c/dynamixel_sdk/dynamixel_sdk.h
+-- Installing: /usr/local/include/dynamixel_sdk_c/dynamixel_sdk/port_handler.h
+...
 ```
 
 </section>
@@ -115,17 +120,19 @@ touch move_motor.cpp
 ```cpp
   #include "dynamixel_easy_sdk/dynamixel_easy_sdk.hpp"
 
-  int main(){
+  int main() {
     dynamixel::Connector connector("/dev/ttyACM0", 57600);
     std::unique_ptr<dynamixel::Motor> motor1 = connector.createMotor(1);
     int target_position = 2000;
+    motor1->setOperatingMode(dynamixel::OperatingMode::POSITION);
     motor1->enableTorque();
     motor1->setGoalPosition(target_position);
-}
+    return 0;
+  }
 ```
 - Build the `move_motor.cpp` file and execute the compiled binary.
 ```bash
-g++ -o move_motor move_motor.cpp -ldxl_x64_cpp
+g++ -o move_motor move_motor.cpp -ldxl_cpp
 ./move_motor
 ```
 

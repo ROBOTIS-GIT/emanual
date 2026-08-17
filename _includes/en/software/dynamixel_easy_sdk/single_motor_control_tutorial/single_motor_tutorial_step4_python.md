@@ -48,22 +48,27 @@ def main():
     follower_motor5.enableTorque()
     follower_motor_gripper.enableTorque()
 
-    while (True):
-      present_position1 = leader_motor1.getPresentPosition()
-      present_position2 = leader_motor2.getPresentPosition()
-      present_position3 = leader_motor3.getPresentPosition()
-      present_position4 = leader_motor4.getPresentPosition()
-      present_position5 = leader_motor5.getPresentPosition()
-      present_position_gripper = leader_motor_gripper.getPresentPosition()
-      try:
-          follower_motor1.setGoalPosition(present_position1)
-          follower_motor2.setGoalPosition(present_position2)
-          follower_motor3.setGoalPosition(present_position3)
-          follower_motor4.setGoalPosition(present_position4)
-          follower_motor5.setGoalPosition(present_position5)
-          follower_motor_gripper.setGoalPosition(present_position_gripper)
-      except DxlRuntimeError as e:
-          print(e)
+    while True:
+        try:
+            # Read Present Position
+            pos1 = leader_motor1.getPresentPosition()
+            pos2 = leader_motor2.getPresentPosition()
+            pos3 = leader_motor3.getPresentPosition()
+            pos4 = leader_motor4.getPresentPosition()
+            pos5 = leader_motor5.getPresentPosition()
+            pos_grip = leader_motor_gripper.getPresentPosition()
+
+            # Write Goal Position
+            follower_motor1.setGoalPosition(pos1)
+            follower_motor2.setGoalPosition(pos2)
+            follower_motor3.setGoalPosition(pos3)
+            follower_motor4.setGoalPosition(pos4)
+            follower_motor5.setGoalPosition(pos5)
+            follower_motor_gripper.setGoalPosition(pos_grip)
+
+        except DxlRuntimeError as e:
+            print(e)
+
 if __name__ == "__main__":
     main()
 ```
@@ -122,20 +127,23 @@ def main():
 - Handle DxlRuntimeError that occurs when position limit is exceeded.
 ```python
       while True:
-        present_position1 = leader_motor1.getPresentPosition()
-        present_position2 = leader_motor2.getPresentPosition()
-        present_position3 = leader_motor3.getPresentPosition()
-        present_position4 = leader_motor4.getPresentPosition()
-        present_position5 = leader_motor5.getPresentPosition()
-        present_position_gripper = leader_motor_gripper.getPresentPosition()
-
         try:
-            follower_motor1.setGoalPosition(present_position1)
-            follower_motor2.setGoalPosition(present_position2)
-            follower_motor3.setGoalPosition(present_position3)
-            follower_motor4.setGoalPosition(present_position4)
-            follower_motor5.setGoalPosition(present_position5)
-            follower_motor_gripper.setGoalPosition(present_position_gripper)
+            # Read Present Position
+            pos1 = leader_motor1.getPresentPosition()
+            pos2 = leader_motor2.getPresentPosition()
+            pos3 = leader_motor3.getPresentPosition()
+            pos4 = leader_motor4.getPresentPosition()
+            pos5 = leader_motor5.getPresentPosition()
+            pos_grip = leader_motor_gripper.getPresentPosition()
+
+            # Write Goal Position
+            follower_motor1.setGoalPosition(pos1)
+            follower_motor2.setGoalPosition(pos2)
+            follower_motor3.setGoalPosition(pos3)
+            follower_motor4.setGoalPosition(pos4)
+            follower_motor5.setGoalPosition(pos5)
+            follower_motor_gripper.setGoalPosition(pos_grip)
+
         except DxlRuntimeError as e:
             print(e)
 ```
